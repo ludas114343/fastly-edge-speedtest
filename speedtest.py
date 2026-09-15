@@ -4,7 +4,7 @@ Cloud-Based Fastly Anycast Speedtest and Clash Subscription Engine
 Author: Antigravity for Tianyou Lu
 Private Repository: ludas114343/fastly-edge-speedtest
 
-Measures Fastly Anycast latency from China domestic perspective via Cloudflare/Anycast domestic relay.
+Measures Fastly Anycast latency from China domestic perspective.
 Sorts candidates by lowest latency and jitter.
 Generates production clash.yaml and fastly_best_nodes.json every 4 hours on GitHub Actions.
 Strictly zero em-dashes.
@@ -35,7 +35,13 @@ FASTLY_ANYCAST_CANDIDATES = [
     "146.75.113.140",
     "146.75.112.133",
     "146.75.114.133",
-    "146.75.115.133"
+    "146.75.115.133",
+    "167.82.0.140",
+    "167.82.1.133",
+    "167.82.2.133",
+    "167.82.3.133",
+    "194.26.29.140",
+    "194.26.28.133"
 ]
 
 def test_single_ip(ip, port=443, rounds=3):
@@ -62,7 +68,7 @@ def test_single_ip(ip, port=443, rounds=3):
             ss.close()
         except Exception:
             pass
-        time.sleep(0.05)
+        time.sleep(0.04)
 
     if not latencies:
         return None
@@ -83,14 +89,232 @@ def generate_clash_yaml(top_ips):
     ip2 = top_ips[1]["ip"] if len(top_ips) > 1 else "151.101.65.140"
     ip3 = top_ips[2]["ip"] if len(top_ips) > 2 else "151.101.1.69"
     ip4 = top_ips[3]["ip"] if len(top_ips) > 3 else "199.232.41.140"
+    ip5 = top_ips[4]["ip"] if len(top_ips) > 4 else "151.101.2.132"
+    ip6 = top_ips[5]["ip"] if len(top_ips) > 5 else "146.75.112.133"
 
     now_iso = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+
+    # Define exactly 20 nodes (2 nodes per region across 10 regions)
+    nodes_def = [
+        # 1. 🇯🇵 日本
+        {
+            "name": f"🇯🇵 日本东京 01 [Fastly 极速优选 {ip1}]",
+            "server": ip1,
+            "path": "/jp",
+            "group": "🇯🇵 日本",
+            "region": "🌏 亚太节点"
+        },
+        {
+            "name": f"🇯🇵 日本东京 02 [Fastly 极速优选 {ip2}]",
+            "server": ip2,
+            "path": "/jp",
+            "group": "🇯🇵 日本",
+            "region": "🌏 亚太节点"
+        },
+        # 2. 🇰🇷 韩国
+        {
+            "name": f"🇰🇷 韩国首尔 01 [Fastly 极速优选 {ip1}]",
+            "server": ip1,
+            "path": "/kr",
+            "group": "🇰🇷 韩国",
+            "region": "🌏 亚太节点"
+        },
+        {
+            "name": f"🇰🇷 韩国首尔 02 [Fastly 极速优选 {ip2}]",
+            "server": ip2,
+            "path": "/kr",
+            "group": "🇰🇷 韩国",
+            "region": "🌏 亚太节点"
+        },
+        # 3. 🇭🇰 香港
+        {
+            "name": f"🇭🇰 香港专线 01 [Fastly 极速优选 {ip3}]",
+            "server": ip3,
+            "path": "/hk",
+            "group": "🇭🇰 香港",
+            "region": "🌏 亚太节点"
+        },
+        {
+            "name": f"🇭🇰 香港专线 02 [Fastly 极速优选 {ip4}]",
+            "server": ip4,
+            "path": "/hk",
+            "group": "🇭🇰 香港",
+            "region": "🌏 亚太节点"
+        },
+        # 4. 🇸🇬 新加坡
+        {
+            "name": f"🇸🇬 新加坡 01 [Fastly 极速优选 {ip1}]",
+            "server": ip1,
+            "path": "/sg",
+            "group": "🇸🇬 新加坡",
+            "region": "🌏 亚太节点"
+        },
+        {
+            "name": f"🇸🇬 新加坡 02 [Fastly 极速优选 {ip3}]",
+            "server": ip3,
+            "path": "/sg",
+            "group": "🇸🇬 新加坡",
+            "region": "🌏 亚太节点"
+        },
+        # 5. 🇩🇪 德国
+        {
+            "name": f"🇩🇪 德国法兰克福 01 [Fastly 极速优选 {ip1}]",
+            "server": ip1,
+            "path": "/de",
+            "group": "🇩🇪 德国",
+            "region": "🌍 欧洲节点"
+        },
+        {
+            "name": f"🇩🇪 德国法兰克福 02 [Fastly 极速优选 {ip2}]",
+            "server": ip2,
+            "path": "/de",
+            "group": "🇩🇪 德国",
+            "region": "🌍 欧洲节点"
+        },
+        # 6. 🇫🇷 法国
+        {
+            "name": f"🇫🇷 法国巴黎 01 [Fastly 极速优选 {ip3}]",
+            "server": ip3,
+            "path": "/fr",
+            "group": "🇫🇷 法国",
+            "region": "🌍 欧洲节点"
+        },
+        {
+            "name": f"🇫🇷 法国巴黎 02 [Fastly 极速优选 {ip4}]",
+            "server": ip4,
+            "path": "/fr",
+            "group": "🇫🇷 法国",
+            "region": "🌍 欧洲节点"
+        },
+        # 7. 🇬🇧 英国
+        {
+            "name": f"🇬🇧 英国伦敦 01 [Fastly 极速优选 {ip2}]",
+            "server": ip2,
+            "path": "/uk",
+            "group": "🇬🇧 英国",
+            "region": "🌍 欧洲节点"
+        },
+        {
+            "name": f"🇬🇧 英国伦敦 02 [Fastly 极速优选 {ip4}]",
+            "server": ip4,
+            "path": "/uk",
+            "group": "🇬🇧 英国",
+            "region": "🌍 欧洲节点"
+        },
+        # 8. 🇨🇭 瑞士
+        {
+            "name": f"🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 {ip1}]",
+            "server": ip1,
+            "path": "/ch",
+            "group": "🇨🇭 瑞士",
+            "region": "🌍 欧洲节点"
+        },
+        {
+            "name": f"🇨🇭 瑞士苏黎世 02 [Fastly 极速优选 {ip3}]",
+            "server": ip3,
+            "path": "/ch",
+            "group": "🇨🇭 瑞士",
+            "region": "🌍 欧洲节点"
+        },
+        # 9. 🇺🇸 美国美东
+        {
+            "name": f"🇺🇸 美国美东 01 [Fastly 极速优选 {ip1}]",
+            "server": ip1,
+            "path": "/us",
+            "group": "🇺🇸 美国美东",
+            "region": "🌎 美洲节点"
+        },
+        {
+            "name": f"🇺🇸 美国美东 02 [Fastly 极速优选 {ip3}]",
+            "server": ip3,
+            "path": "/us",
+            "group": "🇺🇸 美国美东",
+            "region": "🌎 美洲节点"
+        },
+        # 10. 🇺🇸 美国美西
+        {
+            "name": f"🇺🇸 美国美西 01 [Fastly 极速优选 {ip2}]",
+            "server": ip2,
+            "path": "/usw",
+            "group": "🇺🇸 美国美西",
+            "region": "🌎 美洲节点"
+        },
+        {
+            "name": f"🇺🇸 美国美西 02 [Fastly 极速优选 {ip4}]",
+            "server": ip4,
+            "path": "/usw",
+            "group": "🇺🇸 美国美西",
+            "region": "🌎 美洲节点"
+        }
+    ]
+
+    all_node_names = [n["name"] for n in nodes_def]
+
+    # Build proxies block
+    proxies_yaml_lines = []
+    for node in nodes_def:
+        proxies_yaml_lines.append(f"""  - name: "{node['name']}"
+    type: vless
+    server: {node['server']}
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "{node['path']}"
+      headers:
+        Host: fastly.ruoyemu.asia""")
+
+    proxies_block = "\n\n".join(proxies_yaml_lines)
+
+    # Build individual country lists
+    country_groups = [
+        "🇯🇵 日本",
+        "🇰🇷 韩国",
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇨🇭 瑞士",
+        "🇺🇸 美国美东",
+        "🇺🇸 美国美西"
+    ]
+
+    country_selectors_yaml = []
+    for cg in country_groups:
+        c_nodes = [n["name"] for n in nodes_def if n["group"] == cg]
+        c_nodes_yaml = "\n".join([f'      - "{cn}"' for cn in c_nodes])
+        country_selectors_yaml.append(f"""  - name: "{cg}"
+    type: select
+    proxies:
+{c_nodes_yaml}""")
+
+    country_selectors_block = "\n\n".join(country_selectors_yaml)
+
+    # Build Regional groups
+    ap_nodes = [n["name"] for n in nodes_def if n["region"] == "🌏 亚太节点"]
+    eu_nodes = [n["name"] for n in nodes_def if n["region"] == "🌍 欧洲节点"]
+    us_nodes = [n["name"] for n in nodes_def if n["region"] == "🌎 美洲节点"]
+
+    ap_nodes_yaml = "\n".join([f'      - "{cn}"' for cn in ap_nodes])
+    eu_nodes_yaml = "\n".join([f'      - "{cn}"' for cn in eu_nodes])
+    us_nodes_yaml = "\n".join([f'      - "{cn}"' for cn in us_nodes])
+
+    all_nodes_auto_yaml = "\n".join([f'      - "{cn}"' for cn in all_node_names])
+    all_nodes_select_yaml = "\n".join([f'      - "{cn}"' for cn in all_node_names])
+
+    country_direct_menu = "\n".join([f'      - "{cg}"' for cg in country_groups])
 
     content = f"""# ============================================================
 # Fastly Anycast Multi-Region High-Speed Subscription
 # Generated automatically by GitHub Actions Cloud Runner
 # Last Cloud Speedtest: {now_iso}
-# Primary Anycast Top Nodes: {ip1}, {ip2}, {ip3}, {ip4}
+# Primary Anycast Top Nodes: {ip1}, {ip2}, {ip3}, {ip4}, {ip5}, {ip6}
+# Total Nodes: {len(nodes_def)} pure Fastly Anycast nodes
 # ============================================================
 
 port: 7890
@@ -116,200 +340,18 @@ dns:
     - 8.8.8.8
 
 proxies:
-  # --- 🇩🇪 德国欧洲 (Frankfurt) ---
-  - name: "🇩🇪 德国法兰克福 01 [Fastly 极速优选 {ip1}]"
-    type: vless
-    server: {ip1}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/de"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 02 [Fastly 极速优选 {ip2}]"
-    type: vless
-    server: {ip2}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/de"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇫🇷 法国巴黎 (Paris) ---
-  - name: "🇫🇷 法国巴黎 01 [Fastly 极速优选 {ip3}]"
-    type: vless
-    server: {ip3}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/fr"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇬🇧 英国伦敦 (London) ---
-  - name: "🇬🇧 英国伦敦 01 [Fastly 极速优选 {ip4}]"
-    type: vless
-    server: {ip4}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/uk"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇨🇭 瑞士苏黎世 (Zurich) ---
-  - name: "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 {ip1}]"
-    type: vless
-    server: {ip1}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ch"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇺🇸 美国美东 (Virginia) ---
-  - name: "🇺🇸 美国美东 01 [Fastly 极速优选 {ip1}]"
-    type: vless
-    server: {ip1}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/us"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇺🇸 美国美西 (California) ---
-  - name: "🇺🇸 美国美西 02 [Fastly 极速优选 {ip2}]"
-    type: vless
-    server: {ip2}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/usw"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇯🇵 日本东京 (Tokyo) ---
-  - name: "🇯🇵 日本东京 01 [Fastly 极速优选 {ip1}]"
-    type: vless
-    server: {ip1}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/jp"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇸🇬 新加坡 (Singapore) ---
-  - name: "🇸🇬 新加坡 01 [Fastly 极速优选 {ip3}]"
-    type: vless
-    server: {ip3}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/sg"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇨🇦 加拿大 (Montreal) ---
-  - name: "🇨🇦 加拿大 01 [Fastly 极速优选 {ip2}]"
-    type: vless
-    server: {ip2}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ca"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇦🇺 澳大利亚 (Sydney) ---
-  - name: "🇦🇺 澳大利亚 01 [Fastly 极速优选 {ip4}]"
-    type: vless
-    server: {ip4}
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/au"
-      headers:
-        Host: fastly.ruoyemu.asia
+{proxies_block}
 
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
+      - "🌏 亚太节点"
       - "🌍 欧洲节点"
       - "🌎 美洲节点"
-      - "🌏 亚太节点"
-      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 {ip1}]"
-      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 {ip2}]"
-      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 {ip3}]"
-      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 {ip4}]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 {ip1}]"
-      - "🇺🇸 美国美东 01 [Fastly 极速优选 {ip1}]"
-      - "🇺🇸 美国美西 02 [Fastly 极速优选 {ip2}]"
-      - "🇯🇵 日本东京 01 [Fastly 极速优选 {ip1}]"
-      - "🇸🇬 新加坡 01 [Fastly 极速优选 {ip3}]"
-      - "🇨🇦 加拿大 01 [Fastly 极速优选 {ip2}]"
-      - "🇦🇺 澳大利亚 01 [Fastly 极速优选 {ip4}]"
+{country_direct_menu}
+{all_nodes_select_yaml}
 
   - name: "♻️ 自动选择"
     type: url-test
@@ -317,40 +359,24 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 {ip1}]"
-      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 {ip2}]"
-      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 {ip3}]"
-      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 {ip4}]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 {ip1}]"
-      - "🇺🇸 美国美东 01 [Fastly 极速优选 {ip1}]"
-      - "🇺🇸 美国美西 02 [Fastly 极速优选 {ip2}]"
-      - "🇯🇵 日本东京 01 [Fastly 极速优选 {ip1}]"
-      - "🇸🇬 新加坡 01 [Fastly 极速优选 {ip3}]"
-      - "🇨🇦 加拿大 01 [Fastly 极速优选 {ip2}]"
-      - "🇦🇺 澳大利亚 01 [Fastly 极速优选 {ip4}]"
-
-  - name: "🌍 欧洲节点"
-    type: select
-    proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 {ip1}]"
-      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 {ip2}]"
-      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 {ip3}]"
-      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 {ip4}]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 {ip1}]"
-
-  - name: "🌎 美洲节点"
-    type: select
-    proxies:
-      - "🇺🇸 美国美东 01 [Fastly 极速优选 {ip1}]"
-      - "🇺🇸 美国美西 02 [Fastly 极速优选 {ip2}]"
-      - "🇨🇦 加拿大 01 [Fastly 极速优选 {ip2}]"
+{all_nodes_auto_yaml}
 
   - name: "🌏 亚太节点"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [Fastly 极速优选 {ip1}]"
-      - "🇸🇬 新加坡 01 [Fastly 极速优选 {ip3}]"
-      - "🇦🇺 澳大利亚 01 [Fastly 极速优选 {ip4}]"
+{ap_nodes_yaml}
+
+  - name: "🌍 欧洲节点"
+    type: select
+    proxies:
+{eu_nodes_yaml}
+
+  - name: "🌎 美洲节点"
+    type: select
+    proxies:
+{us_nodes_yaml}
+
+{country_selectors_block}
 
 rules:
   - GEOIP,CN,DIRECT
@@ -377,46 +403,50 @@ def main():
 
     # Sort by score (lowest latency first)
     results.sort(key=lambda x: x["score"])
-    print(f"\\n[*] Top 4 Anycast IP Winners:")
-    for r in results[:4]:
+    print(f"\n[*] Top 6 Anycast IP Winners:")
+    for r in results[:6]:
         print(f"  [WINNER] {r['ip']}: TCP={r['tcp_ms']}ms, TLS={r['tls_ms']}ms (Score={r['score']})")
 
     # Save JSON metrics
     with open("fastly_best_nodes.json", "w", encoding="utf-8") as f:
         json.dump({
             "updated_at": datetime.utcnow().isoformat(),
-            "top_nodes": results[:6]
+            "top_nodes": results[:8]
         }, f, indent=2)
 
     # Generate Clash Meta Subscription YAML
-    clash_yaml = generate_clash_yaml(results[:4])
+    clash_yaml = generate_clash_yaml(results[:6])
     with open("clash.yaml", "w", encoding="utf-8") as f:
         f.write(clash_yaml)
 
     # Update README.md
     now_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    winners_md = "\n".join([
+        f"| {idx+1} | `{r['ip']}` | {r['tcp_ms']} ms | {r['tls_ms']} ms | {r['score']} | {r['loss_pct']}% |"
+        for idx, r in enumerate(results[:6])
+    ])
+
     readme_content = f"""# Fastly Anycast Cloud-Tested Best Nodes (Private Feed)
 
 - **Updated At**: `{now_str}`
 - **Automated Schedule**: Every 4 hours via GitHub Actions (`0 */4 * * *`)
-- **Domestic Optimization**: Tested through domestic Anycast / CDN nodes
+- **Total Nodes**: 20 pure Fastly Anycast nodes across 10 regions
+- **Target Regions**: 🇯🇵 Japan, 🇰🇷 South Korea, 🇭🇰 Hong Kong, 🇸🇬 Singapore, 🇩🇪 Germany, 🇫🇷 France, 🇬🇧 United Kingdom, 🇨🇭 Switzerland, 🇺🇸 US East, 🇺🇸 US West
 
 ## Top Anycast Winners (Current Cycle)
 
 | Rank | Anycast IP | TCP RTT | TLS Handshake | Score | Packet Loss |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 **1** | `{results[0]['ip']}` | {results[0]['tcp_ms']} ms | {results[0]['tls_ms']} ms | {results[0]['score']} | {results[0]['loss_pct']}% |
-| 2 **2** | `{results[1]['ip']}` | {results[1]['tcp_ms']} ms | {results[1]['tls_ms']} ms | {results[1]['score']} | {results[1]['loss_pct']}% |
-| 3 **3** | `{results[2]['ip']}` | {results[2]['tcp_ms']} ms | {results[2]['tls_ms']} ms | {results[2]['score']} | {results[2]['loss_pct']}% |
-| 4 **4** | `{results[3]['ip']}` | {results[3]['tcp_ms']} ms | {results[3]['tls_ms']} ms | {results[3]['score']} | {results[3]['loss_pct']}% |
+{winners_md}
 
-## Usage in Clash Meta
-Subscribe to the private raw subscription link or via Cloudflare Worker proxy.
+## Subscription URL
+Subscribe with your secret token:
+- `https://sub.ruoyemu.asia/clash?token=fastly`
 """
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
 
-    print("[*] Generated fastly_best_nodes.json, clash.yaml, and README.md successfully.")
+    print("[*] Generated fastly_best_nodes.json, clash.yaml (20 nodes), and README.md successfully.")
 
 if __name__ == "__main__":
     main()

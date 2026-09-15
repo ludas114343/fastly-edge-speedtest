@@ -1,8 +1,9 @@
 # ============================================================
 # Fastly Anycast Multi-Region High-Speed Subscription
 # Generated automatically by GitHub Actions Cloud Runner
-# Last Cloud Speedtest: 2026-09-15 13:48:36 UTC
-# Primary Anycast Top Nodes: 151.101.193.140, 151.101.2.132, 151.101.65.140, 151.101.1.69
+# Last Cloud Speedtest: 2026-09-15 14:26:07 UTC
+# Primary Anycast Top Nodes: 151.101.1.69, 151.101.65.140, 151.101.129.140, 199.232.41.140, 151.101.2.132, 146.75.112.133
+# Total Nodes: 20 pure Fastly Anycast nodes
 # ============================================================
 
 port: 7890
@@ -28,121 +29,9 @@ dns:
     - 8.8.8.8
 
 proxies:
-  # --- 🇩🇪 德国欧洲 (Frankfurt) ---
-  - name: "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.193.140]"
-    type: vless
-    server: 151.101.193.140
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/de"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.2.132]"
-    type: vless
-    server: 151.101.2.132
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/de"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇫🇷 法国巴黎 (Paris) ---
-  - name: "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.65.140]"
-    type: vless
-    server: 151.101.65.140
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/fr"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇬🇧 英国伦敦 (London) ---
-  - name: "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.1.69]"
+  - name: "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.1.69]"
     type: vless
     server: 151.101.1.69
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/uk"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇨🇭 瑞士苏黎世 (Zurich) ---
-  - name: "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.193.140]"
-    type: vless
-    server: 151.101.193.140
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ch"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇺🇸 美国美东 (Virginia) ---
-  - name: "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.193.140]"
-    type: vless
-    server: 151.101.193.140
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/us"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇺🇸 美国美西 (California) ---
-  - name: "🇺🇸 美国美西 02 [Fastly 极速优选 151.101.2.132]"
-    type: vless
-    server: 151.101.2.132
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fastly.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/usw"
-      headers:
-        Host: fastly.ruoyemu.asia
-
-  # --- 🇯🇵 日本东京 (Tokyo) ---
-  - name: "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.193.140]"
-    type: vless
-    server: 151.101.193.140
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -155,10 +44,84 @@ proxies:
       headers:
         Host: fastly.ruoyemu.asia
 
-  # --- 🇸🇬 新加坡 (Singapore) ---
-  - name: "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.65.140]"
+  - name: "🇯🇵 日本东京 02 [Fastly 极速优选 151.101.65.140]"
     type: vless
     server: 151.101.65.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 01 [Fastly 极速优选 151.101.1.69]"
+    type: vless
+    server: 151.101.1.69
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 02 [Fastly 极速优选 151.101.65.140]"
+    type: vless
+    server: 151.101.65.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 香港专线 01 [Fastly 极速优选 151.101.129.140]"
+    type: vless
+    server: 151.101.129.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 香港专线 02 [Fastly 极速优选 199.232.41.140]"
+    type: vless
+    server: 199.232.41.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.1.69]"
+    type: vless
+    server: 151.101.1.69
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -171,10 +134,9 @@ proxies:
       headers:
         Host: fastly.ruoyemu.asia
 
-  # --- 🇨🇦 加拿大 (Montreal) ---
-  - name: "🇨🇦 加拿大 01 [Fastly 极速优选 151.101.2.132]"
+  - name: "🇸🇬 新加坡 02 [Fastly 极速优选 151.101.129.140]"
     type: vless
-    server: 151.101.2.132
+    server: 151.101.129.140
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -183,12 +145,11 @@ proxies:
     sni: fastly.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/ca"
+      path: "/sg"
       headers:
         Host: fastly.ruoyemu.asia
 
-  # --- 🇦🇺 澳大利亚 (Sydney) ---
-  - name: "🇦🇺 澳大利亚 01 [Fastly 极速优选 151.101.1.69]"
+  - name: "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.1.69]"
     type: vless
     server: 151.101.1.69
     port: 443
@@ -199,7 +160,172 @@ proxies:
     sni: fastly.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/au"
+      path: "/de"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.65.140]"
+    type: vless
+    server: 151.101.65.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/de"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.129.140]"
+    type: vless
+    server: 151.101.129.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 02 [Fastly 极速优选 199.232.41.140]"
+    type: vless
+    server: 199.232.41.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.65.140]"
+    type: vless
+    server: 151.101.65.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/uk"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 02 [Fastly 极速优选 199.232.41.140]"
+    type: vless
+    server: 199.232.41.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/uk"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.1.69]"
+    type: vless
+    server: 151.101.1.69
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/ch"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 02 [Fastly 极速优选 151.101.129.140]"
+    type: vless
+    server: 151.101.129.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/ch"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.1.69]"
+    type: vless
+    server: 151.101.1.69
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 02 [Fastly 极速优选 151.101.129.140]"
+    type: vless
+    server: 151.101.129.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 01 [Fastly 极速优选 151.101.65.140]"
+    type: vless
+    server: 151.101.65.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/usw"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 02 [Fastly 极速优选 199.232.41.140]"
+    type: vless
+    server: 199.232.41.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/usw"
       headers:
         Host: fastly.ruoyemu.asia
 
@@ -208,20 +334,39 @@ proxy-groups:
     type: select
     proxies:
       - "♻️ 自动选择"
+      - "🌏 亚太节点"
       - "🌍 欧洲节点"
       - "🌎 美洲节点"
-      - "🌏 亚太节点"
-      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.2.132]"
-      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.65.140]"
-      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.1.69]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇺🇸 美国美西 02 [Fastly 极速优选 151.101.2.132]"
-      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.65.140]"
-      - "🇨🇦 加拿大 01 [Fastly 极速优选 151.101.2.132]"
-      - "🇦🇺 澳大利亚 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇯🇵 日本"
+      - "🇰🇷 韩国"
+      - "🇭🇰 香港"
+      - "🇸🇬 新加坡"
+      - "🇩🇪 德国"
+      - "🇫🇷 法国"
+      - "🇬🇧 英国"
+      - "🇨🇭 瑞士"
+      - "🇺🇸 美国美东"
+      - "🇺🇸 美国美西"
+      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇯🇵 日本东京 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇰🇷 韩国首尔 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇰🇷 韩国首尔 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇭🇰 香港专线 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇭🇰 香港专线 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇸🇬 新加坡 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇫🇷 法国巴黎 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇬🇧 英国伦敦 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇨🇭 瑞士苏黎世 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇺🇸 美国美东 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇺🇸 美国美西 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇺🇸 美国美西 02 [Fastly 极速优选 199.232.41.140]"
 
   - name: "♻️ 自动选择"
     type: url-test
@@ -229,40 +374,118 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.2.132]"
-      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.65.140]"
-      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.1.69]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇺🇸 美国美西 02 [Fastly 极速优选 151.101.2.132]"
-      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.65.140]"
-      - "🇨🇦 加拿大 01 [Fastly 极速优选 151.101.2.132]"
-      - "🇦🇺 澳大利亚 01 [Fastly 极速优选 151.101.1.69]"
-
-  - name: "🌍 欧洲节点"
-    type: select
-    proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.2.132]"
-      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.65.140]"
-      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.1.69]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.193.140]"
-
-  - name: "🌎 美洲节点"
-    type: select
-    proxies:
-      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇺🇸 美国美西 02 [Fastly 极速优选 151.101.2.132]"
-      - "🇨🇦 加拿大 01 [Fastly 极速优选 151.101.2.132]"
+      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇯🇵 日本东京 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇰🇷 韩国首尔 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇰🇷 韩国首尔 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇭🇰 香港专线 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇭🇰 香港专线 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇸🇬 新加坡 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇫🇷 法国巴黎 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇬🇧 英国伦敦 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇨🇭 瑞士苏黎世 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇺🇸 美国美东 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇺🇸 美国美西 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇺🇸 美国美西 02 [Fastly 极速优选 199.232.41.140]"
 
   - name: "🌏 亚太节点"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.193.140]"
-      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.65.140]"
-      - "🇦🇺 澳大利亚 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇯🇵 日本东京 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇰🇷 韩国首尔 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇰🇷 韩国首尔 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇭🇰 香港专线 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇭🇰 香港专线 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇸🇬 新加坡 02 [Fastly 极速优选 151.101.129.140]"
+
+  - name: "🌍 欧洲节点"
+    type: select
+    proxies:
+      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.65.140]"
+      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇫🇷 法国巴黎 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇬🇧 英国伦敦 02 [Fastly 极速优选 199.232.41.140]"
+      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇨🇭 瑞士苏黎世 02 [Fastly 极速优选 151.101.129.140]"
+
+  - name: "🌎 美洲节点"
+    type: select
+    proxies:
+      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇺🇸 美国美东 02 [Fastly 极速优选 151.101.129.140]"
+      - "🇺🇸 美国美西 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇺🇸 美国美西 02 [Fastly 极速优选 199.232.41.140]"
+
+  - name: "🇯🇵 日本"
+    type: select
+    proxies:
+      - "🇯🇵 日本东京 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇯🇵 日本东京 02 [Fastly 极速优选 151.101.65.140]"
+
+  - name: "🇰🇷 韩国"
+    type: select
+    proxies:
+      - "🇰🇷 韩国首尔 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇰🇷 韩国首尔 02 [Fastly 极速优选 151.101.65.140]"
+
+  - name: "🇭🇰 香港"
+    type: select
+    proxies:
+      - "🇭🇰 香港专线 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇭🇰 香港专线 02 [Fastly 极速优选 199.232.41.140]"
+
+  - name: "🇸🇬 新加坡"
+    type: select
+    proxies:
+      - "🇸🇬 新加坡 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇸🇬 新加坡 02 [Fastly 极速优选 151.101.129.140]"
+
+  - name: "🇩🇪 德国"
+    type: select
+    proxies:
+      - "🇩🇪 德国法兰克福 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇩🇪 德国法兰克福 02 [Fastly 极速优选 151.101.65.140]"
+
+  - name: "🇫🇷 法国"
+    type: select
+    proxies:
+      - "🇫🇷 法国巴黎 01 [Fastly 极速优选 151.101.129.140]"
+      - "🇫🇷 法国巴黎 02 [Fastly 极速优选 199.232.41.140]"
+
+  - name: "🇬🇧 英国"
+    type: select
+    proxies:
+      - "🇬🇧 英国伦敦 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇬🇧 英国伦敦 02 [Fastly 极速优选 199.232.41.140]"
+
+  - name: "🇨🇭 瑞士"
+    type: select
+    proxies:
+      - "🇨🇭 瑞士苏黎世 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇨🇭 瑞士苏黎世 02 [Fastly 极速优选 151.101.129.140]"
+
+  - name: "🇺🇸 美国美东"
+    type: select
+    proxies:
+      - "🇺🇸 美国美东 01 [Fastly 极速优选 151.101.1.69]"
+      - "🇺🇸 美国美东 02 [Fastly 极速优选 151.101.129.140]"
+
+  - name: "🇺🇸 美国美西"
+    type: select
+    proxies:
+      - "🇺🇸 美国美西 01 [Fastly 极速优选 151.101.65.140]"
+      - "🇺🇸 美国美西 02 [Fastly 极速优选 199.232.41.140]"
 
 rules:
   - GEOIP,CN,DIRECT
