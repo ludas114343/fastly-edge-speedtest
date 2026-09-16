@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-09-16T13:26:12.422685",
+  "updated_at": "2026-09-16T13:26:36.724857",
   "regional_winners": {
     "asia": [
       {
-        "ip": "162.159.192.1",
-        "tcp_ms": 17.24,
-        "tls_ms": 1639.95,
-        "score": 990.87,
+        "ip": "172.67.75.1",
+        "tcp_ms": 11.15,
+        "tls_ms": 13.16,
+        "score": 12.36,
         "loss_pct": 0.0,
         "region": "asia"
       },
       {
-        "ip": "172.67.75.1",
-        "tcp_ms": 13.16,
-        "tls_ms": 1645.72,
-        "score": 992.69,
+        "ip": "162.159.192.1",
+        "tcp_ms": 12.92,
+        "tls_ms": 13.28,
+        "score": 13.13,
         "loss_pct": 0.0,
         "region": "asia"
       },
       {
         "ip": "cf.090227.xyz",
-        "tcp_ms": 23.6,
-        "tls_ms": 1722.57,
-        "score": 1042.98,
+        "tcp_ms": 80.34,
+        "tls_ms": 17.44,
+        "score": 42.6,
         "loss_pct": 0.0,
         "region": "asia"
       }
@@ -30,19 +30,51 @@
     "europe": [
       {
         "ip": "162.159.192.1",
-        "tcp_ms": 50.0,
-        "tls_ms": 500.0,
-        "score": 100.0,
+        "tcp_ms": 9.9,
+        "tls_ms": 13.04,
+        "score": 11.78,
+        "loss_pct": 0.0,
+        "region": "europe"
+      },
+      {
+        "ip": "104.18.38.10",
+        "tcp_ms": 9.96,
+        "tls_ms": 13.12,
+        "score": 11.86,
+        "loss_pct": 0.0,
+        "region": "europe"
+      },
+      {
+        "ip": "104.18.2.161",
+        "tcp_ms": 10.13,
+        "tls_ms": 13.1,
+        "score": 11.91,
         "loss_pct": 0.0,
         "region": "europe"
       }
     ],
     "americas": [
       {
+        "ip": "172.67.75.1",
+        "tcp_ms": 11.78,
+        "tls_ms": 12.39,
+        "score": 12.15,
+        "loss_pct": 0.0,
+        "region": "americas"
+      },
+      {
+        "ip": "104.18.2.161",
+        "tcp_ms": 10.51,
+        "tls_ms": 14.39,
+        "score": 12.83,
+        "loss_pct": 0.0,
+        "region": "americas"
+      },
+      {
         "ip": "162.159.192.1",
-        "tcp_ms": 10.69,
-        "tls_ms": 1435.23,
-        "score": 865.41,
+        "tcp_ms": 13.23,
+        "tls_ms": 13.0,
+        "score": 13.09,
         "loss_pct": 0.0,
         "region": "americas"
       }
