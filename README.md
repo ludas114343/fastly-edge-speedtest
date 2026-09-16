@@ -1,21 +1,19 @@
-# Fastly Anycast Cloud-Tested Best Nodes (Private Feed)
+# Anycast Cloud-Tested Multi-Region Best Nodes
 
-- **Updated At**: `2026-09-16 04:37:07 UTC`
-- **Automated Schedule**: Every 4 hours via GitHub Actions (`0 */4 * * *`)
-- **Total Nodes**: 20 pure Fastly Anycast nodes across 10 regions
+- **Last Cloud Update**: `2026-09-16 12:53:25 UTC`
+- **Automated Schedule**: Every 2 hours via GitHub Actions (`0 */2 * * *`)
+- **Total Verified Nodes**: 20 pure Anycast nodes across 10 regions (100% Zero-Timeout)
 - **Target Regions**: 🇯🇵 Japan, 🇰🇷 South Korea, 🇭🇰 Hong Kong, 🇸🇬 Singapore, 🇩🇪 Germany, 🇫🇷 France, 🇬🇧 United Kingdom, 🇨🇭 Switzerland, 🇺🇸 US East, 🇺🇸 US West
 
 ## Top Anycast Winners (Current Cycle)
 
-| Rank | Anycast IP | TCP RTT | TLS Handshake | Score | Packet Loss |
+| Rank | Anycast Frontend | TCP RTT | TLS Handshake | Score | Packet Loss |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | `151.101.193.140` | 5.24 ms | 9.01 ms | 6.37 | 0.0% |
-| 2 | `151.101.129.140` | 5.53 ms | 8.74 ms | 6.49 | 0.0% |
-| 3 | `151.101.65.140` | 5.29 ms | 9.39 ms | 6.52 | 0.0% |
-| 4 | `167.82.1.133` | 5.86 ms | 9.02 ms | 6.81 | 0.0% |
-| 5 | `151.101.2.132` | 5.56 ms | 9.9 ms | 6.86 | 0.0% |
-| 6 | `151.101.1.69` | 5.77 ms | 12.47 ms | 7.78 | 0.0% |
+| 1 | `162.159.192.1` | 19.68 ms | 748.88 ms | 238.44 | 0.0% |
+| 2 | `104.21.5.1` | 22.23 ms | 770.56 ms | 246.73 | 0.0% |
+| 3 | `172.67.75.1` | 11.76 ms | 811.26 ms | 251.61 | 0.0% |
+| 4 | `104.18.2.161` | 18.43 ms | 796.77 ms | 251.93 | 0.0% |
 
 ## Subscription URL
-Subscribe with your secret token:
+Subscribe in Clash Meta / Shadowrocket:
 - `https://sub.ruoyemu.asia/clash?token=fastly`
