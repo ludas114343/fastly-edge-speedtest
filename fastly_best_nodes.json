@@ -6,31 +6,31 @@
       "region": "HK",
       "domestic_lat": 48.5,
       "domestic_spd": "28.5Mbps",
-      "tcp_ms": 19.7,
-      "tls_ms": 518.9,
-      "score": 67.2
+      "tcp_ms": 174.4,
+      "tls_ms": 166.8,
+      "score": 49.6
     },
     {
-      "ip": "104.16.1.12",
+      "ip": "104.16.1.8",
       "port": 443,
       "region": "HK",
       "domestic_lat": 52.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 16.3,
-      "tls_ms": 181.3,
-      "score": 53.3
+      "tcp_ms": 10.1,
+      "tls_ms": 32.7,
+      "score": 45.8
     },
     {
-      "ip": "104.16.1.20",
+      "ip": "104.16.1.4",
       "port": 443,
       "region": "HK",
       "domestic_lat": 52.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 19.4,
-      "tls_ms": 229.1,
-      "score": 55.7
+      "tcp_ms": 8.9,
+      "tls_ms": 33.1,
+      "score": 45.9
     },
     {
       "ip": "104.16.1.24",
@@ -39,63 +39,42 @@
       "domestic_lat": 52.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 11.1,
-      "tls_ms": 478.3,
-      "score": 68.1
+      "tcp_ms": 7.9,
+      "tls_ms": 35.1,
+      "score": 46.0
     },
     {
-      "ip": "23.147.172.135",
+      "ip": "104.16.1.20",
       "port": 443,
       "region": "HK",
-      "domestic_lat": 52.3,
-      "domestic_spd": "24.1Mbps",
-      "tcp_ms": 0.4,
-      "tls_ms": 783.7,
-      "score": 83.6
-    },
-    {
-      "ip": "104.16.1.13",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 52.8,
+      "domestic_lat": 52.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 14.2,
-      "tls_ms": 285.6,
-      "score": 59.2
+      "tcp_ms": 54.9,
+      "tls_ms": 41.7,
+      "score": 46.3
     },
     {
-      "ip": "104.16.1.17",
+      "ip": "104.16.1.16",
       "port": 443,
       "region": "HK",
-      "domestic_lat": 52.8,
+      "domestic_lat": 52.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 23.1,
-      "tls_ms": 695.1,
-      "score": 79.6
+      "tcp_ms": 6.0,
+      "tls_ms": 63.6,
+      "score": 47.4
     },
     {
-      "ip": "104.16.1.21",
+      "ip": "104.16.1.12",
       "port": 443,
       "region": "HK",
-      "domestic_lat": 52.8,
+      "domestic_lat": 52.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 14.4,
-      "tls_ms": 759.8,
-      "score": 82.9
-    },
-    {
-      "ip": "104.16.1.25",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 52.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 25.6,
-      "tls_ms": 2372.9,
-      "score": 163.5
+      "tcp_ms": 14.9,
+      "tls_ms": 73.0,
+      "score": 47.8
     },
     {
       "ip": "104.16.1.9",
@@ -104,9 +83,64 @@
       "domestic_lat": 52.8,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.9,
-      "tls_ms": 2470.1,
-      "score": 168.4
+      "tcp_ms": 5.8,
+      "tls_ms": 35.3,
+      "score": 46.6
+    },
+    {
+      "ip": "104.16.1.25",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 52.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 18.8,
+      "tls_ms": 40.7,
+      "score": 46.9
+    },
+    {
+      "ip": "104.16.1.5",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 52.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 7.8,
+      "tls_ms": 46.9,
+      "score": 47.2
+    },
+    {
+      "ip": "104.16.1.21",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 52.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 33.8,
+      "tls_ms": 53.9,
+      "score": 47.6
+    },
+    {
+      "ip": "104.16.1.17",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 52.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.8,
+      "tls_ms": 55.6,
+      "score": 47.7
+    },
+    {
+      "ip": "104.16.1.13",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 52.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 1.6,
+      "tls_ms": 93.3,
+      "score": 49.5
     },
     {
       "ip": "104.16.1.2",
@@ -115,9 +149,9 @@
       "domestic_lat": 53.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 30.2,
-      "tls_ms": 193.3,
-      "score": 55.2
+      "tcp_ms": 2.0,
+      "tls_ms": 25.1,
+      "score": 46.8
     },
     {
       "ip": "104.16.1.14",
@@ -126,31 +160,9 @@
       "domestic_lat": 53.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 10.6,
-      "tls_ms": 313.7,
-      "score": 61.2
-    },
-    {
-      "ip": "104.16.1.6",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 53.6,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.5,
-      "tls_ms": 316.5,
-      "score": 61.4
-    },
-    {
-      "ip": "104.16.1.18",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 53.6,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 22.2,
-      "tls_ms": 329.9,
-      "score": 62.1
+      "tcp_ms": 8.9,
+      "tls_ms": 31.0,
+      "score": 47.1
     },
     {
       "ip": "104.16.1.22",
@@ -159,9 +171,9 @@
       "domestic_lat": 53.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 24.5,
-      "tls_ms": 353.1,
-      "score": 63.2
+      "tcp_ms": 35.3,
+      "tls_ms": 35.9,
+      "score": 47.4
     },
     {
       "ip": "104.16.1.10",
@@ -170,9 +182,52 @@
       "domestic_lat": 53.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 17.7,
-      "tls_ms": 397.4,
-      "score": 65.4
+      "tcp_ms": 3.9,
+      "tls_ms": 44.0,
+      "score": 47.8
+    },
+    {
+      "ip": "104.16.1.18",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 53.6,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 8.8,
+      "tls_ms": 55.9,
+      "score": 48.4
+    },
+    {
+      "ip": "104.16.1.6",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 53.6,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 1.9,
+      "tls_ms": 56.7,
+      "score": 48.4
+    },
+    {
+      "ip": "104.16.2.20",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 54.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 20.1,
+      "tls_ms": 22.9,
+      "score": 47.0
+    },
+    {
+      "ip": "hk.090227.xyz",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 54.0,
+      "domestic_spd": "25.0Mbps",
+      "tcp_ms": 584.6,
+      "tls_ms": 30.3,
+      "score": 47.4
     },
     {
       "ip": "104.16.2.24",
@@ -181,20 +236,9 @@
       "domestic_lat": 54.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 13.8,
-      "tls_ms": 627.0,
-      "score": 77.3
-    },
-    {
-      "ip": "104.16.2.12",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 54.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 21.5,
-      "tls_ms": 1238.8,
-      "score": 107.8
+      "tcp_ms": 4.8,
+      "tls_ms": 32.5,
+      "score": 47.5
     },
     {
       "ip": "104.16.2.16",
@@ -203,20 +247,9 @@
       "domestic_lat": 54.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 1268.7,
-      "score": 109.3
-    },
-    {
-      "ip": "104.16.2.8",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 54.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 25.4,
-      "tls_ms": 1337.1,
-      "score": 112.8
+      "tcp_ms": 1.8,
+      "tls_ms": 33.6,
+      "score": 47.6
     },
     {
       "ip": "104.16.2.4",
@@ -225,30 +258,42 @@
       "domestic_lat": 54.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.6,
-      "tls_ms": 1341.7,
-      "score": 113.0
+      "tcp_ms": 3.0,
+      "tls_ms": 41.5,
+      "score": 48.0
     },
     {
-      "ip": "hk.090227.xyz",
+      "ip": "104.16.2.12",
       "port": 443,
       "region": "HK",
       "domestic_lat": 54.0,
-      "domestic_spd": "25.0Mbps",
-      "tcp_ms": 81.8,
-      "tls_ms": 1531.9,
-      "score": 122.5
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 27.1,
+      "tls_ms": 41.7,
+      "score": 48.0
     },
     {
-      "ip": "104.16.1.11",
+      "ip": "104.16.2.8",
+      "port": 443,
+      "region": "HK",
+      "domestic_lat": 54.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 62.2,
+      "tls_ms": 58.9,
+      "score": 48.8
+    },
+    {
+      "ip": "104.16.1.7",
       "port": 443,
       "region": "HK",
       "domestic_lat": 54.4,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 20.2,
-      "tls_ms": 566.4,
-      "score": 74.6
+      "tcp_ms": 19.9,
+      "tls_ms": 31.7,
+      "score": 47.8
     },
     {
       "ip": "104.16.1.23",
@@ -257,20 +302,9 @@
       "domestic_lat": 54.4,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 19.9,
-      "tls_ms": 654.1,
-      "score": 78.9
-    },
-    {
-      "ip": "104.16.1.3",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 54.4,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.2,
-      "tls_ms": 1414.1,
-      "score": 116.9
+      "tcp_ms": 18.8,
+      "tls_ms": 31.9,
+      "score": 47.8
     },
     {
       "ip": "104.16.1.19",
@@ -279,53 +313,20 @@
       "domestic_lat": 54.4,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.6,
-      "tls_ms": 1427.7,
-      "score": 117.6
+      "tcp_ms": 3.8,
+      "tls_ms": 39.4,
+      "score": 48.2
     },
     {
-      "ip": "104.16.1.15",
+      "ip": "104.16.1.11",
       "port": 443,
       "region": "HK",
       "domestic_lat": 54.4,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 30.2,
-      "tls_ms": 2026.7,
-      "score": 147.6
-    },
-    {
-      "ip": "104.16.2.5",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 54.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.5,
-      "tls_ms": 556.8,
-      "score": 74.4
-    },
-    {
-      "ip": "104.16.2.1",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 54.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 18.1,
-      "tls_ms": 557.2,
-      "score": 74.4
-    },
-    {
-      "ip": "104.16.2.25",
-      "port": 443,
-      "region": "HK",
-      "domestic_lat": 54.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.2,
-      "tls_ms": 565.3,
-      "score": 74.8
+      "tcp_ms": 3.0,
+      "tls_ms": 42.9,
+      "score": 48.4
     }
   ],
   "JP": [
@@ -335,9 +336,9 @@
       "region": "JP",
       "domestic_lat": 67.23,
       "domestic_spd": "13.11Mbps",
-      "tcp_ms": 20.0,
-      "tls_ms": 601.0,
-      "score": 87.2
+      "tcp_ms": 110.2,
+      "tls_ms": 239.0,
+      "score": 69.1
     },
     {
       "ip": "154.36.162.210",
@@ -345,9 +346,9 @@
       "region": "JP",
       "domestic_lat": 68.6,
       "domestic_spd": "21.7Mbps",
-      "tcp_ms": 62.2,
-      "tls_ms": 560.3,
-      "score": 86.3
+      "tcp_ms": 164.1,
+      "tls_ms": 292.5,
+      "score": 72.9
     },
     {
       "ip": "199.232.41.140",
@@ -355,9 +356,9 @@
       "region": "JP",
       "domestic_lat": 69.5,
       "domestic_spd": "25.0Mbps",
-      "tcp_ms": 8.1,
-      "tls_ms": 996.5,
-      "score": 108.9
+      "tcp_ms": 158.5,
+      "tls_ms": 172.0,
+      "score": 67.7
     },
     {
       "ip": "104.16.3.20",
@@ -366,20 +367,9 @@
       "domestic_lat": 70.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 14.9,
-      "tls_ms": 269.5,
-      "score": 73.0
-    },
-    {
-      "ip": "104.16.3.12",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 70.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 46.9,
-      "tls_ms": 331.0,
-      "score": 76.1
+      "tcp_ms": 17.3,
+      "tls_ms": 23.7,
+      "score": 60.7
     },
     {
       "ip": "104.16.3.24",
@@ -388,20 +378,9 @@
       "domestic_lat": 70.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 397.8,
-      "score": 79.4
-    },
-    {
-      "ip": "104.16.3.4",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 70.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.6,
-      "tls_ms": 494.2,
-      "score": 84.2
+      "tcp_ms": 13.8,
+      "tls_ms": 36.2,
+      "score": 61.3
     },
     {
       "ip": "104.16.3.8",
@@ -410,20 +389,31 @@
       "domestic_lat": 70.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 15.0,
-      "tls_ms": 569.8,
-      "score": 88.0
+      "tcp_ms": 17.1,
+      "tls_ms": 39.7,
+      "score": 61.5
     },
     {
-      "ip": "199.232.41.230",
+      "ip": "104.16.3.4",
       "port": 443,
       "region": "JP",
       "domestic_lat": 70.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 9.8,
+      "tls_ms": 47.3,
+      "score": 61.9
+    },
+    {
+      "ip": "104.16.3.12",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
       "tcp_ms": 17.9,
-      "tls_ms": 1063.3,
-      "score": 112.7
+      "tls_ms": 47.3,
+      "score": 61.9
     },
     {
       "ip": "104.16.3.16",
@@ -432,20 +422,20 @@
       "domestic_lat": 70.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 33.6,
-      "tls_ms": 1422.8,
-      "score": 130.6
+      "tcp_ms": 23.6,
+      "tls_ms": 59.2,
+      "score": 62.5
     },
     {
-      "ip": "199.232.41.240",
+      "ip": "199.232.41.230",
       "port": 443,
       "region": "JP",
       "domestic_lat": 70.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 16.8,
-      "tls_ms": 1717.2,
-      "score": 145.4
+      "tcp_ms": 206.1,
+      "tls_ms": 167.7,
+      "score": 67.9
     },
     {
       "ip": "199.232.41.200",
@@ -454,75 +444,31 @@
       "domestic_lat": 70.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 14.4,
-      "tls_ms": 1936.1,
-      "score": 156.3
+      "tcp_ms": 175.8,
+      "tls_ms": 170.4,
+      "score": 68.0
     },
     {
-      "ip": "104.16.3.25",
+      "ip": "199.232.41.240",
       "port": 443,
       "region": "JP",
-      "domestic_lat": 70.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 56.5,
-      "tls_ms": 294.3,
-      "score": 74.9
+      "domestic_lat": 70.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 199.6,
+      "tls_ms": 178.6,
+      "score": 68.4
     },
     {
-      "ip": "104.16.3.9",
+      "ip": "199.232.41.210",
       "port": 443,
       "region": "JP",
-      "domestic_lat": 70.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 26.1,
-      "tls_ms": 348.4,
-      "score": 77.6
-    },
-    {
-      "ip": "104.16.3.13",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 70.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 13.2,
-      "tls_ms": 447.3,
-      "score": 82.5
-    },
-    {
-      "ip": "104.16.3.17",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 70.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 599.4,
-      "score": 90.1
-    },
-    {
-      "ip": "104.16.3.21",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 70.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 34.7,
-      "tls_ms": 1341.6,
-      "score": 127.3
-    },
-    {
-      "ip": "104.16.3.5",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 70.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.8,
-      "tls_ms": 1391.7,
-      "score": 129.8
+      "domestic_lat": 70.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 189.9,
+      "tls_ms": 199.2,
+      "score": 69.5
     },
     {
       "ip": "104.16.3.1",
@@ -531,9 +477,75 @@
       "domestic_lat": 70.8,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 8.3,
-      "tls_ms": 2059.7,
-      "score": 163.2
+      "tcp_ms": 5.0,
+      "tls_ms": 30.6,
+      "score": 61.7
+    },
+    {
+      "ip": "104.16.3.5",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 9.2,
+      "tls_ms": 31.7,
+      "score": 61.8
+    },
+    {
+      "ip": "104.16.3.25",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 19.0,
+      "tls_ms": 33.9,
+      "score": 61.9
+    },
+    {
+      "ip": "104.16.3.17",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 7.7,
+      "tls_ms": 39.5,
+      "score": 62.2
+    },
+    {
+      "ip": "104.16.3.21",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 10.0,
+      "tls_ms": 43.2,
+      "score": 62.3
+    },
+    {
+      "ip": "104.16.3.13",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 14.8,
+      "tls_ms": 50.7,
+      "score": 62.7
+    },
+    {
+      "ip": "104.16.3.9",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 70.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 19.7,
+      "tls_ms": 54.3,
+      "score": 62.9
     },
     {
       "ip": "199.232.41.132",
@@ -542,9 +554,9 @@
       "domestic_lat": 71.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 10.9,
-      "tls_ms": 1284.1,
-      "score": 124.6
+      "tcp_ms": 167.1,
+      "tls_ms": 350.2,
+      "score": 77.9
     },
     {
       "ip": "199.232.45.140",
@@ -552,20 +564,9 @@
       "region": "JP",
       "domestic_lat": 71.2,
       "domestic_spd": "24.0Mbps",
-      "tcp_ms": 57.6,
-      "tls_ms": 838.5,
-      "score": 102.4
-    },
-    {
-      "ip": "104.16.3.22",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 71.6,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 33.7,
-      "tls_ms": 204.6,
-      "score": 71.1
+      "tcp_ms": 177.8,
+      "tls_ms": 726.6,
+      "score": 96.9
     },
     {
       "ip": "104.16.3.10",
@@ -574,9 +575,9 @@
       "domestic_lat": 71.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 25.5,
-      "tls_ms": 885.7,
-      "score": 105.1
+      "tcp_ms": 7.7,
+      "tls_ms": 37.7,
+      "score": 62.7
     },
     {
       "ip": "104.16.3.18",
@@ -585,20 +586,20 @@
       "domestic_lat": 71.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 24.0,
-      "tls_ms": 891.2,
-      "score": 105.4
+      "tcp_ms": 21.8,
+      "tls_ms": 38.0,
+      "score": 62.8
     },
     {
-      "ip": "104.16.3.2",
+      "ip": "104.16.3.22",
       "port": 443,
       "region": "JP",
       "domestic_lat": 71.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 14.5,
-      "tls_ms": 953.7,
-      "score": 108.5
+      "tcp_ms": 3.9,
+      "tls_ms": 45.2,
+      "score": 63.1
     },
     {
       "ip": "104.16.3.6",
@@ -607,9 +608,9 @@
       "domestic_lat": 71.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 1.7,
-      "tls_ms": 1070.8,
-      "score": 114.4
+      "tcp_ms": 5.7,
+      "tls_ms": 53.5,
+      "score": 63.5
     },
     {
       "ip": "104.16.3.14",
@@ -618,31 +619,20 @@
       "domestic_lat": 71.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 13.1,
-      "tls_ms": 1297.8,
-      "score": 125.7
+      "tcp_ms": 8.2,
+      "tls_ms": 63.6,
+      "score": 64.0
     },
     {
-      "ip": "104.16.4.20",
+      "ip": "104.16.3.2",
       "port": 443,
       "region": "JP",
-      "domestic_lat": 72.0,
+      "domestic_lat": 71.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 3.6,
-      "tls_ms": 222.7,
-      "score": 72.3
-    },
-    {
-      "ip": "104.16.4.4",
-      "port": 443,
-      "region": "JP",
-      "domestic_lat": 72.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 56.0,
-      "tls_ms": 253.9,
-      "score": 73.9
+      "tcp_ms": 19.9,
+      "tls_ms": 69.8,
+      "score": 64.4
     },
     {
       "ip": "104.16.4.8",
@@ -651,9 +641,20 @@
       "domestic_lat": 72.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 29.0,
-      "tls_ms": 259.2,
-      "score": 74.2
+      "tcp_ms": 6.6,
+      "tls_ms": 35.6,
+      "score": 63.0
+    },
+    {
+      "ip": "104.16.4.24",
+      "port": 443,
+      "region": "JP",
+      "domestic_lat": 72.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 9.9,
+      "tls_ms": 41.2,
+      "score": 63.3
     }
   ],
   "KR": [
@@ -663,31 +664,9 @@
       "region": "KR",
       "domestic_lat": 62.87,
       "domestic_spd": "18.8Mbps",
-      "tcp_ms": 31.5,
-      "tls_ms": 691.8,
-      "score": 88.0
-    },
-    {
-      "ip": "151.101.2.210",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 64.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
-      "tcp_ms": 16.1,
-      "tls_ms": 274.6,
-      "score": 68.1
-    },
-    {
-      "ip": "151.101.2.230",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 64.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
-      "tcp_ms": 2.5,
-      "tls_ms": 346.4,
-      "score": 71.7
+      "tcp_ms": 147.3,
+      "tls_ms": 206.6,
+      "score": 63.8
     },
     {
       "ip": "151.101.2.220",
@@ -696,20 +675,20 @@
       "domestic_lat": 64.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 16.2,
-      "tls_ms": 381.8,
-      "score": 73.5
+      "tcp_ms": 39.2,
+      "tls_ms": 23.1,
+      "score": 55.6
     },
     {
-      "ip": "151.101.2.140",
+      "ip": "151.101.2.230",
       "port": 443,
       "region": "KR",
       "domestic_lat": 64.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 15.8,
-      "tls_ms": 386.4,
-      "score": 73.7
+      "tcp_ms": 3.9,
+      "tls_ms": 24.2,
+      "score": 55.6
     },
     {
       "ip": "151.101.2.240",
@@ -718,9 +697,31 @@
       "domestic_lat": 64.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 2.0,
-      "tls_ms": 715.3,
-      "score": 90.2
+      "tcp_ms": 12.8,
+      "tls_ms": 27.0,
+      "score": 55.8
+    },
+    {
+      "ip": "151.101.2.140",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 64.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 33.7,
+      "tls_ms": 28.9,
+      "score": 55.8
+    },
+    {
+      "ip": "151.101.2.210",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 64.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 5.0,
+      "tls_ms": 65.4,
+      "score": 57.7
     },
     {
       "ip": "151.101.2.132",
@@ -728,64 +729,9 @@
       "region": "KR",
       "domestic_lat": 64.2,
       "domestic_spd": "21.0Mbps",
-      "tcp_ms": 81.4,
-      "tls_ms": 1796.1,
-      "score": 144.4
-    },
-    {
-      "ip": "104.16.5.24",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 13.7,
-      "tls_ms": 321.3,
-      "score": 71.3
-    },
-    {
-      "ip": "104.16.5.12",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.6,
-      "tls_ms": 326.3,
-      "score": 71.6
-    },
-    {
-      "ip": "104.16.5.8",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 24.9,
-      "tls_ms": 610.8,
-      "score": 85.8
-    },
-    {
-      "ip": "104.16.5.20",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.1,
-      "tls_ms": 955.5,
-      "score": 103.0
-    },
-    {
-      "ip": "104.16.5.16",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 21.2,
-      "tls_ms": 1016.5,
-      "score": 106.1
+      "tcp_ms": 1.8,
+      "tls_ms": 7.2,
+      "score": 54.9
     },
     {
       "ip": "104.16.5.4",
@@ -794,9 +740,64 @@
       "domestic_lat": 65.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 93.9,
-      "tls_ms": 1193.8,
-      "score": 114.9
+      "tcp_ms": 9.8,
+      "tls_ms": 33.8,
+      "score": 56.9
+    },
+    {
+      "ip": "104.16.5.24",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 9.6,
+      "tls_ms": 41.5,
+      "score": 57.3
+    },
+    {
+      "ip": "104.16.5.20",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 51.0,
+      "tls_ms": 55.9,
+      "score": 58.0
+    },
+    {
+      "ip": "104.16.5.16",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 10.9,
+      "tls_ms": 73.4,
+      "score": 58.9
+    },
+    {
+      "ip": "104.16.5.8",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 1.7,
+      "tls_ms": 88.7,
+      "score": 59.7
+    },
+    {
+      "ip": "104.16.5.12",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 21.1,
+      "tls_ms": 159.3,
+      "score": 63.2
     },
     {
       "ip": "151.101.66.132",
@@ -804,53 +805,9 @@
       "region": "KR",
       "domestic_lat": 65.4,
       "domestic_spd": "20.5Mbps",
-      "tcp_ms": 66.5,
-      "tls_ms": 624.1,
-      "score": 86.8
-    },
-    {
-      "ip": "104.16.5.5",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 47.1,
-      "tls_ms": 365.1,
-      "score": 74.2
-    },
-    {
-      "ip": "104.16.5.13",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 12.4,
-      "tls_ms": 477.5,
-      "score": 79.8
-    },
-    {
-      "ip": "104.16.5.25",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 26.4,
-      "tls_ms": 502.7,
-      "score": 81.1
-    },
-    {
-      "ip": "104.16.5.17",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 65.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 13.5,
-      "tls_ms": 625.5,
-      "score": 87.2
+      "tcp_ms": 1.3,
+      "tls_ms": 32.3,
+      "score": 57.2
     },
     {
       "ip": "104.16.5.21",
@@ -859,9 +816,9 @@
       "domestic_lat": 65.8,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 17.1,
-      "tls_ms": 625.9,
-      "score": 87.2
+      "tcp_ms": 27.7,
+      "tls_ms": 37.3,
+      "score": 57.8
     },
     {
       "ip": "104.16.5.1",
@@ -870,9 +827,53 @@
       "domestic_lat": 65.8,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 2.2,
-      "tls_ms": 649.1,
-      "score": 88.4
+      "tcp_ms": 19.4,
+      "tls_ms": 50.5,
+      "score": 58.5
+    },
+    {
+      "ip": "104.16.5.5",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.9,
+      "tls_ms": 51.9,
+      "score": 58.5
+    },
+    {
+      "ip": "104.16.5.13",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.8,
+      "tls_ms": 61.2,
+      "score": 59.0
+    },
+    {
+      "ip": "104.16.5.25",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.4,
+      "tls_ms": 78.1,
+      "score": 59.8
+    },
+    {
+      "ip": "104.16.5.17",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 65.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 9.9,
+      "tls_ms": 90.4,
+      "score": 60.4
     },
     {
       "ip": "104.16.5.9",
@@ -881,9 +882,9 @@
       "domestic_lat": 65.8,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 24.4,
-      "tls_ms": 1598.4,
-      "score": 135.9
+      "tcp_ms": 19.9,
+      "tls_ms": 166.5,
+      "score": 64.3
     },
     {
       "ip": "151.101.66.140",
@@ -892,20 +893,9 @@
       "domestic_lat": 66.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 27.2,
-      "tls_ms": 236.6,
-      "score": 67.9
-    },
-    {
-      "ip": "151.101.66.230",
-      "port": 443,
-      "region": "KR",
-      "domestic_lat": 66.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
-      "tcp_ms": 18.7,
-      "tls_ms": 277.8,
-      "score": 70.0
+      "tcp_ms": 1.7,
+      "tls_ms": 7.1,
+      "score": 56.5
     },
     {
       "ip": "151.101.2.204",
@@ -914,20 +904,31 @@
       "domestic_lat": 66.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 16.1,
-      "tls_ms": 283.9,
-      "score": 70.3
+      "tcp_ms": 69.1,
+      "tls_ms": 36.9,
+      "score": 57.9
     },
     {
-      "ip": "151.101.2.194",
+      "ip": "151.101.66.230",
       "port": 443,
       "region": "KR",
       "domestic_lat": 66.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 15.2,
-      "tls_ms": 329.5,
-      "score": 72.6
+      "tcp_ms": 31.1,
+      "tls_ms": 37.9,
+      "score": 58.0
+    },
+    {
+      "ip": "151.101.66.240",
+      "port": 443,
+      "region": "KR",
+      "domestic_lat": 66.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 3.4,
+      "tls_ms": 50.8,
+      "score": 58.6
     }
   ],
   "SG": [
@@ -937,85 +938,9 @@
       "region": "SG",
       "domestic_lat": 82.27,
       "domestic_spd": "19.0Mbps",
-      "tcp_ms": 24.3,
-      "tls_ms": 525.9,
-      "score": 96.2
-    },
-    {
-      "ip": "104.16.7.20",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 38.7,
-      "tls_ms": 410.4,
-      "score": 91.9
-    },
-    {
-      "ip": "104.16.7.24",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.6,
-      "tls_ms": 653.6,
-      "score": 104.1
-    },
-    {
-      "ip": "146.75.121.230",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
-      "tcp_ms": 0.5,
-      "tls_ms": 679.3,
-      "score": 105.4
-    },
-    {
-      "ip": "146.75.121.140",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "22.0Mbps",
-      "tcp_ms": 75.3,
-      "tls_ms": 718.2,
-      "score": 107.3
-    },
-    {
-      "ip": "146.75.121.200",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
-      "tcp_ms": 0.5,
-      "tls_ms": 741.9,
-      "score": 108.5
-    },
-    {
-      "ip": "104.16.7.4",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 24.8,
-      "tls_ms": 746.2,
-      "score": 108.7
-    },
-    {
-      "ip": "146.75.121.240",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "fastly",
-      "tcp_ms": 20.1,
-      "tls_ms": 808.1,
-      "score": 111.8
+      "tcp_ms": 174.4,
+      "tls_ms": 267.8,
+      "score": 83.3
     },
     {
       "ip": "104.16.7.16",
@@ -1024,9 +949,107 @@
       "domestic_lat": 84.0,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 50.6,
-      "tls_ms": 901.8,
-      "score": 116.5
+      "tcp_ms": 20.5,
+      "tls_ms": 53.4,
+      "score": 74.1
+    },
+    {
+      "ip": "104.16.7.24",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 40.1,
+      "tls_ms": 57.1,
+      "score": 74.3
+    },
+    {
+      "ip": "104.16.7.20",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.8,
+      "tls_ms": 76.2,
+      "score": 75.2
+    },
+    {
+      "ip": "104.16.7.8",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 15.5,
+      "tls_ms": 93.0,
+      "score": 76.0
+    },
+    {
+      "ip": "104.16.7.12",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 15.9,
+      "tls_ms": 145.2,
+      "score": 78.7
+    },
+    {
+      "ip": "104.16.7.4",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 13.0,
+      "tls_ms": 153.2,
+      "score": 79.1
+    },
+    {
+      "ip": "146.75.121.200",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 147.5,
+      "tls_ms": 168.7,
+      "score": 79.8
+    },
+    {
+      "ip": "146.75.121.230",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 156.2,
+      "tls_ms": 168.8,
+      "score": 79.8
+    },
+    {
+      "ip": "146.75.121.140",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "22.0Mbps",
+      "tcp_ms": 156.3,
+      "tls_ms": 169.8,
+      "score": 79.9
+    },
+    {
+      "ip": "146.75.121.240",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 151.3,
+      "tls_ms": 171.3,
+      "score": 80.0
     },
     {
       "ip": "146.75.121.210",
@@ -1035,53 +1058,9 @@
       "domestic_lat": 84.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 12.8,
-      "tls_ms": 1777.5,
-      "score": 160.3
-    },
-    {
-      "ip": "104.16.7.9",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 42.8,
-      "tls_ms": 348.6,
-      "score": 89.5
-    },
-    {
-      "ip": "104.16.7.1",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 513.8,
-      "score": 97.8
-    },
-    {
-      "ip": "104.16.7.25",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 33.5,
-      "tls_ms": 518.7,
-      "score": 98.0
-    },
-    {
-      "ip": "104.16.7.5",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 84.8,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 4.3,
-      "tls_ms": 561.9,
-      "score": 100.2
+      "tcp_ms": 147.8,
+      "tls_ms": 176.2,
+      "score": 80.2
     },
     {
       "ip": "104.16.7.17",
@@ -1090,9 +1069,75 @@
       "domestic_lat": 84.8,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 49.9,
-      "tls_ms": 616.2,
-      "score": 102.9
+      "tcp_ms": 20.7,
+      "tls_ms": 23.9,
+      "score": 73.3
+    },
+    {
+      "ip": "104.16.7.25",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 20.2,
+      "tls_ms": 33.0,
+      "score": 73.7
+    },
+    {
+      "ip": "104.16.7.1",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.0,
+      "tls_ms": 60.0,
+      "score": 75.1
+    },
+    {
+      "ip": "104.16.7.13",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 20.9,
+      "tls_ms": 125.0,
+      "score": 78.3
+    },
+    {
+      "ip": "104.16.7.21",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 10.4,
+      "tls_ms": 145.1,
+      "score": 79.3
+    },
+    {
+      "ip": "104.16.7.9",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 4.9,
+      "tls_ms": 169.5,
+      "score": 80.6
+    },
+    {
+      "ip": "104.16.7.5",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 84.8,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.8,
+      "tls_ms": 198.9,
+      "score": 82.0
     },
     {
       "ip": "146.75.121.132",
@@ -1101,9 +1146,9 @@
       "domestic_lat": 85.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 21.2,
-      "tls_ms": 1018.3,
-      "score": 123.2
+      "tcp_ms": 161.0,
+      "tls_ms": 312.4,
+      "score": 87.9
     },
     {
       "ip": "104.16.7.18",
@@ -1112,31 +1157,9 @@
       "domestic_lat": 85.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 41.3,
-      "tls_ms": 408.2,
-      "score": 93.2
-    },
-    {
-      "ip": "104.16.7.22",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 85.6,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 486.2,
-      "score": 97.1
-    },
-    {
-      "ip": "104.16.7.14",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 85.6,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 12.3,
-      "tls_ms": 601.4,
-      "score": 102.8
+      "tcp_ms": 15.8,
+      "tls_ms": 99.8,
+      "score": 77.7
     },
     {
       "ip": "104.16.7.2",
@@ -1145,9 +1168,9 @@
       "domestic_lat": 85.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 1.1,
-      "tls_ms": 716.6,
-      "score": 108.6
+      "tcp_ms": 2.4,
+      "tls_ms": 110.6,
+      "score": 78.3
     },
     {
       "ip": "104.16.7.10",
@@ -1156,9 +1179,20 @@
       "domestic_lat": 85.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 1.0,
-      "tls_ms": 838.4,
-      "score": 114.7
+      "tcp_ms": 35.9,
+      "tls_ms": 124.9,
+      "score": 79.0
+    },
+    {
+      "ip": "104.16.7.14",
+      "port": 443,
+      "region": "SG",
+      "domestic_lat": 85.6,
+      "domestic_spd": "20.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 14.0,
+      "tls_ms": 126.0,
+      "score": 79.1
     },
     {
       "ip": "104.16.7.6",
@@ -1167,42 +1201,9 @@
       "domestic_lat": 85.6,
       "domestic_spd": "20.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 2.8,
-      "tls_ms": 1121.4,
-      "score": 128.8
-    },
-    {
-      "ip": "104.16.8.12",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 86.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.0,
-      "tls_ms": 474.8,
-      "score": 96.8
-    },
-    {
-      "ip": "104.16.8.24",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 86.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 38.1,
-      "tls_ms": 1219.4,
-      "score": 134.1
-    },
-    {
-      "ip": "104.16.8.16",
-      "port": 443,
-      "region": "SG",
-      "domestic_lat": 86.0,
-      "domestic_spd": "20.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.1,
-      "tls_ms": 1233.7,
-      "score": 134.8
+      "tcp_ms": 19.0,
+      "tls_ms": 129.1,
+      "score": 79.2
     }
   ],
   "DE": [
@@ -1212,19 +1213,9 @@
       "region": "DE",
       "domestic_lat": 140.94,
       "domestic_spd": "19.8Mbps",
-      "tcp_ms": 1.1,
-      "tls_ms": 2178.3,
-      "score": 228.7
-    },
-    {
-      "ip": "188.114.96.1",
-      "port": 443,
-      "region": "DE",
-      "domestic_lat": 142.0,
-      "domestic_spd": "25.0Mbps",
-      "tcp_ms": 35.1,
-      "tls_ms": 668.9,
-      "score": 154.1
+      "tcp_ms": 165.7,
+      "tls_ms": 221.6,
+      "score": 130.9
     },
     {
       "ip": "151.101.112.200",
@@ -1233,9 +1224,19 @@
       "domestic_lat": 142.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 0.8,
-      "tls_ms": 908.0,
-      "score": 166.1
+      "tcp_ms": 42.5,
+      "tls_ms": 65.3,
+      "score": 124.0
+    },
+    {
+      "ip": "188.114.96.1",
+      "port": 443,
+      "region": "DE",
+      "domestic_lat": 142.0,
+      "domestic_spd": "25.0Mbps",
+      "tcp_ms": 66.5,
+      "tls_ms": 78.3,
+      "score": 124.6
     },
     {
       "ip": "151.101.112.230",
@@ -1244,9 +1245,20 @@
       "domestic_lat": 142.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 23.5,
-      "tls_ms": 1858.8,
-      "score": 213.6
+      "tcp_ms": 42.3,
+      "tls_ms": 96.9,
+      "score": 125.5
+    },
+    {
+      "ip": "151.101.112.220",
+      "port": 443,
+      "region": "DE",
+      "domestic_lat": 142.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "fastly",
+      "tcp_ms": 43.1,
+      "tls_ms": 124.6,
+      "score": 126.9
     },
     {
       "ip": "188.114.97.1",
@@ -1254,9 +1266,9 @@
       "region": "DE",
       "domestic_lat": 143.0,
       "domestic_spd": "25.0Mbps",
-      "tcp_ms": 37.2,
-      "tls_ms": 638.3,
-      "score": 153.5
+      "tcp_ms": 10.6,
+      "tls_ms": 90.0,
+      "score": 126.0
     },
     {
       "ip": "151.101.112.194",
@@ -1265,9 +1277,9 @@
       "domestic_lat": 144.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 19.3,
-      "tls_ms": 563.3,
-      "score": 150.6
+      "tcp_ms": 41.3,
+      "tls_ms": 51.6,
+      "score": 125.0
     },
     {
       "ip": "151.101.112.69",
@@ -1276,9 +1288,9 @@
       "domestic_lat": 144.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 15.2,
-      "tls_ms": 707.0,
-      "score": 157.7
+      "tcp_ms": 39.3,
+      "tls_ms": 98.4,
+      "score": 127.3
     },
     {
       "ip": "88.218.193.65",
@@ -1286,42 +1298,9 @@
       "region": "DE",
       "domestic_lat": 144.57,
       "domestic_spd": "8.99Mbps",
-      "tcp_ms": 17.0,
-      "tls_ms": 1749.3,
-      "score": 210.4
-    },
-    {
-      "ip": "188.114.97.56",
-      "port": 443,
-      "region": "DE",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 204.2,
-      "score": 133.5
-    },
-    {
-      "ip": "188.114.96.8",
-      "port": 443,
-      "region": "DE",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 27.8,
-      "tls_ms": 224.7,
-      "score": 134.5
-    },
-    {
-      "ip": "188.114.97.48",
-      "port": 443,
-      "region": "DE",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 2.7,
-      "tls_ms": 278.5,
-      "score": 137.2
+      "tcp_ms": 169.1,
+      "tls_ms": 262.1,
+      "score": 136.0
     },
     {
       "ip": "188.114.97.88",
@@ -1330,31 +1309,9 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 2.3,
-      "tls_ms": 283.6,
-      "score": 137.4
-    },
-    {
-      "ip": "188.114.96.32",
-      "port": 443,
-      "region": "DE",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 8.6,
-      "tls_ms": 312.1,
-      "score": 138.9
-    },
-    {
-      "ip": "188.114.97.16",
-      "port": 443,
-      "region": "DE",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.1,
-      "tls_ms": 343.0,
-      "score": 140.4
+      "tcp_ms": 10.1,
+      "tls_ms": 10.3,
+      "score": 123.8
     },
     {
       "ip": "188.114.96.48",
@@ -1363,31 +1320,53 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 14.2,
-      "tls_ms": 351.4,
-      "score": 140.8
+      "tcp_ms": 17.1,
+      "tls_ms": 27.9,
+      "score": 124.6
     },
     {
-      "ip": "188.114.97.40",
+      "ip": "188.114.97.32",
       "port": 443,
       "region": "DE",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 1.3,
-      "tls_ms": 354.7,
-      "score": 141.0
+      "tcp_ms": 21.5,
+      "tls_ms": 37.5,
+      "score": 125.1
     },
     {
-      "ip": "188.114.96.64",
+      "ip": "188.114.97.48",
       "port": 443,
       "region": "DE",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 22.1,
-      "tls_ms": 357.8,
-      "score": 141.1
+      "tcp_ms": 6.2,
+      "tls_ms": 43.9,
+      "score": 125.4
+    },
+    {
+      "ip": "188.114.97.64",
+      "port": 443,
+      "region": "DE",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.8,
+      "tls_ms": 45.8,
+      "score": 125.5
+    },
+    {
+      "ip": "188.114.97.16",
+      "port": 443,
+      "region": "DE",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 7.6,
+      "tls_ms": 46.9,
+      "score": 125.6
     },
     {
       "ip": "188.114.96.24",
@@ -1396,12 +1375,56 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 16.1,
-      "tls_ms": 372.8,
-      "score": 141.9
+      "tcp_ms": 2.1,
+      "tls_ms": 47.6,
+      "score": 125.6
+    },
+    {
+      "ip": "188.114.96.8",
+      "port": 443,
+      "region": "DE",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.6,
+      "tls_ms": 49.2,
+      "score": 125.7
+    },
+    {
+      "ip": "188.114.97.72",
+      "port": 443,
+      "region": "DE",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 39.3,
+      "tls_ms": 50.6,
+      "score": 125.8
     }
   ],
   "FR": [
+    {
+      "ip": "188.114.97.56",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 14.8,
+      "tls_ms": 29.9,
+      "score": 124.7
+    },
+    {
+      "ip": "188.114.96.96",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.8,
+      "tls_ms": 36.9,
+      "score": 125.1
+    },
     {
       "ip": "188.114.96.56",
       "port": 443,
@@ -1409,141 +1432,9 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 35.4,
-      "tls_ms": 173.1,
-      "score": 131.9
-    },
-    {
-      "ip": "188.114.96.72",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 24.0,
-      "tls_ms": 188.3,
-      "score": 132.7
-    },
-    {
-      "ip": "188.114.97.48",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 15.9,
-      "tls_ms": 192.5,
-      "score": 132.9
-    },
-    {
-      "ip": "188.114.97.88",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 29.0,
-      "tls_ms": 246.5,
-      "score": 135.6
-    },
-    {
-      "ip": "188.114.96.32",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 15.8,
-      "tls_ms": 256.2,
-      "score": 136.1
-    },
-    {
-      "ip": "188.114.97.96",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 2.1,
-      "tls_ms": 257.7,
-      "score": 136.1
-    },
-    {
-      "ip": "188.114.97.24",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 17.1,
-      "tls_ms": 262.6,
-      "score": 136.4
-    },
-    {
-      "ip": "188.114.96.80",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 37.9,
-      "tls_ms": 266.7,
-      "score": 136.6
-    },
-    {
-      "ip": "188.114.96.16",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 13.3,
-      "tls_ms": 272.8,
-      "score": 136.9
-    },
-    {
-      "ip": "188.114.97.16",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 11.2,
-      "tls_ms": 277.3,
-      "score": 137.1
-    },
-    {
-      "ip": "188.114.97.80",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 37.4,
-      "tls_ms": 281.2,
-      "score": 137.3
-    },
-    {
-      "ip": "188.114.97.72",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 22.3,
-      "tls_ms": 283.4,
-      "score": 137.4
-    },
-    {
-      "ip": "188.114.96.24",
-      "port": 443,
-      "region": "FR",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 12.7,
-      "tls_ms": 286.5,
-      "score": 137.6
+      "tcp_ms": 13.8,
+      "tls_ms": 37.0,
+      "score": 125.1
     },
     {
       "ip": "188.114.97.32",
@@ -1552,9 +1443,31 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 23.0,
-      "tls_ms": 286.6,
-      "score": 137.6
+      "tcp_ms": 17.0,
+      "tls_ms": 37.5,
+      "score": 125.1
+    },
+    {
+      "ip": "188.114.96.72",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 28.8,
+      "tls_ms": 40.0,
+      "score": 125.2
+    },
+    {
+      "ip": "188.114.96.24",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 12.5,
+      "tls_ms": 44.9,
+      "score": 125.5
     },
     {
       "ip": "188.114.96.40",
@@ -1563,9 +1476,9 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 2.3,
-      "tls_ms": 318.0,
-      "score": 139.1
+      "tcp_ms": 5.9,
+      "tls_ms": 46.9,
+      "score": 125.6
     },
     {
       "ip": "188.114.96.8",
@@ -1574,9 +1487,9 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 45.6,
-      "tls_ms": 345.6,
-      "score": 140.5
+      "tcp_ms": 4.4,
+      "tls_ms": 48.9,
+      "score": 125.7
     },
     {
       "ip": "188.114.97.8",
@@ -1585,144 +1498,111 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 21.9,
-      "tls_ms": 362.0,
-      "score": 141.4
+      "tcp_ms": 11.8,
+      "tls_ms": 49.2,
+      "score": 125.7
     },
     {
-      "ip": "188.114.96.96",
+      "ip": "188.114.97.80",
       "port": 443,
       "region": "FR",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 34.5,
-      "tls_ms": 394.0,
-      "score": 143.0
-    }
-  ],
-  "GB": [
-    {
-      "ip": "188.114.97.56",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 10.6,
-      "tls_ms": 208.6,
-      "score": 133.7
-    },
-    {
-      "ip": "188.114.97.24",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 12.9,
-      "tls_ms": 234.2,
-      "score": 135.0
-    },
-    {
-      "ip": "188.114.96.32",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 16.3,
-      "tls_ms": 240.1,
-      "score": 135.3
-    },
-    {
-      "ip": "188.114.97.32",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 72.8,
-      "tls_ms": 248.1,
-      "score": 135.7
-    },
-    {
-      "ip": "188.114.97.96",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 16.7,
-      "tls_ms": 251.5,
-      "score": 135.8
-    },
-    {
-      "ip": "188.114.96.72",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 42.2,
-      "tls_ms": 256.3,
-      "score": 136.1
-    },
-    {
-      "ip": "188.114.96.96",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 275.8,
-      "score": 137.0
-    },
-    {
-      "ip": "188.114.97.40",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 321.7,
-      "score": 139.3
-    },
-    {
-      "ip": "188.114.97.64",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.3,
-      "tls_ms": 326.5,
-      "score": 139.6
-    },
-    {
-      "ip": "188.114.96.80",
-      "port": 443,
-      "region": "GB",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.2,
-      "tls_ms": 348.3,
-      "score": 140.7
+      "tcp_ms": 21.3,
+      "tls_ms": 53.3,
+      "score": 125.9
     },
     {
       "ip": "188.114.97.72",
       "port": 443,
-      "region": "GB",
+      "region": "FR",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 35.7,
-      "tls_ms": 361.3,
-      "score": 141.3
+      "tcp_ms": 32.7,
+      "tls_ms": 54.6,
+      "score": 126.0
     },
+    {
+      "ip": "188.114.97.40",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 23.9,
+      "tls_ms": 57.3,
+      "score": 126.1
+    },
+    {
+      "ip": "188.114.96.32",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 19.8,
+      "tls_ms": 58.4,
+      "score": 126.2
+    },
+    {
+      "ip": "188.114.96.88",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 4.5,
+      "tls_ms": 58.5,
+      "score": 126.2
+    },
+    {
+      "ip": "188.114.96.64",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 6.8,
+      "tls_ms": 61.1,
+      "score": 126.3
+    },
+    {
+      "ip": "188.114.97.48",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 8.6,
+      "tls_ms": 63.2,
+      "score": 126.4
+    },
+    {
+      "ip": "188.114.97.96",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 27.8,
+      "tls_ms": 63.2,
+      "score": 126.4
+    },
+    {
+      "ip": "188.114.96.80",
+      "port": 443,
+      "region": "FR",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 18.7,
+      "tls_ms": 74.6,
+      "score": 127.0
+    }
+  ],
+  "GB": [
     {
       "ip": "188.114.96.88",
       "port": 443,
@@ -1730,20 +1610,53 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 21.0,
-      "tls_ms": 383.8,
-      "score": 142.4
+      "tcp_ms": 1.7,
+      "tls_ms": 27.0,
+      "score": 124.6
     },
     {
-      "ip": "188.114.97.88",
+      "ip": "188.114.96.80",
       "port": 443,
       "region": "GB",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 11.2,
-      "tls_ms": 389.2,
-      "score": 142.7
+      "tcp_ms": 7.1,
+      "tls_ms": 32.3,
+      "score": 124.9
+    },
+    {
+      "ip": "188.114.97.80",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 42.0,
+      "tls_ms": 32.9,
+      "score": 124.9
+    },
+    {
+      "ip": "188.114.97.32",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 16.0,
+      "tls_ms": 37.0,
+      "score": 125.1
+    },
+    {
+      "ip": "188.114.96.40",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 4.0,
+      "tls_ms": 38.7,
+      "score": 125.2
     },
     {
       "ip": "188.114.97.8",
@@ -1752,31 +1665,31 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 42.1,
-      "tls_ms": 490.8,
-      "score": 147.8
+      "tcp_ms": 5.9,
+      "tls_ms": 39.3,
+      "score": 125.2
     },
     {
-      "ip": "188.114.96.48",
+      "ip": "188.114.97.24",
       "port": 443,
       "region": "GB",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 22.2,
-      "tls_ms": 533.4,
-      "score": 149.9
+      "tcp_ms": 16.0,
+      "tls_ms": 39.7,
+      "score": 125.2
     },
     {
-      "ip": "188.114.96.56",
+      "ip": "188.114.96.72",
       "port": 443,
       "region": "GB",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 11.6,
-      "tls_ms": 560.6,
-      "score": 151.3
+      "tcp_ms": 24.1,
+      "tls_ms": 45.8,
+      "score": 125.5
     },
     {
       "ip": "188.114.96.8",
@@ -1785,99 +1698,121 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 46.4,
-      "tls_ms": 654.7,
-      "score": 156.0
+      "tcp_ms": 4.1,
+      "tls_ms": 46.4,
+      "score": 125.6
     },
     {
-      "ip": "188.114.97.80",
+      "ip": "188.114.96.48",
       "port": 443,
       "region": "GB",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 46.2,
-      "tls_ms": 655.1,
-      "score": 156.0
-    }
-  ],
-  "CH": [
-    {
-      "ip": "188.114.96.24",
-      "port": 443,
-      "region": "CH",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 12.9,
-      "tls_ms": 182.6,
-      "score": 132.4
+      "tcp_ms": 6.4,
+      "tls_ms": 52.2,
+      "score": 125.9
     },
     {
-      "ip": "188.114.97.96",
+      "ip": "188.114.97.48",
       "port": 443,
-      "region": "CH",
+      "region": "GB",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 2.8,
-      "tls_ms": 216.6,
-      "score": 134.1
+      "tcp_ms": 8.8,
+      "tls_ms": 54.4,
+      "score": 126.0
+    },
+    {
+      "ip": "188.114.97.72",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.8,
+      "tls_ms": 56.0,
+      "score": 126.1
+    },
+    {
+      "ip": "188.114.97.88",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 21.8,
+      "tls_ms": 60.5,
+      "score": 126.3
+    },
+    {
+      "ip": "188.114.97.40",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 1.8,
+      "tls_ms": 61.5,
+      "score": 126.3
     },
     {
       "ip": "188.114.96.96",
       "port": 443,
-      "region": "CH",
+      "region": "GB",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 246.8,
-      "score": 135.6
+      "tcp_ms": 4.1,
+      "tls_ms": 64.6,
+      "score": 126.5
     },
     {
-      "ip": "188.114.96.64",
+      "ip": "188.114.96.16",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 19.4,
+      "tls_ms": 66.5,
+      "score": 126.6
+    },
+    {
+      "ip": "188.114.97.56",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 15.8,
+      "tls_ms": 71.1,
+      "score": 126.8
+    },
+    {
+      "ip": "188.114.97.96",
+      "port": 443,
+      "region": "GB",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 4.9,
+      "tls_ms": 81.0,
+      "score": 127.3
+    }
+  ],
+  "CH": [
+    {
+      "ip": "188.114.97.48",
       "port": 443,
       "region": "CH",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 28.7,
-      "tls_ms": 286.0,
-      "score": 137.6
-    },
-    {
-      "ip": "188.114.97.64",
-      "port": 443,
-      "region": "CH",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 18.1,
-      "tls_ms": 289.1,
-      "score": 137.7
-    },
-    {
-      "ip": "188.114.97.16",
-      "port": 443,
-      "region": "CH",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 23.2,
-      "tls_ms": 304.5,
-      "score": 138.5
-    },
-    {
-      "ip": "188.114.96.48",
-      "port": 443,
-      "region": "CH",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.0,
-      "tls_ms": 309.4,
-      "score": 138.7
+      "tcp_ms": 17.1,
+      "tls_ms": 33.8,
+      "score": 124.9
     },
     {
       "ip": "188.114.97.24",
@@ -1886,42 +1821,20 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 26.4,
-      "tls_ms": 372.1,
-      "score": 141.9
+      "tcp_ms": 7.9,
+      "tls_ms": 41.1,
+      "score": 125.3
     },
     {
-      "ip": "188.114.97.80",
+      "ip": "188.114.97.16",
       "port": 443,
       "region": "CH",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 18.6,
-      "tls_ms": 433.5,
-      "score": 144.9
-    },
-    {
-      "ip": "188.114.97.88",
-      "port": 443,
-      "region": "CH",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 5.7,
-      "tls_ms": 440.2,
-      "score": 145.3
-    },
-    {
-      "ip": "188.114.96.32",
-      "port": 443,
-      "region": "CH",
-      "domestic_lat": 145.0,
-      "domestic_spd": "25.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 37.4,
-      "tls_ms": 490.7,
-      "score": 147.8
+      "tcp_ms": 16.0,
+      "tls_ms": 47.4,
+      "score": 125.6
     },
     {
       "ip": "188.114.96.40",
@@ -1930,9 +1843,97 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 20.8,
-      "tls_ms": 575.0,
-      "score": 152.0
+      "tcp_ms": 16.7,
+      "tls_ms": 49.8,
+      "score": 125.7
+    },
+    {
+      "ip": "188.114.97.40",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 26.5,
+      "tls_ms": 51.6,
+      "score": 125.8
+    },
+    {
+      "ip": "188.114.96.80",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 12.8,
+      "tls_ms": 55.3,
+      "score": 126.0
+    },
+    {
+      "ip": "188.114.96.96",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 64.0,
+      "tls_ms": 56.7,
+      "score": 126.1
+    },
+    {
+      "ip": "188.114.97.88",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 28.8,
+      "tls_ms": 58.5,
+      "score": 126.2
+    },
+    {
+      "ip": "188.114.96.88",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.8,
+      "tls_ms": 60.4,
+      "score": 126.3
+    },
+    {
+      "ip": "188.114.96.24",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 22.8,
+      "tls_ms": 62.2,
+      "score": 126.4
+    },
+    {
+      "ip": "188.114.96.48",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 13.7,
+      "tls_ms": 63.0,
+      "score": 126.4
+    },
+    {
+      "ip": "188.114.97.96",
+      "port": 443,
+      "region": "CH",
+      "domestic_lat": 145.0,
+      "domestic_spd": "25.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 57.5,
+      "tls_ms": 63.4,
+      "score": 126.4
     },
     {
       "ip": "188.114.96.16",
@@ -1941,133 +1942,34 @@
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 23.9,
-      "tls_ms": 655.5,
-      "score": 156.0
+      "tcp_ms": 20.0,
+      "tls_ms": 67.6,
+      "score": 126.6
     },
     {
-      "ip": "188.114.97.32",
+      "ip": "188.114.97.64",
       "port": 443,
       "region": "CH",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 40.7,
-      "tls_ms": 689.5,
-      "score": 157.7
+      "tcp_ms": 3.9,
+      "tls_ms": 68.2,
+      "score": 126.7
     },
     {
-      "ip": "188.114.96.56",
+      "ip": "188.114.96.64",
       "port": 443,
       "region": "CH",
       "domestic_lat": 145.0,
       "domestic_spd": "25.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 9.5,
-      "tls_ms": 824.6,
-      "score": 164.5
+      "tcp_ms": 3.4,
+      "tls_ms": 68.7,
+      "score": 126.7
     }
   ],
   "US_EAST": [
-    {
-      "ip": "104.17.200.8",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 16.7,
-      "tls_ms": 232.1,
-      "score": 137.4
-    },
-    {
-      "ip": "104.17.200.10",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 19.9,
-      "tls_ms": 263.3,
-      "score": 139.0
-    },
-    {
-      "ip": "104.16.200.8",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 2.4,
-      "tls_ms": 264.3,
-      "score": 139.0
-    },
-    {
-      "ip": "104.16.0.5",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 14.9,
-      "tls_ms": 267.6,
-      "score": 139.2
-    },
-    {
-      "ip": "104.16.0.10",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 29.4,
-      "tls_ms": 271.6,
-      "score": 139.4
-    },
-    {
-      "ip": "104.16.200.15",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 19.2,
-      "tls_ms": 285.7,
-      "score": 140.1
-    },
-    {
-      "ip": "104.16.200.1",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 13.5,
-      "tls_ms": 286.6,
-      "score": 140.1
-    },
-    {
-      "ip": "104.16.200.2",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 12.8,
-      "tls_ms": 289.4,
-      "score": 140.3
-    },
-    {
-      "ip": "104.17.200.30",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 15.2,
-      "tls_ms": 292.3,
-      "score": 140.4
-    },
     {
       "ip": "151.101.128.200",
       "port": 443,
@@ -2075,97 +1977,52 @@
       "domestic_lat": 148.0,
       "domestic_spd": "25.0Mbps",
       "source": "fastly",
-      "tcp_ms": 25.2,
-      "tls_ms": 365.6,
-      "score": 144.1
+      "tcp_ms": 1.8,
+      "tls_ms": 10.2,
+      "score": 126.3
     },
     {
-      "ip": "104.17.200.1",
+      "ip": "104.17.0.2",
       "port": 443,
       "region": "US_EAST",
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 25.0,
-      "tls_ms": 366.0,
-      "score": 144.1
+      "tcp_ms": 34.0,
+      "tls_ms": 20.9,
+      "score": 126.8
     },
     {
-      "ip": "104.16.0.15",
+      "ip": "104.17.222.40",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "tcp_ms": 4.1,
+      "tls_ms": 22.7,
+      "score": 126.9
+    },
+    {
+      "ip": "104.17.200.5",
       "port": 443,
       "region": "US_EAST",
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 5.0,
-      "tls_ms": 380.0,
-      "score": 144.8
+      "tcp_ms": 2.6,
+      "tls_ms": 25.4,
+      "score": 127.1
     },
     {
-      "ip": "104.17.0.20",
+      "ip": "104.16.0.8",
       "port": 443,
       "region": "US_EAST",
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 385.1,
-      "score": 145.1
-    },
-    {
-      "ip": "104.17.0.10",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 2.1,
-      "tls_ms": 405.3,
-      "score": 146.1
-    },
-    {
-      "ip": "104.17.0.5",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 2.1,
-      "tls_ms": 422.1,
-      "score": 146.9
-    },
-    {
-      "ip": "104.16.0.1",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 23.7,
-      "tls_ms": 429.4,
-      "score": 147.3
-    },
-    {
-      "ip": "104.16.0.20",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 19.3,
-      "tls_ms": 493.6,
-      "score": 150.5
-    },
-    {
-      "ip": "104.16.0.30",
-      "port": 443,
-      "region": "US_EAST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 2.1,
-      "tls_ms": 519.0,
-      "score": 151.7
+      "tcp_ms": 33.9,
+      "tls_ms": 27.8,
+      "score": 127.2
     },
     {
       "ip": "104.16.0.25",
@@ -2174,33 +2031,175 @@
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 32.4,
-      "tls_ms": 544.9,
-      "score": 153.0
+      "tcp_ms": 4.8,
+      "tls_ms": 27.8,
+      "score": 127.2
     },
     {
-      "ip": "104.17.200.20",
+      "ip": "104.16.200.1",
       "port": 443,
       "region": "US_EAST",
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 2.3,
-      "tls_ms": 563.5,
-      "score": 154.0
+      "tcp_ms": 1.5,
+      "tls_ms": 29.5,
+      "score": 127.3
+    },
+    {
+      "ip": "104.16.200.2",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.7,
+      "tls_ms": 32.0,
+      "score": 127.4
+    },
+    {
+      "ip": "104.17.200.30",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.9,
+      "tls_ms": 32.3,
+      "score": 127.4
+    },
+    {
+      "ip": "104.17.200.2",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.1,
+      "tls_ms": 32.7,
+      "score": 127.4
+    },
+    {
+      "ip": "104.17.200.8",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.9,
+      "tls_ms": 33.2,
+      "score": 127.5
+    },
+    {
+      "ip": "104.17.0.10",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 6.9,
+      "tls_ms": 33.5,
+      "score": 127.5
+    },
+    {
+      "ip": "104.17.200.1",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 2.2,
+      "tls_ms": 33.5,
+      "score": 127.5
+    },
+    {
+      "ip": "104.16.0.30",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 10.1,
+      "tls_ms": 34.6,
+      "score": 127.5
+    },
+    {
+      "ip": "104.16.0.10",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 23.8,
+      "tls_ms": 34.9,
+      "score": 127.5
+    },
+    {
+      "ip": "104.17.0.30",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 12.9,
+      "tls_ms": 36.5,
+      "score": 127.6
+    },
+    {
+      "ip": "104.16.200.8",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.9,
+      "tls_ms": 37.7,
+      "score": 127.7
+    },
+    {
+      "ip": "104.16.200.15",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 11.3,
+      "tls_ms": 38.1,
+      "score": 127.7
+    },
+    {
+      "ip": "104.17.0.5",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.8,
+      "tls_ms": 38.2,
+      "score": 127.7
+    },
+    {
+      "ip": "104.16.200.25",
+      "port": 443,
+      "region": "US_EAST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.7,
+      "tls_ms": 38.4,
+      "score": 127.7
     }
   ],
   "US_WEST": [
     {
-      "ip": "104.19.200.30",
+      "ip": "172.64.50.5",
       "port": 443,
       "region": "US_WEST",
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 20.8,
-      "tls_ms": 227.0,
-      "score": 137.1
+      "tcp_ms": 4.1,
+      "tls_ms": 11.5,
+      "score": 126.4
     },
     {
       "ip": "104.19.0.20",
@@ -2209,162 +2208,9 @@
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 20.6,
-      "tls_ms": 240.6,
-      "score": 137.8
-    },
-    {
-      "ip": "104.19.200.5",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 17.1,
-      "tls_ms": 264.8,
-      "score": 139.0
-    },
-    {
-      "ip": "104.19.200.25",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.1,
-      "tls_ms": 273.7,
-      "score": 139.5
-    },
-    {
-      "ip": "104.19.200.1",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 1.1,
-      "tls_ms": 318.3,
-      "score": 141.7
-    },
-    {
-      "ip": "104.19.0.1",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.6,
-      "tls_ms": 369.5,
-      "score": 144.3
-    },
-    {
-      "ip": "104.19.0.15",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 20.6,
-      "tls_ms": 370.6,
-      "score": 144.3
-    },
-    {
-      "ip": "104.19.200.2",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.6,
-      "tls_ms": 379.0,
-      "score": 144.7
-    },
-    {
-      "ip": "104.19.0.25",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 3.5,
-      "tls_ms": 440.5,
-      "score": 147.8
-    },
-    {
-      "ip": "104.19.200.20",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 555.9,
-      "score": 153.6
-    },
-    {
-      "ip": "104.19.200.10",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 29.6,
-      "tls_ms": 612.1,
-      "score": 156.4
-    },
-    {
-      "ip": "172.64.50.5",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "tcp_ms": 18.4,
-      "tls_ms": 680.4,
-      "score": 159.8
-    },
-    {
-      "ip": "104.19.0.10",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 29.6,
-      "tls_ms": 855.3,
-      "score": 168.6
-    },
-    {
-      "ip": "104.19.200.8",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 3.3,
-      "tls_ms": 881.1,
-      "score": 169.9
-    },
-    {
-      "ip": "104.19.0.2",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.5,
-      "tls_ms": 882.4,
-      "score": 169.9
-    },
-    {
-      "ip": "104.19.0.8",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 148.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 0.0,
-      "tls_ms": 1018.6,
-      "score": 176.7
+      "tcp_ms": 8.8,
+      "tls_ms": 24.2,
+      "score": 127.0
     },
     {
       "ip": "104.19.0.30",
@@ -2373,9 +2219,86 @@
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 17.8,
-      "tls_ms": 1559.8,
-      "score": 203.8
+      "tcp_ms": 27.9,
+      "tls_ms": 24.6,
+      "score": 127.0
+    },
+    {
+      "ip": "104.19.0.25",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 16.7,
+      "tls_ms": 24.8,
+      "score": 127.0
+    },
+    {
+      "ip": "104.19.0.1",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 12.3,
+      "tls_ms": 25.9,
+      "score": 127.1
+    },
+    {
+      "ip": "104.19.200.5",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 16.2,
+      "tls_ms": 28.4,
+      "score": 127.2
+    },
+    {
+      "ip": "104.19.200.2",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 22.9,
+      "tls_ms": 28.8,
+      "score": 127.2
+    },
+    {
+      "ip": "104.19.200.10",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 8.4,
+      "tls_ms": 31.8,
+      "score": 127.4
+    },
+    {
+      "ip": "104.19.200.1",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 12.8,
+      "tls_ms": 32.6,
+      "score": 127.4
+    },
+    {
+      "ip": "104.19.200.30",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.8,
+      "tls_ms": 34.0,
+      "score": 127.5
     },
     {
       "ip": "104.19.0.5",
@@ -2384,31 +2307,107 @@
       "domestic_lat": 148.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 25.5,
-      "tls_ms": 2423.0,
-      "score": 247.0
+      "tcp_ms": 2.8,
+      "tls_ms": 35.6,
+      "score": 127.6
     },
     {
-      "ip": "104.19.1.2",
+      "ip": "104.19.200.20",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 3.9,
+      "tls_ms": 44.5,
+      "score": 128.0
+    },
+    {
+      "ip": "104.19.200.8",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 4.7,
+      "tls_ms": 46.7,
+      "score": 128.1
+    },
+    {
+      "ip": "104.19.0.10",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 5.0,
+      "tls_ms": 51.2,
+      "score": 128.4
+    },
+    {
+      "ip": "104.19.0.15",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 24.3,
+      "tls_ms": 52.0,
+      "score": 128.4
+    },
+    {
+      "ip": "104.19.0.8",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 27.4,
+      "tls_ms": 63.8,
+      "score": 129.0
+    },
+    {
+      "ip": "104.19.0.2",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 24.4,
+      "tls_ms": 69.9,
+      "score": 129.3
+    },
+    {
+      "ip": "104.19.200.25",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 148.0,
+      "domestic_spd": "22.0Mbps",
+      "source": "cloudflare",
+      "tcp_ms": 16.5,
+      "tls_ms": 76.5,
+      "score": 129.6
+    },
+    {
+      "ip": "104.19.200.15",
+      "port": 443,
+      "region": "US_WEST",
+      "domestic_lat": 149.0,
+      "domestic_spd": "22.0Mbps",
+      "tcp_ms": 13.2,
+      "tls_ms": 7.1,
+      "score": 127.0
+    },
+    {
+      "ip": "104.19.1.25",
       "port": 443,
       "region": "US_WEST",
       "domestic_lat": 149.0,
       "domestic_spd": "22.0Mbps",
       "source": "cloudflare",
-      "tcp_ms": 21.5,
-      "tls_ms": 252.0,
-      "score": 139.3
-    },
-    {
-      "ip": "104.19.1.20",
-      "port": 443,
-      "region": "US_WEST",
-      "domestic_lat": 149.0,
-      "domestic_spd": "22.0Mbps",
-      "source": "cloudflare",
-      "tcp_ms": 19.9,
-      "tls_ms": 312.0,
-      "score": 142.3
+      "tcp_ms": 11.0,
+      "tls_ms": 14.4,
+      "score": 127.4
     }
   ]
 }
