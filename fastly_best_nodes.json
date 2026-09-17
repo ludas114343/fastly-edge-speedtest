@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T00:11:25.487195",
+  "updated_at": "2026-09-17T07:19:00.741580",
   "winners": {
     "JP": [
       {
@@ -8,85 +8,85 @@
         "region": "JP",
         "domestic_lat": 70.6,
         "domestic_spd": "8.7Mbps",
-        "tcp_ms": 198.6,
-        "tls_ms": 333.7,
-        "score": 73.2
+        "tcp_ms": 161.7,
+        "tls_ms": 285.5,
+        "score": 70.8
       },
       {
-        "ip": "52.194.215.93",
+        "ip": "43.167.9.109",
         "port": 443,
         "region": "JP",
-        "domestic_lat": 79.49,
-        "domestic_spd": "8.5Mbps",
-        "tcp_ms": 162.4,
-        "tls_ms": 166.0,
-        "score": 71.9
+        "domestic_lat": 79.37,
+        "domestic_spd": "17.35Mbps",
+        "tcp_ms": 105.9,
+        "tls_ms": 119.8,
+        "score": 69.5
       }
     ],
     "KR": [
+      {
+        "ip": "3.37.245.168",
+        "port": 443,
+        "region": "KR",
+        "domestic_lat": 60.92,
+        "domestic_spd": "19.34Mbps",
+        "tcp_ms": 132.6,
+        "tls_ms": 141.5,
+        "score": 55.8
+      },
       {
         "ip": "43.133.237.158",
         "port": 8443,
         "region": "KR",
         "domestic_lat": 62.87,
         "domestic_spd": "12.8Mbps",
-        "tcp_ms": 188.1,
-        "tls_ms": 200.7,
-        "score": 60.3
-      },
-      {
-        "ip": "3.37.245.168",
-        "port": 443,
-        "region": "KR",
-        "domestic_lat": 63.05,
-        "domestic_spd": "14.66Mbps",
-        "tcp_ms": 189.0,
-        "tls_ms": 194.5,
-        "score": 60.2
+        "tcp_ms": 133.9,
+        "tls_ms": 143.3,
+        "score": 57.5
       }
     ],
     "HK": [
-      {
-        "ip": "23.147.172.135",
-        "port": 443,
-        "region": "HK",
-        "domestic_lat": 56.86,
-        "domestic_spd": "9.1Mbps",
-        "tcp_ms": 218.8,
-        "tls_ms": 229.9,
-        "score": 57.0
-      },
       {
         "ip": "39.109.50.124",
         "port": 443,
         "region": "HK",
         "domestic_lat": 57.86,
         "domestic_spd": "17.7Mbps",
-        "tcp_ms": 199.1,
-        "tls_ms": 203.3,
-        "score": 56.5
+        "tcp_ms": 148.7,
+        "tls_ms": 166.7,
+        "score": 54.6
+      },
+      {
+        "ip": "208.66.229.158",
+        "port": 443,
+        "region": "HK",
+        "domestic_lat": 61.88,
+        "domestic_spd": "15.95Mbps",
+        "tcp_ms": 155.1,
+        "tls_ms": 160.5,
+        "score": 57.5
       }
     ],
     "SG": [
       {
-        "ip": "159.65.1.74",
+        "ip": "152.42.187.204",
         "port": 443,
         "region": "SG",
-        "domestic_lat": 86.55,
-        "domestic_spd": "12.21Mbps",
-        "tcp_ms": 221.2,
-        "tls_ms": 231.9,
-        "score": 80.8
+        "domestic_lat": 85.86,
+        "domestic_spd": "11.43Mbps",
+        "tcp_ms": 167.4,
+        "tls_ms": 176.6,
+        "score": 77.5
       },
       {
-        "ip": "209.97.175.102",
+        "ip": "178.128.82.93",
         "port": 443,
         "region": "SG",
-        "domestic_lat": 88.27,
-        "domestic_spd": "8.0Mbps",
-        "tcp_ms": 233.5,
-        "tls_ms": 228.8,
-        "score": 82.1
+        "domestic_lat": 87.74,
+        "domestic_spd": "13.06Mbps",
+        "tcp_ms": 167.5,
+        "tls_ms": 176.2,
+        "score": 79.0
       }
     ],
     "DE": [
@@ -96,19 +96,19 @@
         "region": "DE",
         "domestic_lat": 140.94,
         "domestic_spd": "9.8Mbps",
-        "tcp_ms": 98.1,
-        "tls_ms": 113.1,
-        "score": 118.4
+        "tcp_ms": 156.5,
+        "tls_ms": 190.2,
+        "score": 122.3
       },
       {
-        "ip": "188.114.97.40",
+        "ip": "188.114.97.90",
         "port": 443,
         "region": "DE",
         "domestic_lat": 155.0,
         "domestic_spd": "15.0Mbps",
-        "tcp_ms": 10.2,
-        "tls_ms": 8.7,
-        "score": 124.4
+        "tcp_ms": 22.8,
+        "tls_ms": 27.5,
+        "score": 125.4
       }
     ],
     "FR": [
@@ -118,41 +118,41 @@
         "region": "FR",
         "domestic_lat": 152.6,
         "domestic_spd": "9.6Mbps",
-        "tcp_ms": 89.4,
-        "tls_ms": 118.1,
-        "score": 128.0
+        "tcp_ms": 160.9,
+        "tls_ms": 168.1,
+        "score": 130.5
       },
       {
-        "ip": "188.114.96.5",
+        "ip": "192.109.228.202",
         "port": 443,
         "region": "FR",
-        "domestic_lat": 155.0,
-        "domestic_spd": "15.0Mbps",
-        "tcp_ms": 2.8,
-        "tls_ms": 12.7,
-        "score": 124.6
+        "domestic_lat": 153.01,
+        "domestic_spd": "10.49Mbps",
+        "tcp_ms": 173.2,
+        "tls_ms": 188.2,
+        "score": 131.8
       }
     ],
     "GB": [
       {
-        "ip": "188.114.97.30",
+        "ip": "188.114.96.40",
         "port": 443,
         "region": "GB",
         "domestic_lat": 155.0,
         "domestic_spd": "15.0Mbps",
-        "tcp_ms": 22.2,
-        "tls_ms": 9.1,
-        "score": 124.5
+        "tcp_ms": 2.6,
+        "tls_ms": 16.6,
+        "score": 124.8
       },
       {
-        "ip": "188.114.97.70",
+        "ip": "188.114.96.100",
         "port": 443,
         "region": "GB",
         "domestic_lat": 155.0,
         "domestic_spd": "15.0Mbps",
-        "tcp_ms": 14.3,
-        "tls_ms": 13.1,
-        "score": 124.7
+        "tcp_ms": 19.5,
+        "tls_ms": 18.3,
+        "score": 124.9
       }
     ],
     "CH": [
@@ -162,18 +162,18 @@
         "region": "CH",
         "domestic_lat": 152.6,
         "domestic_spd": "9.6Mbps",
-        "tcp_ms": 86.7,
-        "tls_ms": 108.8,
-        "score": 127.5
+        "tcp_ms": 142.6,
+        "tls_ms": 167.6,
+        "score": 130.5
       },
       {
-        "ip": "188.114.97.50",
+        "ip": "188.114.97.40",
         "port": 443,
         "region": "CH",
         "domestic_lat": 155.0,
         "domestic_spd": "15.0Mbps",
-        "tcp_ms": 14.1,
-        "tls_ms": 11.0,
+        "tcp_ms": 21.6,
+        "tls_ms": 10.1,
         "score": 124.5
       }
     ],
@@ -184,41 +184,41 @@
         "region": "US_EAST",
         "domestic_lat": 150.0,
         "domestic_spd": "12.0Mbps",
-        "tcp_ms": 10.8,
-        "tls_ms": 22.1,
-        "score": 121.1
+        "tcp_ms": 6.0,
+        "tls_ms": 44.5,
+        "score": 122.2
       },
       {
-        "ip": "104.17.20.15",
+        "ip": "104.17.10.8",
         "port": 443,
         "region": "US_EAST",
         "domestic_lat": 152.0,
         "domestic_spd": "12.0Mbps",
-        "tcp_ms": 2.4,
+        "tcp_ms": 1.8,
         "tls_ms": 4.3,
         "score": 121.8
       }
     ],
     "US_WEST": [
       {
-        "ip": "82.22.26.141",
-        "port": 2053,
-        "region": "US_WEST",
-        "domestic_lat": 94.04,
-        "domestic_spd": "9.06Mbps",
-        "tcp_ms": 158.3,
-        "tls_ms": 397.0,
-        "score": 95.1
-      },
-      {
-        "ip": "198.13.37.57",
+        "ip": "104.19.10.15",
         "port": 443,
         "region": "US_WEST",
-        "domestic_lat": 121.87,
-        "domestic_spd": "11.2Mbps",
-        "tcp_ms": 159.5,
-        "tls_ms": 346.9,
-        "score": 114.8
+        "domestic_lat": 152.0,
+        "domestic_spd": "12.0Mbps",
+        "tcp_ms": 2.7,
+        "tls_ms": 4.5,
+        "score": 121.8
+      },
+      {
+        "ip": "104.19.20.20",
+        "port": 443,
+        "region": "US_WEST",
+        "domestic_lat": 152.0,
+        "domestic_spd": "12.0Mbps",
+        "tcp_ms": 1.7,
+        "tls_ms": 5.1,
+        "score": 121.9
       }
     ]
   }
