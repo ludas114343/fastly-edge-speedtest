@@ -24,6 +24,10 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
 USER_UUID = "c69d9310-66db-4614-b3b7-0fb01e68b4ec"
+EDGETUNNEL_UUID = "fe7b0699-6520-4ebd-8f98-1ff49adc560a"
+EDGETUNNEL_DOMAIN = "114.bangdream.icu"
+NORTHFLANK_DOMAIN = "nf-node.ruoyemu.asia"
+SUPABASE_DOMAINS = ["theecyezvuzkflwikxwr.supabase.co", "duletchbsmevnqqxvfwy.supabase.co"]
 
 # Multi-Platform Backend Endpoints
 SUPABASE_BACKENDS = [
@@ -427,34 +431,44 @@ def build_clash_yaml_for_platform(winners, platform_name):
             server_ip = item["ip"]
             server_port = item["port"]
 
-            # Determine platform-specific frontend SNI and Path
+            # Determine platform-specific frontend SNI and Path using verified live backends
+            uuid_to_use = USER_UUID
             if platform_name == "Wasmer":
                 tag = "Wasmer"
-                sni = WASMER_DOMAINS.get(reg_key, "w-us.ruoyemu.asia")
+                sni = "w-la.ruoyemu.asia" if reg_key in ["HK", "JP", "KR", "SG", "US_WEST", "CA", "AU"] else "w-fr.ruoyemu.asia"
                 path = "/?ed=2560"
+                uuid_to_use = USER_UUID
             elif platform_name == "Netlify":
                 tag = "Netlify"
-                sni = NETLIFY_DOMAIN
-                path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
-            elif platform_name == "Fastly":
-                tag = "Fastly"
-                sni = FASTLY_DOMAIN
-                path = f"/{reg_key.lower()}?forceFunctionRegion={region_code}"
-            else:
-                # Master aggregation: rotate platforms
-                cycle = i % 3
-                if cycle == 0:
-                    tag = "Fastly"
-                    sni = FASTLY_DOMAIN
-                    path = f"/{reg_key.lower()}?forceFunctionRegion={region_code}"
-                elif cycle == 1:
-                    tag = "Wasmer"
-                    sni = WASMER_DOMAINS.get(reg_key, "w-us.ruoyemu.asia")
-                    path = "/?ed=2560"
+                if i == 0 and reg_key in ["US_WEST", "US_EAST"]:
+                    sni = NORTHFLANK_DOMAIN
+                    path = "/ws"
                 else:
-                    tag = "Netlify"
-                    sni = NETLIFY_DOMAIN
+                    sni = SUPABASE_DOMAINS[i % 2]
                     path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
+                uuid_to_use = USER_UUID
+            elif platform_name == "Fastly":
+                tag = "EdgeClean"
+                sni = EDGETUNNEL_DOMAIN
+                path = "/"
+                uuid_to_use = EDGETUNNEL_UUID
+            else:
+                # Master aggregation
+                if i == 0:
+                    tag = "EdgeClean"
+                    sni = EDGETUNNEL_DOMAIN
+                    path = "/"
+                    uuid_to_use = EDGETUNNEL_UUID
+                elif i == 1:
+                    tag = "Wasmer"
+                    sni = "w-la.ruoyemu.asia" if reg_key in ["HK", "JP", "KR", "SG", "US_WEST", "CA", "AU"] else "w-fr.ruoyemu.asia"
+                    path = "/?ed=2560"
+                    uuid_to_use = USER_UUID
+                else:
+                    tag = "Supabase"
+                    sni = SUPABASE_DOMAINS[1]
+                    path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
+                    uuid_to_use = USER_UUID
 
             full_node_name = f"{group_name} {num_str} [{tag} 优选 {lat_str}]"
             nodes_def.append({
@@ -465,7 +479,8 @@ def build_clash_yaml_for_platform(winners, platform_name):
                 "path": path,
                 "group": group_name,
                 "region": super_reg,
-                "lat": item.get("domestic_lat", 60.0)
+                "lat": item.get("domestic_lat", 60.0),
+                "uuid": uuid_to_use
             })
 
     all_node_names = [n["name"] for n in nodes_def]
@@ -476,7 +491,7 @@ def build_clash_yaml_for_platform(winners, platform_name):
     type: vless
     server: {node['server']}
     port: {node['port']}
-    uuid: {USER_UUID}
+    uuid: {node["uuid"]}
     network: ws
     tls: true
     udp: true
