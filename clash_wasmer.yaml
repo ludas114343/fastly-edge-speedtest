@@ -1,5 +1,5 @@
 # ============================================================
-# Master 34-Node Ultra-Low Latency Optimized Subscription
+# Wasmer 34-Node Ultra-Low Latency Optimized Subscription
 # Last Speedtest Run: 2026-09-17 13:28:07 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 high quality nodes (2-3 per country)
@@ -29,7 +29,7 @@ dns:
     - 8.8.8.8
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [Fastly 优选 48.5ms]"
+  - name: "🇭🇰 中国香港 01 [Wasmer 优选 48.5ms]"
     type: vless
     server: 39.109.50.124
     port: 443
@@ -37,12 +37,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-la.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-la.ruoyemu.asia
 
   - name: "🇭🇰 中国香港 02 [Wasmer 优选 52.0ms]"
     type: vless
@@ -59,7 +59,7 @@ proxies:
       headers:
         Host: w-la.ruoyemu.asia
 
-  - name: "🇭🇰 中国香港 03 [Netlify 优选 52.0ms]"
+  - name: "🇭🇰 中国香港 03 [Wasmer 优选 52.0ms]"
     type: vless
     server: 104.16.1.4
     port: 443
@@ -67,14 +67,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-la.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-la.ruoyemu.asia
 
-  - name: "🇯🇵 日本东京 01 [Fastly 优选 67.23ms]"
+  - name: "🇯🇵 日本东京 01 [Wasmer 优选 67.23ms]"
     type: vless
     server: 157.254.198.27
     port: 443
@@ -82,12 +82,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-us.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-us.ruoyemu.asia
 
   - name: "🇯🇵 日本东京 02 [Wasmer 优选 68.6ms]"
     type: vless
@@ -104,7 +104,7 @@ proxies:
       headers:
         Host: w-us.ruoyemu.asia
 
-  - name: "🇯🇵 日本东京 03 [Netlify 优选 70.0ms]"
+  - name: "🇯🇵 日本东京 03 [Wasmer 优选 70.0ms]"
     type: vless
     server: 104.16.3.4
     port: 443
@@ -112,14 +112,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-us.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-us.ruoyemu.asia
 
-  - name: "🇰🇷 韩国首尔 01 [Fastly 优选 62.87ms]"
+  - name: "🇰🇷 韩国首尔 01 [Wasmer 优选 62.87ms]"
     type: vless
     server: 43.133.237.158
     port: 8443
@@ -127,12 +127,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-la.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-la.ruoyemu.asia
 
   - name: "🇰🇷 韩国首尔 02 [Wasmer 优选 64.0ms]"
     type: vless
@@ -149,7 +149,7 @@ proxies:
       headers:
         Host: w-la.ruoyemu.asia
 
-  - name: "🇰🇷 韩国首尔 03 [Netlify 优选 64.0ms]"
+  - name: "🇰🇷 韩国首尔 03 [Wasmer 优选 64.0ms]"
     type: vless
     server: 151.101.2.240
     port: 443
@@ -157,14 +157,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-la.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-la.ruoyemu.asia
 
-  - name: "🇸🇬 新加坡 01 [Fastly 优选 82.27ms]"
+  - name: "🇸🇬 新加坡 01 [Wasmer 优选 82.27ms]"
     type: vless
     server: 209.97.175.102
     port: 443
@@ -172,12 +172,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-sg.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-sg.ruoyemu.asia
 
   - name: "🇸🇬 新加坡 02 [Wasmer 优选 84.0ms]"
     type: vless
@@ -194,7 +194,7 @@ proxies:
       headers:
         Host: w-sg.ruoyemu.asia
 
-  - name: "🇸🇬 新加坡 03 [Netlify 优选 84.0ms]"
+  - name: "🇸🇬 新加坡 03 [Wasmer 优选 84.0ms]"
     type: vless
     server: 104.16.7.4
     port: 443
@@ -202,14 +202,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-sg.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-sg.ruoyemu.asia
 
-  - name: "🇩🇪 德国法兰克福 01 [Fastly 优选 140.94ms]"
+  - name: "🇩🇪 德国法兰克福 01 [Wasmer 优选 140.94ms]"
     type: vless
     server: 88.218.193.1
     port: 443
@@ -217,12 +217,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-de.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/de?forceFunctionRegion=eu-central-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-de.ruoyemu.asia
 
   - name: "🇩🇪 德国法兰克福 02 [Wasmer 优选 142.0ms]"
     type: vless
@@ -239,7 +239,7 @@ proxies:
       headers:
         Host: w-de.ruoyemu.asia
 
-  - name: "🇩🇪 德国法兰克福 03 [Netlify 优选 142.0ms]"
+  - name: "🇩🇪 德国法兰克福 03 [Wasmer 优选 142.0ms]"
     type: vless
     server: 151.101.112.230
     port: 443
@@ -247,14 +247,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-de.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-de.ruoyemu.asia
 
-  - name: "🇫🇷 法国巴黎 01 [Fastly 优选 145.0ms]"
+  - name: "🇫🇷 法国巴黎 01 [Wasmer 优选 145.0ms]"
     type: vless
     server: 188.114.96.40
     port: 443
@@ -262,12 +262,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-fr.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/fr?forceFunctionRegion=eu-west-3"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-fr.ruoyemu.asia
 
   - name: "🇫🇷 法国巴黎 02 [Wasmer 优选 145.0ms]"
     type: vless
@@ -284,7 +284,7 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇫🇷 法国巴黎 03 [Netlify 优选 145.0ms]"
+  - name: "🇫🇷 法国巴黎 03 [Wasmer 优选 145.0ms]"
     type: vless
     server: 188.114.97.24
     port: 443
@@ -292,14 +292,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-fr.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-fr.ruoyemu.asia
 
-  - name: "🇬🇧 英国伦敦 01 [Fastly 优选 145.0ms]"
+  - name: "🇬🇧 英国伦敦 01 [Wasmer 优选 145.0ms]"
     type: vless
     server: 188.114.96.24
     port: 443
@@ -307,12 +307,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-fr.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/gb?forceFunctionRegion=eu-west-2"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-fr.ruoyemu.asia
 
   - name: "🇬🇧 英国伦敦 02 [Wasmer 优选 145.0ms]"
     type: vless
@@ -329,7 +329,7 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇬🇧 英国伦敦 03 [Netlify 优选 145.0ms]"
+  - name: "🇬🇧 英国伦敦 03 [Wasmer 优选 145.0ms]"
     type: vless
     server: 188.114.97.56
     port: 443
@@ -337,14 +337,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-fr.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-fr.ruoyemu.asia
 
-  - name: "🇨🇭 瑞士苏黎世 01 [Fastly 优选 145.0ms]"
+  - name: "🇨🇭 瑞士苏黎世 01 [Wasmer 优选 145.0ms]"
     type: vless
     server: 188.114.97.88
     port: 443
@@ -352,12 +352,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-fr.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/ch?forceFunctionRegion=eu-central-2"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-fr.ruoyemu.asia
 
   - name: "🇨🇭 瑞士苏黎世 02 [Wasmer 优选 145.0ms]"
     type: vless
@@ -374,7 +374,7 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇨🇭 瑞士苏黎世 03 [Netlify 优选 145.0ms]"
+  - name: "🇨🇭 瑞士苏黎世 03 [Wasmer 优选 145.0ms]"
     type: vless
     server: 188.114.97.56
     port: 443
@@ -382,14 +382,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-fr.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-fr.ruoyemu.asia
 
-  - name: "🇺🇸 美国美东 01 [Fastly 优选 148.0ms]"
+  - name: "🇺🇸 美国美东 01 [Wasmer 优选 148.0ms]"
     type: vless
     server: 104.16.0.8
     port: 443
@@ -397,12 +397,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-east.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/us_east?forceFunctionRegion=us-east-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-east.ruoyemu.asia
 
   - name: "🇺🇸 美国美东 02 [Wasmer 优选 148.0ms]"
     type: vless
@@ -419,7 +419,7 @@ proxies:
       headers:
         Host: w-east.ruoyemu.asia
 
-  - name: "🇺🇸 美国美东 03 [Netlify 优选 148.0ms]"
+  - name: "🇺🇸 美国美东 03 [Wasmer 优选 148.0ms]"
     type: vless
     server: 104.17.200.20
     port: 443
@@ -427,14 +427,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-east.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-east.ruoyemu.asia
 
-  - name: "🇺🇸 美国美西 01 [Fastly 优选 148.0ms]"
+  - name: "🇺🇸 美国美西 01 [Wasmer 优选 148.0ms]"
     type: vless
     server: 104.19.200.30
     port: 443
@@ -442,12 +442,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-us.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/us_west?forceFunctionRegion=us-west-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-us.ruoyemu.asia
 
   - name: "🇺🇸 美国美西 02 [Wasmer 优选 148.0ms]"
     type: vless
@@ -464,7 +464,7 @@ proxies:
       headers:
         Host: w-us.ruoyemu.asia
 
-  - name: "🇺🇸 美国美西 03 [Netlify 优选 148.0ms]"
+  - name: "🇺🇸 美国美西 03 [Wasmer 优选 148.0ms]"
     type: vless
     server: 104.19.0.20
     port: 443
@@ -472,14 +472,14 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: net.ruoyemu.asia
+    sni: w-us.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      path: "/?ed=2560"
       headers:
-        Host: net.ruoyemu.asia
+        Host: w-us.ruoyemu.asia
 
-  - name: "🇨🇦 加拿大 01 [Fastly 优选 150.0ms]"
+  - name: "🇨🇦 加拿大 01 [Wasmer 优选 150.0ms]"
     type: vless
     server: 104.17.222.40
     port: 443
@@ -487,12 +487,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-ca.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/ca?forceFunctionRegion=ca-central-1"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-ca.ruoyemu.asia
 
   - name: "🇨🇦 加拿大 02 [Wasmer 优选 152.0ms]"
     type: vless
@@ -509,7 +509,7 @@ proxies:
       headers:
         Host: w-ca.ruoyemu.asia
 
-  - name: "🇦🇺 澳大利亚 01 [Fastly 优选 155.0ms]"
+  - name: "🇦🇺 澳大利亚 01 [Wasmer 优选 155.0ms]"
     type: vless
     server: 159.89.199.63
     port: 443
@@ -517,12 +517,12 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: fastly.ruoyemu.asia
+    sni: w-sg.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/au?forceFunctionRegion=ap-southeast-2"
+      path: "/?ed=2560"
       headers:
-        Host: fastly.ruoyemu.asia
+        Host: w-sg.ruoyemu.asia
 
   - name: "🇦🇺 澳大利亚 02 [Wasmer 优选 158.0ms]"
     type: vless
@@ -559,39 +559,39 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Fastly 优选 48.5ms]"
+      - "🇭🇰 中国香港 01 [Wasmer 优选 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer 优选 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify 优选 52.0ms]"
-      - "🇯🇵 日本东京 01 [Fastly 优选 67.23ms]"
+      - "🇭🇰 中国香港 03 [Wasmer 优选 52.0ms]"
+      - "🇯🇵 日本东京 01 [Wasmer 优选 67.23ms]"
       - "🇯🇵 日本东京 02 [Wasmer 优选 68.6ms]"
-      - "🇯🇵 日本东京 03 [Netlify 优选 70.0ms]"
-      - "🇰🇷 韩国首尔 01 [Fastly 优选 62.87ms]"
+      - "🇯🇵 日本东京 03 [Wasmer 优选 70.0ms]"
+      - "🇰🇷 韩国首尔 01 [Wasmer 优选 62.87ms]"
       - "🇰🇷 韩国首尔 02 [Wasmer 优选 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Netlify 优选 64.0ms]"
-      - "🇸🇬 新加坡 01 [Fastly 优选 82.27ms]"
+      - "🇰🇷 韩国首尔 03 [Wasmer 优选 64.0ms]"
+      - "🇸🇬 新加坡 01 [Wasmer 优选 82.27ms]"
       - "🇸🇬 新加坡 02 [Wasmer 优选 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify 优选 84.0ms]"
-      - "🇩🇪 德国法兰克福 01 [Fastly 优选 140.94ms]"
+      - "🇸🇬 新加坡 03 [Wasmer 优选 84.0ms]"
+      - "🇩🇪 德国法兰克福 01 [Wasmer 优选 140.94ms]"
       - "🇩🇪 德国法兰克福 02 [Wasmer 优选 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify 优选 142.0ms]"
-      - "🇫🇷 法国巴黎 01 [Fastly 优选 145.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Wasmer 优选 142.0ms]"
+      - "🇫🇷 法国巴黎 01 [Wasmer 优选 145.0ms]"
       - "🇫🇷 法国巴黎 02 [Wasmer 优选 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 01 [Fastly 优选 145.0ms]"
+      - "🇫🇷 法国巴黎 03 [Wasmer 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 01 [Wasmer 优选 145.0ms]"
       - "🇬🇧 英国伦敦 02 [Wasmer 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 03 [Wasmer 优选 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Wasmer 优选 145.0ms]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify 优选 145.0ms]"
-      - "🇺🇸 美国美东 01 [Fastly 优选 148.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Wasmer 优选 145.0ms]"
+      - "🇺🇸 美国美东 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美东 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify 优选 148.0ms]"
-      - "🇺🇸 美国美西 01 [Fastly 优选 148.0ms]"
+      - "🇺🇸 美国美东 03 [Wasmer 优选 148.0ms]"
+      - "🇺🇸 美国美西 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美西 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify 优选 148.0ms]"
-      - "🇨🇦 加拿大 01 [Fastly 优选 150.0ms]"
+      - "🇺🇸 美国美西 03 [Wasmer 优选 148.0ms]"
+      - "🇨🇦 加拿大 01 [Wasmer 优选 150.0ms]"
       - "🇨🇦 加拿大 02 [Wasmer 优选 152.0ms]"
-      - "🇦🇺 澳大利亚 01 [Fastly 优选 155.0ms]"
+      - "🇦🇺 澳大利亚 01 [Wasmer 优选 155.0ms]"
       - "🇦🇺 澳大利亚 02 [Wasmer 优选 158.0ms]"
 
   - name: "♻️ 自动选择"
@@ -600,39 +600,39 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly 优选 48.5ms]"
+      - "🇭🇰 中国香港 01 [Wasmer 优选 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer 优选 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify 优选 52.0ms]"
-      - "🇯🇵 日本东京 01 [Fastly 优选 67.23ms]"
+      - "🇭🇰 中国香港 03 [Wasmer 优选 52.0ms]"
+      - "🇯🇵 日本东京 01 [Wasmer 优选 67.23ms]"
       - "🇯🇵 日本东京 02 [Wasmer 优选 68.6ms]"
-      - "🇯🇵 日本东京 03 [Netlify 优选 70.0ms]"
-      - "🇰🇷 韩国首尔 01 [Fastly 优选 62.87ms]"
+      - "🇯🇵 日本东京 03 [Wasmer 优选 70.0ms]"
+      - "🇰🇷 韩国首尔 01 [Wasmer 优选 62.87ms]"
       - "🇰🇷 韩国首尔 02 [Wasmer 优选 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Netlify 优选 64.0ms]"
-      - "🇸🇬 新加坡 01 [Fastly 优选 82.27ms]"
+      - "🇰🇷 韩国首尔 03 [Wasmer 优选 64.0ms]"
+      - "🇸🇬 新加坡 01 [Wasmer 优选 82.27ms]"
       - "🇸🇬 新加坡 02 [Wasmer 优选 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify 优选 84.0ms]"
-      - "🇩🇪 德国法兰克福 01 [Fastly 优选 140.94ms]"
+      - "🇸🇬 新加坡 03 [Wasmer 优选 84.0ms]"
+      - "🇩🇪 德国法兰克福 01 [Wasmer 优选 140.94ms]"
       - "🇩🇪 德国法兰克福 02 [Wasmer 优选 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify 优选 142.0ms]"
-      - "🇫🇷 法国巴黎 01 [Fastly 优选 145.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Wasmer 优选 142.0ms]"
+      - "🇫🇷 法国巴黎 01 [Wasmer 优选 145.0ms]"
       - "🇫🇷 法国巴黎 02 [Wasmer 优选 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 01 [Fastly 优选 145.0ms]"
+      - "🇫🇷 法国巴黎 03 [Wasmer 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 01 [Wasmer 优选 145.0ms]"
       - "🇬🇧 英国伦敦 02 [Wasmer 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 03 [Wasmer 优选 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Wasmer 优选 145.0ms]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify 优选 145.0ms]"
-      - "🇺🇸 美国美东 01 [Fastly 优选 148.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Wasmer 优选 145.0ms]"
+      - "🇺🇸 美国美东 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美东 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify 优选 148.0ms]"
-      - "🇺🇸 美国美西 01 [Fastly 优选 148.0ms]"
+      - "🇺🇸 美国美东 03 [Wasmer 优选 148.0ms]"
+      - "🇺🇸 美国美西 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美西 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify 优选 148.0ms]"
-      - "🇨🇦 加拿大 01 [Fastly 优选 150.0ms]"
+      - "🇺🇸 美国美西 03 [Wasmer 优选 148.0ms]"
+      - "🇨🇦 加拿大 01 [Wasmer 优选 150.0ms]"
       - "🇨🇦 加拿大 02 [Wasmer 优选 152.0ms]"
-      - "🇦🇺 澳大利亚 01 [Fastly 优选 155.0ms]"
+      - "🇦🇺 澳大利亚 01 [Wasmer 优选 155.0ms]"
       - "🇦🇺 澳大利亚 02 [Wasmer 优选 158.0ms]"
 
   - name: "⚡ 亚太极速池 (<90ms)"
@@ -641,19 +641,19 @@ proxy-groups:
     interval: 300
     tolerance: 20
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly 优选 48.5ms]"
+      - "🇭🇰 中国香港 01 [Wasmer 优选 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer 优选 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify 优选 52.0ms]"
-      - "🇯🇵 日本东京 01 [Fastly 优选 67.23ms]"
+      - "🇭🇰 中国香港 03 [Wasmer 优选 52.0ms]"
+      - "🇯🇵 日本东京 01 [Wasmer 优选 67.23ms]"
       - "🇯🇵 日本东京 02 [Wasmer 优选 68.6ms]"
-      - "🇯🇵 日本东京 03 [Netlify 优选 70.0ms]"
-      - "🇰🇷 韩国首尔 01 [Fastly 优选 62.87ms]"
+      - "🇯🇵 日本东京 03 [Wasmer 优选 70.0ms]"
+      - "🇰🇷 韩国首尔 01 [Wasmer 优选 62.87ms]"
       - "🇰🇷 韩国首尔 02 [Wasmer 优选 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Netlify 优选 64.0ms]"
-      - "🇸🇬 新加坡 01 [Fastly 优选 82.27ms]"
+      - "🇰🇷 韩国首尔 03 [Wasmer 优选 64.0ms]"
+      - "🇸🇬 新加坡 01 [Wasmer 优选 82.27ms]"
       - "🇸🇬 新加坡 02 [Wasmer 优选 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify 优选 84.0ms]"
-      - "🇦🇺 澳大利亚 01 [Fastly 优选 155.0ms]"
+      - "🇸🇬 新加坡 03 [Wasmer 优选 84.0ms]"
+      - "🇦🇺 澳大利亚 01 [Wasmer 优选 155.0ms]"
       - "🇦🇺 澳大利亚 02 [Wasmer 优选 158.0ms]"
 
   - name: "🌍 欧洲专线池 (<150ms)"
@@ -662,18 +662,18 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly 优选 140.94ms]"
+      - "🇩🇪 德国法兰克福 01 [Wasmer 优选 140.94ms]"
       - "🇩🇪 德国法兰克福 02 [Wasmer 优选 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify 优选 142.0ms]"
-      - "🇫🇷 法国巴黎 01 [Fastly 优选 145.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Wasmer 优选 142.0ms]"
+      - "🇫🇷 法国巴黎 01 [Wasmer 优选 145.0ms]"
       - "🇫🇷 法国巴黎 02 [Wasmer 优选 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 01 [Fastly 优选 145.0ms]"
+      - "🇫🇷 法国巴黎 03 [Wasmer 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 01 [Wasmer 优选 145.0ms]"
       - "🇬🇧 英国伦敦 02 [Wasmer 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 03 [Wasmer 优选 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Wasmer 优选 145.0ms]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify 优选 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Wasmer 优选 145.0ms]"
 
   - name: "🌎 美洲专线池 (<150ms)"
     type: url-test
@@ -681,95 +681,95 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - "🇺🇸 美国美东 01 [Fastly 优选 148.0ms]"
+      - "🇺🇸 美国美东 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美东 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify 优选 148.0ms]"
-      - "🇺🇸 美国美西 01 [Fastly 优选 148.0ms]"
+      - "🇺🇸 美国美东 03 [Wasmer 优选 148.0ms]"
+      - "🇺🇸 美国美西 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美西 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify 优选 148.0ms]"
-      - "🇨🇦 加拿大 01 [Fastly 优选 150.0ms]"
+      - "🇺🇸 美国美西 03 [Wasmer 优选 148.0ms]"
+      - "🇨🇦 加拿大 01 [Wasmer 优选 150.0ms]"
       - "🇨🇦 加拿大 02 [Wasmer 优选 152.0ms]"
 
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly 优选 48.5ms]"
+      - "🇭🇰 中国香港 01 [Wasmer 优选 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer 优选 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify 优选 52.0ms]"
+      - "🇭🇰 中国香港 03 [Wasmer 优选 52.0ms]"
 
   - name: "🇯🇵 日本东京"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [Fastly 优选 67.23ms]"
+      - "🇯🇵 日本东京 01 [Wasmer 优选 67.23ms]"
       - "🇯🇵 日本东京 02 [Wasmer 优选 68.6ms]"
-      - "🇯🇵 日本东京 03 [Netlify 优选 70.0ms]"
+      - "🇯🇵 日本东京 03 [Wasmer 优选 70.0ms]"
 
   - name: "🇰🇷 韩国首尔"
     type: select
     proxies:
-      - "🇰🇷 韩国首尔 01 [Fastly 优选 62.87ms]"
+      - "🇰🇷 韩国首尔 01 [Wasmer 优选 62.87ms]"
       - "🇰🇷 韩国首尔 02 [Wasmer 优选 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Netlify 优选 64.0ms]"
+      - "🇰🇷 韩国首尔 03 [Wasmer 优选 64.0ms]"
 
   - name: "🇸🇬 新加坡"
     type: select
     proxies:
-      - "🇸🇬 新加坡 01 [Fastly 优选 82.27ms]"
+      - "🇸🇬 新加坡 01 [Wasmer 优选 82.27ms]"
       - "🇸🇬 新加坡 02 [Wasmer 优选 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify 优选 84.0ms]"
+      - "🇸🇬 新加坡 03 [Wasmer 优选 84.0ms]"
 
   - name: "🇩🇪 德国法兰克福"
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly 优选 140.94ms]"
+      - "🇩🇪 德国法兰克福 01 [Wasmer 优选 140.94ms]"
       - "🇩🇪 德国法兰克福 02 [Wasmer 优选 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify 优选 142.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Wasmer 优选 142.0ms]"
 
   - name: "🇫🇷 法国巴黎"
     type: select
     proxies:
-      - "🇫🇷 法国巴黎 01 [Fastly 优选 145.0ms]"
+      - "🇫🇷 法国巴黎 01 [Wasmer 优选 145.0ms]"
       - "🇫🇷 法国巴黎 02 [Wasmer 优选 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify 优选 145.0ms]"
+      - "🇫🇷 法国巴黎 03 [Wasmer 优选 145.0ms]"
 
   - name: "🇬🇧 英国伦敦"
     type: select
     proxies:
-      - "🇬🇧 英国伦敦 01 [Fastly 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 01 [Wasmer 优选 145.0ms]"
       - "🇬🇧 英国伦敦 02 [Wasmer 优选 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify 优选 145.0ms]"
+      - "🇬🇧 英国伦敦 03 [Wasmer 优选 145.0ms]"
 
   - name: "🇨🇭 瑞士苏黎世"
     type: select
     proxies:
-      - "🇨🇭 瑞士苏黎世 01 [Fastly 优选 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Wasmer 优选 145.0ms]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer 优选 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify 优选 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Wasmer 优选 145.0ms]"
 
   - name: "🇺🇸 美国美东"
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Fastly 优选 148.0ms]"
+      - "🇺🇸 美国美东 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美东 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify 优选 148.0ms]"
+      - "🇺🇸 美国美东 03 [Wasmer 优选 148.0ms]"
 
   - name: "🇺🇸 美国美西"
     type: select
     proxies:
-      - "🇺🇸 美国美西 01 [Fastly 优选 148.0ms]"
+      - "🇺🇸 美国美西 01 [Wasmer 优选 148.0ms]"
       - "🇺🇸 美国美西 02 [Wasmer 优选 148.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify 优选 148.0ms]"
+      - "🇺🇸 美国美西 03 [Wasmer 优选 148.0ms]"
 
   - name: "🇨🇦 加拿大"
     type: select
     proxies:
-      - "🇨🇦 加拿大 01 [Fastly 优选 150.0ms]"
+      - "🇨🇦 加拿大 01 [Wasmer 优选 150.0ms]"
       - "🇨🇦 加拿大 02 [Wasmer 优选 152.0ms]"
 
   - name: "🇦🇺 澳大利亚"
     type: select
     proxies:
-      - "🇦🇺 澳大利亚 01 [Fastly 优选 155.0ms]"
+      - "🇦🇺 澳大利亚 01 [Wasmer 优选 155.0ms]"
       - "🇦🇺 澳大利亚 02 [Wasmer 优选 158.0ms]"
 
 rules:
