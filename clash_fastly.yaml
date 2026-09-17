@@ -1,6 +1,6 @@
 # ============================================================
 # Fastly 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-17 17:59:13 UTC
+# Last Speedtest Run: 2026-09-17 21:16:05 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
 # Latency Standard: Asian routes guaranteed sub-90ms
@@ -44,7 +44,7 @@ proxies:
 
   - name: "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 52.0ms]"
     type: vless
-    server: 104.16.1.8
+    server: 104.16.1.4
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -134,7 +134,7 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 65.0ms]"
     type: vless
-    server: 104.16.5.4
+    server: 104.16.5.16
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -149,7 +149,7 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 65.0ms]"
     type: vless
-    server: 104.16.5.16
+    server: 104.16.249.15
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -179,7 +179,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 84.0ms]"
     type: vless
-    server: 104.16.7.16
+    server: 104.16.7.24
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -194,7 +194,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 84.0ms]"
     type: vless
-    server: 104.16.7.24
+    server: 104.16.7.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -254,7 +254,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3 145.0ms]"
     type: vless
-    server: 188.114.97.72
+    server: 188.114.96.80
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -269,7 +269,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 02 [Fastly · AWS eu-west-3 145.0ms]"
     type: vless
-    server: 188.114.96.88
+    server: 188.114.96.56
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -284,7 +284,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 03 [Fastly · AWS eu-west-3 145.0ms]"
     type: vless
-    server: 188.114.96.40
+    server: 188.114.96.96
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -299,7 +299,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2 145.0ms]"
     type: vless
-    server: 188.114.97.72
+    server: 188.114.96.72
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -314,7 +314,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 02 [Fastly · AWS eu-west-2 145.0ms]"
     type: vless
-    server: 188.114.96.56
+    server: 188.114.96.96
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -329,7 +329,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 03 [Fastly · AWS eu-west-2 145.0ms]"
     type: vless
-    server: 188.114.97.56
+    server: 188.114.97.24
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -344,7 +344,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2 145.0ms]"
     type: vless
-    server: 188.114.97.24
+    server: 188.114.96.16
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -359,7 +359,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2 145.0ms]"
     type: vless
-    server: 188.114.96.72
+    server: 188.114.96.88
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -374,7 +374,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2 145.0ms]"
     type: vless
-    server: 188.114.97.56
+    server: 188.114.97.64
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -419,7 +419,7 @@ proxies:
 
   - name: "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 148.0ms]"
     type: vless
-    server: 104.16.0.30
+    server: 104.17.200.2
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
