@@ -1,9 +1,10 @@
 # ============================================================
-# Regional Affinity Multi-Region High-Speed Subscription
+# Multi-Platform Edge Cloud Speedtest & Low Latency Subscription
 # Generated automatically by GitHub Actions Cloud Runner
-# Last Cloud Speedtest: 2026-09-16 13:52:27 UTC
-# Candidate Pool: 700+ domestic-speedtested endpoints
-# Total Nodes: 20 verified ultra-low latency proxies
+# Last Cloud Speedtest: 2026-09-17 13:13:35 UTC
+# Candidate Pool: 1000+ domestic-speedtested Anycast endpoints
+# Total Nodes: 219 verified edge computing proxies
+# Platforms: Fastly + Wasmer + Netlify + Supabase
 # ============================================================
 
 port: 7890
@@ -29,82 +30,7 @@ dns:
     - 8.8.8.8
 
 proxies:
-  - name: "🇯🇵 日本东京 01 [优选 70.6ms 154.36.162.210]"
-    type: vless
-    server: 154.36.162.210
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇯🇵 日本东京 02 [优选 79.49ms 52.194.215.93]"
-    type: vless
-    server: 52.194.215.93
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: gwgiogtgdyrqlexcdjqm.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
-      headers:
-        Host: gwgiogtgdyrqlexcdjqm.supabase.co
-
-  - name: "🇰🇷 韩国首尔 01 [优选 62.87ms 43.133.237.158]"
-    type: vless
-    server: 43.133.237.158
-    port: 8443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇰🇷 韩国首尔 02 [优选 66.11ms 119.28.162.39]"
-    type: vless
-    server: 119.28.162.39
-    port: 8443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: gwgiogtgdyrqlexcdjqm.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
-      headers:
-        Host: gwgiogtgdyrqlexcdjqm.supabase.co
-
-  - name: "🇭🇰 香港专线 01 [优选 56.86ms 23.147.172.135]"
-    type: vless
-    server: 23.147.172.135
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇭🇰 香港专线 02 [优选 57.86ms 39.109.50.124]"
+  - name: "🇭🇰 中国香港 01 [🟠 Fastly 优选 48.5ms 39.109.50.124]"
     type: vless
     server: 39.109.50.124
     port: 443
@@ -112,6 +38,111 @@ proxies:
     network: ws
     tls: true
     udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 02 [🟣 Wasmer 优选 52.0ms 104.16.1.4]"
+    type: vless
+    server: 104.16.1.4
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 03 [🟢 Netlify 优选 52.0ms 104.16.1.20]"
+    type: vless
+    server: 104.16.1.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 04 [⚡ Supabase 优选 52.0ms 104.16.1.8]"
+    type: vless
+    server: 104.16.1.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇭🇰 中国香港 05 [🟠 Fastly 优选 52.0ms 104.16.1.12]"
+    type: vless
+    server: 104.16.1.12
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 06 [🟣 Wasmer 优选 52.0ms 104.16.1.16]"
+    type: vless
+    server: 104.16.1.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 07 [🟢 Netlify 优选 52.0ms 104.16.1.24]"
+    type: vless
+    server: 104.16.1.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 08 [⚡ Supabase 优选 52.3ms 23.147.172.135]"
+    type: vless
+    server: 23.147.172.135
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
     sni: gwgiogtgdyrqlexcdjqm.supabase.co
     client-fingerprint: chrome
     ws-opts:
@@ -119,7 +150,1162 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇸🇬 新加坡 01 [优选 88.27ms 209.97.175.102]"
+  - name: "🇭🇰 中国香港 09 [🟠 Fastly 优选 52.8ms 104.16.1.13]"
+    type: vless
+    server: 104.16.1.13
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 10 [🟣 Wasmer 优选 52.8ms 104.16.1.21]"
+    type: vless
+    server: 104.16.1.21
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 11 [🟢 Netlify 优选 52.8ms 104.16.1.5]"
+    type: vless
+    server: 104.16.1.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 12 [⚡ Supabase 优选 52.8ms 104.16.1.25]"
+    type: vless
+    server: 104.16.1.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇭🇰 中国香港 13 [🟠 Fastly 优选 52.8ms 104.16.1.17]"
+    type: vless
+    server: 104.16.1.17
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 14 [🟣 Wasmer 优选 52.8ms 104.16.1.9]"
+    type: vless
+    server: 104.16.1.9
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 15 [🟢 Netlify 优选 53.6ms 104.16.1.14]"
+    type: vless
+    server: 104.16.1.14
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 16 [⚡ Supabase 优选 53.6ms 104.16.1.2]"
+    type: vless
+    server: 104.16.1.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇭🇰 中国香港 17 [🟠 Fastly 优选 53.6ms 104.16.1.22]"
+    type: vless
+    server: 104.16.1.22
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 18 [🟣 Wasmer 优选 53.6ms 104.16.1.6]"
+    type: vless
+    server: 104.16.1.6
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 19 [🟢 Netlify 优选 53.6ms 104.16.1.10]"
+    type: vless
+    server: 104.16.1.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 20 [⚡ Supabase 优选 53.6ms 104.16.1.18]"
+    type: vless
+    server: 104.16.1.18
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇭🇰 中国香港 21 [🟠 Fastly 优选 54.0ms 104.16.2.16]"
+    type: vless
+    server: 104.16.2.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 22 [🟣 Wasmer 优选 54.0ms 104.16.2.12]"
+    type: vless
+    server: 104.16.2.12
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 23 [🟢 Netlify 优选 54.0ms 104.16.2.4]"
+    type: vless
+    server: 104.16.2.4
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 24 [⚡ Supabase 优选 54.0ms 104.16.2.24]"
+    type: vless
+    server: 104.16.2.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇭🇰 中国香港 25 [🟠 Fastly 优选 54.0ms 104.16.2.8]"
+    type: vless
+    server: 104.16.2.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 26 [🟣 Wasmer 优选 54.0ms hk.090227.xyz]"
+    type: vless
+    server: hk.090227.xyz
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 27 [🟢 Netlify 优选 54.0ms 104.16.2.20]"
+    type: vless
+    server: 104.16.2.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 28 [⚡ Supabase 优选 54.4ms 104.16.1.11]"
+    type: vless
+    server: 104.16.1.11
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇭🇰 中国香港 29 [🟠 Fastly 优选 54.4ms 104.16.1.19]"
+    type: vless
+    server: 104.16.1.19
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/hk?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇭🇰 中国香港 30 [🟣 Wasmer 优选 54.4ms 104.16.1.7]"
+    type: vless
+    server: 104.16.1.7
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 01 [🟠 Fastly 优选 67.23ms 157.254.198.27]"
+    type: vless
+    server: 157.254.198.27
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 02 [🟣 Wasmer 优选 68.6ms 154.36.162.210]"
+    type: vless
+    server: 154.36.162.210
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 03 [🟢 Netlify 优选 69.5ms 199.232.41.140]"
+    type: vless
+    server: 199.232.41.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 04 [⚡ Supabase 优选 70.0ms 104.16.3.16]"
+    type: vless
+    server: 104.16.3.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇯🇵 日本东京 05 [🟠 Fastly 优选 70.0ms 104.16.3.12]"
+    type: vless
+    server: 104.16.3.12
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 06 [🟣 Wasmer 优选 70.0ms 104.16.3.4]"
+    type: vless
+    server: 104.16.3.4
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 07 [🟢 Netlify 优选 70.0ms 104.16.3.20]"
+    type: vless
+    server: 104.16.3.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 08 [⚡ Supabase 优选 70.0ms 199.232.41.240]"
+    type: vless
+    server: 199.232.41.240
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇯🇵 日本东京 09 [🟠 Fastly 优选 70.0ms 199.232.41.200]"
+    type: vless
+    server: 199.232.41.200
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 10 [🟣 Wasmer 优选 70.0ms 104.16.3.8]"
+    type: vless
+    server: 104.16.3.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 11 [🟢 Netlify 优选 70.0ms 104.16.3.24]"
+    type: vless
+    server: 104.16.3.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 12 [⚡ Supabase 优选 70.8ms 104.16.3.25]"
+    type: vless
+    server: 104.16.3.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇯🇵 日本东京 13 [🟠 Fastly 优选 70.8ms 104.16.3.21]"
+    type: vless
+    server: 104.16.3.21
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 14 [🟣 Wasmer 优选 70.8ms 104.16.3.13]"
+    type: vless
+    server: 104.16.3.13
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 15 [🟢 Netlify 优选 70.8ms 104.16.3.9]"
+    type: vless
+    server: 104.16.3.9
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 16 [⚡ Supabase 优选 70.8ms 104.16.3.17]"
+    type: vless
+    server: 104.16.3.17
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇯🇵 日本东京 17 [🟠 Fastly 优选 71.0ms 199.232.41.132]"
+    type: vless
+    server: 199.232.41.132
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 18 [🟣 Wasmer 优选 71.2ms 199.232.45.140]"
+    type: vless
+    server: 199.232.45.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 19 [🟢 Netlify 优选 71.6ms 104.16.3.10]"
+    type: vless
+    server: 104.16.3.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 20 [⚡ Supabase 优选 71.6ms 104.16.3.18]"
+    type: vless
+    server: 104.16.3.18
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇯🇵 日本东京 21 [🟠 Fastly 优选 71.6ms 104.16.3.22]"
+    type: vless
+    server: 104.16.3.22
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 22 [🟣 Wasmer 优选 71.6ms 104.16.3.6]"
+    type: vless
+    server: 104.16.3.6
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 23 [🟢 Netlify 优选 71.6ms 104.16.3.14]"
+    type: vless
+    server: 104.16.3.14
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 24 [⚡ Supabase 优选 71.6ms 104.16.3.2]"
+    type: vless
+    server: 104.16.3.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇯🇵 日本东京 25 [🟠 Fastly 优选 72.0ms 104.16.4.16]"
+    type: vless
+    server: 104.16.4.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 26 [🟣 Wasmer 优选 72.0ms 104.16.4.20]"
+    type: vless
+    server: 104.16.4.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 27 [🟢 Netlify 优选 72.0ms 199.232.45.230]"
+    type: vless
+    server: 199.232.45.230
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 28 [⚡ Supabase 优选 72.0ms 199.232.45.200]"
+    type: vless
+    server: 199.232.45.200
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇯🇵 日本东京 29 [🟠 Fastly 优选 72.0ms 104.16.4.8]"
+    type: vless
+    server: 104.16.4.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/jp?forceFunctionRegion=ap-northeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 30 [🟣 Wasmer 优选 72.0ms 104.16.4.12]"
+    type: vless
+    server: 104.16.4.12
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 01 [🟠 Fastly 优选 62.87ms 43.133.237.158]"
+    type: vless
+    server: 43.133.237.158
+    port: 8443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 02 [🟣 Wasmer 优选 64.0ms 151.101.2.230]"
+    type: vless
+    server: 151.101.2.230
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 03 [🟢 Netlify 优选 64.0ms 151.101.2.240]"
+    type: vless
+    server: 151.101.2.240
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 04 [⚡ Supabase 优选 64.0ms 151.101.2.220]"
+    type: vless
+    server: 151.101.2.220
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇰🇷 韩国首尔 05 [🟠 Fastly 优选 64.0ms 151.101.2.140]"
+    type: vless
+    server: 151.101.2.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 06 [🟣 Wasmer 优选 64.0ms 151.101.2.210]"
+    type: vless
+    server: 151.101.2.210
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 07 [🟢 Netlify 优选 64.2ms 151.101.2.132]"
+    type: vless
+    server: 151.101.2.132
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 08 [⚡ Supabase 优选 65.0ms 104.16.5.12]"
+    type: vless
+    server: 104.16.5.12
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇰🇷 韩国首尔 09 [🟠 Fastly 优选 65.0ms 104.16.5.16]"
+    type: vless
+    server: 104.16.5.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 10 [🟣 Wasmer 优选 65.0ms 104.16.5.4]"
+    type: vless
+    server: 104.16.5.4
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 11 [🟢 Netlify 优选 65.0ms 104.16.5.8]"
+    type: vless
+    server: 104.16.5.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 12 [⚡ Supabase 优选 65.0ms 104.16.5.20]"
+    type: vless
+    server: 104.16.5.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇰🇷 韩国首尔 13 [🟠 Fastly 优选 65.8ms 104.16.5.9]"
+    type: vless
+    server: 104.16.5.9
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 14 [🟣 Wasmer 优选 65.8ms 104.16.5.1]"
+    type: vless
+    server: 104.16.5.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 15 [🟢 Netlify 优选 65.8ms 104.16.5.17]"
+    type: vless
+    server: 104.16.5.17
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 16 [⚡ Supabase 优选 65.8ms 104.16.5.25]"
+    type: vless
+    server: 104.16.5.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇰🇷 韩国首尔 17 [🟠 Fastly 优选 65.8ms 104.16.5.21]"
+    type: vless
+    server: 104.16.5.21
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 18 [🟣 Wasmer 优选 65.8ms 104.16.5.5]"
+    type: vless
+    server: 104.16.5.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 19 [🟢 Netlify 优选 65.8ms 104.16.5.13]"
+    type: vless
+    server: 104.16.5.13
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 20 [⚡ Supabase 优选 66.0ms 151.101.66.240]"
+    type: vless
+    server: 151.101.66.240
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇰🇷 韩国首尔 21 [🟠 Fastly 优选 66.0ms 151.101.66.230]"
+    type: vless
+    server: 151.101.66.230
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 22 [🟣 Wasmer 优选 66.0ms 151.101.66.220]"
+    type: vless
+    server: 151.101.66.220
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-la.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-la.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 23 [🟢 Netlify 优选 66.0ms 151.101.2.204]"
+    type: vless
+    server: 151.101.2.204
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 24 [⚡ Supabase 优选 66.0ms 151.101.66.140]"
+    type: vless
+    server: 151.101.66.140
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇰🇷 韩国首尔 25 [🟠 Fastly 优选 66.0ms 151.101.66.210]"
+    type: vless
+    server: 151.101.66.210
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/kr?forceFunctionRegion=ap-northeast-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 01 [🟠 Fastly 优选 82.27ms 209.97.175.102]"
     type: vless
     server: 209.97.175.102
     port: 443
@@ -127,6 +1313,51 @@ proxies:
     network: ws
     tls: true
     udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 02 [🟣 Wasmer 优选 84.0ms 104.16.7.20]"
+    type: vless
+    server: 104.16.7.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-sg.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-sg.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 03 [🟢 Netlify 优选 84.0ms 104.16.7.8]"
+    type: vless
+    server: 104.16.7.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 04 [⚡ Supabase 优选 84.0ms 104.16.7.12]"
+    type: vless
+    server: 104.16.7.12
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
     sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
@@ -134,9 +1365,54 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇸🇬 新加坡 02 [优选 94.45ms 159.89.199.63]"
+  - name: "🇸🇬 新加坡 05 [🟠 Fastly 优选 84.0ms 104.16.7.4]"
     type: vless
-    server: 159.89.199.63
+    server: 104.16.7.4
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 06 [🟣 Wasmer 优选 84.0ms 104.16.7.16]"
+    type: vless
+    server: 104.16.7.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-sg.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-sg.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 07 [🟢 Netlify 优选 84.0ms 104.16.7.24]"
+    type: vless
+    server: 104.16.7.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 08 [⚡ Supabase 优选 84.0ms 146.75.121.140]"
+    type: vless
+    server: 146.75.121.140
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -149,9 +1425,309 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 01 [优选 155.0ms 188.114.96.30]"
+  - name: "🇸🇬 新加坡 09 [🟠 Fastly 优选 84.0ms 146.75.121.200]"
     type: vless
-    server: 188.114.96.30
+    server: 146.75.121.200
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 10 [🟣 Wasmer 优选 84.0ms 146.75.121.210]"
+    type: vless
+    server: 146.75.121.210
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-sg.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-sg.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 11 [🟢 Netlify 优选 84.0ms 146.75.121.240]"
+    type: vless
+    server: 146.75.121.240
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 12 [⚡ Supabase 优选 84.0ms 146.75.121.230]"
+    type: vless
+    server: 146.75.121.230
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇸🇬 新加坡 13 [🟠 Fastly 优选 84.8ms 104.16.7.1]"
+    type: vless
+    server: 104.16.7.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 14 [🟣 Wasmer 优选 84.8ms 104.16.7.9]"
+    type: vless
+    server: 104.16.7.9
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-sg.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-sg.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 15 [🟢 Netlify 优选 84.8ms 104.16.7.13]"
+    type: vless
+    server: 104.16.7.13
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 16 [⚡ Supabase 优选 84.8ms 104.16.7.5]"
+    type: vless
+    server: 104.16.7.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇸🇬 新加坡 17 [🟠 Fastly 优选 84.8ms 104.16.7.21]"
+    type: vless
+    server: 104.16.7.21
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 18 [🟣 Wasmer 优选 84.8ms 104.16.7.25]"
+    type: vless
+    server: 104.16.7.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-sg.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-sg.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 19 [🟢 Netlify 优选 84.8ms 104.16.7.17]"
+    type: vless
+    server: 104.16.7.17
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 20 [⚡ Supabase 优选 85.0ms 146.75.121.132]"
+    type: vless
+    server: 146.75.121.132
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇸🇬 新加坡 21 [🟠 Fastly 优选 85.6ms 104.16.7.2]"
+    type: vless
+    server: 104.16.7.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 22 [🟣 Wasmer 优选 85.6ms 104.16.7.14]"
+    type: vless
+    server: 104.16.7.14
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-sg.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-sg.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 23 [🟢 Netlify 优选 85.6ms 104.16.7.18]"
+    type: vless
+    server: 104.16.7.18
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 24 [⚡ Supabase 优选 85.6ms 104.16.7.10]"
+    type: vless
+    server: 104.16.7.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇸🇬 新加坡 25 [🟠 Fastly 优选 85.6ms 104.16.7.6]"
+    type: vless
+    server: 104.16.7.6
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/sg?forceFunctionRegion=ap-southeast-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 01 [🟠 Fastly 优选 140.94ms 88.218.193.1]"
+    type: vless
+    server: 88.218.193.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/de?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 02 [🟣 Wasmer 优选 142.0ms 188.114.96.1]"
+    type: vless
+    server: 188.114.96.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-de.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-de.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 03 [🟢 Netlify 优选 142.0ms 151.101.112.200]"
+    type: vless
+    server: 151.101.112.200
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 04 [⚡ Supabase 优选 142.0ms 151.101.112.230]"
+    type: vless
+    server: 151.101.112.230
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -164,9 +1740,54 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 02 [优选 155.0ms 188.114.96.10]"
+  - name: "🇩🇪 德国法兰克福 05 [🟠 Fastly 优选 142.0ms 151.101.112.220]"
     type: vless
-    server: 188.114.96.10
+    server: 151.101.112.220
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/de?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 06 [🟣 Wasmer 优选 143.0ms 188.114.97.1]"
+    type: vless
+    server: 188.114.97.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-de.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-de.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 07 [🟢 Netlify 优选 144.0ms 151.101.112.194]"
+    type: vless
+    server: 151.101.112.194
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 08 [⚡ Supabase 优选 144.0ms 151.101.112.69]"
+    type: vless
+    server: 151.101.112.69
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -179,9 +1800,204 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇫🇷 法国巴黎 01 [优选 152.6ms 89.106.207.216]"
+  - name: "🇩🇪 德国法兰克福 09 [🟠 Fastly 优选 145.0ms 188.114.96.80]"
     type: vless
-    server: 89.106.207.216
+    server: 188.114.96.80
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/de?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 10 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+    type: vless
+    server: 188.114.96.64
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-de.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-de.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 11 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+    type: vless
+    server: 188.114.96.40
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 12 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+    type: vless
+    server: 188.114.96.48
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇩🇪 德国法兰克福 13 [🟠 Fastly 优选 145.0ms 188.114.96.24]"
+    type: vless
+    server: 188.114.96.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/de?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 14 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+    type: vless
+    server: 188.114.96.88
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-de.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-de.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 15 [🟢 Netlify 优选 145.0ms 188.114.96.72]"
+    type: vless
+    server: 188.114.96.72
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 16 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+    type: vless
+    server: 188.114.97.56
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇩🇪 德国法兰克福 17 [🟠 Fastly 优选 145.0ms 188.114.96.96]"
+    type: vless
+    server: 188.114.96.96
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/de?forceFunctionRegion=eu-central-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 18 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+    type: vless
+    server: 188.114.97.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-de.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-de.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 01 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+    type: vless
+    server: 188.114.97.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 02 [🟣 Wasmer 优选 145.0ms 188.114.97.8]"
+    type: vless
+    server: 188.114.97.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 03 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+    type: vless
+    server: 188.114.96.40
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 04 [⚡ Supabase 优选 145.0ms 188.114.97.32]"
+    type: vless
+    server: 188.114.97.32
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -194,7 +2010,172 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇫🇷 法国巴黎 02 [优选 155.0ms 188.114.97.80]"
+  - name: "🇫🇷 法国巴黎 05 [🟠 Fastly 优选 145.0ms 188.114.96.48]"
+    type: vless
+    server: 188.114.96.48
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 06 [🟣 Wasmer 优选 145.0ms 188.114.97.88]"
+    type: vless
+    server: 188.114.97.88
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 07 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+    type: vless
+    server: 188.114.96.88
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+    type: vless
+    server: 188.114.97.64
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇫🇷 法国巴黎 09 [🟠 Fastly 优选 145.0ms 188.114.97.56]"
+    type: vless
+    server: 188.114.97.56
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 10 [🟣 Wasmer 优选 145.0ms 188.114.97.72]"
+    type: vless
+    server: 188.114.97.72
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 11 [🟢 Netlify 优选 145.0ms 188.114.96.24]"
+    type: vless
+    server: 188.114.96.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 12 [⚡ Supabase 优选 145.0ms 188.114.97.96]"
+    type: vless
+    server: 188.114.97.96
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇫🇷 法国巴黎 13 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+    type: vless
+    server: 188.114.96.56
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 14 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+    type: vless
+    server: 188.114.96.64
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 15 [🟢 Netlify 优选 145.0ms 188.114.96.96]"
+    type: vless
+    server: 188.114.96.96
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 16 [⚡ Supabase 优选 145.0ms 188.114.97.80]"
     type: vless
     server: 188.114.97.80
     port: 443
@@ -202,16 +2183,91 @@ proxies:
     network: ws
     tls: true
     udp: true
-    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
       headers:
-        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
 
-  - name: "🇬🇧 英国伦敦 01 [优选 155.0ms 188.114.96.50]"
+  - name: "🇫🇷 法国巴黎 17 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
     type: vless
-    server: 188.114.96.50
+    server: 188.114.97.48
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/fr?forceFunctionRegion=eu-west-3"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 18 [🟣 Wasmer 优选 145.0ms 188.114.96.16]"
+    type: vless
+    server: 188.114.96.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 01 [🟠 Fastly 优选 145.0ms 188.114.96.72]"
+    type: vless
+    server: 188.114.96.72
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/gb?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 02 [🟣 Wasmer 优选 145.0ms 188.114.96.80]"
+    type: vless
+    server: 188.114.96.80
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 03 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+    type: vless
+    server: 188.114.96.88
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 04 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+    type: vless
+    server: 188.114.97.56
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -224,9 +2280,54 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇬🇧 英国伦敦 02 [优选 155.0ms 188.114.96.10]"
+  - name: "🇬🇧 英国伦敦 05 [🟠 Fastly 优选 145.0ms 188.114.96.16]"
     type: vless
-    server: 188.114.96.10
+    server: 188.114.96.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/gb?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 06 [🟣 Wasmer 优选 145.0ms 188.114.97.80]"
+    type: vless
+    server: 188.114.97.80
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 07 [🟢 Netlify 优选 145.0ms 188.114.97.32]"
+    type: vless
+    server: 188.114.97.32
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+    type: vless
+    server: 188.114.97.64
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -239,9 +2340,204 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 01 [优选 152.6ms 89.106.207.216]"
+  - name: "🇬🇧 英国伦敦 09 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
     type: vless
-    server: 89.106.207.216
+    server: 188.114.97.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/gb?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 10 [🟣 Wasmer 优选 145.0ms 188.114.96.96]"
+    type: vless
+    server: 188.114.96.96
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 11 [🟢 Netlify 优选 145.0ms 188.114.97.72]"
+    type: vless
+    server: 188.114.97.72
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 12 [⚡ Supabase 优选 145.0ms 188.114.97.40]"
+    type: vless
+    server: 188.114.97.40
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇬🇧 英国伦敦 13 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+    type: vless
+    server: 188.114.97.48
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/gb?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 14 [🟣 Wasmer 优选 145.0ms 188.114.96.56]"
+    type: vless
+    server: 188.114.96.56
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+    type: vless
+    server: 188.114.96.40
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 16 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+    type: vless
+    server: 188.114.96.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇬🇧 英国伦敦 17 [🟠 Fastly 优选 145.0ms 188.114.96.32]"
+    type: vless
+    server: 188.114.96.32
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/gb?forceFunctionRegion=eu-west-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 18 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+    type: vless
+    server: 188.114.97.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 01 [🟠 Fastly 优选 145.0ms 188.114.97.80]"
+    type: vless
+    server: 188.114.97.80
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/ch?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 02 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+    type: vless
+    server: 188.114.97.16
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 03 [🟢 Netlify 优选 145.0ms 188.114.97.96]"
+    type: vless
+    server: 188.114.97.96
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 04 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+    type: vless
+    server: 188.114.96.48
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -254,9 +2550,54 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 02 [优选 155.0ms 188.114.96.90]"
+  - name: "🇨🇭 瑞士苏黎世 05 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
     type: vless
-    server: 188.114.96.90
+    server: 188.114.96.56
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/ch?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 06 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+    type: vless
+    server: 188.114.97.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 07 [🟢 Netlify 优选 145.0ms 188.114.96.80]"
+    type: vless
+    server: 188.114.96.80
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 08 [⚡ Supabase 优选 145.0ms 188.114.96.64]"
+    type: vless
+    server: 188.114.96.64
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -269,9 +2610,159 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇺🇸 美国美东 01 [优选 150.0ms 104.17.222.40]"
+  - name: "🇨🇭 瑞士苏黎世 09 [🟠 Fastly 优选 145.0ms 188.114.97.40]"
     type: vless
-    server: 104.17.222.40
+    server: 188.114.97.40
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/ch?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 10 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+    type: vless
+    server: 188.114.96.88
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 11 [🟢 Netlify 优选 145.0ms 188.114.97.56]"
+    type: vless
+    server: 188.114.97.56
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 12 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+    type: vless
+    server: 188.114.96.24
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇨🇭 瑞士苏黎世 13 [🟠 Fastly 优选 145.0ms 188.114.97.32]"
+    type: vless
+    server: 188.114.97.32
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/ch?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 14 [🟣 Wasmer 优选 145.0ms 188.114.96.32]"
+    type: vless
+    server: 188.114.96.32
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-fr.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-fr.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+    type: vless
+    server: 188.114.96.40
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 01 [🟠 Fastly 优选 148.0ms 104.16.0.1]"
+    type: vless
+    server: 104.16.0.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_east?forceFunctionRegion=us-east-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 02 [🟣 Wasmer 优选 148.0ms 104.17.200.30]"
+    type: vless
+    server: 104.17.200.30
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-east.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-east.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 03 [🟢 Netlify 优选 148.0ms 104.16.200.5]"
+    type: vless
+    server: 104.16.200.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 04 [⚡ Supabase 优选 148.0ms 104.17.200.15]"
+    type: vless
+    server: 104.17.200.15
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -284,9 +2775,54 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美东 02 [优选 152.0ms 104.16.100.5]"
+  - name: "🇺🇸 美国美东 05 [🟠 Fastly 优选 148.0ms 104.16.0.2]"
     type: vless
-    server: 104.16.100.5
+    server: 104.16.0.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_east?forceFunctionRegion=us-east-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 06 [🟣 Wasmer 优选 148.0ms 104.17.200.10]"
+    type: vless
+    server: 104.17.200.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-east.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-east.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 07 [🟢 Netlify 优选 148.0ms 104.16.0.10]"
+    type: vless
+    server: 104.16.0.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 08 [⚡ Supabase 优选 148.0ms 104.17.200.1]"
+    type: vless
+    server: 104.17.200.1
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -299,7 +2835,382 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇺🇸 美国美西 01 [优选 152.0ms 172.64.50.5]"
+  - name: "🇺🇸 美国美东 09 [🟠 Fastly 优选 148.0ms 104.17.0.30]"
+    type: vless
+    server: 104.17.0.30
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_east?forceFunctionRegion=us-east-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 10 [🟣 Wasmer 优选 148.0ms 104.17.0.15]"
+    type: vless
+    server: 104.17.0.15
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-east.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-east.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 11 [🟢 Netlify 优选 148.0ms 104.17.200.5]"
+    type: vless
+    server: 104.17.200.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 12 [⚡ Supabase 优选 148.0ms 104.17.0.2]"
+    type: vless
+    server: 104.17.0.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇺🇸 美国美东 13 [🟠 Fastly 优选 148.0ms 151.101.128.220]"
+    type: vless
+    server: 151.101.128.220
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_east?forceFunctionRegion=us-east-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 14 [🟣 Wasmer 优选 148.0ms 104.16.200.25]"
+    type: vless
+    server: 104.16.200.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-east.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-east.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 15 [🟢 Netlify 优选 148.0ms 104.17.0.25]"
+    type: vless
+    server: 104.17.0.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 16 [⚡ Supabase 优选 148.0ms 151.101.128.230]"
+    type: vless
+    server: 151.101.128.230
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇺🇸 美国美东 17 [🟠 Fastly 优选 148.0ms 104.16.0.25]"
+    type: vless
+    server: 104.16.0.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_east?forceFunctionRegion=us-east-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 18 [🟣 Wasmer 优选 148.0ms 104.17.200.8]"
+    type: vless
+    server: 104.17.200.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-east.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-east.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 19 [🟢 Netlify 优选 148.0ms 104.16.0.5]"
+    type: vless
+    server: 104.16.0.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美东 20 [⚡ Supabase 优选 148.0ms 151.101.128.200]"
+    type: vless
+    server: 151.101.128.200
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇺🇸 美国美西 01 [🟠 Fastly 优选 148.0ms 104.19.200.25]"
+    type: vless
+    server: 104.19.200.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_west?forceFunctionRegion=us-west-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 02 [🟣 Wasmer 优选 148.0ms 104.19.200.30]"
+    type: vless
+    server: 104.19.200.30
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 03 [🟢 Netlify 优选 148.0ms 104.19.200.1]"
+    type: vless
+    server: 104.19.200.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 04 [⚡ Supabase 优选 148.0ms 104.19.200.5]"
+    type: vless
+    server: 104.19.200.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "🇺🇸 美国美西 05 [🟠 Fastly 优选 148.0ms 104.19.200.10]"
+    type: vless
+    server: 104.19.200.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_west?forceFunctionRegion=us-west-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 06 [🟣 Wasmer 优选 148.0ms 104.19.0.5]"
+    type: vless
+    server: 104.19.0.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 07 [🟢 Netlify 优选 148.0ms 104.19.0.8]"
+    type: vless
+    server: 104.19.0.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 08 [⚡ Supabase 优选 148.0ms 104.19.200.2]"
+    type: vless
+    server: 104.19.200.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "🇺🇸 美国美西 09 [🟠 Fastly 优选 148.0ms 104.19.0.2]"
+    type: vless
+    server: 104.19.0.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_west?forceFunctionRegion=us-west-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 10 [🟣 Wasmer 优选 148.0ms 104.19.0.30]"
+    type: vless
+    server: 104.19.0.30
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 11 [🟢 Netlify 优选 148.0ms 104.19.0.1]"
+    type: vless
+    server: 104.19.0.1
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 12 [⚡ Supabase 优选 148.0ms 104.19.0.20]"
+    type: vless
+    server: 104.19.0.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: duletchbsmevnqqxvfwy.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: duletchbsmevnqqxvfwy.supabase.co
+
+  - name: "🇺🇸 美国美西 13 [🟠 Fastly 优选 148.0ms 104.19.0.25]"
+    type: vless
+    server: 104.19.0.25
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_west?forceFunctionRegion=us-west-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 14 [🟣 Wasmer 优选 148.0ms 172.64.50.5]"
     type: vless
     server: 172.64.50.5
     port: 443
@@ -307,6 +3218,96 @@ proxies:
     network: ws
     tls: true
     udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 15 [🟢 Netlify 优选 148.0ms 104.19.0.10]"
+    type: vless
+    server: 104.19.0.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 16 [⚡ Supabase 优选 148.0ms 104.19.200.20]"
+    type: vless
+    server: 104.19.200.20
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
+
+  - name: "🇺🇸 美国美西 17 [🟠 Fastly 优选 148.0ms 104.19.200.8]"
+    type: vless
+    server: 104.19.200.8
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: fastly.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/us_west?forceFunctionRegion=us-west-1"
+      headers:
+        Host: fastly.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 18 [🟣 Wasmer 优选 148.0ms 104.19.0.15]"
+    type: vless
+    server: 104.19.0.15
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: w-us.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: w-us.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 19 [🟢 Netlify 优选 149.0ms 104.19.1.30]"
+    type: vless
+    server: 104.19.1.30
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: net.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      headers:
+        Host: net.ruoyemu.asia
+
+  - name: "🇺🇸 美国美西 20 [⚡ Supabase 优选 149.0ms 104.19.1.5]"
+    type: vless
+    server: 104.19.1.5
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
     sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
@@ -314,179 +3315,1220 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美西 02 [优选 152.0ms 104.19.200.15]"
-    type: vless
-    server: 104.19.200.15
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: gwgiogtgdyrqlexcdjqm.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
-      headers:
-        Host: gwgiogtgdyrqlexcdjqm.supabase.co
-
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
-      - "🌏 亚太节点"
-      - "🌍 欧洲节点"
-      - "🌎 美洲节点"
-      - "🇯🇵 日本"
-      - "🇰🇷 韩国"
-      - "🇭🇰 香港"
+      - "⚡ 亚太极速池 (<100ms)"
+      - "🌍 欧洲专线池 (<160ms)"
+      - "🌎 美洲专线池 (<160ms)"
+      - "🟠 Fastly 边缘池"
+      - "🟣 Wasmer 边缘池"
+      - "🟢 Netlify 边缘池"
+      - "⚡ Supabase 边缘池"
+      - "🇭🇰 中国香港"
+      - "🇯🇵 日本东京"
+      - "🇰🇷 韩国首尔"
       - "🇸🇬 新加坡"
-      - "🇩🇪 德国"
-      - "🇫🇷 法国"
-      - "🇬🇧 英国"
-      - "🇨🇭 瑞士"
+      - "🇩🇪 德国法兰克福"
+      - "🇫🇷 法国巴黎"
+      - "🇬🇧 英国伦敦"
+      - "🇨🇭 瑞士苏黎世"
       - "🇺🇸 美国美东"
       - "🇺🇸 美国美西"
-      - "🇯🇵 日本东京 01 [优选 70.6ms 154.36.162.210]"
-      - "🇯🇵 日本东京 02 [优选 79.49ms 52.194.215.93]"
-      - "🇰🇷 韩国首尔 01 [优选 62.87ms 43.133.237.158]"
-      - "🇰🇷 韩国首尔 02 [优选 66.11ms 119.28.162.39]"
-      - "🇭🇰 香港专线 01 [优选 56.86ms 23.147.172.135]"
-      - "🇭🇰 香港专线 02 [优选 57.86ms 39.109.50.124]"
-      - "🇸🇬 新加坡 01 [优选 88.27ms 209.97.175.102]"
-      - "🇸🇬 新加坡 02 [优选 94.45ms 159.89.199.63]"
-      - "🇩🇪 德国法兰克福 01 [优选 155.0ms 188.114.96.30]"
-      - "🇩🇪 德国法兰克福 02 [优选 155.0ms 188.114.96.10]"
-      - "🇫🇷 法国巴黎 01 [优选 152.6ms 89.106.207.216]"
-      - "🇫🇷 法国巴黎 02 [优选 155.0ms 188.114.97.80]"
-      - "🇬🇧 英国伦敦 01 [优选 155.0ms 188.114.96.50]"
-      - "🇬🇧 英国伦敦 02 [优选 155.0ms 188.114.96.10]"
-      - "🇨🇭 瑞士苏黎世 01 [优选 152.6ms 89.106.207.216]"
-      - "🇨🇭 瑞士苏黎世 02 [优选 155.0ms 188.114.96.90]"
-      - "🇺🇸 美国美东 01 [优选 150.0ms 104.17.222.40]"
-      - "🇺🇸 美国美东 02 [优选 152.0ms 104.16.100.5]"
-      - "🇺🇸 美国美西 01 [优选 152.0ms 172.64.50.5]"
-      - "🇺🇸 美国美西 02 [优选 152.0ms 104.19.200.15]"
+      - "🇭🇰 中国香港 01 [🟠 Fastly 优选 48.5ms 39.109.50.124]"
+      - "🇭🇰 中国香港 02 [🟣 Wasmer 优选 52.0ms 104.16.1.4]"
+      - "🇭🇰 中国香港 03 [🟢 Netlify 优选 52.0ms 104.16.1.20]"
+      - "🇭🇰 中国香港 04 [⚡ Supabase 优选 52.0ms 104.16.1.8]"
+      - "🇭🇰 中国香港 05 [🟠 Fastly 优选 52.0ms 104.16.1.12]"
+      - "🇭🇰 中国香港 06 [🟣 Wasmer 优选 52.0ms 104.16.1.16]"
+      - "🇭🇰 中国香港 07 [🟢 Netlify 优选 52.0ms 104.16.1.24]"
+      - "🇭🇰 中国香港 08 [⚡ Supabase 优选 52.3ms 23.147.172.135]"
+      - "🇭🇰 中国香港 09 [🟠 Fastly 优选 52.8ms 104.16.1.13]"
+      - "🇭🇰 中国香港 10 [🟣 Wasmer 优选 52.8ms 104.16.1.21]"
+      - "🇭🇰 中国香港 11 [🟢 Netlify 优选 52.8ms 104.16.1.5]"
+      - "🇭🇰 中国香港 12 [⚡ Supabase 优选 52.8ms 104.16.1.25]"
+      - "🇭🇰 中国香港 13 [🟠 Fastly 优选 52.8ms 104.16.1.17]"
+      - "🇭🇰 中国香港 14 [🟣 Wasmer 优选 52.8ms 104.16.1.9]"
+      - "🇭🇰 中国香港 15 [🟢 Netlify 优选 53.6ms 104.16.1.14]"
+      - "🇭🇰 中国香港 16 [⚡ Supabase 优选 53.6ms 104.16.1.2]"
+      - "🇭🇰 中国香港 17 [🟠 Fastly 优选 53.6ms 104.16.1.22]"
+      - "🇭🇰 中国香港 18 [🟣 Wasmer 优选 53.6ms 104.16.1.6]"
+      - "🇭🇰 中国香港 19 [🟢 Netlify 优选 53.6ms 104.16.1.10]"
+      - "🇭🇰 中国香港 20 [⚡ Supabase 优选 53.6ms 104.16.1.18]"
+      - "🇭🇰 中国香港 21 [🟠 Fastly 优选 54.0ms 104.16.2.16]"
+      - "🇭🇰 中国香港 22 [🟣 Wasmer 优选 54.0ms 104.16.2.12]"
+      - "🇭🇰 中国香港 23 [🟢 Netlify 优选 54.0ms 104.16.2.4]"
+      - "🇭🇰 中国香港 24 [⚡ Supabase 优选 54.0ms 104.16.2.24]"
+      - "🇭🇰 中国香港 25 [🟠 Fastly 优选 54.0ms 104.16.2.8]"
+      - "🇭🇰 中国香港 26 [🟣 Wasmer 优选 54.0ms hk.090227.xyz]"
+      - "🇭🇰 中国香港 27 [🟢 Netlify 优选 54.0ms 104.16.2.20]"
+      - "🇭🇰 中国香港 28 [⚡ Supabase 优选 54.4ms 104.16.1.11]"
+      - "🇭🇰 中国香港 29 [🟠 Fastly 优选 54.4ms 104.16.1.19]"
+      - "🇭🇰 中国香港 30 [🟣 Wasmer 优选 54.4ms 104.16.1.7]"
+      - "🇯🇵 日本东京 01 [🟠 Fastly 优选 67.23ms 157.254.198.27]"
+      - "🇯🇵 日本东京 02 [🟣 Wasmer 优选 68.6ms 154.36.162.210]"
+      - "🇯🇵 日本东京 03 [🟢 Netlify 优选 69.5ms 199.232.41.140]"
+      - "🇯🇵 日本东京 04 [⚡ Supabase 优选 70.0ms 104.16.3.16]"
+      - "🇯🇵 日本东京 05 [🟠 Fastly 优选 70.0ms 104.16.3.12]"
+      - "🇯🇵 日本东京 06 [🟣 Wasmer 优选 70.0ms 104.16.3.4]"
+      - "🇯🇵 日本东京 07 [🟢 Netlify 优选 70.0ms 104.16.3.20]"
+      - "🇯🇵 日本东京 08 [⚡ Supabase 优选 70.0ms 199.232.41.240]"
+      - "🇯🇵 日本东京 09 [🟠 Fastly 优选 70.0ms 199.232.41.200]"
+      - "🇯🇵 日本东京 10 [🟣 Wasmer 优选 70.0ms 104.16.3.8]"
+      - "🇯🇵 日本东京 11 [🟢 Netlify 优选 70.0ms 104.16.3.24]"
+      - "🇯🇵 日本东京 12 [⚡ Supabase 优选 70.8ms 104.16.3.25]"
+      - "🇯🇵 日本东京 13 [🟠 Fastly 优选 70.8ms 104.16.3.21]"
+      - "🇯🇵 日本东京 14 [🟣 Wasmer 优选 70.8ms 104.16.3.13]"
+      - "🇯🇵 日本东京 15 [🟢 Netlify 优选 70.8ms 104.16.3.9]"
+      - "🇯🇵 日本东京 16 [⚡ Supabase 优选 70.8ms 104.16.3.17]"
+      - "🇯🇵 日本东京 17 [🟠 Fastly 优选 71.0ms 199.232.41.132]"
+      - "🇯🇵 日本东京 18 [🟣 Wasmer 优选 71.2ms 199.232.45.140]"
+      - "🇯🇵 日本东京 19 [🟢 Netlify 优选 71.6ms 104.16.3.10]"
+      - "🇯🇵 日本东京 20 [⚡ Supabase 优选 71.6ms 104.16.3.18]"
+      - "🇯🇵 日本东京 21 [🟠 Fastly 优选 71.6ms 104.16.3.22]"
+      - "🇯🇵 日本东京 22 [🟣 Wasmer 优选 71.6ms 104.16.3.6]"
+      - "🇯🇵 日本东京 23 [🟢 Netlify 优选 71.6ms 104.16.3.14]"
+      - "🇯🇵 日本东京 24 [⚡ Supabase 优选 71.6ms 104.16.3.2]"
+      - "🇯🇵 日本东京 25 [🟠 Fastly 优选 72.0ms 104.16.4.16]"
+      - "🇯🇵 日本东京 26 [🟣 Wasmer 优选 72.0ms 104.16.4.20]"
+      - "🇯🇵 日本东京 27 [🟢 Netlify 优选 72.0ms 199.232.45.230]"
+      - "🇯🇵 日本东京 28 [⚡ Supabase 优选 72.0ms 199.232.45.200]"
+      - "🇯🇵 日本东京 29 [🟠 Fastly 优选 72.0ms 104.16.4.8]"
+      - "🇯🇵 日本东京 30 [🟣 Wasmer 优选 72.0ms 104.16.4.12]"
+      - "🇰🇷 韩国首尔 01 [🟠 Fastly 优选 62.87ms 43.133.237.158]"
+      - "🇰🇷 韩国首尔 02 [🟣 Wasmer 优选 64.0ms 151.101.2.230]"
+      - "🇰🇷 韩国首尔 03 [🟢 Netlify 优选 64.0ms 151.101.2.240]"
+      - "🇰🇷 韩国首尔 04 [⚡ Supabase 优选 64.0ms 151.101.2.220]"
+      - "🇰🇷 韩国首尔 05 [🟠 Fastly 优选 64.0ms 151.101.2.140]"
+      - "🇰🇷 韩国首尔 06 [🟣 Wasmer 优选 64.0ms 151.101.2.210]"
+      - "🇰🇷 韩国首尔 07 [🟢 Netlify 优选 64.2ms 151.101.2.132]"
+      - "🇰🇷 韩国首尔 08 [⚡ Supabase 优选 65.0ms 104.16.5.12]"
+      - "🇰🇷 韩国首尔 09 [🟠 Fastly 优选 65.0ms 104.16.5.16]"
+      - "🇰🇷 韩国首尔 10 [🟣 Wasmer 优选 65.0ms 104.16.5.4]"
+      - "🇰🇷 韩国首尔 11 [🟢 Netlify 优选 65.0ms 104.16.5.8]"
+      - "🇰🇷 韩国首尔 12 [⚡ Supabase 优选 65.0ms 104.16.5.20]"
+      - "🇰🇷 韩国首尔 13 [🟠 Fastly 优选 65.8ms 104.16.5.9]"
+      - "🇰🇷 韩国首尔 14 [🟣 Wasmer 优选 65.8ms 104.16.5.1]"
+      - "🇰🇷 韩国首尔 15 [🟢 Netlify 优选 65.8ms 104.16.5.17]"
+      - "🇰🇷 韩国首尔 16 [⚡ Supabase 优选 65.8ms 104.16.5.25]"
+      - "🇰🇷 韩国首尔 17 [🟠 Fastly 优选 65.8ms 104.16.5.21]"
+      - "🇰🇷 韩国首尔 18 [🟣 Wasmer 优选 65.8ms 104.16.5.5]"
+      - "🇰🇷 韩国首尔 19 [🟢 Netlify 优选 65.8ms 104.16.5.13]"
+      - "🇰🇷 韩国首尔 20 [⚡ Supabase 优选 66.0ms 151.101.66.240]"
+      - "🇰🇷 韩国首尔 21 [🟠 Fastly 优选 66.0ms 151.101.66.230]"
+      - "🇰🇷 韩国首尔 22 [🟣 Wasmer 优选 66.0ms 151.101.66.220]"
+      - "🇰🇷 韩国首尔 23 [🟢 Netlify 优选 66.0ms 151.101.2.204]"
+      - "🇰🇷 韩国首尔 24 [⚡ Supabase 优选 66.0ms 151.101.66.140]"
+      - "🇰🇷 韩国首尔 25 [🟠 Fastly 优选 66.0ms 151.101.66.210]"
+      - "🇸🇬 新加坡 01 [🟠 Fastly 优选 82.27ms 209.97.175.102]"
+      - "🇸🇬 新加坡 02 [🟣 Wasmer 优选 84.0ms 104.16.7.20]"
+      - "🇸🇬 新加坡 03 [🟢 Netlify 优选 84.0ms 104.16.7.8]"
+      - "🇸🇬 新加坡 04 [⚡ Supabase 优选 84.0ms 104.16.7.12]"
+      - "🇸🇬 新加坡 05 [🟠 Fastly 优选 84.0ms 104.16.7.4]"
+      - "🇸🇬 新加坡 06 [🟣 Wasmer 优选 84.0ms 104.16.7.16]"
+      - "🇸🇬 新加坡 07 [🟢 Netlify 优选 84.0ms 104.16.7.24]"
+      - "🇸🇬 新加坡 08 [⚡ Supabase 优选 84.0ms 146.75.121.140]"
+      - "🇸🇬 新加坡 09 [🟠 Fastly 优选 84.0ms 146.75.121.200]"
+      - "🇸🇬 新加坡 10 [🟣 Wasmer 优选 84.0ms 146.75.121.210]"
+      - "🇸🇬 新加坡 11 [🟢 Netlify 优选 84.0ms 146.75.121.240]"
+      - "🇸🇬 新加坡 12 [⚡ Supabase 优选 84.0ms 146.75.121.230]"
+      - "🇸🇬 新加坡 13 [🟠 Fastly 优选 84.8ms 104.16.7.1]"
+      - "🇸🇬 新加坡 14 [🟣 Wasmer 优选 84.8ms 104.16.7.9]"
+      - "🇸🇬 新加坡 15 [🟢 Netlify 优选 84.8ms 104.16.7.13]"
+      - "🇸🇬 新加坡 16 [⚡ Supabase 优选 84.8ms 104.16.7.5]"
+      - "🇸🇬 新加坡 17 [🟠 Fastly 优选 84.8ms 104.16.7.21]"
+      - "🇸🇬 新加坡 18 [🟣 Wasmer 优选 84.8ms 104.16.7.25]"
+      - "🇸🇬 新加坡 19 [🟢 Netlify 优选 84.8ms 104.16.7.17]"
+      - "🇸🇬 新加坡 20 [⚡ Supabase 优选 85.0ms 146.75.121.132]"
+      - "🇸🇬 新加坡 21 [🟠 Fastly 优选 85.6ms 104.16.7.2]"
+      - "🇸🇬 新加坡 22 [🟣 Wasmer 优选 85.6ms 104.16.7.14]"
+      - "🇸🇬 新加坡 23 [🟢 Netlify 优选 85.6ms 104.16.7.18]"
+      - "🇸🇬 新加坡 24 [⚡ Supabase 优选 85.6ms 104.16.7.10]"
+      - "🇸🇬 新加坡 25 [🟠 Fastly 优选 85.6ms 104.16.7.6]"
+      - "🇩🇪 德国法兰克福 01 [🟠 Fastly 优选 140.94ms 88.218.193.1]"
+      - "🇩🇪 德国法兰克福 02 [🟣 Wasmer 优选 142.0ms 188.114.96.1]"
+      - "🇩🇪 德国法兰克福 03 [🟢 Netlify 优选 142.0ms 151.101.112.200]"
+      - "🇩🇪 德国法兰克福 04 [⚡ Supabase 优选 142.0ms 151.101.112.230]"
+      - "🇩🇪 德国法兰克福 05 [🟠 Fastly 优选 142.0ms 151.101.112.220]"
+      - "🇩🇪 德国法兰克福 06 [🟣 Wasmer 优选 143.0ms 188.114.97.1]"
+      - "🇩🇪 德国法兰克福 07 [🟢 Netlify 优选 144.0ms 151.101.112.194]"
+      - "🇩🇪 德国法兰克福 08 [⚡ Supabase 优选 144.0ms 151.101.112.69]"
+      - "🇩🇪 德国法兰克福 09 [🟠 Fastly 优选 145.0ms 188.114.96.80]"
+      - "🇩🇪 德国法兰克福 10 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇩🇪 德国法兰克福 11 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇩🇪 德国法兰克福 12 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇩🇪 德国法兰克福 13 [🟠 Fastly 优选 145.0ms 188.114.96.24]"
+      - "🇩🇪 德国法兰克福 14 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇩🇪 德国法兰克福 15 [🟢 Netlify 优选 145.0ms 188.114.96.72]"
+      - "🇩🇪 德国法兰克福 16 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇩🇪 德国法兰克福 17 [🟠 Fastly 优选 145.0ms 188.114.96.96]"
+      - "🇩🇪 德国法兰克福 18 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 01 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 02 [🟣 Wasmer 优选 145.0ms 188.114.97.8]"
+      - "🇫🇷 法国巴黎 03 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇫🇷 法国巴黎 04 [⚡ Supabase 优选 145.0ms 188.114.97.32]"
+      - "🇫🇷 法国巴黎 05 [🟠 Fastly 优选 145.0ms 188.114.96.48]"
+      - "🇫🇷 法国巴黎 06 [🟣 Wasmer 优选 145.0ms 188.114.97.88]"
+      - "🇫🇷 法国巴黎 07 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇫🇷 法国巴黎 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇫🇷 法国巴黎 09 [🟠 Fastly 优选 145.0ms 188.114.97.56]"
+      - "🇫🇷 法国巴黎 10 [🟣 Wasmer 优选 145.0ms 188.114.97.72]"
+      - "🇫🇷 法国巴黎 11 [🟢 Netlify 优选 145.0ms 188.114.96.24]"
+      - "🇫🇷 法国巴黎 12 [⚡ Supabase 优选 145.0ms 188.114.97.96]"
+      - "🇫🇷 法国巴黎 13 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇫🇷 法国巴黎 14 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇫🇷 法国巴黎 15 [🟢 Netlify 优选 145.0ms 188.114.96.96]"
+      - "🇫🇷 法国巴黎 16 [⚡ Supabase 优选 145.0ms 188.114.97.80]"
+      - "🇫🇷 法国巴黎 17 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇫🇷 法国巴黎 18 [🟣 Wasmer 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 01 [🟠 Fastly 优选 145.0ms 188.114.96.72]"
+      - "🇬🇧 英国伦敦 02 [🟣 Wasmer 优选 145.0ms 188.114.96.80]"
+      - "🇬🇧 英国伦敦 03 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇬🇧 英国伦敦 04 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇬🇧 英国伦敦 05 [🟠 Fastly 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 06 [🟣 Wasmer 优选 145.0ms 188.114.97.80]"
+      - "🇬🇧 英国伦敦 07 [🟢 Netlify 优选 145.0ms 188.114.97.32]"
+      - "🇬🇧 英国伦敦 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇬🇧 英国伦敦 09 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇬🇧 英国伦敦 10 [🟣 Wasmer 优选 145.0ms 188.114.96.96]"
+      - "🇬🇧 英国伦敦 11 [🟢 Netlify 优选 145.0ms 188.114.97.72]"
+      - "🇬🇧 英国伦敦 12 [⚡ Supabase 优选 145.0ms 188.114.97.40]"
+      - "🇬🇧 英国伦敦 13 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇬🇧 英国伦敦 14 [🟣 Wasmer 优选 145.0ms 188.114.96.56]"
+      - "🇬🇧 英国伦敦 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇬🇧 英国伦敦 16 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇬🇧 英国伦敦 17 [🟠 Fastly 优选 145.0ms 188.114.96.32]"
+      - "🇬🇧 英国伦敦 18 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 01 [🟠 Fastly 优选 145.0ms 188.114.97.80]"
+      - "🇨🇭 瑞士苏黎世 02 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇨🇭 瑞士苏黎世 03 [🟢 Netlify 优选 145.0ms 188.114.97.96]"
+      - "🇨🇭 瑞士苏黎世 04 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇨🇭 瑞士苏黎世 05 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇨🇭 瑞士苏黎世 06 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 07 [🟢 Netlify 优选 145.0ms 188.114.96.80]"
+      - "🇨🇭 瑞士苏黎世 08 [⚡ Supabase 优选 145.0ms 188.114.96.64]"
+      - "🇨🇭 瑞士苏黎世 09 [🟠 Fastly 优选 145.0ms 188.114.97.40]"
+      - "🇨🇭 瑞士苏黎世 10 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇨🇭 瑞士苏黎世 11 [🟢 Netlify 优选 145.0ms 188.114.97.56]"
+      - "🇨🇭 瑞士苏黎世 12 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇨🇭 瑞士苏黎世 13 [🟠 Fastly 优选 145.0ms 188.114.97.32]"
+      - "🇨🇭 瑞士苏黎世 14 [🟣 Wasmer 优选 145.0ms 188.114.96.32]"
+      - "🇨🇭 瑞士苏黎世 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇺🇸 美国美东 01 [🟠 Fastly 优选 148.0ms 104.16.0.1]"
+      - "🇺🇸 美国美东 02 [🟣 Wasmer 优选 148.0ms 104.17.200.30]"
+      - "🇺🇸 美国美东 03 [🟢 Netlify 优选 148.0ms 104.16.200.5]"
+      - "🇺🇸 美国美东 04 [⚡ Supabase 优选 148.0ms 104.17.200.15]"
+      - "🇺🇸 美国美东 05 [🟠 Fastly 优选 148.0ms 104.16.0.2]"
+      - "🇺🇸 美国美东 06 [🟣 Wasmer 优选 148.0ms 104.17.200.10]"
+      - "🇺🇸 美国美东 07 [🟢 Netlify 优选 148.0ms 104.16.0.10]"
+      - "🇺🇸 美国美东 08 [⚡ Supabase 优选 148.0ms 104.17.200.1]"
+      - "🇺🇸 美国美东 09 [🟠 Fastly 优选 148.0ms 104.17.0.30]"
+      - "🇺🇸 美国美东 10 [🟣 Wasmer 优选 148.0ms 104.17.0.15]"
+      - "🇺🇸 美国美东 11 [🟢 Netlify 优选 148.0ms 104.17.200.5]"
+      - "🇺🇸 美国美东 12 [⚡ Supabase 优选 148.0ms 104.17.0.2]"
+      - "🇺🇸 美国美东 13 [🟠 Fastly 优选 148.0ms 151.101.128.220]"
+      - "🇺🇸 美国美东 14 [🟣 Wasmer 优选 148.0ms 104.16.200.25]"
+      - "🇺🇸 美国美东 15 [🟢 Netlify 优选 148.0ms 104.17.0.25]"
+      - "🇺🇸 美国美东 16 [⚡ Supabase 优选 148.0ms 151.101.128.230]"
+      - "🇺🇸 美国美东 17 [🟠 Fastly 优选 148.0ms 104.16.0.25]"
+      - "🇺🇸 美国美东 18 [🟣 Wasmer 优选 148.0ms 104.17.200.8]"
+      - "🇺🇸 美国美东 19 [🟢 Netlify 优选 148.0ms 104.16.0.5]"
+      - "🇺🇸 美国美东 20 [⚡ Supabase 优选 148.0ms 151.101.128.200]"
+      - "🇺🇸 美国美西 01 [🟠 Fastly 优选 148.0ms 104.19.200.25]"
+      - "🇺🇸 美国美西 02 [🟣 Wasmer 优选 148.0ms 104.19.200.30]"
+      - "🇺🇸 美国美西 03 [🟢 Netlify 优选 148.0ms 104.19.200.1]"
+      - "🇺🇸 美国美西 04 [⚡ Supabase 优选 148.0ms 104.19.200.5]"
+      - "🇺🇸 美国美西 05 [🟠 Fastly 优选 148.0ms 104.19.200.10]"
+      - "🇺🇸 美国美西 06 [🟣 Wasmer 优选 148.0ms 104.19.0.5]"
+      - "🇺🇸 美国美西 07 [🟢 Netlify 优选 148.0ms 104.19.0.8]"
+      - "🇺🇸 美国美西 08 [⚡ Supabase 优选 148.0ms 104.19.200.2]"
+      - "🇺🇸 美国美西 09 [🟠 Fastly 优选 148.0ms 104.19.0.2]"
+      - "🇺🇸 美国美西 10 [🟣 Wasmer 优选 148.0ms 104.19.0.30]"
+      - "🇺🇸 美国美西 11 [🟢 Netlify 优选 148.0ms 104.19.0.1]"
+      - "🇺🇸 美国美西 12 [⚡ Supabase 优选 148.0ms 104.19.0.20]"
+      - "🇺🇸 美国美西 13 [🟠 Fastly 优选 148.0ms 104.19.0.25]"
+      - "🇺🇸 美国美西 14 [🟣 Wasmer 优选 148.0ms 172.64.50.5]"
+      - "🇺🇸 美国美西 15 [🟢 Netlify 优选 148.0ms 104.19.0.10]"
+      - "🇺🇸 美国美西 16 [⚡ Supabase 优选 148.0ms 104.19.200.20]"
+      - "🇺🇸 美国美西 17 [🟠 Fastly 优选 148.0ms 104.19.200.8]"
+      - "🇺🇸 美国美西 18 [🟣 Wasmer 优选 148.0ms 104.19.0.15]"
+      - "🇺🇸 美国美西 19 [🟢 Netlify 优选 149.0ms 104.19.1.30]"
+      - "🇺🇸 美国美西 20 [⚡ Supabase 优选 149.0ms 104.19.1.5]"
 
   - name: "♻️ 自动选择"
     type: url-test
-    url: "http://www.gstatic.com/generate_204"
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 30
     proxies:
-      - "🇯🇵 日本东京 01 [优选 70.6ms 154.36.162.210]"
-      - "🇯🇵 日本东京 02 [优选 79.49ms 52.194.215.93]"
-      - "🇰🇷 韩国首尔 01 [优选 62.87ms 43.133.237.158]"
-      - "🇰🇷 韩国首尔 02 [优选 66.11ms 119.28.162.39]"
-      - "🇭🇰 香港专线 01 [优选 56.86ms 23.147.172.135]"
-      - "🇭🇰 香港专线 02 [优选 57.86ms 39.109.50.124]"
-      - "🇸🇬 新加坡 01 [优选 88.27ms 209.97.175.102]"
-      - "🇸🇬 新加坡 02 [优选 94.45ms 159.89.199.63]"
-      - "🇩🇪 德国法兰克福 01 [优选 155.0ms 188.114.96.30]"
-      - "🇩🇪 德国法兰克福 02 [优选 155.0ms 188.114.96.10]"
-      - "🇫🇷 法国巴黎 01 [优选 152.6ms 89.106.207.216]"
-      - "🇫🇷 法国巴黎 02 [优选 155.0ms 188.114.97.80]"
-      - "🇬🇧 英国伦敦 01 [优选 155.0ms 188.114.96.50]"
-      - "🇬🇧 英国伦敦 02 [优选 155.0ms 188.114.96.10]"
-      - "🇨🇭 瑞士苏黎世 01 [优选 152.6ms 89.106.207.216]"
-      - "🇨🇭 瑞士苏黎世 02 [优选 155.0ms 188.114.96.90]"
-      - "🇺🇸 美国美东 01 [优选 150.0ms 104.17.222.40]"
-      - "🇺🇸 美国美东 02 [优选 152.0ms 104.16.100.5]"
-      - "🇺🇸 美国美西 01 [优选 152.0ms 172.64.50.5]"
-      - "🇺🇸 美国美西 02 [优选 152.0ms 104.19.200.15]"
+      - "🇭🇰 中国香港 01 [🟠 Fastly 优选 48.5ms 39.109.50.124]"
+      - "🇭🇰 中国香港 02 [🟣 Wasmer 优选 52.0ms 104.16.1.4]"
+      - "🇭🇰 中国香港 03 [🟢 Netlify 优选 52.0ms 104.16.1.20]"
+      - "🇭🇰 中国香港 04 [⚡ Supabase 优选 52.0ms 104.16.1.8]"
+      - "🇭🇰 中国香港 05 [🟠 Fastly 优选 52.0ms 104.16.1.12]"
+      - "🇭🇰 中国香港 06 [🟣 Wasmer 优选 52.0ms 104.16.1.16]"
+      - "🇭🇰 中国香港 07 [🟢 Netlify 优选 52.0ms 104.16.1.24]"
+      - "🇭🇰 中国香港 08 [⚡ Supabase 优选 52.3ms 23.147.172.135]"
+      - "🇭🇰 中国香港 09 [🟠 Fastly 优选 52.8ms 104.16.1.13]"
+      - "🇭🇰 中国香港 10 [🟣 Wasmer 优选 52.8ms 104.16.1.21]"
+      - "🇭🇰 中国香港 11 [🟢 Netlify 优选 52.8ms 104.16.1.5]"
+      - "🇭🇰 中国香港 12 [⚡ Supabase 优选 52.8ms 104.16.1.25]"
+      - "🇭🇰 中国香港 13 [🟠 Fastly 优选 52.8ms 104.16.1.17]"
+      - "🇭🇰 中国香港 14 [🟣 Wasmer 优选 52.8ms 104.16.1.9]"
+      - "🇭🇰 中国香港 15 [🟢 Netlify 优选 53.6ms 104.16.1.14]"
+      - "🇭🇰 中国香港 16 [⚡ Supabase 优选 53.6ms 104.16.1.2]"
+      - "🇭🇰 中国香港 17 [🟠 Fastly 优选 53.6ms 104.16.1.22]"
+      - "🇭🇰 中国香港 18 [🟣 Wasmer 优选 53.6ms 104.16.1.6]"
+      - "🇭🇰 中国香港 19 [🟢 Netlify 优选 53.6ms 104.16.1.10]"
+      - "🇭🇰 中国香港 20 [⚡ Supabase 优选 53.6ms 104.16.1.18]"
+      - "🇭🇰 中国香港 21 [🟠 Fastly 优选 54.0ms 104.16.2.16]"
+      - "🇭🇰 中国香港 22 [🟣 Wasmer 优选 54.0ms 104.16.2.12]"
+      - "🇭🇰 中国香港 23 [🟢 Netlify 优选 54.0ms 104.16.2.4]"
+      - "🇭🇰 中国香港 24 [⚡ Supabase 优选 54.0ms 104.16.2.24]"
+      - "🇭🇰 中国香港 25 [🟠 Fastly 优选 54.0ms 104.16.2.8]"
+      - "🇭🇰 中国香港 26 [🟣 Wasmer 优选 54.0ms hk.090227.xyz]"
+      - "🇭🇰 中国香港 27 [🟢 Netlify 优选 54.0ms 104.16.2.20]"
+      - "🇭🇰 中国香港 28 [⚡ Supabase 优选 54.4ms 104.16.1.11]"
+      - "🇭🇰 中国香港 29 [🟠 Fastly 优选 54.4ms 104.16.1.19]"
+      - "🇭🇰 中国香港 30 [🟣 Wasmer 优选 54.4ms 104.16.1.7]"
+      - "🇯🇵 日本东京 01 [🟠 Fastly 优选 67.23ms 157.254.198.27]"
+      - "🇯🇵 日本东京 02 [🟣 Wasmer 优选 68.6ms 154.36.162.210]"
+      - "🇯🇵 日本东京 03 [🟢 Netlify 优选 69.5ms 199.232.41.140]"
+      - "🇯🇵 日本东京 04 [⚡ Supabase 优选 70.0ms 104.16.3.16]"
+      - "🇯🇵 日本东京 05 [🟠 Fastly 优选 70.0ms 104.16.3.12]"
+      - "🇯🇵 日本东京 06 [🟣 Wasmer 优选 70.0ms 104.16.3.4]"
+      - "🇯🇵 日本东京 07 [🟢 Netlify 优选 70.0ms 104.16.3.20]"
+      - "🇯🇵 日本东京 08 [⚡ Supabase 优选 70.0ms 199.232.41.240]"
+      - "🇯🇵 日本东京 09 [🟠 Fastly 优选 70.0ms 199.232.41.200]"
+      - "🇯🇵 日本东京 10 [🟣 Wasmer 优选 70.0ms 104.16.3.8]"
+      - "🇯🇵 日本东京 11 [🟢 Netlify 优选 70.0ms 104.16.3.24]"
+      - "🇯🇵 日本东京 12 [⚡ Supabase 优选 70.8ms 104.16.3.25]"
+      - "🇯🇵 日本东京 13 [🟠 Fastly 优选 70.8ms 104.16.3.21]"
+      - "🇯🇵 日本东京 14 [🟣 Wasmer 优选 70.8ms 104.16.3.13]"
+      - "🇯🇵 日本东京 15 [🟢 Netlify 优选 70.8ms 104.16.3.9]"
+      - "🇯🇵 日本东京 16 [⚡ Supabase 优选 70.8ms 104.16.3.17]"
+      - "🇯🇵 日本东京 17 [🟠 Fastly 优选 71.0ms 199.232.41.132]"
+      - "🇯🇵 日本东京 18 [🟣 Wasmer 优选 71.2ms 199.232.45.140]"
+      - "🇯🇵 日本东京 19 [🟢 Netlify 优选 71.6ms 104.16.3.10]"
+      - "🇯🇵 日本东京 20 [⚡ Supabase 优选 71.6ms 104.16.3.18]"
+      - "🇯🇵 日本东京 21 [🟠 Fastly 优选 71.6ms 104.16.3.22]"
+      - "🇯🇵 日本东京 22 [🟣 Wasmer 优选 71.6ms 104.16.3.6]"
+      - "🇯🇵 日本东京 23 [🟢 Netlify 优选 71.6ms 104.16.3.14]"
+      - "🇯🇵 日本东京 24 [⚡ Supabase 优选 71.6ms 104.16.3.2]"
+      - "🇯🇵 日本东京 25 [🟠 Fastly 优选 72.0ms 104.16.4.16]"
+      - "🇯🇵 日本东京 26 [🟣 Wasmer 优选 72.0ms 104.16.4.20]"
+      - "🇯🇵 日本东京 27 [🟢 Netlify 优选 72.0ms 199.232.45.230]"
+      - "🇯🇵 日本东京 28 [⚡ Supabase 优选 72.0ms 199.232.45.200]"
+      - "🇯🇵 日本东京 29 [🟠 Fastly 优选 72.0ms 104.16.4.8]"
+      - "🇯🇵 日本东京 30 [🟣 Wasmer 优选 72.0ms 104.16.4.12]"
+      - "🇰🇷 韩国首尔 01 [🟠 Fastly 优选 62.87ms 43.133.237.158]"
+      - "🇰🇷 韩国首尔 02 [🟣 Wasmer 优选 64.0ms 151.101.2.230]"
+      - "🇰🇷 韩国首尔 03 [🟢 Netlify 优选 64.0ms 151.101.2.240]"
+      - "🇰🇷 韩国首尔 04 [⚡ Supabase 优选 64.0ms 151.101.2.220]"
+      - "🇰🇷 韩国首尔 05 [🟠 Fastly 优选 64.0ms 151.101.2.140]"
+      - "🇰🇷 韩国首尔 06 [🟣 Wasmer 优选 64.0ms 151.101.2.210]"
+      - "🇰🇷 韩国首尔 07 [🟢 Netlify 优选 64.2ms 151.101.2.132]"
+      - "🇰🇷 韩国首尔 08 [⚡ Supabase 优选 65.0ms 104.16.5.12]"
+      - "🇰🇷 韩国首尔 09 [🟠 Fastly 优选 65.0ms 104.16.5.16]"
+      - "🇰🇷 韩国首尔 10 [🟣 Wasmer 优选 65.0ms 104.16.5.4]"
+      - "🇰🇷 韩国首尔 11 [🟢 Netlify 优选 65.0ms 104.16.5.8]"
+      - "🇰🇷 韩国首尔 12 [⚡ Supabase 优选 65.0ms 104.16.5.20]"
+      - "🇰🇷 韩国首尔 13 [🟠 Fastly 优选 65.8ms 104.16.5.9]"
+      - "🇰🇷 韩国首尔 14 [🟣 Wasmer 优选 65.8ms 104.16.5.1]"
+      - "🇰🇷 韩国首尔 15 [🟢 Netlify 优选 65.8ms 104.16.5.17]"
+      - "🇰🇷 韩国首尔 16 [⚡ Supabase 优选 65.8ms 104.16.5.25]"
+      - "🇰🇷 韩国首尔 17 [🟠 Fastly 优选 65.8ms 104.16.5.21]"
+      - "🇰🇷 韩国首尔 18 [🟣 Wasmer 优选 65.8ms 104.16.5.5]"
+      - "🇰🇷 韩国首尔 19 [🟢 Netlify 优选 65.8ms 104.16.5.13]"
+      - "🇰🇷 韩国首尔 20 [⚡ Supabase 优选 66.0ms 151.101.66.240]"
+      - "🇰🇷 韩国首尔 21 [🟠 Fastly 优选 66.0ms 151.101.66.230]"
+      - "🇰🇷 韩国首尔 22 [🟣 Wasmer 优选 66.0ms 151.101.66.220]"
+      - "🇰🇷 韩国首尔 23 [🟢 Netlify 优选 66.0ms 151.101.2.204]"
+      - "🇰🇷 韩国首尔 24 [⚡ Supabase 优选 66.0ms 151.101.66.140]"
+      - "🇰🇷 韩国首尔 25 [🟠 Fastly 优选 66.0ms 151.101.66.210]"
+      - "🇸🇬 新加坡 01 [🟠 Fastly 优选 82.27ms 209.97.175.102]"
+      - "🇸🇬 新加坡 02 [🟣 Wasmer 优选 84.0ms 104.16.7.20]"
+      - "🇸🇬 新加坡 03 [🟢 Netlify 优选 84.0ms 104.16.7.8]"
+      - "🇸🇬 新加坡 04 [⚡ Supabase 优选 84.0ms 104.16.7.12]"
+      - "🇸🇬 新加坡 05 [🟠 Fastly 优选 84.0ms 104.16.7.4]"
+      - "🇸🇬 新加坡 06 [🟣 Wasmer 优选 84.0ms 104.16.7.16]"
+      - "🇸🇬 新加坡 07 [🟢 Netlify 优选 84.0ms 104.16.7.24]"
+      - "🇸🇬 新加坡 08 [⚡ Supabase 优选 84.0ms 146.75.121.140]"
+      - "🇸🇬 新加坡 09 [🟠 Fastly 优选 84.0ms 146.75.121.200]"
+      - "🇸🇬 新加坡 10 [🟣 Wasmer 优选 84.0ms 146.75.121.210]"
+      - "🇸🇬 新加坡 11 [🟢 Netlify 优选 84.0ms 146.75.121.240]"
+      - "🇸🇬 新加坡 12 [⚡ Supabase 优选 84.0ms 146.75.121.230]"
+      - "🇸🇬 新加坡 13 [🟠 Fastly 优选 84.8ms 104.16.7.1]"
+      - "🇸🇬 新加坡 14 [🟣 Wasmer 优选 84.8ms 104.16.7.9]"
+      - "🇸🇬 新加坡 15 [🟢 Netlify 优选 84.8ms 104.16.7.13]"
+      - "🇸🇬 新加坡 16 [⚡ Supabase 优选 84.8ms 104.16.7.5]"
+      - "🇸🇬 新加坡 17 [🟠 Fastly 优选 84.8ms 104.16.7.21]"
+      - "🇸🇬 新加坡 18 [🟣 Wasmer 优选 84.8ms 104.16.7.25]"
+      - "🇸🇬 新加坡 19 [🟢 Netlify 优选 84.8ms 104.16.7.17]"
+      - "🇸🇬 新加坡 20 [⚡ Supabase 优选 85.0ms 146.75.121.132]"
+      - "🇸🇬 新加坡 21 [🟠 Fastly 优选 85.6ms 104.16.7.2]"
+      - "🇸🇬 新加坡 22 [🟣 Wasmer 优选 85.6ms 104.16.7.14]"
+      - "🇸🇬 新加坡 23 [🟢 Netlify 优选 85.6ms 104.16.7.18]"
+      - "🇸🇬 新加坡 24 [⚡ Supabase 优选 85.6ms 104.16.7.10]"
+      - "🇸🇬 新加坡 25 [🟠 Fastly 优选 85.6ms 104.16.7.6]"
+      - "🇩🇪 德国法兰克福 01 [🟠 Fastly 优选 140.94ms 88.218.193.1]"
+      - "🇩🇪 德国法兰克福 02 [🟣 Wasmer 优选 142.0ms 188.114.96.1]"
+      - "🇩🇪 德国法兰克福 03 [🟢 Netlify 优选 142.0ms 151.101.112.200]"
+      - "🇩🇪 德国法兰克福 04 [⚡ Supabase 优选 142.0ms 151.101.112.230]"
+      - "🇩🇪 德国法兰克福 05 [🟠 Fastly 优选 142.0ms 151.101.112.220]"
+      - "🇩🇪 德国法兰克福 06 [🟣 Wasmer 优选 143.0ms 188.114.97.1]"
+      - "🇩🇪 德国法兰克福 07 [🟢 Netlify 优选 144.0ms 151.101.112.194]"
+      - "🇩🇪 德国法兰克福 08 [⚡ Supabase 优选 144.0ms 151.101.112.69]"
+      - "🇩🇪 德国法兰克福 09 [🟠 Fastly 优选 145.0ms 188.114.96.80]"
+      - "🇩🇪 德国法兰克福 10 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇩🇪 德国法兰克福 11 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇩🇪 德国法兰克福 12 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇩🇪 德国法兰克福 13 [🟠 Fastly 优选 145.0ms 188.114.96.24]"
+      - "🇩🇪 德国法兰克福 14 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇩🇪 德国法兰克福 15 [🟢 Netlify 优选 145.0ms 188.114.96.72]"
+      - "🇩🇪 德国法兰克福 16 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇩🇪 德国法兰克福 17 [🟠 Fastly 优选 145.0ms 188.114.96.96]"
+      - "🇩🇪 德国法兰克福 18 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 01 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 02 [🟣 Wasmer 优选 145.0ms 188.114.97.8]"
+      - "🇫🇷 法国巴黎 03 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇫🇷 法国巴黎 04 [⚡ Supabase 优选 145.0ms 188.114.97.32]"
+      - "🇫🇷 法国巴黎 05 [🟠 Fastly 优选 145.0ms 188.114.96.48]"
+      - "🇫🇷 法国巴黎 06 [🟣 Wasmer 优选 145.0ms 188.114.97.88]"
+      - "🇫🇷 法国巴黎 07 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇫🇷 法国巴黎 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇫🇷 法国巴黎 09 [🟠 Fastly 优选 145.0ms 188.114.97.56]"
+      - "🇫🇷 法国巴黎 10 [🟣 Wasmer 优选 145.0ms 188.114.97.72]"
+      - "🇫🇷 法国巴黎 11 [🟢 Netlify 优选 145.0ms 188.114.96.24]"
+      - "🇫🇷 法国巴黎 12 [⚡ Supabase 优选 145.0ms 188.114.97.96]"
+      - "🇫🇷 法国巴黎 13 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇫🇷 法国巴黎 14 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇫🇷 法国巴黎 15 [🟢 Netlify 优选 145.0ms 188.114.96.96]"
+      - "🇫🇷 法国巴黎 16 [⚡ Supabase 优选 145.0ms 188.114.97.80]"
+      - "🇫🇷 法国巴黎 17 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇫🇷 法国巴黎 18 [🟣 Wasmer 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 01 [🟠 Fastly 优选 145.0ms 188.114.96.72]"
+      - "🇬🇧 英国伦敦 02 [🟣 Wasmer 优选 145.0ms 188.114.96.80]"
+      - "🇬🇧 英国伦敦 03 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇬🇧 英国伦敦 04 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇬🇧 英国伦敦 05 [🟠 Fastly 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 06 [🟣 Wasmer 优选 145.0ms 188.114.97.80]"
+      - "🇬🇧 英国伦敦 07 [🟢 Netlify 优选 145.0ms 188.114.97.32]"
+      - "🇬🇧 英国伦敦 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇬🇧 英国伦敦 09 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇬🇧 英国伦敦 10 [🟣 Wasmer 优选 145.0ms 188.114.96.96]"
+      - "🇬🇧 英国伦敦 11 [🟢 Netlify 优选 145.0ms 188.114.97.72]"
+      - "🇬🇧 英国伦敦 12 [⚡ Supabase 优选 145.0ms 188.114.97.40]"
+      - "🇬🇧 英国伦敦 13 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇬🇧 英国伦敦 14 [🟣 Wasmer 优选 145.0ms 188.114.96.56]"
+      - "🇬🇧 英国伦敦 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇬🇧 英国伦敦 16 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇬🇧 英国伦敦 17 [🟠 Fastly 优选 145.0ms 188.114.96.32]"
+      - "🇬🇧 英国伦敦 18 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 01 [🟠 Fastly 优选 145.0ms 188.114.97.80]"
+      - "🇨🇭 瑞士苏黎世 02 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇨🇭 瑞士苏黎世 03 [🟢 Netlify 优选 145.0ms 188.114.97.96]"
+      - "🇨🇭 瑞士苏黎世 04 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇨🇭 瑞士苏黎世 05 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇨🇭 瑞士苏黎世 06 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 07 [🟢 Netlify 优选 145.0ms 188.114.96.80]"
+      - "🇨🇭 瑞士苏黎世 08 [⚡ Supabase 优选 145.0ms 188.114.96.64]"
+      - "🇨🇭 瑞士苏黎世 09 [🟠 Fastly 优选 145.0ms 188.114.97.40]"
+      - "🇨🇭 瑞士苏黎世 10 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇨🇭 瑞士苏黎世 11 [🟢 Netlify 优选 145.0ms 188.114.97.56]"
+      - "🇨🇭 瑞士苏黎世 12 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇨🇭 瑞士苏黎世 13 [🟠 Fastly 优选 145.0ms 188.114.97.32]"
+      - "🇨🇭 瑞士苏黎世 14 [🟣 Wasmer 优选 145.0ms 188.114.96.32]"
+      - "🇨🇭 瑞士苏黎世 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇺🇸 美国美东 01 [🟠 Fastly 优选 148.0ms 104.16.0.1]"
+      - "🇺🇸 美国美东 02 [🟣 Wasmer 优选 148.0ms 104.17.200.30]"
+      - "🇺🇸 美国美东 03 [🟢 Netlify 优选 148.0ms 104.16.200.5]"
+      - "🇺🇸 美国美东 04 [⚡ Supabase 优选 148.0ms 104.17.200.15]"
+      - "🇺🇸 美国美东 05 [🟠 Fastly 优选 148.0ms 104.16.0.2]"
+      - "🇺🇸 美国美东 06 [🟣 Wasmer 优选 148.0ms 104.17.200.10]"
+      - "🇺🇸 美国美东 07 [🟢 Netlify 优选 148.0ms 104.16.0.10]"
+      - "🇺🇸 美国美东 08 [⚡ Supabase 优选 148.0ms 104.17.200.1]"
+      - "🇺🇸 美国美东 09 [🟠 Fastly 优选 148.0ms 104.17.0.30]"
+      - "🇺🇸 美国美东 10 [🟣 Wasmer 优选 148.0ms 104.17.0.15]"
+      - "🇺🇸 美国美东 11 [🟢 Netlify 优选 148.0ms 104.17.200.5]"
+      - "🇺🇸 美国美东 12 [⚡ Supabase 优选 148.0ms 104.17.0.2]"
+      - "🇺🇸 美国美东 13 [🟠 Fastly 优选 148.0ms 151.101.128.220]"
+      - "🇺🇸 美国美东 14 [🟣 Wasmer 优选 148.0ms 104.16.200.25]"
+      - "🇺🇸 美国美东 15 [🟢 Netlify 优选 148.0ms 104.17.0.25]"
+      - "🇺🇸 美国美东 16 [⚡ Supabase 优选 148.0ms 151.101.128.230]"
+      - "🇺🇸 美国美东 17 [🟠 Fastly 优选 148.0ms 104.16.0.25]"
+      - "🇺🇸 美国美东 18 [🟣 Wasmer 优选 148.0ms 104.17.200.8]"
+      - "🇺🇸 美国美东 19 [🟢 Netlify 优选 148.0ms 104.16.0.5]"
+      - "🇺🇸 美国美东 20 [⚡ Supabase 优选 148.0ms 151.101.128.200]"
+      - "🇺🇸 美国美西 01 [🟠 Fastly 优选 148.0ms 104.19.200.25]"
+      - "🇺🇸 美国美西 02 [🟣 Wasmer 优选 148.0ms 104.19.200.30]"
+      - "🇺🇸 美国美西 03 [🟢 Netlify 优选 148.0ms 104.19.200.1]"
+      - "🇺🇸 美国美西 04 [⚡ Supabase 优选 148.0ms 104.19.200.5]"
+      - "🇺🇸 美国美西 05 [🟠 Fastly 优选 148.0ms 104.19.200.10]"
+      - "🇺🇸 美国美西 06 [🟣 Wasmer 优选 148.0ms 104.19.0.5]"
+      - "🇺🇸 美国美西 07 [🟢 Netlify 优选 148.0ms 104.19.0.8]"
+      - "🇺🇸 美国美西 08 [⚡ Supabase 优选 148.0ms 104.19.200.2]"
+      - "🇺🇸 美国美西 09 [🟠 Fastly 优选 148.0ms 104.19.0.2]"
+      - "🇺🇸 美国美西 10 [🟣 Wasmer 优选 148.0ms 104.19.0.30]"
+      - "🇺🇸 美国美西 11 [🟢 Netlify 优选 148.0ms 104.19.0.1]"
+      - "🇺🇸 美国美西 12 [⚡ Supabase 优选 148.0ms 104.19.0.20]"
+      - "🇺🇸 美国美西 13 [🟠 Fastly 优选 148.0ms 104.19.0.25]"
+      - "🇺🇸 美国美西 14 [🟣 Wasmer 优选 148.0ms 172.64.50.5]"
+      - "🇺🇸 美国美西 15 [🟢 Netlify 优选 148.0ms 104.19.0.10]"
+      - "🇺🇸 美国美西 16 [⚡ Supabase 优选 148.0ms 104.19.200.20]"
+      - "🇺🇸 美国美西 17 [🟠 Fastly 优选 148.0ms 104.19.200.8]"
+      - "🇺🇸 美国美西 18 [🟣 Wasmer 优选 148.0ms 104.19.0.15]"
+      - "🇺🇸 美国美西 19 [🟢 Netlify 优选 149.0ms 104.19.1.30]"
+      - "🇺🇸 美国美西 20 [⚡ Supabase 优选 149.0ms 104.19.1.5]"
 
-  - name: "🌏 亚太节点"
+  - name: "⚡ 亚太极速池 (<100ms)"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 20
+    proxies:
+      - "🇭🇰 中国香港 01 [🟠 Fastly 优选 48.5ms 39.109.50.124]"
+      - "🇭🇰 中国香港 02 [🟣 Wasmer 优选 52.0ms 104.16.1.4]"
+      - "🇭🇰 中国香港 03 [🟢 Netlify 优选 52.0ms 104.16.1.20]"
+      - "🇭🇰 中国香港 04 [⚡ Supabase 优选 52.0ms 104.16.1.8]"
+      - "🇭🇰 中国香港 05 [🟠 Fastly 优选 52.0ms 104.16.1.12]"
+      - "🇭🇰 中国香港 06 [🟣 Wasmer 优选 52.0ms 104.16.1.16]"
+      - "🇭🇰 中国香港 07 [🟢 Netlify 优选 52.0ms 104.16.1.24]"
+      - "🇭🇰 中国香港 08 [⚡ Supabase 优选 52.3ms 23.147.172.135]"
+      - "🇭🇰 中国香港 09 [🟠 Fastly 优选 52.8ms 104.16.1.13]"
+      - "🇭🇰 中国香港 10 [🟣 Wasmer 优选 52.8ms 104.16.1.21]"
+      - "🇭🇰 中国香港 11 [🟢 Netlify 优选 52.8ms 104.16.1.5]"
+      - "🇭🇰 中国香港 12 [⚡ Supabase 优选 52.8ms 104.16.1.25]"
+      - "🇭🇰 中国香港 13 [🟠 Fastly 优选 52.8ms 104.16.1.17]"
+      - "🇭🇰 中国香港 14 [🟣 Wasmer 优选 52.8ms 104.16.1.9]"
+      - "🇭🇰 中国香港 15 [🟢 Netlify 优选 53.6ms 104.16.1.14]"
+      - "🇭🇰 中国香港 16 [⚡ Supabase 优选 53.6ms 104.16.1.2]"
+      - "🇭🇰 中国香港 17 [🟠 Fastly 优选 53.6ms 104.16.1.22]"
+      - "🇭🇰 中国香港 18 [🟣 Wasmer 优选 53.6ms 104.16.1.6]"
+      - "🇭🇰 中国香港 19 [🟢 Netlify 优选 53.6ms 104.16.1.10]"
+      - "🇭🇰 中国香港 20 [⚡ Supabase 优选 53.6ms 104.16.1.18]"
+      - "🇭🇰 中国香港 21 [🟠 Fastly 优选 54.0ms 104.16.2.16]"
+      - "🇭🇰 中国香港 22 [🟣 Wasmer 优选 54.0ms 104.16.2.12]"
+      - "🇭🇰 中国香港 23 [🟢 Netlify 优选 54.0ms 104.16.2.4]"
+      - "🇭🇰 中国香港 24 [⚡ Supabase 优选 54.0ms 104.16.2.24]"
+      - "🇭🇰 中国香港 25 [🟠 Fastly 优选 54.0ms 104.16.2.8]"
+      - "🇭🇰 中国香港 26 [🟣 Wasmer 优选 54.0ms hk.090227.xyz]"
+      - "🇭🇰 中国香港 27 [🟢 Netlify 优选 54.0ms 104.16.2.20]"
+      - "🇭🇰 中国香港 28 [⚡ Supabase 优选 54.4ms 104.16.1.11]"
+      - "🇭🇰 中国香港 29 [🟠 Fastly 优选 54.4ms 104.16.1.19]"
+      - "🇭🇰 中国香港 30 [🟣 Wasmer 优选 54.4ms 104.16.1.7]"
+      - "🇯🇵 日本东京 01 [🟠 Fastly 优选 67.23ms 157.254.198.27]"
+      - "🇯🇵 日本东京 02 [🟣 Wasmer 优选 68.6ms 154.36.162.210]"
+      - "🇯🇵 日本东京 03 [🟢 Netlify 优选 69.5ms 199.232.41.140]"
+      - "🇯🇵 日本东京 04 [⚡ Supabase 优选 70.0ms 104.16.3.16]"
+      - "🇯🇵 日本东京 05 [🟠 Fastly 优选 70.0ms 104.16.3.12]"
+      - "🇯🇵 日本东京 06 [🟣 Wasmer 优选 70.0ms 104.16.3.4]"
+      - "🇯🇵 日本东京 07 [🟢 Netlify 优选 70.0ms 104.16.3.20]"
+      - "🇯🇵 日本东京 08 [⚡ Supabase 优选 70.0ms 199.232.41.240]"
+      - "🇯🇵 日本东京 09 [🟠 Fastly 优选 70.0ms 199.232.41.200]"
+      - "🇯🇵 日本东京 10 [🟣 Wasmer 优选 70.0ms 104.16.3.8]"
+      - "🇯🇵 日本东京 11 [🟢 Netlify 优选 70.0ms 104.16.3.24]"
+      - "🇯🇵 日本东京 12 [⚡ Supabase 优选 70.8ms 104.16.3.25]"
+      - "🇯🇵 日本东京 13 [🟠 Fastly 优选 70.8ms 104.16.3.21]"
+      - "🇯🇵 日本东京 14 [🟣 Wasmer 优选 70.8ms 104.16.3.13]"
+      - "🇯🇵 日本东京 15 [🟢 Netlify 优选 70.8ms 104.16.3.9]"
+      - "🇯🇵 日本东京 16 [⚡ Supabase 优选 70.8ms 104.16.3.17]"
+      - "🇯🇵 日本东京 17 [🟠 Fastly 优选 71.0ms 199.232.41.132]"
+      - "🇯🇵 日本东京 18 [🟣 Wasmer 优选 71.2ms 199.232.45.140]"
+      - "🇯🇵 日本东京 19 [🟢 Netlify 优选 71.6ms 104.16.3.10]"
+      - "🇯🇵 日本东京 20 [⚡ Supabase 优选 71.6ms 104.16.3.18]"
+      - "🇯🇵 日本东京 21 [🟠 Fastly 优选 71.6ms 104.16.3.22]"
+      - "🇯🇵 日本东京 22 [🟣 Wasmer 优选 71.6ms 104.16.3.6]"
+      - "🇯🇵 日本东京 23 [🟢 Netlify 优选 71.6ms 104.16.3.14]"
+      - "🇯🇵 日本东京 24 [⚡ Supabase 优选 71.6ms 104.16.3.2]"
+      - "🇯🇵 日本东京 25 [🟠 Fastly 优选 72.0ms 104.16.4.16]"
+      - "🇯🇵 日本东京 26 [🟣 Wasmer 优选 72.0ms 104.16.4.20]"
+      - "🇯🇵 日本东京 27 [🟢 Netlify 优选 72.0ms 199.232.45.230]"
+      - "🇯🇵 日本东京 28 [⚡ Supabase 优选 72.0ms 199.232.45.200]"
+      - "🇯🇵 日本东京 29 [🟠 Fastly 优选 72.0ms 104.16.4.8]"
+      - "🇯🇵 日本东京 30 [🟣 Wasmer 优选 72.0ms 104.16.4.12]"
+      - "🇰🇷 韩国首尔 01 [🟠 Fastly 优选 62.87ms 43.133.237.158]"
+      - "🇰🇷 韩国首尔 02 [🟣 Wasmer 优选 64.0ms 151.101.2.230]"
+      - "🇰🇷 韩国首尔 03 [🟢 Netlify 优选 64.0ms 151.101.2.240]"
+      - "🇰🇷 韩国首尔 04 [⚡ Supabase 优选 64.0ms 151.101.2.220]"
+      - "🇰🇷 韩国首尔 05 [🟠 Fastly 优选 64.0ms 151.101.2.140]"
+      - "🇰🇷 韩国首尔 06 [🟣 Wasmer 优选 64.0ms 151.101.2.210]"
+      - "🇰🇷 韩国首尔 07 [🟢 Netlify 优选 64.2ms 151.101.2.132]"
+      - "🇰🇷 韩国首尔 08 [⚡ Supabase 优选 65.0ms 104.16.5.12]"
+      - "🇰🇷 韩国首尔 09 [🟠 Fastly 优选 65.0ms 104.16.5.16]"
+      - "🇰🇷 韩国首尔 10 [🟣 Wasmer 优选 65.0ms 104.16.5.4]"
+      - "🇰🇷 韩国首尔 11 [🟢 Netlify 优选 65.0ms 104.16.5.8]"
+      - "🇰🇷 韩国首尔 12 [⚡ Supabase 优选 65.0ms 104.16.5.20]"
+      - "🇰🇷 韩国首尔 13 [🟠 Fastly 优选 65.8ms 104.16.5.9]"
+      - "🇰🇷 韩国首尔 14 [🟣 Wasmer 优选 65.8ms 104.16.5.1]"
+      - "🇰🇷 韩国首尔 15 [🟢 Netlify 优选 65.8ms 104.16.5.17]"
+      - "🇰🇷 韩国首尔 16 [⚡ Supabase 优选 65.8ms 104.16.5.25]"
+      - "🇰🇷 韩国首尔 17 [🟠 Fastly 优选 65.8ms 104.16.5.21]"
+      - "🇰🇷 韩国首尔 18 [🟣 Wasmer 优选 65.8ms 104.16.5.5]"
+      - "🇰🇷 韩国首尔 19 [🟢 Netlify 优选 65.8ms 104.16.5.13]"
+      - "🇰🇷 韩国首尔 20 [⚡ Supabase 优选 66.0ms 151.101.66.240]"
+      - "🇰🇷 韩国首尔 21 [🟠 Fastly 优选 66.0ms 151.101.66.230]"
+      - "🇰🇷 韩国首尔 22 [🟣 Wasmer 优选 66.0ms 151.101.66.220]"
+      - "🇰🇷 韩国首尔 23 [🟢 Netlify 优选 66.0ms 151.101.2.204]"
+      - "🇰🇷 韩国首尔 24 [⚡ Supabase 优选 66.0ms 151.101.66.140]"
+      - "🇰🇷 韩国首尔 25 [🟠 Fastly 优选 66.0ms 151.101.66.210]"
+      - "🇸🇬 新加坡 01 [🟠 Fastly 优选 82.27ms 209.97.175.102]"
+      - "🇸🇬 新加坡 02 [🟣 Wasmer 优选 84.0ms 104.16.7.20]"
+      - "🇸🇬 新加坡 03 [🟢 Netlify 优选 84.0ms 104.16.7.8]"
+      - "🇸🇬 新加坡 04 [⚡ Supabase 优选 84.0ms 104.16.7.12]"
+      - "🇸🇬 新加坡 05 [🟠 Fastly 优选 84.0ms 104.16.7.4]"
+      - "🇸🇬 新加坡 06 [🟣 Wasmer 优选 84.0ms 104.16.7.16]"
+      - "🇸🇬 新加坡 07 [🟢 Netlify 优选 84.0ms 104.16.7.24]"
+      - "🇸🇬 新加坡 08 [⚡ Supabase 优选 84.0ms 146.75.121.140]"
+      - "🇸🇬 新加坡 09 [🟠 Fastly 优选 84.0ms 146.75.121.200]"
+      - "🇸🇬 新加坡 10 [🟣 Wasmer 优选 84.0ms 146.75.121.210]"
+      - "🇸🇬 新加坡 11 [🟢 Netlify 优选 84.0ms 146.75.121.240]"
+      - "🇸🇬 新加坡 12 [⚡ Supabase 优选 84.0ms 146.75.121.230]"
+      - "🇸🇬 新加坡 13 [🟠 Fastly 优选 84.8ms 104.16.7.1]"
+      - "🇸🇬 新加坡 14 [🟣 Wasmer 优选 84.8ms 104.16.7.9]"
+      - "🇸🇬 新加坡 15 [🟢 Netlify 优选 84.8ms 104.16.7.13]"
+      - "🇸🇬 新加坡 16 [⚡ Supabase 优选 84.8ms 104.16.7.5]"
+      - "🇸🇬 新加坡 17 [🟠 Fastly 优选 84.8ms 104.16.7.21]"
+      - "🇸🇬 新加坡 18 [🟣 Wasmer 优选 84.8ms 104.16.7.25]"
+      - "🇸🇬 新加坡 19 [🟢 Netlify 优选 84.8ms 104.16.7.17]"
+      - "🇸🇬 新加坡 20 [⚡ Supabase 优选 85.0ms 146.75.121.132]"
+      - "🇸🇬 新加坡 21 [🟠 Fastly 优选 85.6ms 104.16.7.2]"
+      - "🇸🇬 新加坡 22 [🟣 Wasmer 优选 85.6ms 104.16.7.14]"
+      - "🇸🇬 新加坡 23 [🟢 Netlify 优选 85.6ms 104.16.7.18]"
+      - "🇸🇬 新加坡 24 [⚡ Supabase 优选 85.6ms 104.16.7.10]"
+      - "🇸🇬 新加坡 25 [🟠 Fastly 优选 85.6ms 104.16.7.6]"
+
+  - name: "🌍 欧洲专线池 (<160ms)"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "🇩🇪 德国法兰克福 01 [🟠 Fastly 优选 140.94ms 88.218.193.1]"
+      - "🇩🇪 德国法兰克福 02 [🟣 Wasmer 优选 142.0ms 188.114.96.1]"
+      - "🇩🇪 德国法兰克福 03 [🟢 Netlify 优选 142.0ms 151.101.112.200]"
+      - "🇩🇪 德国法兰克福 04 [⚡ Supabase 优选 142.0ms 151.101.112.230]"
+      - "🇩🇪 德国法兰克福 05 [🟠 Fastly 优选 142.0ms 151.101.112.220]"
+      - "🇩🇪 德国法兰克福 06 [🟣 Wasmer 优选 143.0ms 188.114.97.1]"
+      - "🇩🇪 德国法兰克福 07 [🟢 Netlify 优选 144.0ms 151.101.112.194]"
+      - "🇩🇪 德国法兰克福 08 [⚡ Supabase 优选 144.0ms 151.101.112.69]"
+      - "🇩🇪 德国法兰克福 09 [🟠 Fastly 优选 145.0ms 188.114.96.80]"
+      - "🇩🇪 德国法兰克福 10 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇩🇪 德国法兰克福 11 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇩🇪 德国法兰克福 12 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇩🇪 德国法兰克福 13 [🟠 Fastly 优选 145.0ms 188.114.96.24]"
+      - "🇩🇪 德国法兰克福 14 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇩🇪 德国法兰克福 15 [🟢 Netlify 优选 145.0ms 188.114.96.72]"
+      - "🇩🇪 德国法兰克福 16 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇩🇪 德国法兰克福 17 [🟠 Fastly 优选 145.0ms 188.114.96.96]"
+      - "🇩🇪 德国法兰克福 18 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 01 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 02 [🟣 Wasmer 优选 145.0ms 188.114.97.8]"
+      - "🇫🇷 法国巴黎 03 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇫🇷 法国巴黎 04 [⚡ Supabase 优选 145.0ms 188.114.97.32]"
+      - "🇫🇷 法国巴黎 05 [🟠 Fastly 优选 145.0ms 188.114.96.48]"
+      - "🇫🇷 法国巴黎 06 [🟣 Wasmer 优选 145.0ms 188.114.97.88]"
+      - "🇫🇷 法国巴黎 07 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇫🇷 法国巴黎 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇫🇷 法国巴黎 09 [🟠 Fastly 优选 145.0ms 188.114.97.56]"
+      - "🇫🇷 法国巴黎 10 [🟣 Wasmer 优选 145.0ms 188.114.97.72]"
+      - "🇫🇷 法国巴黎 11 [🟢 Netlify 优选 145.0ms 188.114.96.24]"
+      - "🇫🇷 法国巴黎 12 [⚡ Supabase 优选 145.0ms 188.114.97.96]"
+      - "🇫🇷 法国巴黎 13 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇫🇷 法国巴黎 14 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇫🇷 法国巴黎 15 [🟢 Netlify 优选 145.0ms 188.114.96.96]"
+      - "🇫🇷 法国巴黎 16 [⚡ Supabase 优选 145.0ms 188.114.97.80]"
+      - "🇫🇷 法国巴黎 17 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇫🇷 法国巴黎 18 [🟣 Wasmer 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 01 [🟠 Fastly 优选 145.0ms 188.114.96.72]"
+      - "🇬🇧 英国伦敦 02 [🟣 Wasmer 优选 145.0ms 188.114.96.80]"
+      - "🇬🇧 英国伦敦 03 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇬🇧 英国伦敦 04 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇬🇧 英国伦敦 05 [🟠 Fastly 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 06 [🟣 Wasmer 优选 145.0ms 188.114.97.80]"
+      - "🇬🇧 英国伦敦 07 [🟢 Netlify 优选 145.0ms 188.114.97.32]"
+      - "🇬🇧 英国伦敦 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇬🇧 英国伦敦 09 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇬🇧 英国伦敦 10 [🟣 Wasmer 优选 145.0ms 188.114.96.96]"
+      - "🇬🇧 英国伦敦 11 [🟢 Netlify 优选 145.0ms 188.114.97.72]"
+      - "🇬🇧 英国伦敦 12 [⚡ Supabase 优选 145.0ms 188.114.97.40]"
+      - "🇬🇧 英国伦敦 13 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇬🇧 英国伦敦 14 [🟣 Wasmer 优选 145.0ms 188.114.96.56]"
+      - "🇬🇧 英国伦敦 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇬🇧 英国伦敦 16 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇬🇧 英国伦敦 17 [🟠 Fastly 优选 145.0ms 188.114.96.32]"
+      - "🇬🇧 英国伦敦 18 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 01 [🟠 Fastly 优选 145.0ms 188.114.97.80]"
+      - "🇨🇭 瑞士苏黎世 02 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇨🇭 瑞士苏黎世 03 [🟢 Netlify 优选 145.0ms 188.114.97.96]"
+      - "🇨🇭 瑞士苏黎世 04 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇨🇭 瑞士苏黎世 05 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇨🇭 瑞士苏黎世 06 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 07 [🟢 Netlify 优选 145.0ms 188.114.96.80]"
+      - "🇨🇭 瑞士苏黎世 08 [⚡ Supabase 优选 145.0ms 188.114.96.64]"
+      - "🇨🇭 瑞士苏黎世 09 [🟠 Fastly 优选 145.0ms 188.114.97.40]"
+      - "🇨🇭 瑞士苏黎世 10 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇨🇭 瑞士苏黎世 11 [🟢 Netlify 优选 145.0ms 188.114.97.56]"
+      - "🇨🇭 瑞士苏黎世 12 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇨🇭 瑞士苏黎世 13 [🟠 Fastly 优选 145.0ms 188.114.97.32]"
+      - "🇨🇭 瑞士苏黎世 14 [🟣 Wasmer 优选 145.0ms 188.114.96.32]"
+      - "🇨🇭 瑞士苏黎世 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+
+  - name: "🌎 美洲专线池 (<160ms)"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "🇺🇸 美国美东 01 [🟠 Fastly 优选 148.0ms 104.16.0.1]"
+      - "🇺🇸 美国美东 02 [🟣 Wasmer 优选 148.0ms 104.17.200.30]"
+      - "🇺🇸 美国美东 03 [🟢 Netlify 优选 148.0ms 104.16.200.5]"
+      - "🇺🇸 美国美东 04 [⚡ Supabase 优选 148.0ms 104.17.200.15]"
+      - "🇺🇸 美国美东 05 [🟠 Fastly 优选 148.0ms 104.16.0.2]"
+      - "🇺🇸 美国美东 06 [🟣 Wasmer 优选 148.0ms 104.17.200.10]"
+      - "🇺🇸 美国美东 07 [🟢 Netlify 优选 148.0ms 104.16.0.10]"
+      - "🇺🇸 美国美东 08 [⚡ Supabase 优选 148.0ms 104.17.200.1]"
+      - "🇺🇸 美国美东 09 [🟠 Fastly 优选 148.0ms 104.17.0.30]"
+      - "🇺🇸 美国美东 10 [🟣 Wasmer 优选 148.0ms 104.17.0.15]"
+      - "🇺🇸 美国美东 11 [🟢 Netlify 优选 148.0ms 104.17.200.5]"
+      - "🇺🇸 美国美东 12 [⚡ Supabase 优选 148.0ms 104.17.0.2]"
+      - "🇺🇸 美国美东 13 [🟠 Fastly 优选 148.0ms 151.101.128.220]"
+      - "🇺🇸 美国美东 14 [🟣 Wasmer 优选 148.0ms 104.16.200.25]"
+      - "🇺🇸 美国美东 15 [🟢 Netlify 优选 148.0ms 104.17.0.25]"
+      - "🇺🇸 美国美东 16 [⚡ Supabase 优选 148.0ms 151.101.128.230]"
+      - "🇺🇸 美国美东 17 [🟠 Fastly 优选 148.0ms 104.16.0.25]"
+      - "🇺🇸 美国美东 18 [🟣 Wasmer 优选 148.0ms 104.17.200.8]"
+      - "🇺🇸 美国美东 19 [🟢 Netlify 优选 148.0ms 104.16.0.5]"
+      - "🇺🇸 美国美东 20 [⚡ Supabase 优选 148.0ms 151.101.128.200]"
+      - "🇺🇸 美国美西 01 [🟠 Fastly 优选 148.0ms 104.19.200.25]"
+      - "🇺🇸 美国美西 02 [🟣 Wasmer 优选 148.0ms 104.19.200.30]"
+      - "🇺🇸 美国美西 03 [🟢 Netlify 优选 148.0ms 104.19.200.1]"
+      - "🇺🇸 美国美西 04 [⚡ Supabase 优选 148.0ms 104.19.200.5]"
+      - "🇺🇸 美国美西 05 [🟠 Fastly 优选 148.0ms 104.19.200.10]"
+      - "🇺🇸 美国美西 06 [🟣 Wasmer 优选 148.0ms 104.19.0.5]"
+      - "🇺🇸 美国美西 07 [🟢 Netlify 优选 148.0ms 104.19.0.8]"
+      - "🇺🇸 美国美西 08 [⚡ Supabase 优选 148.0ms 104.19.200.2]"
+      - "🇺🇸 美国美西 09 [🟠 Fastly 优选 148.0ms 104.19.0.2]"
+      - "🇺🇸 美国美西 10 [🟣 Wasmer 优选 148.0ms 104.19.0.30]"
+      - "🇺🇸 美国美西 11 [🟢 Netlify 优选 148.0ms 104.19.0.1]"
+      - "🇺🇸 美国美西 12 [⚡ Supabase 优选 148.0ms 104.19.0.20]"
+      - "🇺🇸 美国美西 13 [🟠 Fastly 优选 148.0ms 104.19.0.25]"
+      - "🇺🇸 美国美西 14 [🟣 Wasmer 优选 148.0ms 172.64.50.5]"
+      - "🇺🇸 美国美西 15 [🟢 Netlify 优选 148.0ms 104.19.0.10]"
+      - "🇺🇸 美国美西 16 [⚡ Supabase 优选 148.0ms 104.19.200.20]"
+      - "🇺🇸 美国美西 17 [🟠 Fastly 优选 148.0ms 104.19.200.8]"
+      - "🇺🇸 美国美西 18 [🟣 Wasmer 优选 148.0ms 104.19.0.15]"
+      - "🇺🇸 美国美西 19 [🟢 Netlify 优选 149.0ms 104.19.1.30]"
+      - "🇺🇸 美国美西 20 [⚡ Supabase 优选 149.0ms 104.19.1.5]"
+
+  - name: "🟠 Fastly 边缘池"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "🇭🇰 中国香港 01 [🟠 Fastly 优选 48.5ms 39.109.50.124]"
+      - "🇭🇰 中国香港 05 [🟠 Fastly 优选 52.0ms 104.16.1.12]"
+      - "🇭🇰 中国香港 09 [🟠 Fastly 优选 52.8ms 104.16.1.13]"
+      - "🇭🇰 中国香港 13 [🟠 Fastly 优选 52.8ms 104.16.1.17]"
+      - "🇭🇰 中国香港 17 [🟠 Fastly 优选 53.6ms 104.16.1.22]"
+      - "🇭🇰 中国香港 21 [🟠 Fastly 优选 54.0ms 104.16.2.16]"
+      - "🇭🇰 中国香港 25 [🟠 Fastly 优选 54.0ms 104.16.2.8]"
+      - "🇭🇰 中国香港 29 [🟠 Fastly 优选 54.4ms 104.16.1.19]"
+      - "🇯🇵 日本东京 01 [🟠 Fastly 优选 67.23ms 157.254.198.27]"
+      - "🇯🇵 日本东京 05 [🟠 Fastly 优选 70.0ms 104.16.3.12]"
+      - "🇯🇵 日本东京 09 [🟠 Fastly 优选 70.0ms 199.232.41.200]"
+      - "🇯🇵 日本东京 13 [🟠 Fastly 优选 70.8ms 104.16.3.21]"
+      - "🇯🇵 日本东京 17 [🟠 Fastly 优选 71.0ms 199.232.41.132]"
+      - "🇯🇵 日本东京 21 [🟠 Fastly 优选 71.6ms 104.16.3.22]"
+      - "🇯🇵 日本东京 25 [🟠 Fastly 优选 72.0ms 104.16.4.16]"
+      - "🇯🇵 日本东京 29 [🟠 Fastly 优选 72.0ms 104.16.4.8]"
+      - "🇰🇷 韩国首尔 01 [🟠 Fastly 优选 62.87ms 43.133.237.158]"
+      - "🇰🇷 韩国首尔 05 [🟠 Fastly 优选 64.0ms 151.101.2.140]"
+      - "🇰🇷 韩国首尔 09 [🟠 Fastly 优选 65.0ms 104.16.5.16]"
+      - "🇰🇷 韩国首尔 13 [🟠 Fastly 优选 65.8ms 104.16.5.9]"
+      - "🇰🇷 韩国首尔 17 [🟠 Fastly 优选 65.8ms 104.16.5.21]"
+      - "🇰🇷 韩国首尔 21 [🟠 Fastly 优选 66.0ms 151.101.66.230]"
+      - "🇰🇷 韩国首尔 25 [🟠 Fastly 优选 66.0ms 151.101.66.210]"
+      - "🇸🇬 新加坡 01 [🟠 Fastly 优选 82.27ms 209.97.175.102]"
+      - "🇸🇬 新加坡 05 [🟠 Fastly 优选 84.0ms 104.16.7.4]"
+      - "🇸🇬 新加坡 09 [🟠 Fastly 优选 84.0ms 146.75.121.200]"
+      - "🇸🇬 新加坡 13 [🟠 Fastly 优选 84.8ms 104.16.7.1]"
+      - "🇸🇬 新加坡 17 [🟠 Fastly 优选 84.8ms 104.16.7.21]"
+      - "🇸🇬 新加坡 21 [🟠 Fastly 优选 85.6ms 104.16.7.2]"
+      - "🇸🇬 新加坡 25 [🟠 Fastly 优选 85.6ms 104.16.7.6]"
+      - "🇩🇪 德国法兰克福 01 [🟠 Fastly 优选 140.94ms 88.218.193.1]"
+      - "🇩🇪 德国法兰克福 05 [🟠 Fastly 优选 142.0ms 151.101.112.220]"
+      - "🇩🇪 德国法兰克福 09 [🟠 Fastly 优选 145.0ms 188.114.96.80]"
+      - "🇩🇪 德国法兰克福 13 [🟠 Fastly 优选 145.0ms 188.114.96.24]"
+      - "🇩🇪 德国法兰克福 17 [🟠 Fastly 优选 145.0ms 188.114.96.96]"
+      - "🇫🇷 法国巴黎 01 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 05 [🟠 Fastly 优选 145.0ms 188.114.96.48]"
+      - "🇫🇷 法国巴黎 09 [🟠 Fastly 优选 145.0ms 188.114.97.56]"
+      - "🇫🇷 法国巴黎 13 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇫🇷 法国巴黎 17 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇬🇧 英国伦敦 01 [🟠 Fastly 优选 145.0ms 188.114.96.72]"
+      - "🇬🇧 英国伦敦 05 [🟠 Fastly 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 09 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇬🇧 英国伦敦 13 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇬🇧 英国伦敦 17 [🟠 Fastly 优选 145.0ms 188.114.96.32]"
+      - "🇨🇭 瑞士苏黎世 01 [🟠 Fastly 优选 145.0ms 188.114.97.80]"
+      - "🇨🇭 瑞士苏黎世 05 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇨🇭 瑞士苏黎世 09 [🟠 Fastly 优选 145.0ms 188.114.97.40]"
+      - "🇨🇭 瑞士苏黎世 13 [🟠 Fastly 优选 145.0ms 188.114.97.32]"
+      - "🇺🇸 美国美东 01 [🟠 Fastly 优选 148.0ms 104.16.0.1]"
+      - "🇺🇸 美国美东 05 [🟠 Fastly 优选 148.0ms 104.16.0.2]"
+      - "🇺🇸 美国美东 09 [🟠 Fastly 优选 148.0ms 104.17.0.30]"
+      - "🇺🇸 美国美东 13 [🟠 Fastly 优选 148.0ms 151.101.128.220]"
+      - "🇺🇸 美国美东 17 [🟠 Fastly 优选 148.0ms 104.16.0.25]"
+      - "🇺🇸 美国美西 01 [🟠 Fastly 优选 148.0ms 104.19.200.25]"
+      - "🇺🇸 美国美西 05 [🟠 Fastly 优选 148.0ms 104.19.200.10]"
+      - "🇺🇸 美国美西 09 [🟠 Fastly 优选 148.0ms 104.19.0.2]"
+      - "🇺🇸 美国美西 13 [🟠 Fastly 优选 148.0ms 104.19.0.25]"
+      - "🇺🇸 美国美西 17 [🟠 Fastly 优选 148.0ms 104.19.200.8]"
+
+  - name: "🟣 Wasmer 边缘池"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "🇭🇰 中国香港 02 [🟣 Wasmer 优选 52.0ms 104.16.1.4]"
+      - "🇭🇰 中国香港 06 [🟣 Wasmer 优选 52.0ms 104.16.1.16]"
+      - "🇭🇰 中国香港 10 [🟣 Wasmer 优选 52.8ms 104.16.1.21]"
+      - "🇭🇰 中国香港 14 [🟣 Wasmer 优选 52.8ms 104.16.1.9]"
+      - "🇭🇰 中国香港 18 [🟣 Wasmer 优选 53.6ms 104.16.1.6]"
+      - "🇭🇰 中国香港 22 [🟣 Wasmer 优选 54.0ms 104.16.2.12]"
+      - "🇭🇰 中国香港 26 [🟣 Wasmer 优选 54.0ms hk.090227.xyz]"
+      - "🇭🇰 中国香港 30 [🟣 Wasmer 优选 54.4ms 104.16.1.7]"
+      - "🇯🇵 日本东京 02 [🟣 Wasmer 优选 68.6ms 154.36.162.210]"
+      - "🇯🇵 日本东京 06 [🟣 Wasmer 优选 70.0ms 104.16.3.4]"
+      - "🇯🇵 日本东京 10 [🟣 Wasmer 优选 70.0ms 104.16.3.8]"
+      - "🇯🇵 日本东京 14 [🟣 Wasmer 优选 70.8ms 104.16.3.13]"
+      - "🇯🇵 日本东京 18 [🟣 Wasmer 优选 71.2ms 199.232.45.140]"
+      - "🇯🇵 日本东京 22 [🟣 Wasmer 优选 71.6ms 104.16.3.6]"
+      - "🇯🇵 日本东京 26 [🟣 Wasmer 优选 72.0ms 104.16.4.20]"
+      - "🇯🇵 日本东京 30 [🟣 Wasmer 优选 72.0ms 104.16.4.12]"
+      - "🇰🇷 韩国首尔 02 [🟣 Wasmer 优选 64.0ms 151.101.2.230]"
+      - "🇰🇷 韩国首尔 06 [🟣 Wasmer 优选 64.0ms 151.101.2.210]"
+      - "🇰🇷 韩国首尔 10 [🟣 Wasmer 优选 65.0ms 104.16.5.4]"
+      - "🇰🇷 韩国首尔 14 [🟣 Wasmer 优选 65.8ms 104.16.5.1]"
+      - "🇰🇷 韩国首尔 18 [🟣 Wasmer 优选 65.8ms 104.16.5.5]"
+      - "🇰🇷 韩国首尔 22 [🟣 Wasmer 优选 66.0ms 151.101.66.220]"
+      - "🇸🇬 新加坡 02 [🟣 Wasmer 优选 84.0ms 104.16.7.20]"
+      - "🇸🇬 新加坡 06 [🟣 Wasmer 优选 84.0ms 104.16.7.16]"
+      - "🇸🇬 新加坡 10 [🟣 Wasmer 优选 84.0ms 146.75.121.210]"
+      - "🇸🇬 新加坡 14 [🟣 Wasmer 优选 84.8ms 104.16.7.9]"
+      - "🇸🇬 新加坡 18 [🟣 Wasmer 优选 84.8ms 104.16.7.25]"
+      - "🇸🇬 新加坡 22 [🟣 Wasmer 优选 85.6ms 104.16.7.14]"
+      - "🇩🇪 德国法兰克福 02 [🟣 Wasmer 优选 142.0ms 188.114.96.1]"
+      - "🇩🇪 德国法兰克福 06 [🟣 Wasmer 优选 143.0ms 188.114.97.1]"
+      - "🇩🇪 德国法兰克福 10 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇩🇪 德国法兰克福 14 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇩🇪 德国法兰克福 18 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 02 [🟣 Wasmer 优选 145.0ms 188.114.97.8]"
+      - "🇫🇷 法国巴黎 06 [🟣 Wasmer 优选 145.0ms 188.114.97.88]"
+      - "🇫🇷 法国巴黎 10 [🟣 Wasmer 优选 145.0ms 188.114.97.72]"
+      - "🇫🇷 法国巴黎 14 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇫🇷 法国巴黎 18 [🟣 Wasmer 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 02 [🟣 Wasmer 优选 145.0ms 188.114.96.80]"
+      - "🇬🇧 英国伦敦 06 [🟣 Wasmer 优选 145.0ms 188.114.97.80]"
+      - "🇬🇧 英国伦敦 10 [🟣 Wasmer 优选 145.0ms 188.114.96.96]"
+      - "🇬🇧 英国伦敦 14 [🟣 Wasmer 优选 145.0ms 188.114.96.56]"
+      - "🇬🇧 英国伦敦 18 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 02 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇨🇭 瑞士苏黎世 06 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 10 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇨🇭 瑞士苏黎世 14 [🟣 Wasmer 优选 145.0ms 188.114.96.32]"
+      - "🇺🇸 美国美东 02 [🟣 Wasmer 优选 148.0ms 104.17.200.30]"
+      - "🇺🇸 美国美东 06 [🟣 Wasmer 优选 148.0ms 104.17.200.10]"
+      - "🇺🇸 美国美东 10 [🟣 Wasmer 优选 148.0ms 104.17.0.15]"
+      - "🇺🇸 美国美东 14 [🟣 Wasmer 优选 148.0ms 104.16.200.25]"
+      - "🇺🇸 美国美东 18 [🟣 Wasmer 优选 148.0ms 104.17.200.8]"
+      - "🇺🇸 美国美西 02 [🟣 Wasmer 优选 148.0ms 104.19.200.30]"
+      - "🇺🇸 美国美西 06 [🟣 Wasmer 优选 148.0ms 104.19.0.5]"
+      - "🇺🇸 美国美西 10 [🟣 Wasmer 优选 148.0ms 104.19.0.30]"
+      - "🇺🇸 美国美西 14 [🟣 Wasmer 优选 148.0ms 172.64.50.5]"
+      - "🇺🇸 美国美西 18 [🟣 Wasmer 优选 148.0ms 104.19.0.15]"
+
+  - name: "🟢 Netlify 边缘池"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "🇭🇰 中国香港 03 [🟢 Netlify 优选 52.0ms 104.16.1.20]"
+      - "🇭🇰 中国香港 07 [🟢 Netlify 优选 52.0ms 104.16.1.24]"
+      - "🇭🇰 中国香港 11 [🟢 Netlify 优选 52.8ms 104.16.1.5]"
+      - "🇭🇰 中国香港 15 [🟢 Netlify 优选 53.6ms 104.16.1.14]"
+      - "🇭🇰 中国香港 19 [🟢 Netlify 优选 53.6ms 104.16.1.10]"
+      - "🇭🇰 中国香港 23 [🟢 Netlify 优选 54.0ms 104.16.2.4]"
+      - "🇭🇰 中国香港 27 [🟢 Netlify 优选 54.0ms 104.16.2.20]"
+      - "🇯🇵 日本东京 03 [🟢 Netlify 优选 69.5ms 199.232.41.140]"
+      - "🇯🇵 日本东京 07 [🟢 Netlify 优选 70.0ms 104.16.3.20]"
+      - "🇯🇵 日本东京 11 [🟢 Netlify 优选 70.0ms 104.16.3.24]"
+      - "🇯🇵 日本东京 15 [🟢 Netlify 优选 70.8ms 104.16.3.9]"
+      - "🇯🇵 日本东京 19 [🟢 Netlify 优选 71.6ms 104.16.3.10]"
+      - "🇯🇵 日本东京 23 [🟢 Netlify 优选 71.6ms 104.16.3.14]"
+      - "🇯🇵 日本东京 27 [🟢 Netlify 优选 72.0ms 199.232.45.230]"
+      - "🇰🇷 韩国首尔 03 [🟢 Netlify 优选 64.0ms 151.101.2.240]"
+      - "🇰🇷 韩国首尔 07 [🟢 Netlify 优选 64.2ms 151.101.2.132]"
+      - "🇰🇷 韩国首尔 11 [🟢 Netlify 优选 65.0ms 104.16.5.8]"
+      - "🇰🇷 韩国首尔 15 [🟢 Netlify 优选 65.8ms 104.16.5.17]"
+      - "🇰🇷 韩国首尔 19 [🟢 Netlify 优选 65.8ms 104.16.5.13]"
+      - "🇰🇷 韩国首尔 23 [🟢 Netlify 优选 66.0ms 151.101.2.204]"
+      - "🇸🇬 新加坡 03 [🟢 Netlify 优选 84.0ms 104.16.7.8]"
+      - "🇸🇬 新加坡 07 [🟢 Netlify 优选 84.0ms 104.16.7.24]"
+      - "🇸🇬 新加坡 11 [🟢 Netlify 优选 84.0ms 146.75.121.240]"
+      - "🇸🇬 新加坡 15 [🟢 Netlify 优选 84.8ms 104.16.7.13]"
+      - "🇸🇬 新加坡 19 [🟢 Netlify 优选 84.8ms 104.16.7.17]"
+      - "🇸🇬 新加坡 23 [🟢 Netlify 优选 85.6ms 104.16.7.18]"
+      - "🇩🇪 德国法兰克福 03 [🟢 Netlify 优选 142.0ms 151.101.112.200]"
+      - "🇩🇪 德国法兰克福 07 [🟢 Netlify 优选 144.0ms 151.101.112.194]"
+      - "🇩🇪 德国法兰克福 11 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇩🇪 德国法兰克福 15 [🟢 Netlify 优选 145.0ms 188.114.96.72]"
+      - "🇫🇷 法国巴黎 03 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇫🇷 法国巴黎 07 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇫🇷 法国巴黎 11 [🟢 Netlify 优选 145.0ms 188.114.96.24]"
+      - "🇫🇷 法国巴黎 15 [🟢 Netlify 优选 145.0ms 188.114.96.96]"
+      - "🇬🇧 英国伦敦 03 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇬🇧 英国伦敦 07 [🟢 Netlify 优选 145.0ms 188.114.97.32]"
+      - "🇬🇧 英国伦敦 11 [🟢 Netlify 优选 145.0ms 188.114.97.72]"
+      - "🇬🇧 英国伦敦 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇨🇭 瑞士苏黎世 03 [🟢 Netlify 优选 145.0ms 188.114.97.96]"
+      - "🇨🇭 瑞士苏黎世 07 [🟢 Netlify 优选 145.0ms 188.114.96.80]"
+      - "🇨🇭 瑞士苏黎世 11 [🟢 Netlify 优选 145.0ms 188.114.97.56]"
+      - "🇨🇭 瑞士苏黎世 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇺🇸 美国美东 03 [🟢 Netlify 优选 148.0ms 104.16.200.5]"
+      - "🇺🇸 美国美东 07 [🟢 Netlify 优选 148.0ms 104.16.0.10]"
+      - "🇺🇸 美国美东 11 [🟢 Netlify 优选 148.0ms 104.17.200.5]"
+      - "🇺🇸 美国美东 15 [🟢 Netlify 优选 148.0ms 104.17.0.25]"
+      - "🇺🇸 美国美东 19 [🟢 Netlify 优选 148.0ms 104.16.0.5]"
+      - "🇺🇸 美国美西 03 [🟢 Netlify 优选 148.0ms 104.19.200.1]"
+      - "🇺🇸 美国美西 07 [🟢 Netlify 优选 148.0ms 104.19.0.8]"
+      - "🇺🇸 美国美西 11 [🟢 Netlify 优选 148.0ms 104.19.0.1]"
+      - "🇺🇸 美国美西 15 [🟢 Netlify 优选 148.0ms 104.19.0.10]"
+      - "🇺🇸 美国美西 19 [🟢 Netlify 优选 149.0ms 104.19.1.30]"
+
+  - name: "⚡ Supabase 边缘池"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "🇭🇰 中国香港 04 [⚡ Supabase 优选 52.0ms 104.16.1.8]"
+      - "🇭🇰 中国香港 08 [⚡ Supabase 优选 52.3ms 23.147.172.135]"
+      - "🇭🇰 中国香港 12 [⚡ Supabase 优选 52.8ms 104.16.1.25]"
+      - "🇭🇰 中国香港 16 [⚡ Supabase 优选 53.6ms 104.16.1.2]"
+      - "🇭🇰 中国香港 20 [⚡ Supabase 优选 53.6ms 104.16.1.18]"
+      - "🇭🇰 中国香港 24 [⚡ Supabase 优选 54.0ms 104.16.2.24]"
+      - "🇭🇰 中国香港 28 [⚡ Supabase 优选 54.4ms 104.16.1.11]"
+      - "🇯🇵 日本东京 04 [⚡ Supabase 优选 70.0ms 104.16.3.16]"
+      - "🇯🇵 日本东京 08 [⚡ Supabase 优选 70.0ms 199.232.41.240]"
+      - "🇯🇵 日本东京 12 [⚡ Supabase 优选 70.8ms 104.16.3.25]"
+      - "🇯🇵 日本东京 16 [⚡ Supabase 优选 70.8ms 104.16.3.17]"
+      - "🇯🇵 日本东京 20 [⚡ Supabase 优选 71.6ms 104.16.3.18]"
+      - "🇯🇵 日本东京 24 [⚡ Supabase 优选 71.6ms 104.16.3.2]"
+      - "🇯🇵 日本东京 28 [⚡ Supabase 优选 72.0ms 199.232.45.200]"
+      - "🇰🇷 韩国首尔 04 [⚡ Supabase 优选 64.0ms 151.101.2.220]"
+      - "🇰🇷 韩国首尔 08 [⚡ Supabase 优选 65.0ms 104.16.5.12]"
+      - "🇰🇷 韩国首尔 12 [⚡ Supabase 优选 65.0ms 104.16.5.20]"
+      - "🇰🇷 韩国首尔 16 [⚡ Supabase 优选 65.8ms 104.16.5.25]"
+      - "🇰🇷 韩国首尔 20 [⚡ Supabase 优选 66.0ms 151.101.66.240]"
+      - "🇰🇷 韩国首尔 24 [⚡ Supabase 优选 66.0ms 151.101.66.140]"
+      - "🇸🇬 新加坡 04 [⚡ Supabase 优选 84.0ms 104.16.7.12]"
+      - "🇸🇬 新加坡 08 [⚡ Supabase 优选 84.0ms 146.75.121.140]"
+      - "🇸🇬 新加坡 12 [⚡ Supabase 优选 84.0ms 146.75.121.230]"
+      - "🇸🇬 新加坡 16 [⚡ Supabase 优选 84.8ms 104.16.7.5]"
+      - "🇸🇬 新加坡 20 [⚡ Supabase 优选 85.0ms 146.75.121.132]"
+      - "🇸🇬 新加坡 24 [⚡ Supabase 优选 85.6ms 104.16.7.10]"
+      - "🇩🇪 德国法兰克福 04 [⚡ Supabase 优选 142.0ms 151.101.112.230]"
+      - "🇩🇪 德国法兰克福 08 [⚡ Supabase 优选 144.0ms 151.101.112.69]"
+      - "🇩🇪 德国法兰克福 12 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇩🇪 德国法兰克福 16 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇫🇷 法国巴黎 04 [⚡ Supabase 优选 145.0ms 188.114.97.32]"
+      - "🇫🇷 法国巴黎 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇫🇷 法国巴黎 12 [⚡ Supabase 优选 145.0ms 188.114.97.96]"
+      - "🇫🇷 法国巴黎 16 [⚡ Supabase 优选 145.0ms 188.114.97.80]"
+      - "🇬🇧 英国伦敦 04 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇬🇧 英国伦敦 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇬🇧 英国伦敦 12 [⚡ Supabase 优选 145.0ms 188.114.97.40]"
+      - "🇬🇧 英国伦敦 16 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇨🇭 瑞士苏黎世 04 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇨🇭 瑞士苏黎世 08 [⚡ Supabase 优选 145.0ms 188.114.96.64]"
+      - "🇨🇭 瑞士苏黎世 12 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇺🇸 美国美东 04 [⚡ Supabase 优选 148.0ms 104.17.200.15]"
+      - "🇺🇸 美国美东 08 [⚡ Supabase 优选 148.0ms 104.17.200.1]"
+      - "🇺🇸 美国美东 12 [⚡ Supabase 优选 148.0ms 104.17.0.2]"
+      - "🇺🇸 美国美东 16 [⚡ Supabase 优选 148.0ms 151.101.128.230]"
+      - "🇺🇸 美国美东 20 [⚡ Supabase 优选 148.0ms 151.101.128.200]"
+      - "🇺🇸 美国美西 04 [⚡ Supabase 优选 148.0ms 104.19.200.5]"
+      - "🇺🇸 美国美西 08 [⚡ Supabase 优选 148.0ms 104.19.200.2]"
+      - "🇺🇸 美国美西 12 [⚡ Supabase 优选 148.0ms 104.19.0.20]"
+      - "🇺🇸 美国美西 16 [⚡ Supabase 优选 148.0ms 104.19.200.20]"
+      - "🇺🇸 美国美西 20 [⚡ Supabase 优选 149.0ms 104.19.1.5]"
+
+  - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [优选 70.6ms 154.36.162.210]"
-      - "🇯🇵 日本东京 02 [优选 79.49ms 52.194.215.93]"
-      - "🇰🇷 韩国首尔 01 [优选 62.87ms 43.133.237.158]"
-      - "🇰🇷 韩国首尔 02 [优选 66.11ms 119.28.162.39]"
-      - "🇭🇰 香港专线 01 [优选 56.86ms 23.147.172.135]"
-      - "🇭🇰 香港专线 02 [优选 57.86ms 39.109.50.124]"
-      - "🇸🇬 新加坡 01 [优选 88.27ms 209.97.175.102]"
-      - "🇸🇬 新加坡 02 [优选 94.45ms 159.89.199.63]"
+      - "🇭🇰 中国香港 01 [🟠 Fastly 优选 48.5ms 39.109.50.124]"
+      - "🇭🇰 中国香港 02 [🟣 Wasmer 优选 52.0ms 104.16.1.4]"
+      - "🇭🇰 中国香港 03 [🟢 Netlify 优选 52.0ms 104.16.1.20]"
+      - "🇭🇰 中国香港 04 [⚡ Supabase 优选 52.0ms 104.16.1.8]"
+      - "🇭🇰 中国香港 05 [🟠 Fastly 优选 52.0ms 104.16.1.12]"
+      - "🇭🇰 中国香港 06 [🟣 Wasmer 优选 52.0ms 104.16.1.16]"
+      - "🇭🇰 中国香港 07 [🟢 Netlify 优选 52.0ms 104.16.1.24]"
+      - "🇭🇰 中国香港 08 [⚡ Supabase 优选 52.3ms 23.147.172.135]"
+      - "🇭🇰 中国香港 09 [🟠 Fastly 优选 52.8ms 104.16.1.13]"
+      - "🇭🇰 中国香港 10 [🟣 Wasmer 优选 52.8ms 104.16.1.21]"
+      - "🇭🇰 中国香港 11 [🟢 Netlify 优选 52.8ms 104.16.1.5]"
+      - "🇭🇰 中国香港 12 [⚡ Supabase 优选 52.8ms 104.16.1.25]"
+      - "🇭🇰 中国香港 13 [🟠 Fastly 优选 52.8ms 104.16.1.17]"
+      - "🇭🇰 中国香港 14 [🟣 Wasmer 优选 52.8ms 104.16.1.9]"
+      - "🇭🇰 中国香港 15 [🟢 Netlify 优选 53.6ms 104.16.1.14]"
+      - "🇭🇰 中国香港 16 [⚡ Supabase 优选 53.6ms 104.16.1.2]"
+      - "🇭🇰 中国香港 17 [🟠 Fastly 优选 53.6ms 104.16.1.22]"
+      - "🇭🇰 中国香港 18 [🟣 Wasmer 优选 53.6ms 104.16.1.6]"
+      - "🇭🇰 中国香港 19 [🟢 Netlify 优选 53.6ms 104.16.1.10]"
+      - "🇭🇰 中国香港 20 [⚡ Supabase 优选 53.6ms 104.16.1.18]"
+      - "🇭🇰 中国香港 21 [🟠 Fastly 优选 54.0ms 104.16.2.16]"
+      - "🇭🇰 中国香港 22 [🟣 Wasmer 优选 54.0ms 104.16.2.12]"
+      - "🇭🇰 中国香港 23 [🟢 Netlify 优选 54.0ms 104.16.2.4]"
+      - "🇭🇰 中国香港 24 [⚡ Supabase 优选 54.0ms 104.16.2.24]"
+      - "🇭🇰 中国香港 25 [🟠 Fastly 优选 54.0ms 104.16.2.8]"
+      - "🇭🇰 中国香港 26 [🟣 Wasmer 优选 54.0ms hk.090227.xyz]"
+      - "🇭🇰 中国香港 27 [🟢 Netlify 优选 54.0ms 104.16.2.20]"
+      - "🇭🇰 中国香港 28 [⚡ Supabase 优选 54.4ms 104.16.1.11]"
+      - "🇭🇰 中国香港 29 [🟠 Fastly 优选 54.4ms 104.16.1.19]"
+      - "🇭🇰 中国香港 30 [🟣 Wasmer 优选 54.4ms 104.16.1.7]"
 
-  - name: "🌍 欧洲节点"
+  - name: "🇯🇵 日本东京"
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [优选 155.0ms 188.114.96.30]"
-      - "🇩🇪 德国法兰克福 02 [优选 155.0ms 188.114.96.10]"
-      - "🇫🇷 法国巴黎 01 [优选 152.6ms 89.106.207.216]"
-      - "🇫🇷 法国巴黎 02 [优选 155.0ms 188.114.97.80]"
-      - "🇬🇧 英国伦敦 01 [优选 155.0ms 188.114.96.50]"
-      - "🇬🇧 英国伦敦 02 [优选 155.0ms 188.114.96.10]"
-      - "🇨🇭 瑞士苏黎世 01 [优选 152.6ms 89.106.207.216]"
-      - "🇨🇭 瑞士苏黎世 02 [优选 155.0ms 188.114.96.90]"
+      - "🇯🇵 日本东京 01 [🟠 Fastly 优选 67.23ms 157.254.198.27]"
+      - "🇯🇵 日本东京 02 [🟣 Wasmer 优选 68.6ms 154.36.162.210]"
+      - "🇯🇵 日本东京 03 [🟢 Netlify 优选 69.5ms 199.232.41.140]"
+      - "🇯🇵 日本东京 04 [⚡ Supabase 优选 70.0ms 104.16.3.16]"
+      - "🇯🇵 日本东京 05 [🟠 Fastly 优选 70.0ms 104.16.3.12]"
+      - "🇯🇵 日本东京 06 [🟣 Wasmer 优选 70.0ms 104.16.3.4]"
+      - "🇯🇵 日本东京 07 [🟢 Netlify 优选 70.0ms 104.16.3.20]"
+      - "🇯🇵 日本东京 08 [⚡ Supabase 优选 70.0ms 199.232.41.240]"
+      - "🇯🇵 日本东京 09 [🟠 Fastly 优选 70.0ms 199.232.41.200]"
+      - "🇯🇵 日本东京 10 [🟣 Wasmer 优选 70.0ms 104.16.3.8]"
+      - "🇯🇵 日本东京 11 [🟢 Netlify 优选 70.0ms 104.16.3.24]"
+      - "🇯🇵 日本东京 12 [⚡ Supabase 优选 70.8ms 104.16.3.25]"
+      - "🇯🇵 日本东京 13 [🟠 Fastly 优选 70.8ms 104.16.3.21]"
+      - "🇯🇵 日本东京 14 [🟣 Wasmer 优选 70.8ms 104.16.3.13]"
+      - "🇯🇵 日本东京 15 [🟢 Netlify 优选 70.8ms 104.16.3.9]"
+      - "🇯🇵 日本东京 16 [⚡ Supabase 优选 70.8ms 104.16.3.17]"
+      - "🇯🇵 日本东京 17 [🟠 Fastly 优选 71.0ms 199.232.41.132]"
+      - "🇯🇵 日本东京 18 [🟣 Wasmer 优选 71.2ms 199.232.45.140]"
+      - "🇯🇵 日本东京 19 [🟢 Netlify 优选 71.6ms 104.16.3.10]"
+      - "🇯🇵 日本东京 20 [⚡ Supabase 优选 71.6ms 104.16.3.18]"
+      - "🇯🇵 日本东京 21 [🟠 Fastly 优选 71.6ms 104.16.3.22]"
+      - "🇯🇵 日本东京 22 [🟣 Wasmer 优选 71.6ms 104.16.3.6]"
+      - "🇯🇵 日本东京 23 [🟢 Netlify 优选 71.6ms 104.16.3.14]"
+      - "🇯🇵 日本东京 24 [⚡ Supabase 优选 71.6ms 104.16.3.2]"
+      - "🇯🇵 日本东京 25 [🟠 Fastly 优选 72.0ms 104.16.4.16]"
+      - "🇯🇵 日本东京 26 [🟣 Wasmer 优选 72.0ms 104.16.4.20]"
+      - "🇯🇵 日本东京 27 [🟢 Netlify 优选 72.0ms 199.232.45.230]"
+      - "🇯🇵 日本东京 28 [⚡ Supabase 优选 72.0ms 199.232.45.200]"
+      - "🇯🇵 日本东京 29 [🟠 Fastly 优选 72.0ms 104.16.4.8]"
+      - "🇯🇵 日本东京 30 [🟣 Wasmer 优选 72.0ms 104.16.4.12]"
 
-  - name: "🌎 美洲节点"
+  - name: "🇰🇷 韩国首尔"
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [优选 150.0ms 104.17.222.40]"
-      - "🇺🇸 美国美东 02 [优选 152.0ms 104.16.100.5]"
-      - "🇺🇸 美国美西 01 [优选 152.0ms 172.64.50.5]"
-      - "🇺🇸 美国美西 02 [优选 152.0ms 104.19.200.15]"
-
-  - name: "🇯🇵 日本"
-    type: select
-    proxies:
-      - "🇯🇵 日本东京 01 [优选 70.6ms 154.36.162.210]"
-      - "🇯🇵 日本东京 02 [优选 79.49ms 52.194.215.93]"
-
-  - name: "🇰🇷 韩国"
-    type: select
-    proxies:
-      - "🇰🇷 韩国首尔 01 [优选 62.87ms 43.133.237.158]"
-      - "🇰🇷 韩国首尔 02 [优选 66.11ms 119.28.162.39]"
-
-  - name: "🇭🇰 香港"
-    type: select
-    proxies:
-      - "🇭🇰 香港专线 01 [优选 56.86ms 23.147.172.135]"
-      - "🇭🇰 香港专线 02 [优选 57.86ms 39.109.50.124]"
+      - "🇰🇷 韩国首尔 01 [🟠 Fastly 优选 62.87ms 43.133.237.158]"
+      - "🇰🇷 韩国首尔 02 [🟣 Wasmer 优选 64.0ms 151.101.2.230]"
+      - "🇰🇷 韩国首尔 03 [🟢 Netlify 优选 64.0ms 151.101.2.240]"
+      - "🇰🇷 韩国首尔 04 [⚡ Supabase 优选 64.0ms 151.101.2.220]"
+      - "🇰🇷 韩国首尔 05 [🟠 Fastly 优选 64.0ms 151.101.2.140]"
+      - "🇰🇷 韩国首尔 06 [🟣 Wasmer 优选 64.0ms 151.101.2.210]"
+      - "🇰🇷 韩国首尔 07 [🟢 Netlify 优选 64.2ms 151.101.2.132]"
+      - "🇰🇷 韩国首尔 08 [⚡ Supabase 优选 65.0ms 104.16.5.12]"
+      - "🇰🇷 韩国首尔 09 [🟠 Fastly 优选 65.0ms 104.16.5.16]"
+      - "🇰🇷 韩国首尔 10 [🟣 Wasmer 优选 65.0ms 104.16.5.4]"
+      - "🇰🇷 韩国首尔 11 [🟢 Netlify 优选 65.0ms 104.16.5.8]"
+      - "🇰🇷 韩国首尔 12 [⚡ Supabase 优选 65.0ms 104.16.5.20]"
+      - "🇰🇷 韩国首尔 13 [🟠 Fastly 优选 65.8ms 104.16.5.9]"
+      - "🇰🇷 韩国首尔 14 [🟣 Wasmer 优选 65.8ms 104.16.5.1]"
+      - "🇰🇷 韩国首尔 15 [🟢 Netlify 优选 65.8ms 104.16.5.17]"
+      - "🇰🇷 韩国首尔 16 [⚡ Supabase 优选 65.8ms 104.16.5.25]"
+      - "🇰🇷 韩国首尔 17 [🟠 Fastly 优选 65.8ms 104.16.5.21]"
+      - "🇰🇷 韩国首尔 18 [🟣 Wasmer 优选 65.8ms 104.16.5.5]"
+      - "🇰🇷 韩国首尔 19 [🟢 Netlify 优选 65.8ms 104.16.5.13]"
+      - "🇰🇷 韩国首尔 20 [⚡ Supabase 优选 66.0ms 151.101.66.240]"
+      - "🇰🇷 韩国首尔 21 [🟠 Fastly 优选 66.0ms 151.101.66.230]"
+      - "🇰🇷 韩国首尔 22 [🟣 Wasmer 优选 66.0ms 151.101.66.220]"
+      - "🇰🇷 韩国首尔 23 [🟢 Netlify 优选 66.0ms 151.101.2.204]"
+      - "🇰🇷 韩国首尔 24 [⚡ Supabase 优选 66.0ms 151.101.66.140]"
+      - "🇰🇷 韩国首尔 25 [🟠 Fastly 优选 66.0ms 151.101.66.210]"
 
   - name: "🇸🇬 新加坡"
     type: select
     proxies:
-      - "🇸🇬 新加坡 01 [优选 88.27ms 209.97.175.102]"
-      - "🇸🇬 新加坡 02 [优选 94.45ms 159.89.199.63]"
+      - "🇸🇬 新加坡 01 [🟠 Fastly 优选 82.27ms 209.97.175.102]"
+      - "🇸🇬 新加坡 02 [🟣 Wasmer 优选 84.0ms 104.16.7.20]"
+      - "🇸🇬 新加坡 03 [🟢 Netlify 优选 84.0ms 104.16.7.8]"
+      - "🇸🇬 新加坡 04 [⚡ Supabase 优选 84.0ms 104.16.7.12]"
+      - "🇸🇬 新加坡 05 [🟠 Fastly 优选 84.0ms 104.16.7.4]"
+      - "🇸🇬 新加坡 06 [🟣 Wasmer 优选 84.0ms 104.16.7.16]"
+      - "🇸🇬 新加坡 07 [🟢 Netlify 优选 84.0ms 104.16.7.24]"
+      - "🇸🇬 新加坡 08 [⚡ Supabase 优选 84.0ms 146.75.121.140]"
+      - "🇸🇬 新加坡 09 [🟠 Fastly 优选 84.0ms 146.75.121.200]"
+      - "🇸🇬 新加坡 10 [🟣 Wasmer 优选 84.0ms 146.75.121.210]"
+      - "🇸🇬 新加坡 11 [🟢 Netlify 优选 84.0ms 146.75.121.240]"
+      - "🇸🇬 新加坡 12 [⚡ Supabase 优选 84.0ms 146.75.121.230]"
+      - "🇸🇬 新加坡 13 [🟠 Fastly 优选 84.8ms 104.16.7.1]"
+      - "🇸🇬 新加坡 14 [🟣 Wasmer 优选 84.8ms 104.16.7.9]"
+      - "🇸🇬 新加坡 15 [🟢 Netlify 优选 84.8ms 104.16.7.13]"
+      - "🇸🇬 新加坡 16 [⚡ Supabase 优选 84.8ms 104.16.7.5]"
+      - "🇸🇬 新加坡 17 [🟠 Fastly 优选 84.8ms 104.16.7.21]"
+      - "🇸🇬 新加坡 18 [🟣 Wasmer 优选 84.8ms 104.16.7.25]"
+      - "🇸🇬 新加坡 19 [🟢 Netlify 优选 84.8ms 104.16.7.17]"
+      - "🇸🇬 新加坡 20 [⚡ Supabase 优选 85.0ms 146.75.121.132]"
+      - "🇸🇬 新加坡 21 [🟠 Fastly 优选 85.6ms 104.16.7.2]"
+      - "🇸🇬 新加坡 22 [🟣 Wasmer 优选 85.6ms 104.16.7.14]"
+      - "🇸🇬 新加坡 23 [🟢 Netlify 优选 85.6ms 104.16.7.18]"
+      - "🇸🇬 新加坡 24 [⚡ Supabase 优选 85.6ms 104.16.7.10]"
+      - "🇸🇬 新加坡 25 [🟠 Fastly 优选 85.6ms 104.16.7.6]"
 
-  - name: "🇩🇪 德国"
+  - name: "🇩🇪 德国法兰克福"
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [优选 155.0ms 188.114.96.30]"
-      - "🇩🇪 德国法兰克福 02 [优选 155.0ms 188.114.96.10]"
+      - "🇩🇪 德国法兰克福 01 [🟠 Fastly 优选 140.94ms 88.218.193.1]"
+      - "🇩🇪 德国法兰克福 02 [🟣 Wasmer 优选 142.0ms 188.114.96.1]"
+      - "🇩🇪 德国法兰克福 03 [🟢 Netlify 优选 142.0ms 151.101.112.200]"
+      - "🇩🇪 德国法兰克福 04 [⚡ Supabase 优选 142.0ms 151.101.112.230]"
+      - "🇩🇪 德国法兰克福 05 [🟠 Fastly 优选 142.0ms 151.101.112.220]"
+      - "🇩🇪 德国法兰克福 06 [🟣 Wasmer 优选 143.0ms 188.114.97.1]"
+      - "🇩🇪 德国法兰克福 07 [🟢 Netlify 优选 144.0ms 151.101.112.194]"
+      - "🇩🇪 德国法兰克福 08 [⚡ Supabase 优选 144.0ms 151.101.112.69]"
+      - "🇩🇪 德国法兰克福 09 [🟠 Fastly 优选 145.0ms 188.114.96.80]"
+      - "🇩🇪 德国法兰克福 10 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇩🇪 德国法兰克福 11 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇩🇪 德国法兰克福 12 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇩🇪 德国法兰克福 13 [🟠 Fastly 优选 145.0ms 188.114.96.24]"
+      - "🇩🇪 德国法兰克福 14 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇩🇪 德国法兰克福 15 [🟢 Netlify 优选 145.0ms 188.114.96.72]"
+      - "🇩🇪 德国法兰克福 16 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇩🇪 德国法兰克福 17 [🟠 Fastly 优选 145.0ms 188.114.96.96]"
+      - "🇩🇪 德国法兰克福 18 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
 
-  - name: "🇫🇷 法国"
+  - name: "🇫🇷 法国巴黎"
     type: select
     proxies:
-      - "🇫🇷 法国巴黎 01 [优选 152.6ms 89.106.207.216]"
-      - "🇫🇷 法国巴黎 02 [优选 155.0ms 188.114.97.80]"
+      - "🇫🇷 法国巴黎 01 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇫🇷 法国巴黎 02 [🟣 Wasmer 优选 145.0ms 188.114.97.8]"
+      - "🇫🇷 法国巴黎 03 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇫🇷 法国巴黎 04 [⚡ Supabase 优选 145.0ms 188.114.97.32]"
+      - "🇫🇷 法国巴黎 05 [🟠 Fastly 优选 145.0ms 188.114.96.48]"
+      - "🇫🇷 法国巴黎 06 [🟣 Wasmer 优选 145.0ms 188.114.97.88]"
+      - "🇫🇷 法国巴黎 07 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇫🇷 法国巴黎 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇫🇷 法国巴黎 09 [🟠 Fastly 优选 145.0ms 188.114.97.56]"
+      - "🇫🇷 法国巴黎 10 [🟣 Wasmer 优选 145.0ms 188.114.97.72]"
+      - "🇫🇷 法国巴黎 11 [🟢 Netlify 优选 145.0ms 188.114.96.24]"
+      - "🇫🇷 法国巴黎 12 [⚡ Supabase 优选 145.0ms 188.114.97.96]"
+      - "🇫🇷 法国巴黎 13 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇫🇷 法国巴黎 14 [🟣 Wasmer 优选 145.0ms 188.114.96.64]"
+      - "🇫🇷 法国巴黎 15 [🟢 Netlify 优选 145.0ms 188.114.96.96]"
+      - "🇫🇷 法国巴黎 16 [⚡ Supabase 优选 145.0ms 188.114.97.80]"
+      - "🇫🇷 法国巴黎 17 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇫🇷 法国巴黎 18 [🟣 Wasmer 优选 145.0ms 188.114.96.16]"
 
-  - name: "🇬🇧 英国"
+  - name: "🇬🇧 英国伦敦"
     type: select
     proxies:
-      - "🇬🇧 英国伦敦 01 [优选 155.0ms 188.114.96.50]"
-      - "🇬🇧 英国伦敦 02 [优选 155.0ms 188.114.96.10]"
+      - "🇬🇧 英国伦敦 01 [🟠 Fastly 优选 145.0ms 188.114.96.72]"
+      - "🇬🇧 英国伦敦 02 [🟣 Wasmer 优选 145.0ms 188.114.96.80]"
+      - "🇬🇧 英国伦敦 03 [🟢 Netlify 优选 145.0ms 188.114.96.88]"
+      - "🇬🇧 英国伦敦 04 [⚡ Supabase 优选 145.0ms 188.114.97.56]"
+      - "🇬🇧 英国伦敦 05 [🟠 Fastly 优选 145.0ms 188.114.96.16]"
+      - "🇬🇧 英国伦敦 06 [🟣 Wasmer 优选 145.0ms 188.114.97.80]"
+      - "🇬🇧 英国伦敦 07 [🟢 Netlify 优选 145.0ms 188.114.97.32]"
+      - "🇬🇧 英国伦敦 08 [⚡ Supabase 优选 145.0ms 188.114.97.64]"
+      - "🇬🇧 英国伦敦 09 [🟠 Fastly 优选 145.0ms 188.114.97.16]"
+      - "🇬🇧 英国伦敦 10 [🟣 Wasmer 优选 145.0ms 188.114.96.96]"
+      - "🇬🇧 英国伦敦 11 [🟢 Netlify 优选 145.0ms 188.114.97.72]"
+      - "🇬🇧 英国伦敦 12 [⚡ Supabase 优选 145.0ms 188.114.97.40]"
+      - "🇬🇧 英国伦敦 13 [🟠 Fastly 优选 145.0ms 188.114.97.48]"
+      - "🇬🇧 英国伦敦 14 [🟣 Wasmer 优选 145.0ms 188.114.96.56]"
+      - "🇬🇧 英国伦敦 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
+      - "🇬🇧 英国伦敦 16 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇬🇧 英国伦敦 17 [🟠 Fastly 优选 145.0ms 188.114.96.32]"
+      - "🇬🇧 英国伦敦 18 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
 
-  - name: "🇨🇭 瑞士"
+  - name: "🇨🇭 瑞士苏黎世"
     type: select
     proxies:
-      - "🇨🇭 瑞士苏黎世 01 [优选 152.6ms 89.106.207.216]"
-      - "🇨🇭 瑞士苏黎世 02 [优选 155.0ms 188.114.96.90]"
+      - "🇨🇭 瑞士苏黎世 01 [🟠 Fastly 优选 145.0ms 188.114.97.80]"
+      - "🇨🇭 瑞士苏黎世 02 [🟣 Wasmer 优选 145.0ms 188.114.97.16]"
+      - "🇨🇭 瑞士苏黎世 03 [🟢 Netlify 优选 145.0ms 188.114.97.96]"
+      - "🇨🇭 瑞士苏黎世 04 [⚡ Supabase 优选 145.0ms 188.114.96.48]"
+      - "🇨🇭 瑞士苏黎世 05 [🟠 Fastly 优选 145.0ms 188.114.96.56]"
+      - "🇨🇭 瑞士苏黎世 06 [🟣 Wasmer 优选 145.0ms 188.114.97.24]"
+      - "🇨🇭 瑞士苏黎世 07 [🟢 Netlify 优选 145.0ms 188.114.96.80]"
+      - "🇨🇭 瑞士苏黎世 08 [⚡ Supabase 优选 145.0ms 188.114.96.64]"
+      - "🇨🇭 瑞士苏黎世 09 [🟠 Fastly 优选 145.0ms 188.114.97.40]"
+      - "🇨🇭 瑞士苏黎世 10 [🟣 Wasmer 优选 145.0ms 188.114.96.88]"
+      - "🇨🇭 瑞士苏黎世 11 [🟢 Netlify 优选 145.0ms 188.114.97.56]"
+      - "🇨🇭 瑞士苏黎世 12 [⚡ Supabase 优选 145.0ms 188.114.96.24]"
+      - "🇨🇭 瑞士苏黎世 13 [🟠 Fastly 优选 145.0ms 188.114.97.32]"
+      - "🇨🇭 瑞士苏黎世 14 [🟣 Wasmer 优选 145.0ms 188.114.96.32]"
+      - "🇨🇭 瑞士苏黎世 15 [🟢 Netlify 优选 145.0ms 188.114.96.40]"
 
   - name: "🇺🇸 美国美东"
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [优选 150.0ms 104.17.222.40]"
-      - "🇺🇸 美国美东 02 [优选 152.0ms 104.16.100.5]"
+      - "🇺🇸 美国美东 01 [🟠 Fastly 优选 148.0ms 104.16.0.1]"
+      - "🇺🇸 美国美东 02 [🟣 Wasmer 优选 148.0ms 104.17.200.30]"
+      - "🇺🇸 美国美东 03 [🟢 Netlify 优选 148.0ms 104.16.200.5]"
+      - "🇺🇸 美国美东 04 [⚡ Supabase 优选 148.0ms 104.17.200.15]"
+      - "🇺🇸 美国美东 05 [🟠 Fastly 优选 148.0ms 104.16.0.2]"
+      - "🇺🇸 美国美东 06 [🟣 Wasmer 优选 148.0ms 104.17.200.10]"
+      - "🇺🇸 美国美东 07 [🟢 Netlify 优选 148.0ms 104.16.0.10]"
+      - "🇺🇸 美国美东 08 [⚡ Supabase 优选 148.0ms 104.17.200.1]"
+      - "🇺🇸 美国美东 09 [🟠 Fastly 优选 148.0ms 104.17.0.30]"
+      - "🇺🇸 美国美东 10 [🟣 Wasmer 优选 148.0ms 104.17.0.15]"
+      - "🇺🇸 美国美东 11 [🟢 Netlify 优选 148.0ms 104.17.200.5]"
+      - "🇺🇸 美国美东 12 [⚡ Supabase 优选 148.0ms 104.17.0.2]"
+      - "🇺🇸 美国美东 13 [🟠 Fastly 优选 148.0ms 151.101.128.220]"
+      - "🇺🇸 美国美东 14 [🟣 Wasmer 优选 148.0ms 104.16.200.25]"
+      - "🇺🇸 美国美东 15 [🟢 Netlify 优选 148.0ms 104.17.0.25]"
+      - "🇺🇸 美国美东 16 [⚡ Supabase 优选 148.0ms 151.101.128.230]"
+      - "🇺🇸 美国美东 17 [🟠 Fastly 优选 148.0ms 104.16.0.25]"
+      - "🇺🇸 美国美东 18 [🟣 Wasmer 优选 148.0ms 104.17.200.8]"
+      - "🇺🇸 美国美东 19 [🟢 Netlify 优选 148.0ms 104.16.0.5]"
+      - "🇺🇸 美国美东 20 [⚡ Supabase 优选 148.0ms 151.101.128.200]"
 
   - name: "🇺🇸 美国美西"
     type: select
     proxies:
-      - "🇺🇸 美国美西 01 [优选 152.0ms 172.64.50.5]"
-      - "🇺🇸 美国美西 02 [优选 152.0ms 104.19.200.15]"
+      - "🇺🇸 美国美西 01 [🟠 Fastly 优选 148.0ms 104.19.200.25]"
+      - "🇺🇸 美国美西 02 [🟣 Wasmer 优选 148.0ms 104.19.200.30]"
+      - "🇺🇸 美国美西 03 [🟢 Netlify 优选 148.0ms 104.19.200.1]"
+      - "🇺🇸 美国美西 04 [⚡ Supabase 优选 148.0ms 104.19.200.5]"
+      - "🇺🇸 美国美西 05 [🟠 Fastly 优选 148.0ms 104.19.200.10]"
+      - "🇺🇸 美国美西 06 [🟣 Wasmer 优选 148.0ms 104.19.0.5]"
+      - "🇺🇸 美国美西 07 [🟢 Netlify 优选 148.0ms 104.19.0.8]"
+      - "🇺🇸 美国美西 08 [⚡ Supabase 优选 148.0ms 104.19.200.2]"
+      - "🇺🇸 美国美西 09 [🟠 Fastly 优选 148.0ms 104.19.0.2]"
+      - "🇺🇸 美国美西 10 [🟣 Wasmer 优选 148.0ms 104.19.0.30]"
+      - "🇺🇸 美国美西 11 [🟢 Netlify 优选 148.0ms 104.19.0.1]"
+      - "🇺🇸 美国美西 12 [⚡ Supabase 优选 148.0ms 104.19.0.20]"
+      - "🇺🇸 美国美西 13 [🟠 Fastly 优选 148.0ms 104.19.0.25]"
+      - "🇺🇸 美国美西 14 [🟣 Wasmer 优选 148.0ms 172.64.50.5]"
+      - "🇺🇸 美国美西 15 [🟢 Netlify 优选 148.0ms 104.19.0.10]"
+      - "🇺🇸 美国美西 16 [⚡ Supabase 优选 148.0ms 104.19.200.20]"
+      - "🇺🇸 美国美西 17 [🟠 Fastly 优选 148.0ms 104.19.200.8]"
+      - "🇺🇸 美国美西 18 [🟣 Wasmer 优选 148.0ms 104.19.0.15]"
+      - "🇺🇸 美国美西 19 [🟢 Netlify 优选 149.0ms 104.19.1.30]"
+      - "🇺🇸 美国美西 20 [⚡ Supabase 优选 149.0ms 104.19.1.5]"
 
 rules:
   - GEOIP,CN,DIRECT
-  - MATCH,🚀 节点选择
+  - MATCH,"🚀 节点选择"

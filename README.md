@@ -1,37 +1,31 @@
-# Regional Affinity Cloud-Tested Multi-Region Best Nodes
+# Multi-Platform Edge Anycast Speedtest Engine
 
-- **Last Cloud Update**: `2026-09-16 13:52:27 UTC`
+- **Last Cloud Update**: `2026-09-17 13:13:35 UTC`
 - **Automated Schedule**: Every 2 hours via GitHub Actions (`0 */2 * * *`)
-- **Candidate Pool**: 700+ domestic-verified endpoints
-- **Total Verified Nodes**: 20 pure Anycast nodes across 10 regions (100% Zero-Timeout)
-- **Target Regions**: 🇯🇵 Japan, 🇰🇷 South Korea, 🇭🇰 Hong Kong, 🇸🇬 Singapore, 🇩🇪 Germany, 🇫🇷 France, 🇬🇧 United Kingdom, 🇨🇭 Switzerland, 🇺🇸 US East, 🇺🇸 US West
-- **Routing Guarantee**: Strict regional affinity - zero transpacific double detour for Europe and Asia nodes.
+- **Total Candidate Pool**: 1000+ domestic-speedtested Anycast endpoints
+- **Total Active Edge Nodes**: **219 nodes** (100% Zero-Timeout)
+- **Supported Platforms**: 🟠 Fastly + 🟣 Wasmer + 🟢 Netlify + ⚡ Supabase
+- **Regional Breakdown**: 🇭🇰 香港 (30) + 🇯🇵 日本 (30) + 🇰🇷 韩国 (25) + 🇸🇬 新加坡 (25) + 🌍 欧洲 (69) + 🌎 美洲 (40)
+- **Latency Standard**: All Asian routes guaranteed **sub-100ms** under Chinese traffic flow.
 
-## Regional Winners Board (Current Cycle)
+## Regional Allocation Board
 
-| 区域代码 | 排名 | 前端节点 | 三网国内实测延迟 | 实测下行速度 | 本次 TLS 验证 RTT |
+| 区域代码 | 目标地区 | 节点数量 | 最优前端入口 | 国内实测延迟 | 实测下行速度 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `JP` | 1 | `154.36.162.210:443` | **70.6 ms** | 8.7Mbps | 61.9 ms |
-| `JP` | 2 | `52.194.215.93:443` | **79.49 ms** | 8.5Mbps | 32.2 ms |
-| `KR` | 1 | `43.133.237.158:8443` | **62.87 ms** | 12.8Mbps | - ms |
-| `KR` | 2 | `119.28.162.39:8443` | **66.11 ms** | 12.5Mbps | - ms |
-| `HK` | 1 | `23.147.172.135:443` | **56.86 ms** | 9.1Mbps | 1.2 ms |
-| `HK` | 2 | `39.109.50.124:443` | **57.86 ms** | 17.7Mbps | 0.7 ms |
-| `SG` | 1 | `209.97.175.102:443` | **88.27 ms** | 8.0Mbps | 16.3 ms |
-| `SG` | 2 | `159.89.199.63:443` | **94.45 ms** | 9.5Mbps | 60.3 ms |
-| `DE` | 1 | `188.114.96.30:443` | **155.0 ms** | 15.0Mbps | 15.7 ms |
-| `DE` | 2 | `188.114.96.10:443` | **155.0 ms** | 15.0Mbps | 1.0 ms |
-| `FR` | 1 | `89.106.207.216:443` | **152.6 ms** | 9.6Mbps | 45.8 ms |
-| `FR` | 2 | `188.114.97.80:443` | **155.0 ms** | 15.0Mbps | 15.1 ms |
-| `GB` | 1 | `188.114.96.50:443` | **155.0 ms** | 15.0Mbps | 13.8 ms |
-| `GB` | 2 | `188.114.96.10:443` | **155.0 ms** | 15.0Mbps | 15.2 ms |
-| `CH` | 1 | `89.106.207.216:443` | **152.6 ms** | 9.6Mbps | 17.0 ms |
-| `CH` | 2 | `188.114.96.90:443` | **155.0 ms** | 15.0Mbps | 26.6 ms |
-| `US_EAST` | 1 | `104.17.222.40:443` | **150.0 ms** | 12.0Mbps | 76.6 ms |
-| `US_EAST` | 2 | `104.16.100.5:443` | **152.0 ms** | 12.0Mbps | 24.6 ms |
-| `US_WEST` | 1 | `172.64.50.5:443` | **152.0 ms** | 12.0Mbps | 1.0 ms |
-| `US_WEST` | 2 | `104.19.200.15:443` | **152.0 ms** | 12.0Mbps | 11.6 ms |
+| `HK` | 🇭🇰 中国香港 | **30** | `39.109.50.124:443` | **48.5 ms** | 28.5Mbps |
+| `JP` | 🇯🇵 日本东京 | **30** | `157.254.198.27:443` | **67.23 ms** | 13.11Mbps |
+| `KR` | 🇰🇷 韩国首尔 | **25** | `43.133.237.158:8443` | **62.87 ms** | 18.8Mbps |
+| `SG` | 🇸🇬 新加坡 | **25** | `209.97.175.102:443` | **82.27 ms** | 19.0Mbps |
+| `DE` | 🇩🇪 德国法兰克福 | **18** | `88.218.193.1:443` | **140.94 ms** | 19.8Mbps |
+| `FR` | 🇫🇷 法国巴黎 | **18** | `188.114.97.16:443` | **145.0 ms** | 25.0Mbps |
+| `GB` | 🇬🇧 英国伦敦 | **18** | `188.114.96.72:443` | **145.0 ms** | 25.0Mbps |
+| `CH` | 🇨🇭 瑞士苏黎世 | **15** | `188.114.97.80:443` | **145.0 ms** | 25.0Mbps |
+| `US_EAST` | 🇺🇸 美国美东 | **20** | `104.16.0.1:443` | **148.0 ms** | 22.0Mbps |
+| `US_WEST` | 🇺🇸 美国美西 | **20** | `104.19.200.25:443` | **148.0 ms** | 22.0Mbps |
 
-## Subscription URL
-Subscribe in Clash Meta / Clash Verge / Shadowrocket:
-- `https://sub.ruoyemu.asia/clash?token=fastly`
+## Subscription URLs
+- Aggregated Multi-Platform (200+ Nodes): `https://sub.ruoyemu.asia/clash?token=all`
+- Fastly Edge Dedicated: `https://sub.ruoyemu.asia/clash?token=fastly`
+- Wasmer Edge Dedicated: `https://sub.ruoyemu.asia/clash?token=wasmer`
+- Netlify Edge Dedicated: `https://sub.ruoyemu.asia/clash?token=netlify`
+- Supabase Edge Dedicated: `https://sub.ruoyemu.asia/clash?token=supabase`
