@@ -600,7 +600,7 @@ proxy-groups:
 
 rules:
   - GEOIP,CN,DIRECT
-  - MATCH,"🚀 节点选择"
+  - MATCH,🚀 节点选择
 """
     return content, nodes_def
 
