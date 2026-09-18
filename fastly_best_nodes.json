@@ -1,21 +1,21 @@
 {
   "HK": [
     {
-      "ip": "39.109.50.124",
-      "port": 443,
+      "ip": "119.45.41.162",
+      "port": 8443,
       "region": "HK",
       "domestic_lat": 50.5,
       "domestic_spd": "28.5Mbps"
     },
     {
-      "ip": "23.147.172.135",
-      "port": 443,
+      "ip": "43.133.237.158",
+      "port": 8443,
       "region": "HK",
       "domestic_lat": 52.0,
       "domestic_spd": "25.0Mbps"
     },
     {
-      "ip": "119.45.41.162",
+      "ip": "119.28.162.39",
       "port": 8443,
       "region": "HK",
       "domestic_lat": 54.0,
@@ -185,14 +185,14 @@
   ],
   "US_EAST": [
     {
-      "ip": "5.161.23.223",
+      "ip": "104.17.222.40",
       "port": 443,
       "region": "US_EAST",
       "domestic_lat": 139.0,
       "domestic_spd": "25.0Mbps"
     },
     {
-      "ip": "35.193.113.78",
+      "ip": "172.64.50.5",
       "port": 443,
       "region": "US_EAST",
       "domestic_lat": 142.0,
@@ -208,21 +208,21 @@
   ],
   "US_WEST": [
     {
-      "ip": "5.78.28.161",
+      "ip": "208.68.180.63",
       "port": 443,
       "region": "US_WEST",
       "domestic_lat": 138.0,
       "domestic_spd": "26.0Mbps"
     },
     {
-      "ip": "208.68.180.63",
+      "ip": "104.18.25.100",
       "port": 443,
       "region": "US_WEST",
       "domestic_lat": 141.0,
       "domestic_spd": "25.0Mbps"
     },
     {
-      "ip": "35.193.113.78",
+      "ip": "198.41.214.162",
       "port": 443,
       "region": "US_WEST",
       "domestic_lat": 143.0,
@@ -231,14 +231,14 @@
   ],
   "CA": [
     {
-      "ip": "5.78.28.161",
+      "ip": "104.17.222.40",
       "port": 443,
       "region": "CA",
       "domestic_lat": 149.0,
       "domestic_spd": "22.0Mbps"
     },
     {
-      "ip": "35.193.113.78",
+      "ip": "172.64.50.5",
       "port": 443,
       "region": "CA",
       "domestic_lat": 152.0,

@@ -1,10 +1,9 @@
 # ============================================================
 # Master 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-18 15:30:53 UTC
-# Candidate Pool Tested: 1500+ endpoints
+# Last Speedtest Run: 2026-09-18 16:01:23 UTC
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
 # Latency Standard: Asian routes guaranteed sub-90ms
-# Backends: Amazon AWS + Wasmer + Northflank (Pure multi-cloud infrastructure)
+# Backends: Amazon AWS + Wasmer + Northflank (Multi-cloud infrastructure)
 # ============================================================
 
 port: 7890
@@ -44,7 +43,7 @@ proxies:
 
   - name: "🇭🇰 中国香港 02 [Wasmer · 150G]"
     type: vless
-    server: w-la.ruoyemu.asia
+    server: 66.42.98.41
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -57,20 +56,20 @@ proxies:
       headers:
         Host: w-la.ruoyemu.asia
 
-  - name: "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+  - name: "🇭🇰 中国香港 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
     type: vless
@@ -89,7 +88,7 @@ proxies:
 
   - name: "🇯🇵 日本东京 02 [Wasmer · 150G]"
     type: vless
-    server: w-la.ruoyemu.asia
+    server: 66.42.98.41
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -102,20 +101,20 @@ proxies:
       headers:
         Host: w-la.ruoyemu.asia
 
-  - name: "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+  - name: "🇯🇵 日本东京 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
     type: vless
@@ -134,7 +133,7 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 02 [Wasmer · 150G]"
     type: vless
-    server: w-la.ruoyemu.asia
+    server: 66.42.98.41
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -147,20 +146,20 @@ proxies:
       headers:
         Host: w-la.ruoyemu.asia
 
-  - name: "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+  - name: "🇰🇷 韩国首尔 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
     type: vless
@@ -179,7 +178,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 02 [Wasmer · 150G]"
     type: vless
-    server: w-la.ruoyemu.asia
+    server: 66.42.98.41
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -192,20 +191,20 @@ proxies:
       headers:
         Host: w-la.ruoyemu.asia
 
-  - name: "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+  - name: "🇸🇬 新加坡 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
     type: vless
@@ -224,7 +223,7 @@ proxies:
 
   - name: "🇩🇪 德国法兰克福 02 [Wasmer · 150G]"
     type: vless
-    server: w-fr.ruoyemu.asia
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -237,20 +236,20 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+  - name: "🇩🇪 德国法兰克福 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
     type: vless
@@ -269,7 +268,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 02 [Wasmer · 150G]"
     type: vless
-    server: w-fr.ruoyemu.asia
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -282,20 +281,20 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+  - name: "🇫🇷 法国巴黎 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
     type: vless
@@ -314,7 +313,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 02 [Wasmer · 150G]"
     type: vless
-    server: w-fr.ruoyemu.asia
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -327,20 +326,20 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+  - name: "🇬🇧 英国伦敦 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
     type: vless
@@ -359,7 +358,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 02 [Wasmer · 150G]"
     type: vless
-    server: w-fr.ruoyemu.asia
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -372,20 +371,20 @@ proxies:
       headers:
         Host: w-fr.ruoyemu.asia
 
-  - name: "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+  - name: "🇨🇭 瑞士苏黎世 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
     type: vless
@@ -404,7 +403,7 @@ proxies:
 
   - name: "🇺🇸 美国美东 02 [Wasmer · 150G]"
     type: vless
-    server: w-east.ruoyemu.asia
+    server: 5.161.23.223
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -417,20 +416,20 @@ proxies:
       headers:
         Host: w-east.ruoyemu.asia
 
-  - name: "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+  - name: "🇺🇸 美国美东 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
     type: vless
@@ -449,7 +448,7 @@ proxies:
 
   - name: "🇺🇸 美国美西 02 [Wasmer · 150G]"
     type: vless
-    server: 208.68.180.63
+    server: 5.78.28.161
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -462,20 +461,20 @@ proxies:
       headers:
         Host: w-us.ruoyemu.asia
 
-  - name: "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+  - name: "🇺🇸 美国美西 03 [Northflank · 90G]"
     type: vless
-    server: duletchbsmevnqqxvfwy.supabase.co
+    server: nf-node.ruoyemu.asia
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: duletchbsmevnqqxvfwy.supabase.co
+    sni: nf-node.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
+      path: "/ws"
       headers:
-        Host: duletchbsmevnqqxvfwy.supabase.co
+        Host: nf-node.ruoyemu.asia
 
   - name: "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
     type: vless
@@ -494,18 +493,18 @@ proxies:
 
   - name: "🇨🇦 加拿大 02 [Wasmer · 150G]"
     type: vless
-    server: w-la.ruoyemu.asia
+    server: 5.78.28.161
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: w-la.ruoyemu.asia
+    sni: w-us.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
       path: "/?ed=2560"
       headers:
-        Host: w-la.ruoyemu.asia
+        Host: w-us.ruoyemu.asia
 
   - name: "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
     type: vless
@@ -524,7 +523,7 @@ proxies:
 
   - name: "🇦🇺 澳大利亚 02 [Wasmer · 150G]"
     type: vless
-    server: w-la.ruoyemu.asia
+    server: 66.42.98.41
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -559,34 +558,34 @@ proxy-groups:
       - "🇦🇺 澳大利亚"
       - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [Northflank · 90G]"
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
       - "🇯🇵 日本东京 02 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [Northflank · 90G]"
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
       - "🇰🇷 韩国首尔 02 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [Northflank · 90G]"
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
       - "🇸🇬 新加坡 02 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [Northflank · 90G]"
       - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
       - "🇩🇪 德国法兰克福 02 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [Northflank · 90G]"
       - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
       - "🇫🇷 法国巴黎 02 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [Northflank · 90G]"
       - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
       - "🇬🇧 英国伦敦 02 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [Northflank · 90G]"
       - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [Northflank · 90G]"
       - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
       - "🇺🇸 美国美东 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [Northflank · 90G]"
       - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
       - "🇺🇸 美国美西 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [Northflank · 90G]"
       - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
       - "🇨🇦 加拿大 02 [Wasmer · 150G]"
       - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
@@ -600,34 +599,34 @@ proxy-groups:
     proxies:
       - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [Northflank · 90G]"
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
       - "🇯🇵 日本东京 02 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [Northflank · 90G]"
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
       - "🇰🇷 韩国首尔 02 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [Northflank · 90G]"
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
       - "🇸🇬 新加坡 02 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [Northflank · 90G]"
       - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
       - "🇩🇪 德国法兰克福 02 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [Northflank · 90G]"
       - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
       - "🇫🇷 法国巴黎 02 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [Northflank · 90G]"
       - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
       - "🇬🇧 英国伦敦 02 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [Northflank · 90G]"
       - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [Northflank · 90G]"
       - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
       - "🇺🇸 美国美东 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [Northflank · 90G]"
       - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
       - "🇺🇸 美国美西 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [Northflank · 90G]"
       - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
       - "🇨🇦 加拿大 02 [Wasmer · 150G]"
       - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
@@ -638,16 +637,16 @@ proxy-groups:
     proxies:
       - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [Northflank · 90G]"
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
       - "🇯🇵 日本东京 02 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [Northflank · 90G]"
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
       - "🇰🇷 韩国首尔 02 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [Northflank · 90G]"
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
       - "🇸🇬 新加坡 02 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [Northflank · 90G]"
       - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
       - "🇦🇺 澳大利亚 02 [Wasmer · 150G]"
 
@@ -656,26 +655,26 @@ proxy-groups:
     proxies:
       - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
       - "🇩🇪 德国法兰克福 02 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [Northflank · 90G]"
       - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
       - "🇫🇷 法国巴黎 02 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [Northflank · 90G]"
       - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
       - "🇬🇧 英国伦敦 02 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [Northflank · 90G]"
       - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [Northflank · 90G]"
 
   - name: 🌎 美洲节点
     type: select
     proxies:
       - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
       - "🇺🇸 美国美东 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [Northflank · 90G]"
       - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
       - "🇺🇸 美国美西 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [Northflank · 90G]"
       - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
       - "🇨🇦 加拿大 02 [Wasmer · 150G]"
 
@@ -684,70 +683,70 @@ proxy-groups:
     proxies:
       - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [Northflank · 90G]"
 
   - name: "🇯🇵 日本东京"
     type: select
     proxies:
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
       - "🇯🇵 日本东京 02 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [Northflank · 90G]"
 
   - name: "🇰🇷 韩国首尔"
     type: select
     proxies:
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
       - "🇰🇷 韩国首尔 02 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [Northflank · 90G]"
 
   - name: "🇸🇬 新加坡"
     type: select
     proxies:
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
       - "🇸🇬 新加坡 02 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [Northflank · 90G]"
 
   - name: "🇩🇪 德国法兰克福"
     type: select
     proxies:
       - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
       - "🇩🇪 德国法兰克福 02 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [Northflank · 90G]"
 
   - name: "🇫🇷 法国巴黎"
     type: select
     proxies:
       - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
       - "🇫🇷 法国巴黎 02 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [Northflank · 90G]"
 
   - name: "🇬🇧 英国伦敦"
     type: select
     proxies:
       - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
       - "🇬🇧 英国伦敦 02 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [Northflank · 90G]"
 
   - name: "🇨🇭 瑞士苏黎世"
     type: select
     proxies:
       - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
       - "🇨🇭 瑞士苏黎世 02 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [Northflank · 90G]"
 
   - name: "🇺🇸 美国美东"
     type: select
     proxies:
       - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
       - "🇺🇸 美国美东 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [Northflank · 90G]"
 
   - name: "🇺🇸 美国美西"
     type: select
     proxies:
       - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
       - "🇺🇸 美国美西 02 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [Northflank · 90G]"
 
   - name: "🇨🇦 加拿大"
     type: select
