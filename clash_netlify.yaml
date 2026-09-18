@@ -1,6 +1,6 @@
 # ============================================================
 # Netlify 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-17 23:58:27 UTC
+# Last Speedtest Run: 2026-09-18 04:29:02 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
 # Latency Standard: Asian routes guaranteed sub-90ms
@@ -27,9 +27,9 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+  - name: "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 52.0ms]"
     type: vless
-    server: 39.109.50.124
+    server: 104.16.1.4
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -44,7 +44,7 @@ proxies:
 
   - name: "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
     type: vless
-    server: 104.16.1.24
+    server: 104.16.1.16
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -59,7 +59,7 @@ proxies:
 
   - name: "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
     type: vless
-    server: 104.16.1.4
+    server: 104.16.1.12
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -134,7 +134,7 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 65.0ms]"
     type: vless
-    server: 104.16.5.12
+    server: 104.16.5.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -149,7 +149,7 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 03 [Netlify · AWS ap-northeast-2 65.0ms]"
     type: vless
-    server: 104.16.5.16
+    server: 104.16.5.4
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -179,7 +179,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 02 [Netlify · AWS ap-southeast-1 84.0ms]"
     type: vless
-    server: 104.16.7.16
+    server: 104.16.7.4
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -194,7 +194,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 84.0ms]"
     type: vless
-    server: 104.16.7.12
+    server: 104.16.7.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -224,7 +224,7 @@ proxies:
 
   - name: "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 142.0ms]"
     type: vless
-    server: 151.101.112.220
+    server: 151.101.112.230
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -239,7 +239,7 @@ proxies:
 
   - name: "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 142.0ms]"
     type: vless
-    server: 151.101.112.230
+    server: 151.101.112.220
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -254,7 +254,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 145.0ms]"
     type: vless
-    server: 188.114.96.40
+    server: 188.114.96.56
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -284,7 +284,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 145.0ms]"
     type: vless
-    server: 188.114.96.96
+    server: 188.114.97.64
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -299,7 +299,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 145.0ms]"
     type: vless
-    server: 188.114.97.40
+    server: 188.114.97.48
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -314,7 +314,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 145.0ms]"
     type: vless
-    server: 188.114.96.96
+    server: 188.114.96.88
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -329,7 +329,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 145.0ms]"
     type: vless
-    server: 188.114.97.72
+    server: 188.114.96.8
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -344,7 +344,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 145.0ms]"
     type: vless
-    server: 188.114.97.56
+    server: 188.114.97.96
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -359,7 +359,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 145.0ms]"
     type: vless
-    server: 188.114.97.32
+    server: 188.114.97.48
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -374,7 +374,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 145.0ms]"
     type: vless
-    server: 188.114.96.16
+    server: 188.114.96.80
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -557,7 +557,7 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
@@ -598,7 +598,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
@@ -636,7 +636,7 @@ proxy-groups:
   - name: 🌏 亚太节点
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
@@ -682,7 +682,7 @@ proxy-groups:
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
       - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
 
