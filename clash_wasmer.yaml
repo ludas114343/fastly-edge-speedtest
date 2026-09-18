@@ -1,6 +1,6 @@
 # ============================================================
 # Wasmer 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-18 04:29:02 UTC
+# Last Speedtest Run: 2026-09-18 10:45:48 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
 # Latency Standard: Asian routes guaranteed sub-90ms
@@ -27,7 +27,7 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [Wasmer · 150G 52.0ms]"
+  - name: "🇭🇰 中国香港 01 [Wasmer · 150G 48.5ms]"
     type: vless
     server: 66.42.98.41
     port: 443
@@ -59,7 +59,7 @@ proxies:
 
   - name: "🇭🇰 中国香港 03 [Wasmer · 150G 52.0ms]"
     type: vless
-    server: 104.16.1.12
+    server: 104.16.1.4
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -149,7 +149,7 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 03 [Wasmer · 150G 65.0ms]"
     type: vless
-    server: 104.16.5.4
+    server: 104.16.5.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -194,7 +194,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 03 [Wasmer · 150G 84.0ms]"
     type: vless
-    server: 104.16.7.20
+    server: 104.16.7.24
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -239,7 +239,7 @@ proxies:
 
   - name: "🇩🇪 德国法兰克福 03 [Wasmer · 150G 142.0ms]"
     type: vless
-    server: 151.101.112.220
+    server: 151.101.112.230
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -284,7 +284,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 03 [Wasmer · 150G 145.0ms]"
     type: vless
-    server: 188.114.97.64
+    server: 188.114.96.32
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -329,7 +329,7 @@ proxies:
 
   - name: "🇬🇧 英国伦敦 03 [Wasmer · 150G 145.0ms]"
     type: vless
-    server: 188.114.96.8
+    server: 188.114.97.40
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -374,7 +374,7 @@ proxies:
 
   - name: "🇨🇭 瑞士苏黎世 03 [Wasmer · 150G 145.0ms]"
     type: vless
-    server: 188.114.96.80
+    server: 188.114.97.24
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -419,7 +419,7 @@ proxies:
 
   - name: "🇺🇸 美国美东 03 [Wasmer · 150G 148.0ms]"
     type: vless
-    server: 151.101.128.200
+    server: 151.101.128.230
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -557,7 +557,7 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Wasmer · 150G 52.0ms]"
+      - "🇭🇰 中国香港 01 [Wasmer · 150G 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G 52.0ms]"
       - "🇭🇰 中国香港 03 [Wasmer · 150G 52.0ms]"
       - "🇯🇵 日本东京 01 [Wasmer · 150G 48.0ms]"
@@ -598,7 +598,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [Wasmer · 150G 52.0ms]"
+      - "🇭🇰 中国香港 01 [Wasmer · 150G 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G 52.0ms]"
       - "🇭🇰 中国香港 03 [Wasmer · 150G 52.0ms]"
       - "🇯🇵 日本东京 01 [Wasmer · 150G 48.0ms]"
@@ -636,7 +636,7 @@ proxy-groups:
   - name: 🌏 亚太节点
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Wasmer · 150G 52.0ms]"
+      - "🇭🇰 中国香港 01 [Wasmer · 150G 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G 52.0ms]"
       - "🇭🇰 中国香港 03 [Wasmer · 150G 52.0ms]"
       - "🇯🇵 日本东京 01 [Wasmer · 150G 48.0ms]"
@@ -682,7 +682,7 @@ proxy-groups:
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Wasmer · 150G 52.0ms]"
+      - "🇭🇰 中国香港 01 [Wasmer · 150G 48.5ms]"
       - "🇭🇰 中国香港 02 [Wasmer · 150G 52.0ms]"
       - "🇭🇰 中国香港 03 [Wasmer · 150G 52.0ms]"
 
