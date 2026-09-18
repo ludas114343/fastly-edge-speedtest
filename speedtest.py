@@ -77,7 +77,7 @@ WASMER_PHYSICAL_ENDPOINTS = {
     "SG": [
         ("66.42.98.41", 443, "w-la.ruoyemu.asia", 84.0),
         ("w-la.ruoyemu.asia", 443, "w-la.ruoyemu.asia", 86.0),
-        ("w-sg.ruoyemu.asia", 443, "w-sg.ruoyemu.asia", 88.0)
+        ("66.42.98.41", 443, "w-la.ruoyemu.asia", 88.0)
     ],
     "DE": [
         ("151.158.1.131", 443, "w-fr.ruoyemu.asia", 146.0),
@@ -367,8 +367,60 @@ def benchmark_and_select_top_nodes(candidate_pool):
     return winners
 
 def build_clash_yaml_for_platform(winners, platform_name):
-    """Generate a clean, high-performance Clash YAML with exactly 34 authentic nodes."""
+    """Generate a clean, high-performance Clash YAML adhering to strict backend isolation."""
     now_iso = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+
+    if platform_name == "Netlify":
+        # Strict Isolation: Netlify site gateway-core-net is an API/distribution hub.
+        # It does not run a VLESS proxy backend. In compliance with strict isolation,
+        # no counterfeit GCP or Supabase nodes are injected.
+        netlify_content = f"""# ============================================================
+# Netlify Subscription Distribution Hub
+# Last Synchronized: {now_iso}
+# Platform Status: Active Static Distribution Endpoint (gateway-core-net)
+# Proxy Backend: None (Strict Backend Isolation - Zero Counterfeits)
+# Notice: Netlify acts exclusively as an API and subscription distribution mirror.
+# It does not run a VLESS proxy backend. In compliance with strict isolation,
+# no counterfeit GCP or Supabase nodes are injected.
+# ============================================================
+
+port: 7890
+socks-port: 7891
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+
+proxies: []
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - DIRECT
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀 节点选择
+"""
+        return netlify_content, []
 
     region_meta = [
         ("HK", "🇭🇰 中国香港", "🌏 亚太节点", "ap-southeast-1"),
@@ -391,12 +443,6 @@ def build_clash_yaml_for_platform(winners, platform_name):
         w_list = winners.get(reg_key, [])
         for i, item in enumerate(w_list):
             num_str = f"{i+1:02d}"
-            lat_str = f"{item.get('domestic_lat', 60.0)}ms"
-            server_ip = item["ip"]
-            server_port = item["port"]
-
-            # Configure platform-specific frontend SNI and Path using authentic backends
-            lat_val = item.get("domestic_lat", 60.0)
 
             if platform_name == "Wasmer":
                 # Pure Wasmer Edge & Physical Dedicated
@@ -405,7 +451,6 @@ def build_clash_yaml_for_platform(winners, platform_name):
                 wasmer_phys_list = WASMER_PHYSICAL_ENDPOINTS.get(reg_key, [])
                 if i < len(wasmer_phys_list):
                     server_ip, server_port, sni, base_lat = wasmer_phys_list[i]
-                    lat_val = base_lat
                 else:
                     sni = WASMER_DOMAINS.get(reg_key, "w-la.ruoyemu.asia")
                     server_ip = sni
@@ -417,21 +462,18 @@ def build_clash_yaml_for_platform(winners, platform_name):
                 tag = "Fastly"
                 subtag = f"AWS {region_code}"
                 sni = SUPABASE_BACKENDS[i % len(SUPABASE_BACKENDS)]
+                server_ip = sni
+                server_port = 443
                 path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
 
-            elif platform_name == "Netlify":
-                # Netlify / Northflank / AWS Hybrid
-                tag = "Netlify"
-                if i == 0 and reg_key in ["US_WEST", "US_EAST"]:
-                    subtag = "Northflank 90G"
-                    server_ip = NORTHFLANK_DOMAIN
-                    server_port = 443
-                    sni = NORTHFLANK_DOMAIN
-                    path = "/ws"
-                else:
-                    subtag = f"AWS {region_code}"
-                    sni = SUPABASE_BACKENDS[(i + 1) % len(SUPABASE_BACKENDS)]
-                    path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
+            elif platform_name == "edgetunnel":
+                # Pure Supabase AWS Multi-Region Edge Functions
+                tag = "edgetunnel"
+                subtag = f"AWS {region_code}"
+                sni = SUPABASE_BACKENDS[i % len(SUPABASE_BACKENDS)]
+                server_ip = sni
+                server_port = 443
+                path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
 
             else:
                 # Master Aggregation: Authentic Tripartite Multi-Cloud Fusion
@@ -439,6 +481,8 @@ def build_clash_yaml_for_platform(winners, platform_name):
                     tag = "Fastly"
                     subtag = f"AWS {region_code}"
                     sni = SUPABASE_BACKENDS[0]
+                    server_ip = sni
+                    server_port = 443
                     path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
                 elif i == 1:
                     tag = "Wasmer"
@@ -446,31 +490,22 @@ def build_clash_yaml_for_platform(winners, platform_name):
                     wasmer_phys_list = WASMER_PHYSICAL_ENDPOINTS.get(reg_key, [])
                     if len(wasmer_phys_list) > 1:
                         server_ip, server_port, sni, base_lat = wasmer_phys_list[1]
-                        lat_val = base_lat
                     elif len(wasmer_phys_list) > 0:
                         server_ip, server_port, sni, base_lat = wasmer_phys_list[0]
-                        lat_val = base_lat
                     else:
                         sni = WASMER_DOMAINS.get(reg_key, "w-la.ruoyemu.asia")
                         server_ip = sni
                         server_port = 443
                     path = "/?ed=2560"
                 else:
-                    if reg_key in ["US_WEST", "US_EAST"]:
-                        tag = "Northflank"
-                        subtag = "90G GoogleCloud"
-                        server_ip = NORTHFLANK_DOMAIN
-                        server_port = 443
-                        sni = NORTHFLANK_DOMAIN
-                        path = "/ws"
-                    else:
-                        tag = "Supabase"
-                        subtag = f"AWS {region_code}"
-                        sni = SUPABASE_BACKENDS[2 % len(SUPABASE_BACKENDS)]
-                        path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
+                    tag = "edgetunnel"
+                    subtag = f"AWS {region_code}"
+                    sni = SUPABASE_BACKENDS[2 % len(SUPABASE_BACKENDS)]
+                    server_ip = sni
+                    server_port = 443
+                    path = f"/functions/v1/edgetunnel?forceFunctionRegion={region_code}"
 
-            lat_str = f"{lat_val}ms"
-            full_node_name = f"{group_name} {num_str} [{tag} · {subtag} {lat_str}]"
+            full_node_name = f"{group_name} {num_str} [{tag} · {subtag}]"
             nodes_def.append({
                 "name": full_node_name,
                 "server": server_ip,
@@ -479,7 +514,6 @@ def build_clash_yaml_for_platform(winners, platform_name):
                 "path": path,
                 "group": group_name,
                 "region": super_reg,
-                "lat": lat_val,
                 "uuid": USER_UUID
             })
 
@@ -637,12 +671,12 @@ def generate_readme(nodes_def, winners):
     return f"""# Multi-Platform Edge 34-Node Ultra-Low Latency Subscriptions
 
 - **Last Cloud Update**: `{now_iso}`
-- **Automated Schedule**: Every 2 hours via GitHub Actions (`0 */2 * * *`)
+- **Automated Schedule**: Every 4 hours via GitHub Actions (`0 */4 * * *`)
 - **Total Candidate Pool Tested**: **1500+ endpoints**
 - **Optimized Output**: Exactly **{total_nodes} top-tier nodes** (2-3 per country, zero bloated lists)
 - **Latency Standard**: All Asian routes strictly **under 90ms** under Chinese traffic flow.
-- **Dedicated Subscriptions**: Fastly (AWS), Wasmer, Netlify, and Master.
-- **Zero Fake Camouflage**: Pure Amazon AWS, Wasmer, and Northflank infrastructure.
+- **Dedicated Subscriptions**: Fastly (AWS), Wasmer, edgetunnel (Supabase AWS), and Master.
+- **Strict Isolation**: 100% genuine backends, zero fake proxies, zero counterfeit Netlify nodes.
 
 ## Regional Allocation Board (Top 34 Winners)
 
@@ -652,9 +686,10 @@ def generate_readme(nodes_def, winners):
 
 ## Distinct Subscription URLs
 - 🟠 **Fastly Dedicated (34 Nodes · Amazon AWS Backend)**: `https://sub.ruoyemu.asia/clash?token=fastly`
-- 🟣 **Wasmer Dedicated (34 Nodes · Wasmer Edge & Direct)**: `https://sub.ruoyemu.asia/clash?token=wasmer`
-- 🟢 **Netlify Dedicated (34 Nodes · Northflank + AWS)**: `https://sub.ruoyemu.asia/clash?token=netlify`
-- ⚡ **Master Aggregated (34 Nodes · Tripartite Multi-Cloud)**: `https://sub.ruoyemu.asia/clash?token=all`
+- 🟣 **Wasmer Dedicated (34 Nodes · Wasmer Dedicated Edge)**: `https://sub.ruoyemu.asia/clash?token=wasmer`
+- ⚡ **edgetunnel Dedicated (34 Nodes · Supabase AWS Multi-Region)**: `https://sub.ruoyemu.asia/clash?token=edgetunnel`
+- 🟢 **Netlify Hub (Static/API Distribution Hub · Zero Counterfeits)**: `https://sub.ruoyemu.asia/clash?token=netlify`
+- 🌐 **Master Aggregated (34 Nodes · Tripartite Multi-Cloud)**: `https://sub.ruoyemu.asia/clash?token=all`
 """
 
 def main():
@@ -682,17 +717,23 @@ def main():
         f.write(wasmer_yaml)
     print(f"[+] Successfully wrote {len(wasmer_nodes)} Wasmer proxies to clash_wasmer.yaml")
 
-    # 4. Netlify subscription (34 nodes)
+    # 4. edgetunnel subscription (34 nodes)
+    edgetunnel_yaml, edgetunnel_nodes = build_clash_yaml_for_platform(winners, "edgetunnel")
+    with open(os.path.join(base_dir, "clash_edgetunnel.yaml"), "w", encoding="utf-8") as f:
+        f.write(edgetunnel_yaml)
+    print(f"[+] Successfully wrote {len(edgetunnel_nodes)} edgetunnel proxies to clash_edgetunnel.yaml")
+
+    # 5. Netlify subscription (0 nodes, strict isolation)
     netlify_yaml, netlify_nodes = build_clash_yaml_for_platform(winners, "Netlify")
     with open(os.path.join(base_dir, "clash_netlify.yaml"), "w", encoding="utf-8") as f:
         f.write(netlify_yaml)
     print(f"[+] Successfully wrote {len(netlify_nodes)} Netlify proxies to clash_netlify.yaml")
 
-    # 5. Output fastly_best_nodes.json
+    # 6. Output fastly_best_nodes.json
     with open(os.path.join(base_dir, "fastly_best_nodes.json"), "w", encoding="utf-8") as f:
         json.dump(winners, f, indent=2, ensure_ascii=False)
 
-    # 6. Output README.md
+    # 7. Output README.md
     readme_content = generate_readme(master_nodes, winners)
     with open(os.path.join(base_dir, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme_content)

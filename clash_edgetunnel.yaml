@@ -1,5 +1,5 @@
 # ============================================================
-# Fastly 34-Node Ultra-Low Latency Optimized Subscription
+# edgetunnel 34-Node Ultra-Low Latency Optimized Subscription
 # Last Speedtest Run: 2026-09-18 15:30:53 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
@@ -27,7 +27,7 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
+  - name: "🇭🇰 中国香港 01 [edgetunnel · AWS ap-southeast-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -42,7 +42,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1]"
+  - name: "🇭🇰 中国香港 02 [edgetunnel · AWS ap-southeast-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -57,7 +57,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1]"
+  - name: "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -72,7 +72,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
+  - name: "🇯🇵 日本东京 01 [edgetunnel · AWS ap-northeast-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -87,7 +87,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1]"
+  - name: "🇯🇵 日本东京 02 [edgetunnel · AWS ap-northeast-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -102,7 +102,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1]"
+  - name: "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -117,7 +117,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
+  - name: "🇰🇷 韩国首尔 01 [edgetunnel · AWS ap-northeast-2]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -132,7 +132,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2]"
+  - name: "🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -147,7 +147,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2]"
+  - name: "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -162,7 +162,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
+  - name: "🇸🇬 新加坡 01 [edgetunnel · AWS ap-southeast-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -177,7 +177,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1]"
+  - name: "🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -192,7 +192,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1]"
+  - name: "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -207,7 +207,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
+  - name: "🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -222,7 +222,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1]"
+  - name: "🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -237,7 +237,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1]"
+  - name: "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -252,7 +252,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
+  - name: "🇫🇷 法国巴黎 01 [edgetunnel · AWS eu-west-3]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -267,7 +267,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇫🇷 法国巴黎 02 [Fastly · AWS eu-west-3]"
+  - name: "🇫🇷 法国巴黎 02 [edgetunnel · AWS eu-west-3]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -282,7 +282,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇫🇷 法国巴黎 03 [Fastly · AWS eu-west-3]"
+  - name: "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -297,7 +297,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
+  - name: "🇬🇧 英国伦敦 01 [edgetunnel · AWS eu-west-2]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -312,7 +312,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇬🇧 英国伦敦 02 [Fastly · AWS eu-west-2]"
+  - name: "🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -327,7 +327,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇬🇧 英国伦敦 03 [Fastly · AWS eu-west-2]"
+  - name: "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -342,7 +342,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
+  - name: "🇨🇭 瑞士苏黎世 01 [edgetunnel · AWS eu-central-2]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -357,7 +357,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2]"
+  - name: "🇨🇭 瑞士苏黎世 02 [edgetunnel · AWS eu-central-2]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -372,7 +372,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2]"
+  - name: "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -387,7 +387,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
+  - name: "🇺🇸 美国美东 01 [edgetunnel · AWS us-east-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -402,7 +402,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美东 02 [Fastly · AWS us-east-1]"
+  - name: "🇺🇸 美国美东 02 [edgetunnel · AWS us-east-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -417,7 +417,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇺🇸 美国美东 03 [Fastly · AWS us-east-1]"
+  - name: "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -432,7 +432,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
+  - name: "🇺🇸 美国美西 01 [edgetunnel · AWS us-west-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -447,7 +447,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美西 02 [Fastly · AWS us-west-1]"
+  - name: "🇺🇸 美国美西 02 [edgetunnel · AWS us-west-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -462,7 +462,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇺🇸 美国美西 03 [Fastly · AWS us-west-1]"
+  - name: "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
     type: vless
     server: duletchbsmevnqqxvfwy.supabase.co
     port: 443
@@ -477,7 +477,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
+  - name: "🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -492,7 +492,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1]"
+  - name: "🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -507,7 +507,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
+  - name: "🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]"
     type: vless
     server: theecyezvuzkflwikxwr.supabase.co
     port: 443
@@ -522,7 +522,7 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇦🇺 澳大利亚 02 [Fastly · AWS ap-southeast-2]"
+  - name: "🇦🇺 澳大利亚 02 [edgetunnel · AWS ap-southeast-2]"
     type: vless
     server: gwgiogtgdyrqlexcdjqm.supabase.co
     port: 443
@@ -557,40 +557,40 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1]"
-      - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1]"
-      - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2]"
-      - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1]"
-      - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1]"
-      - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 02 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 03 [Fastly · AWS eu-west-3]"
-      - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 02 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 03 [Fastly · AWS eu-west-2]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2]"
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1]"
-      - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
-      - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1]"
-      - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
-      - "🇦🇺 澳大利亚 02 [Fastly · AWS ap-southeast-2]"
+      - "🇭🇰 中国香港 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇯🇵 日本东京 01 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 02 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇰🇷 韩国首尔 01 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇸🇬 新加坡 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇫🇷 法国巴黎 01 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 02 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇬🇧 英国伦敦 01 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇨🇭 瑞士苏黎世 01 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 02 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+      - "🇺🇸 美国美东 01 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 02 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美西 01 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 02 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]"
+      - "🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]"
+      - "🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]"
+      - "🇦🇺 澳大利亚 02 [edgetunnel · AWS ap-southeast-2]"
 
   - name: ♻️ 自动选择
     type: url-test
@@ -598,168 +598,168 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1]"
-      - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1]"
-      - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2]"
-      - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1]"
-      - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1]"
-      - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 02 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 03 [Fastly · AWS eu-west-3]"
-      - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 02 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 03 [Fastly · AWS eu-west-2]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2]"
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1]"
-      - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
-      - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1]"
-      - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
-      - "🇦🇺 澳大利亚 02 [Fastly · AWS ap-southeast-2]"
+      - "🇭🇰 中国香港 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇯🇵 日本东京 01 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 02 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇰🇷 韩国首尔 01 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇸🇬 新加坡 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇫🇷 法国巴黎 01 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 02 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇬🇧 英国伦敦 01 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇨🇭 瑞士苏黎世 01 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 02 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
+      - "🇺🇸 美国美东 01 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 02 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美西 01 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 02 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]"
+      - "🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]"
+      - "🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]"
+      - "🇦🇺 澳大利亚 02 [edgetunnel · AWS ap-southeast-2]"
 
   - name: 🌏 亚太节点
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1]"
-      - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1]"
-      - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2]"
-      - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1]"
-      - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
-      - "🇦🇺 澳大利亚 02 [Fastly · AWS ap-southeast-2]"
+      - "🇭🇰 中国香港 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇯🇵 日本东京 01 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 02 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
+      - "🇰🇷 韩国首尔 01 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
+      - "🇸🇬 新加坡 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
+      - "🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]"
+      - "🇦🇺 澳大利亚 02 [edgetunnel · AWS ap-southeast-2]"
 
   - name: 🌍 欧洲节点
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1]"
-      - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 02 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 03 [Fastly · AWS eu-west-3]"
-      - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 02 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 03 [Fastly · AWS eu-west-2]"
-      - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2]"
+      - "🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
+      - "🇫🇷 法国巴黎 01 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 02 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
+      - "🇬🇧 英国伦敦 01 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
+      - "🇨🇭 瑞士苏黎世 01 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 02 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
 
   - name: 🌎 美洲节点
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1]"
-      - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
-      - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1]"
+      - "🇺🇸 美国美东 01 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 02 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美西 01 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 02 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
+      - "🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]"
+      - "🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]"
 
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1]"
-      - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇭🇰 中国香港 03 [edgetunnel · AWS ap-southeast-1]"
 
   - name: "🇯🇵 日本东京"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1]"
-      - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 01 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 02 [edgetunnel · AWS ap-northeast-1]"
+      - "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]"
 
   - name: "🇰🇷 韩国首尔"
     type: select
     proxies:
-      - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 01 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]"
+      - "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]"
 
   - name: "🇸🇬 新加坡"
     type: select
     proxies:
-      - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 01 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]"
+      - "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]"
 
   - name: "🇩🇪 德国法兰克福"
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1]"
-      - "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]"
+      - "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]"
 
   - name: "🇫🇷 法国巴黎"
     type: select
     proxies:
-      - "🇫🇷 法国巴黎 01 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 02 [Fastly · AWS eu-west-3]"
-      - "🇫🇷 法国巴黎 03 [Fastly · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 01 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 02 [edgetunnel · AWS eu-west-3]"
+      - "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]"
 
   - name: "🇬🇧 英国伦敦"
     type: select
     proxies:
-      - "🇬🇧 英国伦敦 01 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 02 [Fastly · AWS eu-west-2]"
-      - "🇬🇧 英国伦敦 03 [Fastly · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 01 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]"
+      - "🇬🇧 英国伦敦 03 [edgetunnel · AWS eu-west-2]"
 
   - name: "🇨🇭 瑞士苏黎世"
     type: select
     proxies:
-      - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2]"
-      - "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 01 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 02 [edgetunnel · AWS eu-central-2]"
+      - "🇨🇭 瑞士苏黎世 03 [edgetunnel · AWS eu-central-2]"
 
   - name: "🇺🇸 美国美东"
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1]"
+      - "🇺🇸 美国美东 01 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 02 [edgetunnel · AWS us-east-1]"
+      - "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]"
 
   - name: "🇺🇸 美国美西"
     type: select
     proxies:
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1]"
+      - "🇺🇸 美国美西 01 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 02 [edgetunnel · AWS us-west-1]"
+      - "🇺🇸 美国美西 03 [edgetunnel · AWS us-west-1]"
 
   - name: "🇨🇦 加拿大"
     type: select
     proxies:
-      - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1]"
-      - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1]"
+      - "🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]"
+      - "🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]"
 
   - name: "🇦🇺 澳大利亚"
     type: select
     proxies:
-      - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2]"
-      - "🇦🇺 澳大利亚 02 [Fastly · AWS ap-southeast-2]"
+      - "🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]"
+      - "🇦🇺 澳大利亚 02 [edgetunnel · AWS ap-southeast-2]"
 
 rules:
   - DOMAIN-SUFFIX,google.com,🚀 节点选择
