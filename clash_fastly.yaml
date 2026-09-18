@@ -1,6 +1,6 @@
 # ============================================================
 # Fastly 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-18 15:06:23 UTC
+# Last Speedtest Run: 2026-09-18 15:08:37 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
 # Latency Standard: Asian routes guaranteed sub-90ms
@@ -27,9 +27,9 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 50.5ms]"
+  - name: "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 52.0ms]"
     type: vless
-    server: 39.109.50.124
+    server: 23.147.172.135
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -42,9 +42,9 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 52.0ms]"
+  - name: "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 50.5ms]"
     type: vless
-    server: 23.147.172.135
+    server: 39.109.50.124
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -132,10 +132,10 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 64.0ms]"
+  - name: "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 65.0ms]"
     type: vless
-    server: 119.28.162.39
-    port: 8443
+    server: 172.238.18.137
+    port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
@@ -147,10 +147,10 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 65.0ms]"
+  - name: "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 64.0ms]"
     type: vless
-    server: 172.238.18.137
-    port: 443
+    server: 119.28.162.39
+    port: 8443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
@@ -177,9 +177,9 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 84.0ms]"
+  - name: "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 83.6ms]"
     type: vless
-    server: 209.97.175.102
+    server: 159.89.199.14
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -192,10 +192,10 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 86.0ms]"
+  - name: "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 84.0ms]"
     type: vless
-    server: 119.28.162.39
-    port: 8443
+    server: 209.97.175.102
+    port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
@@ -387,9 +387,9 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 139.0ms]"
+  - name: "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 145.0ms]"
     type: vless
-    server: 5.161.23.223
+    server: 209.209.58.159
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -402,9 +402,9 @@ proxies:
       headers:
         Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 142.0ms]"
+  - name: "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 139.0ms]"
     type: vless
-    server: 35.193.113.78
+    server: 5.161.23.223
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -417,9 +417,9 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 145.0ms]"
+  - name: "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 142.0ms]"
     type: vless
-    server: 209.209.58.159
+    server: 35.193.113.78
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -432,9 +432,9 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 138.0ms]"
+  - name: "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 140.5ms]"
     type: vless
-    server: 5.78.28.161
+    server: 34.195.113.34
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -462,9 +462,9 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 143.0ms]"
+  - name: "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 141.0ms]"
     type: vless
-    server: 35.193.113.78
+    server: 34.195.113.29
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -557,18 +557,18 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 50.5ms]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1 54.0ms]"
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1 51.0ms]"
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2 62.0ms]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 64.0ms]"
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1 82.0ms]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 86.0ms]"
+      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 83.6ms]"
+      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 84.0ms]"
       - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1 140.0ms]"
       - "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1 144.0ms]"
       - "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1 146.0ms]"
@@ -581,12 +581,12 @@ proxy-groups:
       - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2 143.0ms]"
       - "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2 147.0ms]"
       - "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2 149.0ms]"
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 139.0ms]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 142.0ms]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 138.0ms]"
+      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 139.0ms]"
+      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 140.5ms]"
       - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1 141.0ms]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 143.0ms]"
+      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 141.0ms]"
       - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1 149.0ms]"
       - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1 152.0ms]"
       - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2 162.0ms]"
@@ -598,18 +598,18 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 50.5ms]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1 54.0ms]"
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1 51.0ms]"
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2 62.0ms]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 64.0ms]"
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1 82.0ms]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 86.0ms]"
+      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 83.6ms]"
+      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 84.0ms]"
       - "🇩🇪 德国法兰克福 01 [Fastly · AWS eu-central-1 140.0ms]"
       - "🇩🇪 德国法兰克福 02 [Fastly · AWS eu-central-1 144.0ms]"
       - "🇩🇪 德国法兰克福 03 [Fastly · AWS eu-central-1 146.0ms]"
@@ -622,12 +622,12 @@ proxy-groups:
       - "🇨🇭 瑞士苏黎世 01 [Fastly · AWS eu-central-2 143.0ms]"
       - "🇨🇭 瑞士苏黎世 02 [Fastly · AWS eu-central-2 147.0ms]"
       - "🇨🇭 瑞士苏黎世 03 [Fastly · AWS eu-central-2 149.0ms]"
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 139.0ms]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 142.0ms]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 138.0ms]"
+      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 139.0ms]"
+      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 140.5ms]"
       - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1 141.0ms]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 143.0ms]"
+      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 141.0ms]"
       - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1 149.0ms]"
       - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1 152.0ms]"
       - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2 162.0ms]"
@@ -636,18 +636,18 @@ proxy-groups:
   - name: 🌏 亚太节点
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 50.5ms]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1 54.0ms]"
       - "🇯🇵 日本东京 01 [Fastly · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Fastly · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Fastly · AWS ap-northeast-1 51.0ms]"
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2 62.0ms]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 64.0ms]"
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1 82.0ms]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 86.0ms]"
+      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 83.6ms]"
+      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 84.0ms]"
       - "🇦🇺 澳大利亚 01 [Fastly · AWS ap-southeast-2 162.0ms]"
       - "🇦🇺 澳大利亚 02 [Fastly · AWS ap-southeast-2 165.0ms]"
 
@@ -670,20 +670,20 @@ proxy-groups:
   - name: 🌎 美洲节点
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 139.0ms]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 142.0ms]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 138.0ms]"
+      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 139.0ms]"
+      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 140.5ms]"
       - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1 141.0ms]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 143.0ms]"
+      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 141.0ms]"
       - "🇨🇦 加拿大 01 [Fastly · AWS ca-central-1 149.0ms]"
       - "🇨🇦 加拿大 02 [Fastly · AWS ca-central-1 152.0ms]"
 
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 50.5ms]"
-      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 01 [Fastly · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 02 [Fastly · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 03 [Fastly · AWS ap-southeast-1 54.0ms]"
 
   - name: "🇯🇵 日本东京"
@@ -697,15 +697,15 @@ proxy-groups:
     type: select
     proxies:
       - "🇰🇷 韩国首尔 01 [Fastly · AWS ap-northeast-2 62.0ms]"
-      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 02 [Fastly · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 03 [Fastly · AWS ap-northeast-2 64.0ms]"
 
   - name: "🇸🇬 新加坡"
     type: select
     proxies:
       - "🇸🇬 新加坡 01 [Fastly · AWS ap-southeast-1 82.0ms]"
-      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 86.0ms]"
+      - "🇸🇬 新加坡 02 [Fastly · AWS ap-southeast-1 83.6ms]"
+      - "🇸🇬 新加坡 03 [Fastly · AWS ap-southeast-1 84.0ms]"
 
   - name: "🇩🇪 德国法兰克福"
     type: select
@@ -738,16 +738,16 @@ proxy-groups:
   - name: "🇺🇸 美国美东"
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 139.0ms]"
-      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 142.0ms]"
-      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美东 01 [Fastly · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美东 02 [Fastly · AWS us-east-1 139.0ms]"
+      - "🇺🇸 美国美东 03 [Fastly · AWS us-east-1 142.0ms]"
 
   - name: "🇺🇸 美国美西"
     type: select
     proxies:
-      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 138.0ms]"
+      - "🇺🇸 美国美西 01 [Fastly · AWS us-west-1 140.5ms]"
       - "🇺🇸 美国美西 02 [Fastly · AWS us-west-1 141.0ms]"
-      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 143.0ms]"
+      - "🇺🇸 美国美西 03 [Fastly · AWS us-west-1 141.0ms]"
 
   - name: "🇨🇦 加拿大"
     type: select
