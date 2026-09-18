@@ -1,6 +1,6 @@
 # Multi-Platform Edge 34-Node Ultra-Low Latency Subscriptions
 
-- **Last Cloud Update**: `2026-09-18 16:01:23 UTC`
+- **Last Cloud Update**: `2026-09-18 16:06:39 UTC`
 - **Automated Schedule**: Every 4 hours via GitHub Actions (`0 */4 * * *`)
 - **Total Candidate Pool Tested**: **1500+ endpoints**
 - **Optimized Output**: Exactly **34 top-tier nodes** (2-3 per country, zero bloated lists)
@@ -14,7 +14,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `HK` | 🇭🇰 中国香港 | **3** | `119.45.41.162:8443` | **50.5 ms** | 28.5Mbps |
 | `JP` | 🇯🇵 日本东京 | **3** | `172.238.18.137:443` | **47.0 ms** | 28.0Mbps |
-| `KR` | 🇰🇷 韩国首尔 | **3** | `119.28.162.39:8443` | **64.0 ms** | 24.0Mbps |
+| `KR` | 🇰🇷 韩国首尔 | **3** | `43.133.237.158:8443` | **62.0 ms** | 25.0Mbps |
 | `SG` | 🇸🇬 新加坡 | **3** | `159.89.199.63:443` | **82.0 ms** | 24.0Mbps |
 | `DE` | 🇩🇪 德国法兰克福 | **3** | `88.218.193.1:443` | **140.0 ms** | 24.0Mbps |
 | `FR` | 🇫🇷 法国巴黎 | **3** | `89.106.207.216:443` | **142.0 ms** | 22.5Mbps |
