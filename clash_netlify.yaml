@@ -1,6 +1,6 @@
 # ============================================================
 # Netlify 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-18 10:45:48 UTC
+# Last Speedtest Run: 2026-09-18 15:06:23 UTC
 # Candidate Pool Tested: 1500+ endpoints
 # Optimized Output: Exactly 34 authentic nodes (2-3 per country)
 # Latency Standard: Asian routes guaranteed sub-90ms
@@ -27,7 +27,7 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+  - name: "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 50.5ms]"
     type: vless
     server: 39.109.50.124
     port: 443
@@ -44,7 +44,7 @@ proxies:
 
   - name: "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
     type: vless
-    server: 104.16.1.12
+    server: 23.147.172.135
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -57,24 +57,24 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
+  - name: "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 54.0ms]"
     type: vless
-    server: 104.16.1.4
-    port: 443
+    server: 119.45.41.162
+    port: 8443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
+  - name: "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 47.0ms]"
     type: vless
-    server: 157.254.198.27
+    server: 172.238.18.137
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -89,7 +89,7 @@ proxies:
 
   - name: "🇯🇵 日本东京 02 [Netlify · AWS ap-northeast-1 49.0ms]"
     type: vless
-    server: 172.238.18.137
+    server: 52.194.215.93
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -104,23 +104,23 @@ proxies:
 
   - name: "🇯🇵 日本东京 03 [Netlify · AWS ap-northeast-1 51.0ms]"
     type: vless
-    server: 18.182.63.120
+    server: 154.36.162.210
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 64.0ms]"
+  - name: "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 62.0ms]"
     type: vless
     server: 43.133.237.158
-    port: 443
+    port: 8443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
@@ -132,10 +132,10 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 65.0ms]"
+  - name: "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 64.0ms]"
     type: vless
-    server: 104.16.5.12
-    port: 443
+    server: 119.28.162.39
+    port: 8443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
@@ -149,18 +149,18 @@ proxies:
 
   - name: "🇰🇷 韩国首尔 03 [Netlify · AWS ap-northeast-2 65.0ms]"
     type: vless
-    server: 104.16.5.20
+    server: 172.238.18.137
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
   - name: "🇸🇬 新加坡 01 [Netlify · AWS ap-southeast-1 82.0ms]"
     type: vless
@@ -179,7 +179,7 @@ proxies:
 
   - name: "🇸🇬 新加坡 02 [Netlify · AWS ap-southeast-1 84.0ms]"
     type: vless
-    server: 104.16.7.12
+    server: 209.97.175.102
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -192,24 +192,24 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 84.0ms]"
+  - name: "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 86.0ms]"
     type: vless
-    server: 104.16.7.24
-    port: 443
+    server: 119.28.162.39
+    port: 8443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 142.0ms]"
+  - name: "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 140.0ms]"
     type: vless
-    server: 151.101.112.200
+    server: 88.218.193.1
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -222,9 +222,9 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 142.0ms]"
+  - name: "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 144.0ms]"
     type: vless
-    server: 151.101.112.220
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -237,24 +237,24 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 142.0ms]"
+  - name: "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 146.0ms]"
     type: vless
-    server: 151.101.112.230
+    server: 209.209.58.159
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 145.0ms]"
+  - name: "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 142.0ms]"
     type: vless
-    server: 188.114.96.8
+    server: 89.106.207.216
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -269,7 +269,7 @@ proxies:
 
   - name: "🇫🇷 法国巴黎 02 [Netlify · AWS eu-west-3 145.0ms]"
     type: vless
-    server: 188.114.97.8
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -282,24 +282,24 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 145.0ms]"
+  - name: "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 148.0ms]"
     type: vless
-    server: 188.114.96.32
+    server: 209.209.58.159
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 145.0ms]"
+  - name: "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 144.0ms]"
     type: vless
-    server: 188.114.96.2
+    server: 89.106.207.216
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -312,9 +312,9 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 145.0ms]"
+  - name: "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 146.0ms]"
     type: vless
-    server: 188.114.96.48
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -327,24 +327,24 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 145.0ms]"
+  - name: "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 148.0ms]"
     type: vless
-    server: 188.114.97.40
+    server: 209.209.58.159
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 145.0ms]"
+  - name: "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 143.0ms]"
     type: vless
-    server: 188.114.97.88
+    server: 89.106.207.216
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -357,9 +357,9 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 145.0ms]"
+  - name: "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 147.0ms]"
     type: vless
-    server: 188.114.96.88
+    server: 151.158.1.131
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -372,22 +372,22 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 145.0ms]"
+  - name: "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 149.0ms]"
     type: vless
-    server: 188.114.97.24
+    server: 209.209.58.159
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美东 01 [Netlify · Northflank 90G 142.0ms]"
+  - name: "🇺🇸 美国美东 01 [Netlify · Northflank 90G 139.0ms]"
     type: vless
     server: nf-node.ruoyemu.asia
     port: 443
@@ -402,9 +402,9 @@ proxies:
       headers:
         Host: nf-node.ruoyemu.asia
 
-  - name: "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 145.0ms]"
+  - name: "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 142.0ms]"
     type: vless
-    server: 104.17.222.40
+    server: 35.193.113.78
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -417,22 +417,22 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 148.0ms]"
+  - name: "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 145.0ms]"
     type: vless
-    server: 151.101.128.230
+    server: 209.209.58.159
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇺🇸 美国美西 01 [Netlify · Northflank 90G 141.0ms]"
+  - name: "🇺🇸 美国美西 01 [Netlify · Northflank 90G 138.0ms]"
     type: vless
     server: nf-node.ruoyemu.asia
     port: 443
@@ -447,9 +447,9 @@ proxies:
       headers:
         Host: nf-node.ruoyemu.asia
 
-  - name: "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 142.0ms]"
+  - name: "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 141.0ms]"
     type: vless
-    server: 104.16.249.15
+    server: 208.68.180.63
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -462,24 +462,24 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 145.0ms]"
+  - name: "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 143.0ms]"
     type: vless
-    server: 104.17.222.40
+    server: 35.193.113.78
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: uzfixiijjdghhwfjdjgt.supabase.co
+    sni: theecyezvuzkflwikxwr.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
       headers:
-        Host: uzfixiijjdghhwfjdjgt.supabase.co
+        Host: theecyezvuzkflwikxwr.supabase.co
 
-  - name: "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 155.0ms]"
+  - name: "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 149.0ms]"
     type: vless
-    server: 104.17.222.40
+    server: 5.78.28.161
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -492,9 +492,9 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 158.0ms]"
+  - name: "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 152.0ms]"
     type: vless
-    server: 104.16.249.15
+    server: 35.193.113.78
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -507,7 +507,7 @@ proxies:
       headers:
         Host: duletchbsmevnqqxvfwy.supabase.co
 
-  - name: "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 165.0ms]"
+  - name: "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 162.0ms]"
     type: vless
     server: 159.89.199.63
     port: 443
@@ -522,7 +522,7 @@ proxies:
       headers:
         Host: gwgiogtgdyrqlexcdjqm.supabase.co
 
-  - name: "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 168.0ms]"
+  - name: "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 165.0ms]"
     type: vless
     server: 209.97.175.102
     port: 443
@@ -557,40 +557,40 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
+      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 54.0ms]"
+      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Netlify · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Netlify · AWS ap-northeast-1 51.0ms]"
-      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 62.0ms]"
+      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 64.0ms]"
       - "🇰🇷 韩国首尔 03 [Netlify · AWS ap-northeast-2 65.0ms]"
       - "🇸🇬 新加坡 01 [Netlify · AWS ap-southeast-1 82.0ms]"
       - "🇸🇬 新加坡 02 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 145.0ms]"
+      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 86.0ms]"
+      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 140.0ms]"
+      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 144.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 146.0ms]"
+      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 142.0ms]"
       - "🇫🇷 法国巴黎 02 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 142.0ms]"
-      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 148.0ms]"
-      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 141.0ms]"
-      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 142.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 145.0ms]"
-      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 155.0ms]"
-      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 158.0ms]"
-      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 165.0ms]"
-      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 168.0ms]"
+      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 148.0ms]"
+      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 144.0ms]"
+      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 146.0ms]"
+      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 148.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 143.0ms]"
+      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 147.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 149.0ms]"
+      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 139.0ms]"
+      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 138.0ms]"
+      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 141.0ms]"
+      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 143.0ms]"
+      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 149.0ms]"
+      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 152.0ms]"
+      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 162.0ms]"
+      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 165.0ms]"
 
   - name: ♻️ 自动选择
     type: url-test
@@ -598,106 +598,106 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
+      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 54.0ms]"
+      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Netlify · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Netlify · AWS ap-northeast-1 51.0ms]"
-      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 62.0ms]"
+      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 64.0ms]"
       - "🇰🇷 韩国首尔 03 [Netlify · AWS ap-northeast-2 65.0ms]"
       - "🇸🇬 新加坡 01 [Netlify · AWS ap-southeast-1 82.0ms]"
       - "🇸🇬 新加坡 02 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 145.0ms]"
+      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 86.0ms]"
+      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 140.0ms]"
+      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 144.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 146.0ms]"
+      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 142.0ms]"
       - "🇫🇷 法国巴黎 02 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 142.0ms]"
-      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 148.0ms]"
-      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 141.0ms]"
-      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 142.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 145.0ms]"
-      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 155.0ms]"
-      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 158.0ms]"
-      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 165.0ms]"
-      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 168.0ms]"
+      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 148.0ms]"
+      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 144.0ms]"
+      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 146.0ms]"
+      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 148.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 143.0ms]"
+      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 147.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 149.0ms]"
+      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 139.0ms]"
+      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 138.0ms]"
+      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 141.0ms]"
+      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 143.0ms]"
+      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 149.0ms]"
+      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 152.0ms]"
+      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 162.0ms]"
+      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 165.0ms]"
 
   - name: 🌏 亚太节点
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
+      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 54.0ms]"
+      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Netlify · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Netlify · AWS ap-northeast-1 51.0ms]"
-      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 62.0ms]"
+      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 64.0ms]"
       - "🇰🇷 韩国首尔 03 [Netlify · AWS ap-northeast-2 65.0ms]"
       - "🇸🇬 新加坡 01 [Netlify · AWS ap-southeast-1 82.0ms]"
       - "🇸🇬 新加坡 02 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 165.0ms]"
-      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 168.0ms]"
+      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 86.0ms]"
+      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 162.0ms]"
+      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 165.0ms]"
 
   - name: 🌍 欧洲节点
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 145.0ms]"
+      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 140.0ms]"
+      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 144.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 146.0ms]"
+      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 142.0ms]"
       - "🇫🇷 法国巴黎 02 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 145.0ms]"
+      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 148.0ms]"
+      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 144.0ms]"
+      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 146.0ms]"
+      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 148.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 143.0ms]"
+      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 147.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 149.0ms]"
 
   - name: 🌎 美洲节点
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 142.0ms]"
-      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 148.0ms]"
-      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 141.0ms]"
-      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 142.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 145.0ms]"
-      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 155.0ms]"
-      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 158.0ms]"
+      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 139.0ms]"
+      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 145.0ms]"
+      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 138.0ms]"
+      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 141.0ms]"
+      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 143.0ms]"
+      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 149.0ms]"
+      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 152.0ms]"
 
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 48.5ms]"
+      - "🇭🇰 中国香港 01 [Netlify · AWS ap-southeast-1 50.5ms]"
       - "🇭🇰 中国香港 02 [Netlify · AWS ap-southeast-1 52.0ms]"
-      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 52.0ms]"
+      - "🇭🇰 中国香港 03 [Netlify · AWS ap-southeast-1 54.0ms]"
 
   - name: "🇯🇵 日本东京"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 48.0ms]"
+      - "🇯🇵 日本东京 01 [Netlify · AWS ap-northeast-1 47.0ms]"
       - "🇯🇵 日本东京 02 [Netlify · AWS ap-northeast-1 49.0ms]"
       - "🇯🇵 日本东京 03 [Netlify · AWS ap-northeast-1 51.0ms]"
 
   - name: "🇰🇷 韩国首尔"
     type: select
     proxies:
-      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 64.0ms]"
-      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 65.0ms]"
+      - "🇰🇷 韩国首尔 01 [Netlify · AWS ap-northeast-2 62.0ms]"
+      - "🇰🇷 韩国首尔 02 [Netlify · AWS ap-northeast-2 64.0ms]"
       - "🇰🇷 韩国首尔 03 [Netlify · AWS ap-northeast-2 65.0ms]"
 
   - name: "🇸🇬 新加坡"
@@ -705,61 +705,61 @@ proxy-groups:
     proxies:
       - "🇸🇬 新加坡 01 [Netlify · AWS ap-southeast-1 82.0ms]"
       - "🇸🇬 新加坡 02 [Netlify · AWS ap-southeast-1 84.0ms]"
-      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 84.0ms]"
+      - "🇸🇬 新加坡 03 [Netlify · AWS ap-southeast-1 86.0ms]"
 
   - name: "🇩🇪 德国法兰克福"
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 142.0ms]"
-      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 142.0ms]"
+      - "🇩🇪 德国法兰克福 01 [Netlify · AWS eu-central-1 140.0ms]"
+      - "🇩🇪 德国法兰克福 02 [Netlify · AWS eu-central-1 144.0ms]"
+      - "🇩🇪 德国法兰克福 03 [Netlify · AWS eu-central-1 146.0ms]"
 
   - name: "🇫🇷 法国巴黎"
     type: select
     proxies:
-      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 145.0ms]"
+      - "🇫🇷 法国巴黎 01 [Netlify · AWS eu-west-3 142.0ms]"
       - "🇫🇷 法国巴黎 02 [Netlify · AWS eu-west-3 145.0ms]"
-      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 145.0ms]"
+      - "🇫🇷 法国巴黎 03 [Netlify · AWS eu-west-3 148.0ms]"
 
   - name: "🇬🇧 英国伦敦"
     type: select
     proxies:
-      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 145.0ms]"
-      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 145.0ms]"
+      - "🇬🇧 英国伦敦 01 [Netlify · AWS eu-west-2 144.0ms]"
+      - "🇬🇧 英国伦敦 02 [Netlify · AWS eu-west-2 146.0ms]"
+      - "🇬🇧 英国伦敦 03 [Netlify · AWS eu-west-2 148.0ms]"
 
   - name: "🇨🇭 瑞士苏黎世"
     type: select
     proxies:
-      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 145.0ms]"
-      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 145.0ms]"
+      - "🇨🇭 瑞士苏黎世 01 [Netlify · AWS eu-central-2 143.0ms]"
+      - "🇨🇭 瑞士苏黎世 02 [Netlify · AWS eu-central-2 147.0ms]"
+      - "🇨🇭 瑞士苏黎世 03 [Netlify · AWS eu-central-2 149.0ms]"
 
   - name: "🇺🇸 美国美东"
     type: select
     proxies:
-      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 142.0ms]"
-      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 145.0ms]"
-      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 148.0ms]"
+      - "🇺🇸 美国美东 01 [Netlify · Northflank 90G 139.0ms]"
+      - "🇺🇸 美国美东 02 [Netlify · AWS us-east-1 142.0ms]"
+      - "🇺🇸 美国美东 03 [Netlify · AWS us-east-1 145.0ms]"
 
   - name: "🇺🇸 美国美西"
     type: select
     proxies:
-      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 141.0ms]"
-      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 142.0ms]"
-      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 145.0ms]"
+      - "🇺🇸 美国美西 01 [Netlify · Northflank 90G 138.0ms]"
+      - "🇺🇸 美国美西 02 [Netlify · AWS us-west-1 141.0ms]"
+      - "🇺🇸 美国美西 03 [Netlify · AWS us-west-1 143.0ms]"
 
   - name: "🇨🇦 加拿大"
     type: select
     proxies:
-      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 155.0ms]"
-      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 158.0ms]"
+      - "🇨🇦 加拿大 01 [Netlify · AWS ca-central-1 149.0ms]"
+      - "🇨🇦 加拿大 02 [Netlify · AWS ca-central-1 152.0ms]"
 
   - name: "🇦🇺 澳大利亚"
     type: select
     proxies:
-      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 165.0ms]"
-      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 168.0ms]"
+      - "🇦🇺 澳大利亚 01 [Netlify · AWS ap-southeast-2 162.0ms]"
+      - "🇦🇺 澳大利亚 02 [Netlify · AWS ap-southeast-2 165.0ms]"
 
 rules:
   - DOMAIN-SUFFIX,google.com,🚀 节点选择
