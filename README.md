@@ -1,6 +1,6 @@
 # Multi-Platform Edge 34-Node Ultra-Low Latency Subscriptions
 
-- **Last Cloud Update**: `2026-09-19 08:23:59 UTC`
+- **Last Cloud Update**: `2026-09-19 11:45:08 UTC`
 - **Automated Schedule**: Every 4 hours via GitHub Actions (`0 */4 * * *`)
 - **Total Candidate Pool Tested**: **1500+ endpoints**
 - **Optimized Output**: Exactly **34 top-tier nodes** (2-3 per country, zero bloated lists)
@@ -31,3 +31,4 @@
 - 🟢 **Netlify Dedicated (34 Nodes · Domestic Gateway Routing)**: `https://sub.ruoyemu.asia/clash?token=netlify`
 - ⚡ **edgetunnel Dedicated (34 Nodes · Supabase AWS Multi-Region)**: `https://sub.ruoyemu.asia/clash?token=edgetunnel`
 - 🌐 **Master Aggregated (34 Nodes · Tripartite Multi-Cloud)**: `https://sub.ruoyemu.asia/clash?token=all`
+- 🛡️ **EdgeOne Dedicated (36 Nodes · Tencent Cloud Anycast)**: `https://sub.ruoyemu.asia/clash?token=edgeone`

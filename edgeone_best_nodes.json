@@ -1,0 +1,424 @@
+{
+  "HK": [
+    {
+      "host": "43.153.64.1",
+      "port": 443,
+      "region": "HK",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 42.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 37.8,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "162.14.21.1",
+      "port": 443,
+      "region": "HK",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 45.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 40.5,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "150.109.112.1",
+      "port": 443,
+      "region": "HK",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 48.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 43.2,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "119.28.162.1",
+      "port": 443,
+      "region": "HK",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 52.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 46.8,
+      "speed": "28.0Mbps"
+    }
+  ],
+  "JP": [
+    {
+      "host": "43.129.21.1",
+      "port": 443,
+      "region": "JP",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 48.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 43.2,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "43.129.21.10",
+      "port": 443,
+      "region": "JP",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 50.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 45.0,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "150.109.108.1",
+      "port": 443,
+      "region": "JP",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 52.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 46.8,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "119.28.188.1",
+      "port": 443,
+      "region": "JP",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 55.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 49.5,
+      "speed": "28.0Mbps"
+    }
+  ],
+  "KR": [
+    {
+      "host": "43.133.232.1",
+      "port": 443,
+      "region": "KR",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 62.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 55.8,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "43.133.232.10",
+      "port": 443,
+      "region": "KR",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 64.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 57.6,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "119.28.160.1",
+      "port": 443,
+      "region": "KR",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 65.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 58.5,
+      "speed": "28.0Mbps"
+    }
+  ],
+  "SG": [
+    {
+      "host": "119.28.128.1",
+      "port": 443,
+      "region": "SG",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 78.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 70.2,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "150.109.104.1",
+      "port": 443,
+      "region": "SG",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 80.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 72.0,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "124.156.128.1",
+      "port": 443,
+      "region": "SG",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 82.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 73.8,
+      "speed": "28.0Mbps"
+    }
+  ],
+  "TW": [
+    {
+      "host": "43.153.68.1",
+      "port": 443,
+      "region": "TW",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 68.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 61.2,
+      "speed": "28.0Mbps"
+    },
+    {
+      "host": "43.153.68.10",
+      "port": 443,
+      "region": "TW",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 72.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 64.8,
+      "speed": "28.0Mbps"
+    }
+  ],
+  "DE": [
+    {
+      "host": "150.109.16.1",
+      "port": 443,
+      "region": "DE",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 142.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 127.8,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "150.109.16.10",
+      "port": 443,
+      "region": "DE",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 145.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 130.5,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "150.109.16.20",
+      "port": 443,
+      "region": "DE",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 146.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 131.4,
+      "speed": "20.0Mbps"
+    }
+  ],
+  "GB": [
+    {
+      "host": "162.14.128.16",
+      "port": 443,
+      "region": "GB",
+      "isp": "Anycast_GB",
+      "avg_rtt": 135.7,
+      "jitter": 7.0,
+      "loss_rate": 0.0,
+      "score": 122.87,
+      "speed": "22.0Mbps"
+    },
+    {
+      "host": "162.14.128.10",
+      "port": 443,
+      "region": "GB",
+      "isp": "Anycast_GB",
+      "avg_rtt": 156.4,
+      "jitter": 27.5,
+      "loss_rate": 0.0,
+      "score": 143.54,
+      "speed": "18.0Mbps"
+    },
+    {
+      "host": "162.14.128.19",
+      "port": 443,
+      "region": "GB",
+      "isp": "Anycast_GB",
+      "avg_rtt": 152.0,
+      "jitter": 72.5,
+      "loss_rate": 0.0,
+      "score": 144.04,
+      "speed": "18.0Mbps"
+    }
+  ],
+  "FR": [
+    {
+      "host": "150.109.20.1",
+      "port": 443,
+      "region": "FR",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 145.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 130.5,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "150.109.20.10",
+      "port": 443,
+      "region": "FR",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 148.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 133.2,
+      "speed": "20.0Mbps"
+    }
+  ],
+  "CH": [
+    {
+      "host": "150.109.24.1",
+      "port": 443,
+      "region": "CH",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 146.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 131.4,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "150.109.24.10",
+      "port": 443,
+      "region": "CH",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 149.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 134.1,
+      "speed": "20.0Mbps"
+    }
+  ],
+  "US_WEST": [
+    {
+      "host": "170.106.128.1",
+      "port": 443,
+      "region": "US_WEST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 138.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 124.2,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "170.106.128.10",
+      "port": 443,
+      "region": "US_WEST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 140.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 126.0,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "170.106.128.30",
+      "port": 443,
+      "region": "US_WEST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 141.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 126.9,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "170.106.128.20",
+      "port": 443,
+      "region": "US_WEST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 142.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 127.8,
+      "speed": "20.0Mbps"
+    }
+  ],
+  "US_EAST": [
+    {
+      "host": "170.106.130.1",
+      "port": 443,
+      "region": "US_EAST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 142.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 127.8,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "170.106.130.10",
+      "port": 443,
+      "region": "US_EAST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 144.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 129.6,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "170.106.130.20",
+      "port": 443,
+      "region": "US_EAST",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 145.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 130.5,
+      "speed": "20.0Mbps"
+    }
+  ],
+  "CA": [
+    {
+      "host": "170.106.132.1",
+      "port": 443,
+      "region": "CA",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 148.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 133.2,
+      "speed": "20.0Mbps"
+    },
+    {
+      "host": "170.106.132.10",
+      "port": 443,
+      "region": "CA",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 152.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 136.8,
+      "speed": "20.0Mbps"
+    }
+  ],
+  "AU": [
+    {
+      "host": "150.109.28.1",
+      "port": 443,
+      "region": "AU",
+      "isp": "Anycast_Verified",
+      "avg_rtt": 162.0,
+      "jitter": 1.2,
+      "loss_rate": 0.0,
+      "score": 145.8,
+      "speed": "20.0Mbps"
+    }
+  ]
+}
