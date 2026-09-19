@@ -1,6 +1,6 @@
 # ============================================================
 # EdgeOne Standalone 36-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-19 12:18:20 UTC
+# Last Speedtest Run: 2026-09-19 12:20:48 UTC
 # Optimized Output: Exactly 36 verified edge nodes
 # Latency Standard: All Asian routes strictly sub-80ms under Chinese network
 # Platform: Tencent Cloud EdgeOne (Fourth Standalone Edge Service)
@@ -28,18 +28,18 @@ dns:
 proxies:
   - name: "🇭🇰 中国香港 01 [EdgeOne 电信优选 58ms]"
     type: vless
-    server: 119.45.41.162
-    port: 8443
+    server: uzfixiijjdghhwfjdjgt.supabase.co
+    port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
     tls: true
     udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
+    sni: uzfixiijjdghhwfjdjgt.supabase.co
     client-fingerprint: chrome
     ws-opts:
       path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
       headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
+        Host: uzfixiijjdghhwfjdjgt.supabase.co
 
   - name: "🇭🇰 中国香港 02 [EdgeOne 联通优选 62ms]"
     type: vless
