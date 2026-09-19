@@ -1,6 +1,6 @@
 # ============================================================
 # EdgeOne Standalone 36-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-19 11:45:08 UTC
+# Last Speedtest Run: 2026-09-19 11:50:24 UTC
 # Optimized Output: Exactly 36 verified edge nodes
 # Latency Standard: All Asian routes strictly sub-80ms under Chinese network
 # Platform: Tencent Cloud EdgeOne (Fourth Standalone Edge Service)
@@ -26,9 +26,9 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
+  - name: "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
     type: vless
-    server: 43.153.64.1
+    server: 162.14.128.11
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -41,9 +41,9 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇭🇰 中国香港 02 [EdgeOne Anycast极速 45ms]"
+  - name: "🇭🇰 中国香港 02 [EdgeOne Anycast极速 375ms]"
     type: vless
-    server: 162.14.21.1
+    server: 162.14.128.1
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -56,9 +56,9 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇭🇰 中国香港 03 [EdgeOne Anycast极速 48ms]"
+  - name: "🇭🇰 中国香港 03 [EdgeOne Anycast极速 386ms]"
     type: vless
-    server: 150.109.112.1
+    server: 162.14.128.21
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -71,247 +71,7 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇭🇰 中国香港 04 [EdgeOne Anycast极速 52ms]"
-    type: vless
-    server: 119.28.162.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-    type: vless
-    server: 43.129.21.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇯🇵 日本东京 02 [EdgeOne Anycast极速 50ms]"
-    type: vless
-    server: 43.129.21.10
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇯🇵 日本东京 03 [EdgeOne Anycast极速 52ms]"
-    type: vless
-    server: 150.109.108.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇯🇵 日本东京 04 [EdgeOne Anycast极速 55ms]"
-    type: vless
-    server: 119.28.188.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 62ms]"
-    type: vless
-    server: 43.133.232.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 64ms]"
-    type: vless
-    server: 43.133.232.10
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 65ms]"
-    type: vless
-    server: 119.28.160.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
-    type: vless
-    server: 119.28.128.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇸🇬 新加坡 02 [EdgeOne Anycast极速 80ms]"
-    type: vless
-    server: 150.109.104.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇸🇬 新加坡 03 [EdgeOne Anycast极速 82ms]"
-    type: vless
-    server: 124.156.128.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 68ms]"
-    type: vless
-    server: 43.153.68.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 72ms]"
-    type: vless
-    server: 43.153.68.10
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 142ms]"
-    type: vless
-    server: 150.109.16.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 145ms]"
-    type: vless
-    server: 150.109.16.10
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 146ms]"
-    type: vless
-    server: 150.109.16.20
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: eo.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: eo.ruoyemu.asia
-
-  - name: "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 135ms]"
+  - name: "🇭🇰 中国香港 04 [EdgeOne Anycast极速 474ms]"
     type: vless
     server: 162.14.128.16
     port: 443
@@ -326,9 +86,9 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 156ms]"
+  - name: "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
     type: vless
-    server: 162.14.128.10
+    server: 162.14.128.12
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -341,7 +101,97 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 152ms]"
+  - name: "🇯🇵 日本东京 02 [EdgeOne Anycast极速 366ms]"
+    type: vless
+    server: 162.14.128.2
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 03 [EdgeOne Anycast极速 401ms]"
+    type: vless
+    server: 162.14.128.7
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇯🇵 日本东京 04 [EdgeOne Anycast极速 420ms]"
+    type: vless
+    server: 162.14.128.17
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 161ms]"
+    type: vless
+    server: 162.14.128.18
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 190ms]"
+    type: vless
+    server: 162.14.128.3
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 236ms]"
+    type: vless
+    server: 162.14.128.23
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
     type: vless
     server: 162.14.128.19
     port: 443
@@ -356,9 +206,9 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 145ms]"
+  - name: "🇸🇬 新加坡 02 [EdgeOne Anycast极速 383ms]"
     type: vless
-    server: 150.109.20.1
+    server: 162.14.128.4
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -371,9 +221,9 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 148ms]"
+  - name: "🇸🇬 新加坡 03 [EdgeOne Anycast极速 382ms]"
     type: vless
-    server: 150.109.20.10
+    server: 162.14.128.9
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -386,9 +236,9 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 146ms]"
+  - name: "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 186ms]"
     type: vless
-    server: 150.109.24.1
+    server: 162.14.128.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -401,9 +251,159 @@ proxies:
       headers:
         Host: eo.ruoyemu.asia
 
-  - name: "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 149ms]"
+  - name: "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 198ms]"
     type: vless
-    server: 150.109.24.10
+    server: 162.14.128.10
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 293ms]"
+    type: vless
+    server: 162.14.129.9
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 324ms]"
+    type: vless
+    server: 162.14.129.29
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 339ms]"
+    type: vless
+    server: 162.14.129.21
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 355ms]"
+    type: vless
+    server: 162.14.129.30
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 363ms]"
+    type: vless
+    server: 162.14.129.26
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 357ms]"
+    type: vless
+    server: 162.14.129.6
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 288ms]"
+    type: vless
+    server: 162.14.129.19
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 359ms]"
+    type: vless
+    server: 162.14.129.23
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 288ms]"
+    type: vless
+    server: 162.14.129.4
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: eo.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: eo.ruoyemu.asia
+
+  - name: "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 303ms]"
+    type: vless
+    server: 162.14.129.24
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -418,7 +418,7 @@ proxies:
 
   - name: "🇺🇸 美国美西 01 [EdgeOne Anycast极速 138ms]"
     type: vless
-    server: 170.106.128.1
+    server: 162.14.129.13
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -433,7 +433,7 @@ proxies:
 
   - name: "🇺🇸 美国美西 02 [EdgeOne Anycast极速 140ms]"
     type: vless
-    server: 170.106.128.10
+    server: 162.14.129.14
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -448,7 +448,7 @@ proxies:
 
   - name: "🇺🇸 美国美西 03 [EdgeOne Anycast极速 141ms]"
     type: vless
-    server: 170.106.128.30
+    server: 162.14.129.17
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -463,7 +463,7 @@ proxies:
 
   - name: "🇺🇸 美国美西 04 [EdgeOne Anycast极速 142ms]"
     type: vless
-    server: 170.106.128.20
+    server: 162.14.129.15
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -478,7 +478,7 @@ proxies:
 
   - name: "🇺🇸 美国美东 01 [EdgeOne Anycast极速 142ms]"
     type: vless
-    server: 170.106.130.1
+    server: 162.14.129.19
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -493,7 +493,7 @@ proxies:
 
   - name: "🇺🇸 美国美东 02 [EdgeOne Anycast极速 144ms]"
     type: vless
-    server: 170.106.130.10
+    server: 162.14.129.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -508,7 +508,7 @@ proxies:
 
   - name: "🇺🇸 美国美东 03 [EdgeOne Anycast极速 145ms]"
     type: vless
-    server: 170.106.130.20
+    server: 162.14.129.21
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -523,7 +523,7 @@ proxies:
 
   - name: "🇨🇦 加拿大 01 [EdgeOne Anycast极速 148ms]"
     type: vless
-    server: 170.106.132.1
+    server: 162.14.129.23
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -538,7 +538,7 @@ proxies:
 
   - name: "🇨🇦 加拿大 02 [EdgeOne Anycast极速 152ms]"
     type: vless
-    server: 170.106.132.10
+    server: 162.14.129.24
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -553,7 +553,7 @@ proxies:
 
   - name: "🇦🇺 澳大利亚 01 [EdgeOne Anycast极速 162ms]"
     type: vless
-    server: 150.109.28.1
+    server: 162.14.129.25
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -589,32 +589,32 @@ proxy-groups:
       - "🇺🇸 美国美西"
       - "🇨🇦 加拿大"
       - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
-      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 45ms]"
-      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 48ms]"
-      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 50ms]"
-      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 55ms]"
-      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 62ms]"
-      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 64ms]"
-      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 65ms]"
-      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
-      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 80ms]"
-      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 82ms]"
-      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 68ms]"
-      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 72ms]"
-      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 142ms]"
-      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 145ms]"
-      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 146ms]"
-      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 135ms]"
-      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 156ms]"
-      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 152ms]"
-      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 145ms]"
-      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 148ms]"
-      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 146ms]"
-      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 149ms]"
+      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
+      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 375ms]"
+      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 386ms]"
+      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 474ms]"
+      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
+      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 366ms]"
+      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 401ms]"
+      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 420ms]"
+      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 161ms]"
+      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 190ms]"
+      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 236ms]"
+      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
+      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 383ms]"
+      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 382ms]"
+      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 186ms]"
+      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 198ms]"
+      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 293ms]"
+      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 324ms]"
+      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 339ms]"
+      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 355ms]"
+      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 363ms]"
+      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 357ms]"
+      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 288ms]"
+      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 359ms]"
+      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 288ms]"
+      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 303ms]"
       - "🇺🇸 美国美西 01 [EdgeOne Anycast极速 138ms]"
       - "🇺🇸 美国美西 02 [EdgeOne Anycast极速 140ms]"
       - "🇺🇸 美国美西 03 [EdgeOne Anycast极速 141ms]"
@@ -632,32 +632,32 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
-      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 45ms]"
-      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 48ms]"
-      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 50ms]"
-      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 55ms]"
-      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 62ms]"
-      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 64ms]"
-      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 65ms]"
-      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
-      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 80ms]"
-      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 82ms]"
-      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 68ms]"
-      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 72ms]"
-      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 142ms]"
-      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 145ms]"
-      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 146ms]"
-      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 135ms]"
-      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 156ms]"
-      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 152ms]"
-      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 145ms]"
-      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 148ms]"
-      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 146ms]"
-      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 149ms]"
+      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
+      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 375ms]"
+      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 386ms]"
+      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 474ms]"
+      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
+      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 366ms]"
+      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 401ms]"
+      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 420ms]"
+      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 161ms]"
+      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 190ms]"
+      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 236ms]"
+      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
+      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 383ms]"
+      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 382ms]"
+      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 186ms]"
+      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 198ms]"
+      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 293ms]"
+      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 324ms]"
+      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 339ms]"
+      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 355ms]"
+      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 363ms]"
+      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 357ms]"
+      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 288ms]"
+      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 359ms]"
+      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 288ms]"
+      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 303ms]"
       - "🇺🇸 美国美西 01 [EdgeOne Anycast极速 138ms]"
       - "🇺🇸 美国美西 02 [EdgeOne Anycast极速 140ms]"
       - "🇺🇸 美国美西 03 [EdgeOne Anycast极速 141ms]"
@@ -675,56 +675,56 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
-      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 45ms]"
-      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 48ms]"
-      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 50ms]"
-      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 55ms]"
-      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 62ms]"
-      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 64ms]"
-      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 65ms]"
-      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
-      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 80ms]"
-      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 82ms]"
-      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 68ms]"
-      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 72ms]"
+      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
+      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 375ms]"
+      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 386ms]"
+      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 474ms]"
+      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
+      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 366ms]"
+      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 401ms]"
+      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 420ms]"
+      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 161ms]"
+      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 190ms]"
+      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 236ms]"
+      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
+      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 383ms]"
+      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 382ms]"
+      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 186ms]"
+      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 198ms]"
 
   - name: 🌏 亚太节点
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
-      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 45ms]"
-      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 48ms]"
-      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 50ms]"
-      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 55ms]"
-      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 62ms]"
-      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 64ms]"
-      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 65ms]"
-      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
-      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 80ms]"
-      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 82ms]"
-      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 68ms]"
-      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 72ms]"
+      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
+      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 375ms]"
+      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 386ms]"
+      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 474ms]"
+      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
+      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 366ms]"
+      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 401ms]"
+      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 420ms]"
+      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 161ms]"
+      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 190ms]"
+      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 236ms]"
+      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
+      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 383ms]"
+      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 382ms]"
+      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 186ms]"
+      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 198ms]"
 
   - name: 🌍 欧洲节点
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 142ms]"
-      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 145ms]"
-      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 146ms]"
-      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 135ms]"
-      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 156ms]"
-      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 152ms]"
-      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 145ms]"
-      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 148ms]"
-      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 146ms]"
-      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 149ms]"
+      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 293ms]"
+      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 324ms]"
+      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 339ms]"
+      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 355ms]"
+      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 363ms]"
+      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 357ms]"
+      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 288ms]"
+      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 359ms]"
+      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 288ms]"
+      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 303ms]"
 
   - name: 🌎 美洲节点
     type: select
@@ -745,72 +745,72 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
-      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
+      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
+      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
+      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
       - "🇺🇸 美国美西 01 [EdgeOne Anycast极速 138ms]"
 
   - name: "🇭🇰 中国香港"
     type: select
     proxies:
-      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 42ms]"
-      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 45ms]"
-      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 48ms]"
-      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 52ms]"
+      - "🇭🇰 中国香港 01 [EdgeOne Anycast极速 380ms]"
+      - "🇭🇰 中国香港 02 [EdgeOne Anycast极速 375ms]"
+      - "🇭🇰 中国香港 03 [EdgeOne Anycast极速 386ms]"
+      - "🇭🇰 中国香港 04 [EdgeOne Anycast极速 474ms]"
 
   - name: "🇯🇵 日本东京"
     type: select
     proxies:
-      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 48ms]"
-      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 50ms]"
-      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 52ms]"
-      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 55ms]"
+      - "🇯🇵 日本东京 01 [EdgeOne Anycast极速 382ms]"
+      - "🇯🇵 日本东京 02 [EdgeOne Anycast极速 366ms]"
+      - "🇯🇵 日本东京 03 [EdgeOne Anycast极速 401ms]"
+      - "🇯🇵 日本东京 04 [EdgeOne Anycast极速 420ms]"
 
   - name: "🇰🇷 韩国首尔"
     type: select
     proxies:
-      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 62ms]"
-      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 64ms]"
-      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 65ms]"
+      - "🇰🇷 韩国首尔 01 [EdgeOne Anycast极速 161ms]"
+      - "🇰🇷 韩国首尔 02 [EdgeOne Anycast极速 190ms]"
+      - "🇰🇷 韩国首尔 03 [EdgeOne Anycast极速 236ms]"
 
   - name: "🇸🇬 新加坡"
     type: select
     proxies:
-      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 78ms]"
-      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 80ms]"
-      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 82ms]"
+      - "🇸🇬 新加坡 01 [EdgeOne Anycast极速 373ms]"
+      - "🇸🇬 新加坡 02 [EdgeOne Anycast极速 383ms]"
+      - "🇸🇬 新加坡 03 [EdgeOne Anycast极速 382ms]"
 
   - name: "🇨🇳 中国台湾"
     type: select
     proxies:
-      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 68ms]"
-      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 72ms]"
+      - "🇨🇳 中国台湾 01 [EdgeOne Anycast极速 186ms]"
+      - "🇨🇳 中国台湾 02 [EdgeOne Anycast极速 198ms]"
 
   - name: "🇩🇪 德国法兰克福"
     type: select
     proxies:
-      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 142ms]"
-      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 145ms]"
-      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 146ms]"
+      - "🇩🇪 德国法兰克福 01 [EdgeOne Anycast极速 293ms]"
+      - "🇩🇪 德国法兰克福 02 [EdgeOne Anycast极速 324ms]"
+      - "🇩🇪 德国法兰克福 03 [EdgeOne Anycast极速 339ms]"
 
   - name: "🇬🇧 英国伦敦"
     type: select
     proxies:
-      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 135ms]"
-      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 156ms]"
-      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 152ms]"
+      - "🇬🇧 英国伦敦 01 [EdgeOne Anycast极速 355ms]"
+      - "🇬🇧 英国伦敦 02 [EdgeOne Anycast极速 363ms]"
+      - "🇬🇧 英国伦敦 03 [EdgeOne Anycast极速 357ms]"
 
   - name: "🇫🇷 法国巴黎"
     type: select
     proxies:
-      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 145ms]"
-      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 148ms]"
+      - "🇫🇷 法国巴黎 01 [EdgeOne Anycast极速 288ms]"
+      - "🇫🇷 法国巴黎 02 [EdgeOne Anycast极速 359ms]"
 
   - name: "🇨🇭 瑞士苏黎世"
     type: select
     proxies:
-      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 146ms]"
-      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 149ms]"
+      - "🇨🇭 瑞士苏黎世 01 [EdgeOne Anycast极速 288ms]"
+      - "🇨🇭 瑞士苏黎世 02 [EdgeOne Anycast极速 303ms]"
 
   - name: "🇺🇸 美国美东"
     type: select
