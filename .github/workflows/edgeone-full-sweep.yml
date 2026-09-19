@@ -61,9 +61,13 @@ jobs:
                   sys.exit(1)
           "
 
+      - name: Geo Gate Pre-Publish Hard Verification
+        run: |
+          python geo_gate_verify.py clash_edgeone.yaml
+
       - name: Commit and Push Updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add clash.yaml clash_fastly.yaml clash_wasmer.yaml clash_edgetunnel.yaml clash_netlify.yaml clash_edgeone.yaml fastly_best_nodes.json edgeone_best_nodes.json edgeone_candidates.json fastly_candidates.json wasmer_candidates.json netlify_candidates.json generate_all_pools.py usage_metrics.json README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): daily multi-platform candidate sweep and node update [skip ci]" && git pull --rebase origin main && git push origin main)
+          git add clash.yaml clash_fastly.yaml clash_wasmer.yaml clash_edgetunnel.yaml clash_netlify.yaml clash_edgeone.yaml fastly_best_nodes.json edgeone_best_nodes.json edgeone_candidates.json fastly_candidates.json wasmer_candidates.json netlify_candidates.json generate_all_pools.py geo_gate_verify.py geo_audit_report.json usage_metrics.json README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): daily candidate sweep with Geo Gate audit [skip ci]" && git pull --rebase origin main && git push origin main)
