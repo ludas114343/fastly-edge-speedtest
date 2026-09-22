@@ -1,7 +1,7 @@
 {
   "current_month": "2026-09",
-  "total_minutes_consumed": 10.26,
-  "runs_count": 15,
+  "total_minutes_consumed": 10.48,
+  "runs_count": 16,
   "history": [
     {
       "timestamp": "2026-09-19 12:26:47 UTC",
@@ -442,6 +442,42 @@
       "timestamp": "2026-09-21 22:55:38 UTC",
       "workflow": "published-recheck",
       "duration_sec": 13.2,
+      "duration_min": 0.22,
+      "nodes_tested": 172,
+      "nodes_passed": 160,
+      "pass_rate": "93.0%",
+      "fail_breakdown": {
+        "clash_edgeone.yaml": {
+          "total": 36,
+          "passed": 35,
+          "pass_rate": "97.2%"
+        },
+        "clash_fastly.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_wasmer.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_netlify.yaml": {
+          "total": 34,
+          "passed": 23,
+          "pass_rate": "67.6%"
+        },
+        "clash.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-22 02:18:04 UTC",
+      "workflow": "published-recheck",
+      "duration_sec": 13.4,
       "duration_min": 0.22,
       "nodes_tested": 172,
       "nodes_passed": 160,
