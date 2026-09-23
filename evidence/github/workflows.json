@@ -1,5 +1,5 @@
 {
-  "audit_timestamp": "2026-09-23T11:24:52.471192+00:00",
+  "audit_timestamp": "2026-09-23T11:26:21.239052+00:00",
   "auditor": "agent-github-auditor",
   "summary": {
     "expected_workflows_count": 13,
@@ -18,7 +18,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-cloudflare.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-cloudflare.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b693bc6b7b52c1bd99d61c8b1461ae2bbfa8bf99",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-cloudflare.yml?token=BJQP6DE3TBLAKCHH2DKJNE3KWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-cloudflare.yml?token=BJQP6DAEJRUU5345V4GAGI3KWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-cloudflare.yml?ref=main",
@@ -34,7 +34,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-edgeone.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-edgeone.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/f3db204f5491c6c192e5f6bd208024d28d89a4c7",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-edgeone.yml?token=BJQP6DBL62JGXWQGBMVPD2DKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-edgeone.yml?token=BJQP6DG63IH5KGWD7QQQ6ZLKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-edgeone.yml?ref=main",
@@ -50,7 +50,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-fastly.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-fastly.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/c697225ee748ce62ba20ab18e473b9bf49970ea1",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-fastly.yml?token=BJQP6DEVGUVJX2FEROVNNFTKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-fastly.yml?token=BJQP6DFELNAX6BZOHG454K3KWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-fastly.yml?ref=main",
@@ -66,7 +66,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-netlify.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-netlify.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/4126aca24df6c1c19e5c18b3219dbc3f1f12b3a2",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-netlify.yml?token=BJQP6DBAWFVMQPZPGQBYDNDKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-netlify.yml?token=BJQP6DCEJJSRDBCDNBNZFLDKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-netlify.yml?ref=main",
@@ -82,7 +82,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-northflank.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-northflank.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/477640c884b661ff6bf0455638317e94462c6bd6",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-northflank.yml?token=BJQP6DERZRVPCPL2AUMMFVTKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-northflank.yml?token=BJQP6DFDXNU4HWQR33JCPZ3KWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-northflank.yml?ref=main",
@@ -98,7 +98,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-supabase.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-supabase.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/1efb2ef67381921e57258e36a568c01fec2e16c0",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-supabase.yml?token=BJQP6DHDS6XOYFUFUARAIITKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-supabase.yml?token=BJQP6DAOXN2ZFMYMF6SAAM3KWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-supabase.yml?ref=main",
@@ -114,7 +114,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-wasmer.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-wasmer.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/55bd4b8a8e201a53adccf7bdb58311d5a5549bda",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-wasmer.yml?token=BJQP6DCQMSANR55LNIDHTZ3KWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-wasmer.yml?token=BJQP6DBX2CD3VK6SSUUXLLLKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-wasmer.yml?ref=main",
@@ -130,7 +130,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/discover-candidates.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/discover-candidates.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/17c40b3b248adf5eaa2b6c6536e9e24f9b02de7e",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/discover-candidates.yml?token=BJQP6DCLW2Y255T433RJZKLKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/discover-candidates.yml?token=BJQP6DGOCU7K3FH3GVFUCKTKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/discover-candidates.yml?ref=main",
@@ -146,7 +146,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/external-blackbox-audit.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/external-blackbox-audit.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/389dea3ef5c8bd84b59dc227f5d41b08e306750c",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/external-blackbox-audit.yml?token=BJQP6DDSWBJKGZBWROPGO4DKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/external-blackbox-audit.yml?token=BJQP6DA5B3X6YLJSDISMB3LKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/external-blackbox-audit.yml?ref=main",
@@ -162,7 +162,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/optimize-three-carriers.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/optimize-three-carriers.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/e41e33e3557e89490637acc315653aa0bac7528c",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/optimize-three-carriers.yml?token=BJQP6DGZAAUB6XEGQSWQTGDKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/optimize-three-carriers.yml?token=BJQP6DGSOHXZUFF6J32KIXDKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/optimize-three-carriers.yml?ref=main",
@@ -173,16 +173,16 @@
     {
       "name": "publish-subscriptions.yml",
       "path": ".github/workflows/publish-subscriptions.yml",
-      "sha": "b0b03adbf97ec14599604a41e9db3ef904db9b91",
-      "size": 1397,
+      "sha": "fe4d0ccc25d18a84bf1e2fc1ea19234401077544",
+      "size": 1785,
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/publish-subscriptions.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/publish-subscriptions.yml",
-      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b0b03adbf97ec14599604a41e9db3ef904db9b91",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/publish-subscriptions.yml?token=BJQP6DAK2G3JAPHJ5CK4EC3KWO3UJAA",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/fe4d0ccc25d18a84bf1e2fc1ea19234401077544",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/publish-subscriptions.yml?token=BJQP6DD6LYXQ6QVYCMINUFTKWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/publish-subscriptions.yml?ref=main",
-        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b0b03adbf97ec14599604a41e9db3ef904db9b91",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/fe4d0ccc25d18a84bf1e2fc1ea19234401077544",
         "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/publish-subscriptions.yml"
       }
     },
@@ -194,7 +194,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/smoke-test.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/smoke-test.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d21619690bc6e0ce37fd3bab84a0170da1f8ab1c",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/smoke-test.yml?token=BJQP6DH4SA3OJTGBCJYANPLKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/smoke-test.yml?token=BJQP6DGAXHKQC4KQMVPZP23KWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/smoke-test.yml?ref=main",
@@ -210,7 +210,7 @@
       "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/watchdog.yml?ref=main",
       "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/watchdog.yml",
       "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d79dbf36b5081b162ec206664b2db66b27deff59",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/watchdog.yml?token=BJQP6DA7KNKQOLPIBU5QZXTKWO3UJAA",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/watchdog.yml?token=BJQP6DFD3BMQVH5XWICTKL3KWO3ZZAA",
       "type": "file",
       "_links": {
         "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/watchdog.yml?ref=main",

@@ -1,5 +1,5 @@
 {
-  "audit_timestamp": "2026-09-23T11:24:52.471192+00:00",
+  "audit_timestamp": "2026-09-23T11:26:21.239052+00:00",
   "auditor": "agent-github-auditor",
   "repository": {
     "id": 1371538374,
@@ -20,8 +20,8 @@
     "fork": false,
     "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest",
     "created_at": "2026-09-15T13:38:29Z",
-    "updated_at": "2026-09-23T11:24:15Z",
-    "pushed_at": "2026-09-23T11:24:12Z",
+    "updated_at": "2026-09-23T11:26:15Z",
+    "pushed_at": "2026-09-23T11:26:11Z",
     "git_url": "git://github.com/ludas114343/fastly-edge-speedtest.git",
     "ssh_url": "git@github.com:ludas114343/fastly-edge-speedtest.git",
     "clone_url": "https://github.com/ludas114343/fastly-edge-speedtest.git",
@@ -32,28 +32,28 @@
   },
   "remote_head": {
     "branch": "main",
-    "sha": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-    "commit_url": "https://github.com/ludas114343/fastly-edge-speedtest/commit/54e44a916b279fc5be3f4b765b8fabfb996b775c",
+    "sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+    "commit_url": "https://github.com/ludas114343/fastly-edge-speedtest/commit/816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
     "author": {
       "name": "github-actions[bot]",
       "email": "github-actions[bot]@users.noreply.github.com",
-      "date": "2026-09-23T11:24:10Z"
+      "date": "2026-09-23T11:26:06Z"
     },
     "committer": {
       "name": "github-actions[bot]",
       "email": "github-actions[bot]@users.noreply.github.com",
-      "date": "2026-09-23T11:24:10Z"
+      "date": "2026-09-23T11:26:06Z"
     },
-    "message": "chore(audit): record blackbox audit results [skip ci]",
+    "message": "feat(v13): publish atomic releases and subscription manifests",
     "tree": {
-      "sha": "4a815f4fd6d865d86684e02756742520ca792732",
-      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/trees/4a815f4fd6d865d86684e02756742520ca792732"
+      "sha": "d5842b2eaad35c112d92a8688c3a6ab8a9902dc0",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/trees/d5842b2eaad35c112d92a8688c3a6ab8a9902dc0"
     },
     "parents": [
       {
-        "sha": "f1690ecc07ba2328954970771f744b32bea9e650",
-        "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/commits/f1690ecc07ba2328954970771f744b32bea9e650",
-        "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/commit/f1690ecc07ba2328954970771f744b32bea9e650"
+        "sha": "506a147fd412d14961ad0af3d8afebccd916d094",
+        "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/commits/506a147fd412d14961ad0af3d8afebccd916d094",
+        "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/commit/506a147fd412d14961ad0af3d8afebccd916d094"
       }
     ]
   },
