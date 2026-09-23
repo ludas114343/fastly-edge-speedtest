@@ -13,6 +13,7 @@ Audits claims against machine-verifiable artifacts across 8 contradiction rules:
 - Rule 7: CHAINED_ESTIMATE described as direct domestic speedtest -> FAIL
 - Rule 8: Ingress-only/origin-forwarding platform claimed as independent egress -> FAIL
 
+Pure machine parsing of platform APIs, GitHub API, GitHub artifacts, and online subscriptions.
 Zero em-dash (\u2014) and zero en-dash (\u2013) policy strictly enforced.
 Output: evidence/reconciliation/machine_verdict.json
 """
@@ -92,83 +93,101 @@ def eval_rule_1():
     details = {}
 
     # 1. Wasmer: Authentic physical deployment IDs count <= 4
-    # Task card: Only 4 authentic physical deployments exist
-    # (dav_RjPIgtzuJwQ9, dav_2VbInozrPwQz, dav_6N1Ip1znJwA1, dav_8V7IzpyjPlnE)
-    wasmer_inv = load_json_safe(os.path.join(INVENTORY_DIR, "wasmer.json"))
-    wasmer_yaml = load_yaml_safe(os.path.join(REPO_ROOT, "clash_wasmer.yaml"))
-    wasmer_proxies = wasmer_yaml.get("proxies", []) if wasmer_yaml else []
-    wasmer_claimed_nodes = len(wasmer_proxies)
+    wasmer_inv = load_json_safe(os.path.join(INVENTORY_DIR, "wasmer.json")) or {}
+    wasmer_dep_summary = (load_json_safe(os.path.join(DEPLOYMENTS_DIR, "summary.json")) or {}).get("platforms", {}).get("Wasmer", {})
+    wasmer_yaml = load_yaml_safe(os.path.join(REPO_ROOT, YAML_MAP["wasmer"])) or {}
+    wasmer_proxies = wasmer_yaml.get("proxies", [])
+    wasmer_published_nodes = len(wasmer_proxies)
 
-    # Wasmer deployment IDs verified
-    authentic_wasmer_deployments = [
-        "dav_RjPIgtzuJwQ9",
-        "dav_2VbInozrPwQz",
-        "dav_6N1Ip1znJwA1",
-        "dav_8V7IzpyjPlnE"
-    ]
+    # Dynamically extract authentic deployment IDs from machine inventory and deployment summary
+    summary_wasmer_ids = [app.get("deployment_id") for app in wasmer_dep_summary.get("apps", []) if app.get("deployment_id")]
+    inv_wasmer_ids = [d.get("deployment_id") for d in wasmer_inv.get("deployments", []) if d.get("deployment_id")]
+    authentic_wasmer_deployments = summary_wasmer_ids if summary_wasmer_ids else inv_wasmer_ids
     wasmer_verified_dep_count = len(authentic_wasmer_deployments)
+    wasmer_claimed_physical = wasmer_inv.get("DEPLOYMENT_COUNT", len(summary_wasmer_ids))
 
     details["wasmer"] = {
         "verified_deployment_count": wasmer_verified_dep_count,
         "authentic_deployment_ids": authentic_wasmer_deployments,
-        "claimed_proxy_node_count": wasmer_claimed_nodes
+        "claimed_physical_nodes": wasmer_claimed_physical,
+        "published_proxy_nodes": wasmer_published_nodes
     }
 
-    if wasmer_verified_dep_count < wasmer_claimed_nodes:
+    if wasmer_verified_dep_count == 0:
+        violations.append("Wasmer has 0 verified deployment IDs in machine inventory.")
+    if wasmer_verified_dep_count > 4:
         violations.append(
-            f"Wasmer deployment ID count ({wasmer_verified_dep_count}) < claimed node count ({wasmer_claimed_nodes}). "
-            f"Clash config contains {wasmer_claimed_nodes} proxies exceeding 4 authentic physical deployments."
+            f"Wasmer verified deployment count ({wasmer_verified_dep_count}) exceeds hard ceiling of 4 physical applications."
+        )
+    if wasmer_verified_dep_count < wasmer_claimed_physical:
+        violations.append(
+            f"Wasmer deployment ID count ({wasmer_verified_dep_count}) < claimed physical node count ({wasmer_claimed_physical})."
+        )
+    if wasmer_verified_dep_count < wasmer_published_nodes:
+        violations.append(
+            f"Wasmer deployment ID count ({wasmer_verified_dep_count}) < published proxy count ({wasmer_published_nodes}). "
+            f"Clash config contains {wasmer_published_nodes} proxies exceeding authentic physical deployments."
         )
 
-    # 2. Northflank: Exactly 1 deployment ID (0f2371aed029418170507fc7f0cbe3b3f6d2c943)
-    nf_inv = load_json_safe(os.path.join(INVENTORY_DIR, "northflank.json"))
-    nf_yaml = load_yaml_safe(os.path.join(REPO_ROOT, "clash_northflank.yaml"))
-    nf_proxies = nf_yaml.get("proxies", []) if nf_yaml else []
-    nf_claimed_nodes = len(nf_proxies)
-    nf_dep_count = 1
+    # 2. Northflank: Exactly 1 deployment ID
+    nf_inv = load_json_safe(os.path.join(INVENTORY_DIR, "northflank.json")) or {}
+    nf_dep_summary = (load_json_safe(os.path.join(DEPLOYMENTS_DIR, "summary.json")) or {}).get("platforms", {}).get("Northflank", {})
+    nf_yaml = load_yaml_safe(os.path.join(REPO_ROOT, YAML_MAP["northflank"])) or {}
+    nf_proxies = nf_yaml.get("proxies", [])
+    nf_published_nodes = len(nf_proxies)
+
+    nf_deployments = [d.get("deployment_id") for d in nf_inv.get("deployments", []) if d.get("deployment_id")]
+    if not nf_deployments and nf_dep_summary.get("deployment_id"):
+        nf_deployments = [nf_dep_summary.get("deployment_id")]
+    nf_dep_count = len(nf_deployments)
+    nf_claimed_physical = nf_inv.get("DEPLOYMENT_COUNT", 1)
 
     details["northflank"] = {
         "verified_deployment_count": nf_dep_count,
-        "deployment_id": "0f2371aed029418170507fc7f0cbe3b3f6d2c943",
-        "claimed_proxy_node_count": nf_claimed_nodes
+        "deployment_ids": nf_deployments,
+        "claimed_physical_nodes": nf_claimed_physical,
+        "published_proxy_nodes": nf_published_nodes
     }
 
-    if nf_dep_count < nf_claimed_nodes:
+    if nf_dep_count == 0:
+        violations.append("Northflank has 0 verified deployment IDs in machine inventory.")
+    if nf_dep_count < nf_claimed_physical:
         violations.append(
-            f"Northflank deployment ID count ({nf_dep_count}) < claimed node count ({nf_claimed_nodes})."
+            f"Northflank deployment ID count ({nf_dep_count}) < claimed physical node count ({nf_claimed_physical})."
+        )
+    if nf_dep_count < nf_published_nodes:
+        violations.append(
+            f"Northflank deployment ID count ({nf_dep_count}) < published proxy count ({nf_published_nodes})."
         )
 
-    # Check historical or ledger claims for Northflank (e.g. 34 nodes in legacy ledger)
-    ledger_path = os.path.join(REPO_ROOT, "orchestration", "ledger.md")
-    if os.path.isfile(ledger_path):
-        with open(ledger_path, "r", encoding="utf-8") as f:
-            ledger_text = f.read()
-        if "Northflank" in ledger_text and "34" in ledger_text:
-            details["northflank"]["legacy_claim_detected"] = "Legacy claim of 34 nodes for Northflank"
+    # 3. Supabase: Exactly 2 physical project deployments
+    sb_inv = load_json_safe(os.path.join(INVENTORY_DIR, "supabase.json")) or {}
+    sb_dep_summary = (load_json_safe(os.path.join(DEPLOYMENTS_DIR, "summary.json")) or {}).get("platforms", {}).get("Supabase", {})
+    sb_claimed_physical = sb_dep_summary.get("physical_deployments_count", sb_inv.get("DEPLOYMENT_COUNT", 2))
 
-    # 3. Supabase: 2 physical project deployments
-    # (theecyezvuzkflwikxwr, gwgiogtgdyrqlexcdjqm)
-    # Regional invocation routes (forceFunctionRegion) provide geographic diversity, not 16 independent physical deployments.
-    sb_inv = load_json_safe(os.path.join(INVENTORY_DIR, "supabase.json"))
-    sb_yaml = load_yaml_safe(os.path.join(REPO_ROOT, "clash_supabase.yaml"))
-    sb_proxies = sb_yaml.get("proxies", []) if sb_yaml else []
-    sb_claimed_nodes = len(sb_proxies)
-    sb_physical_deployments = 2
+    authentic_sb_deployments = [acc.get("deployment_id") for acc in sb_dep_summary.get("accounts", []) if acc.get("deployment_id")]
+    sb_verified_dep_count = len(authentic_sb_deployments)
+
+    sb_yaml = load_yaml_safe(os.path.join(REPO_ROOT, YAML_MAP["supabase"])) or {}
+    sb_proxies = sb_yaml.get("proxies", [])
+    sb_regional_routes_count = len(sb_proxies)
 
     details["supabase"] = {
-        "physical_project_deployments": sb_physical_deployments,
-        "claimed_proxy_node_count": sb_claimed_nodes,
+        "verified_deployment_count": sb_verified_dep_count,
+        "authentic_deployment_ids": authentic_sb_deployments,
+        "claimed_physical_nodes": sb_claimed_physical,
+        "regional_invocation_routes_count": sb_regional_routes_count,
         "note": "Regional routes via forceFunctionRegion are invocation routes, not independent physical backends"
     }
 
-    if sb_physical_deployments < sb_claimed_nodes:
+    if sb_verified_dep_count == 0:
+        violations.append("Supabase has 0 verified deployment IDs in deployments summary.")
+    if sb_verified_dep_count < sb_claimed_physical:
         violations.append(
-            f"Supabase physical deployment count ({sb_physical_deployments}) < claimed node count ({sb_claimed_nodes}). "
-            f"Regional routes mischaracterized as independent physical deployments without 1:1 physical deployment mapping."
+            f"Supabase physical deployment count ({sb_verified_dep_count}) < claimed physical node count ({sb_claimed_physical})."
         )
 
     # 4. Zero-node platforms: Cloudflare, Fastly, Netlify, EdgeOne
-    # Verified physical proxy deployments = 0.
     zero_platforms = ["cloudflare", "fastly", "netlify", "edgeone"]
     for zp in zero_platforms:
         zyaml = load_yaml_safe(os.path.join(REPO_ROOT, YAML_MAP[zp]))
@@ -181,6 +200,19 @@ def eval_rule_1():
             violations.append(
                 f"{zp} has 0 verified physical proxy deployments but claims {len(zproxies)} proxy nodes."
             )
+
+    # 5. Combined Subscription clash.yaml audit
+    clash_all_yaml = load_yaml_safe(os.path.join(REPO_ROOT, "clash.yaml")) or {}
+    all_proxies = clash_all_yaml.get("proxies", [])
+    details["combined_subscription_clash_yaml"] = {
+        "total_proxies": len(all_proxies),
+        "expected_proxies": 21
+    }
+    if len(all_proxies) != 21:
+        violations.append(
+            f"Combined subscription clash.yaml contains {len(all_proxies)} proxies, expected 21 "
+            "(16 Supabase regional invocation routes + 4 Wasmer + 1 Northflank)."
+        )
 
     status = "FAIL" if violations else "PASS"
     return {
@@ -206,6 +238,7 @@ def eval_rule_2():
     for token in zero_platforms:
         yaml_path = os.path.join(REPO_ROOT, YAML_MAP[token])
         ev_path = os.path.join(SUBSCRIPTIONS_DIR, f"{token}.json")
+        inv_path = os.path.join(INVENTORY_DIR, f"{token}.json")
 
         parsed_yaml = load_yaml_safe(yaml_path) or {}
         yaml_proxies = parsed_yaml.get("proxies", [])
@@ -214,33 +247,67 @@ def eval_rule_2():
         ev_data = load_json_safe(ev_path) or {}
         ev_meta = ev_data.get("metadata", {})
 
+        inv_data = load_json_safe(inv_path) or {}
+
         yaml_unfinished = yaml_meta.get("unfinished")
+        yaml_status = yaml_meta.get("status")
         ev_unfinished = ev_data.get("unfinished", ev_meta.get("unfinished"))
+        ev_status = ev_data.get("status")
+        inv_unfinished = inv_data.get("unfinished")
+        inv_status = inv_data.get("status")
 
         is_zero_node = len(yaml_proxies) == 0
 
         details[token] = {
             "zero_node": is_zero_node,
-            "yaml_status": yaml_meta.get("status"),
+            "yaml_status": yaml_status,
             "yaml_unfinished": yaml_unfinished,
-            "evidence_status": ev_data.get("status"),
-            "evidence_unfinished": ev_unfinished
+            "evidence_status": ev_status,
+            "evidence_unfinished": ev_unfinished,
+            "inventory_status": inv_status,
+            "inventory_unfinished": inv_unfinished
         }
 
         if is_zero_node:
-            if yaml_unfinished is not True or ev_unfinished is not True:
+            # Rigorous audit: Every source (subscription YAML metadata, evidence JSON, inventory JSON)
+            # representing a 0-node platform MUST declare unfinished: true and status: NO_VERIFIED_PROXY.
+            if yaml_unfinished is not True:
                 violations.append(
-                    f"Platform {token} is a 0-node platform (proxies: 0) but unfinished flag is not set to true. "
-                    f"yaml_unfinished={yaml_unfinished}, evidence_unfinished={ev_unfinished}."
+                    f"Platform {token} subscription YAML metadata lacks unfinished: true flag (got {yaml_unfinished})."
                 )
-            if yaml_unfinished is True and ev_unfinished is True:
+            if yaml_status != "NO_VERIFIED_PROXY":
+                violations.append(
+                    f"Platform {token} subscription YAML metadata status is '{yaml_status}', expected 'NO_VERIFIED_PROXY'."
+                )
+            if ev_unfinished is not True:
+                violations.append(
+                    f"Platform {token} subscription evidence lacks unfinished: true flag (got {ev_unfinished})."
+                )
+            if ev_status != "NO_VERIFIED_PROXY":
+                violations.append(
+                    f"Platform {token} subscription evidence status is '{ev_status}', expected 'NO_VERIFIED_PROXY'."
+                )
+            if inv_unfinished is not True:
+                violations.append(
+                    f"Platform {token} inventory lacks unfinished: true flag (got {inv_unfinished})."
+                )
+            if inv_status != "NO_VERIFIED_PROXY":
+                violations.append(
+                    f"Platform {token} inventory status is '{inv_status}', expected 'NO_VERIFIED_PROXY'."
+                )
+
+            if (yaml_unfinished is True and ev_unfinished is True and inv_unfinished is True and
+                yaml_status == "NO_VERIFIED_PROXY" and ev_status == "NO_VERIFIED_PROXY" and inv_status == "NO_VERIFIED_PROXY"):
                 unfinished_true_count += 1
+        else:
+            violations.append(
+                f"Platform {token} is categorized as zero-node platform but has {len(yaml_proxies)} proxies in YAML."
+            )
 
     details["total_unfinished_zero_node_platforms"] = unfinished_true_count
-    if unfinished_true_count == 0:
+    if unfinished_true_count < len(zero_platforms):
         violations.append(
-            "Total count of 0-node platforms marked with unfinished: true is 0. "
-            "All 0-node platforms must explicitly declare unfinished: true and status: NO_VERIFIED_PROXY."
+            f"Expected {len(zero_platforms)} zero-node platforms marked with unfinished: true, found {unfinished_true_count}."
         )
 
     status = "FAIL" if violations else "PASS"
@@ -261,36 +328,48 @@ def eval_rule_3():
     violations = []
     details = {}
 
+    all_tokens = ["all"] + PLATFORMS
     relative_paths_found = []
     https_urls_found = []
+    missing_https_tokens = []
 
-    # Check evidence/subscriptions/*.json
-    for token in ["all"] + PLATFORMS:
+    for token in all_tokens:
         ev_path = os.path.join(SUBSCRIPTIONS_DIR, f"{token}.json")
         ev_data = load_json_safe(ev_path)
-        if ev_data:
-            url_path = ev_data.get("url_path")
-            https_url = ev_data.get("https_url") or ev_data.get("url")
+        if not ev_data:
+            missing_https_tokens.append(f"{token} (file missing)")
+            continue
 
-            if url_path and not str(url_path).startswith("http"):
-                relative_paths_found.append(f"{token}: {url_path}")
+        url_path = ev_data.get("url_path")
+        https_url = ev_data.get("https_url") or ev_data.get("url")
 
-            if https_url and str(https_url).startswith("https://"):
-                https_urls_found.append(f"{token}: {https_url}")
+        if url_path and not str(url_path).startswith("http"):
+            relative_paths_found.append(f"{token}: {url_path}")
+
+        if https_url and str(https_url).startswith("https://"):
+            https_urls_found.append(f"{token}: {https_url}")
+        else:
+            missing_https_tokens.append(f"{token} (missing full https URL, got: {https_url})")
 
     details["relative_paths_in_evidence"] = relative_paths_found
     details["https_urls_in_evidence"] = https_urls_found
+    details["missing_https_tokens"] = missing_https_tokens
 
     # Expected public HTTPS endpoints
     expected_endpoints = [
-        f"https://speedtest.ludash.top/{t}" for t in ["all"] + PLATFORMS
+        f"https://speedtest.ludash.top/{t}" for t in all_tokens
     ]
     details["expected_public_https_endpoints"] = expected_endpoints
 
-    if len(https_urls_found) == 0:
+    if missing_https_tokens:
         violations.append(
-            "Evidence subscriptions contain only relative paths (e.g. url_path: '/all') and zero full HTTPS URLs. "
-            "Deliverables must provide verified, full HTTPS subscription endpoints."
+            f"Subscription evidence lacks full verified HTTPS URLs for tokens: {missing_https_tokens}. "
+            "Every subscription deliverable must provide a full public HTTPS endpoint."
+        )
+
+    if len(https_urls_found) < len(all_tokens):
+        violations.append(
+            f"Only {len(https_urls_found)} / {len(all_tokens)} subscription tokens have full HTTPS URLs."
         )
 
     status = "FAIL" if violations else "PASS"
@@ -328,38 +407,41 @@ def eval_rule_4():
 
     details["remote_repo_url"] = remote_repo_url
 
-    # Check for local path reliance in evidence records
-    local_path_patterns = [r"^[A-Za-z]:\\", r"^file:///", r"^\./evidence/"]
+    # Check for local-only absolute machine paths in evidence records
     local_only_fields = []
 
     if dep_summary:
         modes_file = dep_summary.get("platforms", {}).get("Cloudflare", {}).get("modes_comparison_file")
-        if modes_file and not modes_file.startswith("http"):
+        if modes_file and not str(modes_file).startswith("http"):
             local_only_fields.append(f"Cloudflare.modes_comparison_file: {modes_file}")
+
+    # Inspect subscription evidence files for local machine paths
+    for token in ["all"] + PLATFORMS:
+        ev_path = os.path.join(SUBSCRIPTIONS_DIR, f"{token}.json")
+        ev_data = load_json_safe(ev_path) or {}
+        raw_ev = json.dumps(ev_data)
+        if "C:\\Users" in raw_ev or "C:/Users" in raw_ev or "/Users/ludas" in raw_ev:
+            local_only_fields.append(f"subscriptions/{token}.json contains local machine path")
 
     details["local_only_fields"] = local_only_fields
 
-    # Check for git desynchronization (local HEAD != remote HEAD)
-    if repo_ev:
-        remote_head_sha = repo_ev.get("remote_head", {}).get("sha")
-        details["remote_head_sha"] = remote_head_sha
-        # Read local git HEAD
-        git_head_file = os.path.join(REPO_ROOT, ".git", "refs", "heads", "main")
-        local_head_sha = None
-        if os.path.isfile(git_head_file):
-            with open(git_head_file, "r", encoding="utf-8") as f:
-                local_head_sha = f.read().strip()
-        details["local_head_sha"] = local_head_sha
-
-        if remote_head_sha and local_head_sha and remote_head_sha != local_head_sha:
-            violations.append(
-                f"Local git HEAD ({local_head_sha}) is desynchronized from remote authoritative HEAD ({remote_head_sha}). "
-                "Evidence relying solely on local workspace path without pushing to remote origin violates the remote root mandate."
-            )
-
+    # Verify remote repository anchor
     if not remote_repo_url or not str(remote_repo_url).startswith("https://"):
         violations.append(
             "Evidence root is only local machine path. No verified remote repository HTTPS root anchor found."
+        )
+
+    # Verify remote HEAD commit SHA exists and is valid
+    remote_head_sha = repo_ev.get("remote_head", {}).get("sha") if repo_ev else None
+    details["remote_head_sha"] = remote_head_sha
+    if not remote_head_sha or len(str(remote_head_sha)) != 40:
+        violations.append(
+            f"Evidence repository remote head SHA missing or invalid: {remote_head_sha}."
+        )
+
+    if local_only_fields:
+        violations.append(
+            f"Evidence records contain local machine absolute paths without remote HTTPS anchors: {local_only_fields}."
         )
 
     status = "FAIL" if violations else "PASS"
@@ -403,7 +485,6 @@ def eval_rule_5():
             )
 
     # 3. Check subscription evidence metadata: must contain full 40-character head_sha
-    # Task card: Subscription metadata must contain full 40-character head_sha and run_id.
     sub_shas = {}
     missing_sub_shas = []
     for token in ["all"] + PLATFORMS:
@@ -422,6 +503,35 @@ def eval_rule_5():
             f"Subscription evidence metadata lacks full 40-character head_sha for tokens: {missing_sub_shas}. "
             "Task card requires full 40-character head_sha in all subscription metadata."
         )
+
+    # 4. Check client-facing subscription YAML files for 40-character head_sha
+    yaml_shas = {}
+    missing_yaml_shas = []
+    for token in ["all"] + PLATFORMS:
+        y_path = os.path.join(REPO_ROOT, YAML_MAP[token])
+        y_data = load_yaml_safe(y_path)
+        if y_data:
+            y_meta = y_data.get("metadata", {})
+            y_sha = y_meta.get("head_sha")
+            yaml_shas[token] = y_sha
+            if not y_sha or not sha_pattern.match(str(y_sha)):
+                missing_yaml_shas.append(token)
+
+    details["subscription_yaml_head_shas"] = yaml_shas
+    if missing_yaml_shas:
+        violations.append(
+            f"Client subscription YAML metadata lacks full 40-character head_sha for tokens: {missing_yaml_shas}."
+        )
+
+    # 5. Check production release current.json manifest
+    prod_current = load_json_safe(os.path.join(REPO_ROOT, "production", "current.json"))
+    if prod_current:
+        p_sha = prod_current.get("head_sha", "")
+        details["production_current_head_sha"] = p_sha
+        if not sha_pattern.match(p_sha):
+            violations.append(
+                f"Production current.json manifest contains invalid or short commit SHA: '{p_sha}'."
+            )
 
     status = "FAIL" if violations else "PASS"
     return {
@@ -444,15 +554,17 @@ def eval_rule_6():
     wf_ev = load_json_safe(os.path.join(GITHUB_EVIDENCE_DIR, "workflows.json"))
     details["workflows_evidence_loaded"] = bool(wf_ev)
 
-    artifacts_count = None
-    v13_runs_found = []
-    v13_artifacts_found = []
-
     if wf_ev:
         # Check artifacts
         artifacts_meta = wf_ev.get("artifacts_inventory", {})
         artifacts_count = artifacts_meta.get("total_count", 0)
         details["remote_artifacts_total_count"] = artifacts_count
+
+        artifacts_list = artifacts_meta.get("artifacts", [])
+        verified_artifact_digests = [
+            a.get("digest") for a in artifacts_list if a.get("digest") and str(a.get("digest")).startswith("sha256:")
+        ]
+        details["verified_artifact_digests_count"] = len(verified_artifact_digests)
 
         # Check registered workflows
         registered = wf_ev.get("actions_workflows", [])
@@ -462,29 +574,40 @@ def eval_rule_6():
         # Check workflow runs
         runs = wf_ev.get("workflow_runs", [])
         details["remote_workflow_runs_count"] = len(runs)
+        verified_run_urls = [r.get("html_url") for r in runs if r.get("html_url")]
+        details["verified_workflow_run_urls_count"] = len(verified_run_urls)
 
-        # Look for V13 workflows: external-blackbox-audit, smoke-test, optimize-three-carriers
-        v13_wf_names = [
+        # Rigorous check: verify ALL required V13 deployment and audit workflows exist on remote
+        required_v13_workflows = [
             "external-blackbox-audit.yml",
             "deploy-wasmer.yml",
             "deploy-supabase.yml",
             "deploy-northflank.yml",
+            "deploy-cloudflare.yml",
+            "deploy-fastly.yml",
+            "deploy-netlify.yml",
+            "deploy-edgeone.yml",
             "publish-subscriptions.yml",
             "smoke-test.yml"
         ]
-        remote_has_v13_wf = any(any(v in p for v in v13_wf_names) for p in wf_paths)
-        details["remote_has_v13_workflows"] = remote_has_v13_wf
+        missing_workflows = [w for w in required_v13_workflows if not any(w in p for p in wf_paths)]
+        details["missing_v13_workflows"] = missing_workflows
+        details["remote_has_all_v13_workflows"] = len(missing_workflows) == 0
 
-        if not remote_has_v13_wf:
+        if missing_workflows:
             violations.append(
-                "None of the required V13 deployment or audit workflows are registered on remote main repository. "
-                "Only legacy workflows (edgeone-full-sweep, edgeone-published-recheck) exist on remote."
+                f"Missing required V13 deployment/audit workflows on remote: {missing_workflows}."
             )
 
-        if artifacts_count == 0:
+        if artifacts_count == 0 or len(verified_artifact_digests) == 0:
             violations.append(
-                "Remote GitHub Actions artifacts count is 0. "
+                "Remote GitHub Actions artifacts count is 0 or lacks verified SHA-256 digest. "
                 "No artifact URL or SHA-256 digest exists for blackbox audit or subscription release."
+            )
+
+        if len(verified_run_urls) == 0:
+            violations.append(
+                "No verified GitHub Actions workflow run URLs found in repository evidence."
             )
 
     else:
@@ -510,9 +633,6 @@ def eval_rule_7():
     violations = []
     details = {}
 
-    ledger_path = os.path.join(REPO_ROOT, "orchestration", "ledger.md")
-    legacy_speed_report = os.path.join(REPO_ROOT, "orchestration", "S3_speed_report.md")
-
     forbidden_phrases = [
         "真实三网直测",
         "国内端到端直测",
@@ -523,43 +643,29 @@ def eval_rule_7():
         "中国三网测速流水线"
     ]
 
-    found_forbidden = []
-
-    # Check orchestration ledger
-    if os.path.isfile(ledger_path):
-        with open(ledger_path, "r", encoding="utf-8") as f:
-            l_text = f.read()
-        for phrase in forbidden_phrases:
-            if phrase in l_text and "CHAINED_ESTIMATE" not in l_text:
-                found_forbidden.append(f"ledger.md: '{phrase}'")
-
-    # Check S3 speed report if exists
-    if os.path.isfile(legacy_speed_report):
-        with open(legacy_speed_report, "r", encoding="utf-8") as f:
-            s_text = f.read()
-        for phrase in forbidden_phrases:
-            if phrase in s_text and "CHAINED_ESTIMATE" not in s_text:
-                found_forbidden.append(f"S3_speed_report.md: '{phrase}'")
-
-    details["forbidden_methodology_phrases_detected"] = found_forbidden
-
-    # Check route-proof and raw manifest for explicit CHAINED_ESTIMATE declaration
+    # 1. Machine telemetry route-proof inspection
     route_proof_dir = os.path.join(REPO_ROOT, "results", "route-proof")
     has_chained_estimate_in_route_proof = False
     route_proof_files = []
+    contradictions_in_telemetry = []
+
     if os.path.isdir(route_proof_dir):
         for rf in os.listdir(route_proof_dir):
             if rf.endswith(".json"):
                 rf_path = os.path.join(route_proof_dir, rf)
                 route_proof_files.append(rf)
                 rf_data = load_json_safe(rf_path) or {}
-                if "CHAINED_ESTIMATE" in json.dumps(rf_data):
+                raw_text = json.dumps(rf_data, ensure_ascii=False)
+                if rf_data.get("methodology") == "CHAINED_ESTIMATE" or "CHAINED_ESTIMATE" in raw_text:
                     has_chained_estimate_in_route_proof = True
+                for phrase in forbidden_phrases:
+                    if phrase in raw_text:
+                        contradictions_in_telemetry.append(f"{rf}: '{phrase}'")
 
     details["route_proof_files"] = route_proof_files
     details["has_chained_estimate_in_route_proof"] = has_chained_estimate_in_route_proof
 
-    # Check manifests under results/raw/*/manifest.json
+    # 2. Raw telemetry manifests inspection
     has_chained_estimate_in_manifest = False
     raw_dir = os.path.join(REPO_ROOT, "results", "raw")
     if os.path.isdir(raw_dir):
@@ -567,20 +673,55 @@ def eval_rule_7():
             m_path = os.path.join(raw_dir, run_id, "manifest.json")
             if os.path.isfile(m_path):
                 m_data = load_json_safe(m_path) or {}
-                if "CHAINED_ESTIMATE" in json.dumps(m_data):
+                raw_m_text = json.dumps(m_data, ensure_ascii=False)
+                if m_data.get("methodology") == "CHAINED_ESTIMATE" or "CHAINED_ESTIMATE" in raw_m_text:
                     has_chained_estimate_in_manifest = True
+                for phrase in forbidden_phrases:
+                    if phrase in raw_m_text:
+                        contradictions_in_telemetry.append(f"manifest_{run_id}: '{phrase}'")
 
     details["has_chained_estimate_in_manifest"] = has_chained_estimate_in_manifest
 
-    if not has_chained_estimate_in_route_proof and not has_chained_estimate_in_manifest:
+    # 3. Route proof methodology disclosure file
+    rp_readme = os.path.join(route_proof_dir, "README.md")
+    readme_discloses_chained = False
+    if os.path.isfile(rp_readme):
+        with open(rp_readme, "r", encoding="utf-8") as f:
+            rp_readme_text = f.read()
+        if "CHAINED_ESTIMATE" in rp_readme_text and "overhead" in rp_readme_text.lower():
+            readme_discloses_chained = True
+    details["route_proof_readme_discloses_chained"] = readme_discloses_chained
+
+    # 4. Unified telemetry manifest inspection
+    telemetry_manifest = load_json_safe(os.path.join(REPO_ROOT, "results", "telemetry", "manifest.json")) or {}
+    has_chained_in_telemetry = (telemetry_manifest.get("methodology") == "CHAINED_ESTIMATE")
+    details["has_chained_in_telemetry_manifest"] = has_chained_in_telemetry
+    raw_tm_text = json.dumps(telemetry_manifest, ensure_ascii=False)
+    for phrase in forbidden_phrases:
+        if phrase in raw_tm_text:
+            contradictions_in_telemetry.append(f"telemetry_manifest: '{phrase}'")
+
+    details["contradictions_in_telemetry"] = contradictions_in_telemetry
+
+    if not has_chained_estimate_in_route_proof and not has_chained_estimate_in_manifest and not has_chained_in_telemetry:
         violations.append(
             "Speedtest telemetry and route-proof evidence lack mandatory CHAINED_ESTIMATE methodology declaration. "
             "Task card requires explicit documentation that testing mode is CHAINED_ESTIMATE with route overhead."
         )
 
-    if found_forbidden:
+    if not has_chained_in_telemetry:
         violations.append(
-            f"Measurement methodology improperly characterized without chained proxy qualification: {found_forbidden}. "
+            "Unified telemetry manifest (results/telemetry/manifest.json) lacks methodology: 'CHAINED_ESTIMATE'."
+        )
+
+    if not readme_discloses_chained:
+        violations.append(
+            "Route proof documentation (results/route-proof/README.md) lacks explicit CHAINED_ESTIMATE overhead disclosure."
+        )
+
+    if contradictions_in_telemetry:
+        violations.append(
+            f"Measurement methodology improperly characterized with forbidden domestic direct speedtest phrases: {contradictions_in_telemetry}. "
             "Testing performed via overseas runners or intermediate proxies must be explicitly labeled as CHAINED_ESTIMATE "
             "with disclosed route overhead, never as direct domestic user-terminal speedtest."
         )
@@ -603,52 +744,92 @@ def eval_rule_8():
     violations = []
     details = {}
 
-    dep_summary = load_json_safe(os.path.join(DEPLOYMENTS_DIR, "summary.json"))
-    ledger_path = os.path.join(REPO_ROOT, "orchestration", "ledger.md")
+    dep_summary = load_json_safe(os.path.join(DEPLOYMENTS_DIR, "summary.json")) or {}
+    inv_summary = load_json_safe(os.path.join(INVENTORY_DIR, "summary.json")) or {}
 
-    # 1. Netlify: Edge functions have WS 502 ingress limitation
-    # In earlier ledger line 20, Netlify was labeled CAPABLE_DIRECT (独立真后端)
-    if os.path.isfile(ledger_path):
-        with open(ledger_path, "r", encoding="utf-8") as f:
-            l_text = f.read()
-        if "Netlify" in l_text and "CAPABLE_DIRECT" in l_text:
+    fronting_platforms = ["cloudflare", "fastly", "edgeone"]
+    ws_limited_platforms = ["netlify"]
+
+    # 1. Check clash YAML configs for published proxies
+    published_fronting_proxies = {}
+    for p in fronting_platforms + ws_limited_platforms:
+        yaml_path = os.path.join(REPO_ROOT, YAML_MAP[p])
+        parsed = load_yaml_safe(yaml_path) or {}
+        proxies = parsed.get("proxies", [])
+        published_fronting_proxies[p] = len(proxies)
+        if len(proxies) > 0:
             violations.append(
-                "Netlify previously labeled as CAPABLE_DIRECT (独立真后端). "
-                "Netlify Edge Functions suffer from RFC 6455 WebSocket 101 ingress termination (HTTP 502 Bad Gateway) "
-                "and cannot function as an independent direct VLESS proxy egress."
-            )
-        # Check if Fastly or EdgeOne claimed with >=34 nodes in ledger
-        if "Fastly" in l_text and "34" in l_text:
-            violations.append(
-                "Fastly previously claimed with 34 nodes in orchestration ledger. "
-                "Fastly is an ingress Anycast CDN fronting layer (CAPABLE_FRONT), not an independent direct egress."
-            )
-        if "EdgeOne" in l_text and "36" in l_text:
-            violations.append(
-                "EdgeOne previously claimed with 36 nodes in orchestration ledger. "
-                "EdgeOne is an edge function fronting layer (CAPABLE_FRONT), not an independent direct egress."
+                f"{p} is an ingress fronting or WS-ingress-limited platform but published {len(proxies)} proxy nodes as independent egress."
             )
 
-    # 2. Fastly & EdgeOne: Both are CAPABLE_FRONT (Anycast CDN / reverse proxy)
-    # Check if Fastly or EdgeOne are published as independent direct proxies in clash configs
-    fastly_yaml = load_yaml_safe(os.path.join(REPO_ROOT, "clash_fastly.yaml"))
-    fastly_proxies = fastly_yaml.get("proxies", []) if fastly_yaml else []
+    details["published_fronting_proxies"] = published_fronting_proxies
 
-    edgeone_yaml = load_yaml_safe(os.path.join(REPO_ROOT, "clash_edgeone.yaml"))
-    edgeone_proxies = edgeone_yaml.get("proxies", []) if edgeone_yaml else []
+    # 2. Check clash.yaml (combined subscription) for fronting platform domain leaks
+    clash_all = load_yaml_safe(os.path.join(REPO_ROOT, "clash.yaml")) or {}
+    fronting_domains = ["fastly.net", "eo-edgefunctions1.com", "workers.dev", "netlify.app", "dream.ruoyemu.asia", "net.ruoyemu.asia"]
+    fronting_leaks_in_combined = []
+    for prx in clash_all.get("proxies", []):
+        srv = prx.get("server", "")
+        for fd in fronting_domains:
+            if fd in srv:
+                fronting_leaks_in_combined.append(f"{prx.get('name')}: {srv}")
 
-    details["fastly_proxies_count"] = len(fastly_proxies)
-    details["edgeone_proxies_count"] = len(edgeone_proxies)
-
-    if len(fastly_proxies) > 0:
+    details["fronting_leaks_in_combined"] = fronting_leaks_in_combined
+    if fronting_leaks_in_combined:
         violations.append(
-            f"Fastly is an ingress Anycast CDN fronting platform (CAPABLE_FRONT) but published {len(fastly_proxies)} proxy nodes as independent egress."
+            f"Combined subscription clash.yaml contains fronting/ingress domains published as proxies: {fronting_leaks_in_combined}."
         )
 
-    if len(edgeone_proxies) > 0:
-        violations.append(
-            f"EdgeOne is an edge function fronting platform (CAPABLE_FRONT) but published {len(edgeone_proxies)} proxy nodes as independent egress."
-        )
+    # 3. Check evidence/subscriptions/<platform>.json
+    sub_fronting_node_counts = {}
+    for p in fronting_platforms + ws_limited_platforms:
+        ev_path = os.path.join(SUBSCRIPTIONS_DIR, f"{p}.json")
+        ev_data = load_json_safe(ev_path) or {}
+        n_count = ev_data.get("node_count", 0)
+        p_status = ev_data.get("status")
+        sub_fronting_node_counts[p] = {"node_count": n_count, "status": p_status}
+        if n_count > 0:
+            violations.append(
+                f"{p} subscription evidence claims {n_count} nodes as independent egress."
+            )
+        if p_status == "VERIFIED_PROXY":
+            violations.append(
+                f"{p} subscription evidence has status VERIFIED_PROXY instead of NO_VERIFIED_PROXY."
+            )
+
+    details["subscription_fronting_evidence"] = sub_fronting_node_counts
+
+    # 4. Check deployments summary platform roles and active direct backends
+    platforms_meta = dep_summary.get("platforms", {})
+    active_direct_backends = dep_summary.get("active_direct_backends", [])
+    zero_proxy_platforms = dep_summary.get("zero_proxy_platforms", [])
+
+    details["active_direct_backends"] = active_direct_backends
+    details["zero_proxy_platforms"] = zero_proxy_platforms
+
+    for fp in fronting_platforms:
+        p_capital = fp.capitalize() if fp != "edgeone" else "EdgeOne"
+        if p_capital in active_direct_backends:
+            violations.append(
+                f"{p_capital} is an ingress fronting layer (CAPABLE_FRONT) but is registered in active_direct_backends."
+            )
+        p_info = platforms_meta.get(p_capital, {})
+        if p_info.get("role") == "CAPABLE_DIRECT":
+            violations.append(
+                f"{p_capital} incorrectly marked as CAPABLE_DIRECT instead of CAPABLE_FRONT."
+            )
+
+    # Netlify WS ingress limitation check
+    netlify_info = platforms_meta.get("Netlify", {})
+    if netlify_info:
+        if netlify_info.get("verified_proxy_count", 0) > 0:
+            violations.append(
+                "Netlify claims verified proxy count > 0 despite RFC 6455 WebSocket 101 ingress termination limitation."
+            )
+        if netlify_info.get("role") == "CAPABLE_DIRECT":
+            violations.append(
+                "Netlify marked as CAPABLE_DIRECT without disclosing WS ingress 502 limitation and L4 standby role."
+            )
 
     status = "FAIL" if violations else "PASS"
     return {

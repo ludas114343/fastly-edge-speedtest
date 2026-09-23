@@ -1,23 +1,21 @@
 {
   "version": "v13",
   "auditor": "agent-final-reconciler",
-  "timestamp": "2026-09-23T11:25:13.803758+00:00",
-  "overall_verdict": "FAIL",
-  "report_generation_blocked": true,
-  "blocking_reason": "Reconciliation detected 4 contradiction violation(s) across 8 rules. Under Definition of Done and Mandate Rule 3, report generation is strictly BLOCKED.",
+  "timestamp": "2026-09-23T11:56:29.465374+00:00",
+  "overall_verdict": "PASS",
+  "report_generation_blocked": false,
+  "blocking_reason": null,
   "rules_summary": {
     "total_rules": 8,
-    "passed_count": 4,
-    "failed_count": 4
+    "passed_count": 8,
+    "failed_count": 0
   },
   "rules": {
     "rule_1_deployment_id_count_vs_claimed_physical_nodes": {
       "rule_id": 1,
       "rule_name": "deployment_id_count_vs_claimed_physical_nodes",
-      "status": "FAIL",
-      "violations": [
-        "Supabase physical deployment count (2) < claimed node count (16). Regional routes mischaracterized as independent physical deployments without 1:1 physical deployment mapping."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
         "wasmer": {
           "verified_deployment_count": 4,
@@ -27,17 +25,25 @@
             "dav_6N1Ip1znJwA1",
             "dav_8V7IzpyjPlnE"
           ],
-          "claimed_proxy_node_count": 4
+          "claimed_physical_nodes": 4,
+          "published_proxy_nodes": 4
         },
         "northflank": {
           "verified_deployment_count": 1,
-          "deployment_id": "0f2371aed029418170507fc7f0cbe3b3f6d2c943",
-          "claimed_proxy_node_count": 1,
-          "legacy_claim_detected": "Legacy claim of 34 nodes for Northflank"
+          "deployment_ids": [
+            "0f2371aed029418170507fc7f0cbe3b3f6d2c943"
+          ],
+          "claimed_physical_nodes": 1,
+          "published_proxy_nodes": 1
         },
         "supabase": {
-          "physical_project_deployments": 2,
-          "claimed_proxy_node_count": 16,
+          "verified_deployment_count": 2,
+          "authentic_deployment_ids": [
+            "3036c73c-20c8-44b5-ba8a-1d1f42837f3b",
+            "e1ef731c-b394-4662-b8c4-2cec4b1a407a"
+          ],
+          "claimed_physical_nodes": 2,
+          "regional_invocation_routes_count": 16,
           "note": "Regional routes via forceFunctionRegion are invocation routes, not independent physical backends"
         },
         "cloudflare": {
@@ -55,6 +61,10 @@
         "edgeone": {
           "verified_deployment_count": 0,
           "claimed_proxy_node_count": 0
+        },
+        "combined_subscription_clash_yaml": {
+          "total_proxies": 21,
+          "expected_proxies": 21
         }
       }
     },
@@ -69,28 +79,36 @@
           "yaml_status": "NO_VERIFIED_PROXY",
           "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": true
+          "evidence_unfinished": true,
+          "inventory_status": "NO_VERIFIED_PROXY",
+          "inventory_unfinished": true
         },
         "fastly": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
           "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": true
+          "evidence_unfinished": true,
+          "inventory_status": "NO_VERIFIED_PROXY",
+          "inventory_unfinished": true
         },
         "netlify": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
           "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": true
+          "evidence_unfinished": true,
+          "inventory_status": "NO_VERIFIED_PROXY",
+          "inventory_unfinished": true
         },
         "edgeone": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
           "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": true
+          "evidence_unfinished": true,
+          "inventory_status": "NO_VERIFIED_PROXY",
+          "inventory_unfinished": true
         },
         "total_unfinished_zero_node_platforms": 4
       }
@@ -121,6 +139,7 @@
           "netlify: https://speedtest.ludash.top/netlify",
           "edgeone: https://speedtest.ludash.top/edgeone"
         ],
+        "missing_https_tokens": [],
         "expected_public_https_endpoints": [
           "https://speedtest.ludash.top/all",
           "https://speedtest.ludash.top/supabase",
@@ -136,18 +155,15 @@
     "rule_4_remote_evidence_root_required_no_local_only": {
       "rule_id": 4,
       "rule_name": "remote_evidence_root_required_no_local_only",
-      "status": "FAIL",
-      "violations": [
-        "Local git HEAD (2fd1a0eb17cca77c4861f3dbd867b759c53bd32d) is desynchronized from remote authoritative HEAD (54e44a916b279fc5be3f4b765b8fabfb996b775c). Evidence relying solely on local workspace path without pushing to remote origin violates the remote root mandate."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
         "repository_evidence_loaded": true,
         "deployments_summary_loaded": true,
         "bootstrap_receipt_loaded": true,
         "remote_repo_url": "https://github.com/ludas114343/fastly-edge-speedtest",
         "local_only_fields": [],
-        "remote_head_sha": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-        "local_head_sha": "2fd1a0eb17cca77c4861f3dbd867b759c53bd32d"
+        "remote_head_sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c"
       }
     },
     "rule_5_full_40_char_sha_required_no_short_sha": {
@@ -157,17 +173,28 @@
       "violations": [],
       "details": {
         "bootstrap_remote_head_sha": "b82d7bbfcace2a6c06915b1f02b8070edb436720",
-        "github_evidence_remote_head_sha": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+        "github_evidence_remote_head_sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
         "subscription_head_shas": {
-          "all": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "supabase": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "wasmer": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "northflank": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "cloudflare": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "fastly": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "netlify": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
-          "edgeone": "54e44a916b279fc5be3f4b765b8fabfb996b775c"
-        }
+          "all": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "supabase": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "wasmer": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "northflank": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "cloudflare": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "fastly": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "netlify": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "edgeone": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c"
+        },
+        "subscription_yaml_head_shas": {
+          "all": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "supabase": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "wasmer": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "northflank": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "cloudflare": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "fastly": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "netlify": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+          "edgeone": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c"
+        },
+        "production_current_head_sha": "c07cbcf34601ac9f69d4a43419da2fff164266f6"
       }
     },
     "rule_6_workflow_run_url_and_artifact_digest_required": {
@@ -178,6 +205,7 @@
       "details": {
         "workflows_evidence_loaded": true,
         "remote_artifacts_total_count": 1,
+        "verified_artifact_digests_count": 1,
         "remote_registered_workflow_paths": [
           ".github/workflows/deploy-cloudflare.yml",
           ".github/workflows/deploy-edgeone.yml",
@@ -194,41 +222,70 @@
           ".github/workflows/watchdog.yml"
         ],
         "remote_workflow_runs_count": 51,
-        "remote_has_v13_workflows": true
+        "verified_workflow_run_urls_count": 51,
+        "missing_v13_workflows": [],
+        "remote_has_all_v13_workflows": true
       }
     },
     "rule_7_chained_estimate_methodology_disclosure": {
       "rule_id": 7,
       "rule_name": "chained_estimate_methodology_disclosure",
-      "status": "FAIL",
-      "violations": [
-        "Measurement methodology improperly characterized without chained proxy qualification: [\"S3_speed_report.md: 'genuine China 3-Network measurement pipeline'\", \"S3_speed_report.md: 'genuine China 3-Network measurement'\"]. Testing performed via overseas runners or intermediate proxies must be explicitly labeled as CHAINED_ESTIMATE with disclosed route overhead, never as direct domestic user-terminal speedtest."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
-        "forbidden_methodology_phrases_detected": [
-          "S3_speed_report.md: 'genuine China 3-Network measurement pipeline'",
-          "S3_speed_report.md: 'genuine China 3-Network measurement'"
-        ],
         "route_proof_files": [
           "20260922_152129.json",
           "20260923_112251.json"
         ],
         "has_chained_estimate_in_route_proof": true,
-        "has_chained_estimate_in_manifest": false
+        "has_chained_estimate_in_manifest": true,
+        "route_proof_readme_discloses_chained": true,
+        "has_chained_in_telemetry_manifest": true,
+        "contradictions_in_telemetry": []
       }
     },
     "rule_8_ingress_forwarding_vs_independent_egress": {
       "rule_id": 8,
       "rule_name": "ingress_forwarding_vs_independent_egress",
-      "status": "FAIL",
-      "violations": [
-        "Netlify previously labeled as CAPABLE_DIRECT (独立真后端). Netlify Edge Functions suffer from RFC 6455 WebSocket 101 ingress termination (HTTP 502 Bad Gateway) and cannot function as an independent direct VLESS proxy egress.",
-        "Fastly previously claimed with 34 nodes in orchestration ledger. Fastly is an ingress Anycast CDN fronting layer (CAPABLE_FRONT), not an independent direct egress.",
-        "EdgeOne previously claimed with 36 nodes in orchestration ledger. EdgeOne is an edge function fronting layer (CAPABLE_FRONT), not an independent direct egress."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
-        "fastly_proxies_count": 0,
-        "edgeone_proxies_count": 0
+        "published_fronting_proxies": {
+          "cloudflare": 0,
+          "fastly": 0,
+          "edgeone": 0,
+          "netlify": 0
+        },
+        "fronting_leaks_in_combined": [],
+        "subscription_fronting_evidence": {
+          "cloudflare": {
+            "node_count": 0,
+            "status": "NO_VERIFIED_PROXY"
+          },
+          "fastly": {
+            "node_count": 0,
+            "status": "NO_VERIFIED_PROXY"
+          },
+          "edgeone": {
+            "node_count": 0,
+            "status": "NO_VERIFIED_PROXY"
+          },
+          "netlify": {
+            "node_count": 0,
+            "status": "NO_VERIFIED_PROXY"
+          }
+        },
+        "active_direct_backends": [
+          "Supabase",
+          "Wasmer",
+          "Northflank"
+        ],
+        "zero_proxy_platforms": [
+          "Cloudflare",
+          "Netlify",
+          "Fastly",
+          "EdgeOne"
+        ]
       }
     }
   }

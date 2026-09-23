@@ -114,7 +114,7 @@ Northflank Management REST API (`https://api.northflank.com/v1/projects/proxy-us
 
 ### 2.4 Zero-Node Platforms: Honest Accounting of Technical Limits
 
-Under V13 Defintion of Done and contradiction checking rules, platforms that do not provide independent verified proxy functionality must not publish fake nodes:
+Under V13 Definition of Done and contradiction checking rules, platforms that do not provide independent verified proxy functionality must not publish fake nodes:
 
 1. **Cloudflare (Worker `summer-fog-5f9c`, Deploy ID: `55a7593abfeab93eb505f669bebc803a6f3ee325`)**:
    - Inbound WebSocket upgrade to `dream.ruoyemu.asia` succeeds (`HTTP/1.1 101 Switching Protocols`).

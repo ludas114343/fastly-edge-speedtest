@@ -295,9 +295,15 @@ def publish_atomic_release(run_id=None):
         print(f"\nTesting Host: {host_label} ({base_url}):")
         host_results = {}
         for token in TOKENS:
-            url = f"{base_url}/{token}"
+            url = f"{base_url}/{token}?t={int(datetime.now(timezone.utc).timestamp())}"
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "ClashMeta/v1.19.0"})
+                req = urllib.request.Request(
+                    url,
+                    headers={
+                        "User-Agent": "ClashMeta/v1.19.0",
+                        "Cache-Control": "no-cache, no-store, must-revalidate"
+                    }
+                )
                 with urllib.request.urlopen(req, timeout=10, context=ctx) as resp:
                     status_code = resp.status
                     ctype = resp.headers.get("Content-Type", "")
