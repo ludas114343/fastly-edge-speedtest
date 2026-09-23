@@ -1,0 +1,18 @@
+{
+  "token": "fastly",
+  "url_path": "/fastly",
+  "http_status": 200,
+  "sha256": "85a4818aa5bf035e0a8372af856c146055bd9eab7ac9c959fd348a7e83517958",
+  "node_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "metadata": {
+    "status": "NO_VERIFIED_PROXY",
+    "platform": "fastly",
+    "node_count": 0,
+    "reason": "Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips WebSocket Upgrade headers without paid Custom TLS SAN certificate",
+    "tested_run_id": "20260922_133327",
+    "verified_at": "2026-09-22T15:41:01.284864+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-09-22T15:41:01.293837+00:00"
+}

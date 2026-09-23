@@ -1,0 +1,269 @@
+{
+  "current_month": "2026-09",
+  "total_minutes_consumed": 19.26,
+  "runs_count": 9,
+  "history": [
+    {
+      "timestamp": "2026-09-19 12:26:47 UTC",
+      "workflow": "published-recheck",
+      "duration_sec": 19.3,
+      "duration_min": 0.32,
+      "nodes_tested": 172,
+      "nodes_passed": 169,
+      "pass_rate": "98.3%",
+      "fail_breakdown": {
+        "clash_edgeone.yaml": {
+          "total": 36,
+          "passed": 36,
+          "pass_rate": "100.0%"
+        },
+        "clash_fastly.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_wasmer.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_netlify.yaml": {
+          "total": 34,
+          "passed": 31,
+          "pass_rate": "91.2%"
+        },
+        "clash.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-19 12:56:49 UTC",
+      "workflow": "geo-gate-audit",
+      "duration_sec": 133.1,
+      "duration_min": 2.22,
+      "nodes_tested": 36,
+      "nodes_passed": 35,
+      "pass_rate": "97.2%",
+      "fail_breakdown": {
+        "timeouts": 1,
+        "mismatches": 0
+      }
+    },
+    {
+      "timestamp": "2026-09-19 13:00:22 UTC",
+      "workflow": "geo-gate-audit",
+      "duration_sec": 154.2,
+      "duration_min": 2.57,
+      "nodes_tested": 36,
+      "nodes_passed": 34,
+      "pass_rate": "94.4%",
+      "fail_breakdown": {
+        "timeouts": 2,
+        "mismatches": 0
+      }
+    },
+    {
+      "timestamp": "2026-09-19 13:04:38 UTC",
+      "workflow": "geo-gate-audit",
+      "duration_sec": 163.5,
+      "duration_min": 2.73,
+      "nodes_tested": 36,
+      "nodes_passed": 36,
+      "pass_rate": "100.0%",
+      "fail_breakdown": {
+        "timeouts": 0,
+        "mismatches": 0
+      }
+    },
+    {
+      "timestamp": "2026-09-21 14:02:18 UTC",
+      "workflow": "published-recheck",
+      "duration_sec": 46.0,
+      "duration_min": 0.77,
+      "nodes_tested": 206,
+      "nodes_passed": 138,
+      "pass_rate": "67.0%",
+      "fail_breakdown": {
+        "clash_edgetunnel.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_wasmer.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_fastly.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_netlify.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_edgeone.yaml": {
+          "total": 36,
+          "passed": 36,
+          "pass_rate": "100.0%"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-21 14:16:33 UTC",
+      "workflow": "published-recheck",
+      "duration_sec": 50.5,
+      "duration_min": 0.84,
+      "nodes_tested": 206,
+      "nodes_passed": 138,
+      "pass_rate": "67.0%",
+      "fail_breakdown": {
+        "clash_edgetunnel.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_wasmer.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_fastly.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_netlify.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_edgeone.yaml": {
+          "total": 36,
+          "passed": 36,
+          "pass_rate": "100.0%"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-21 14:41:28 UTC",
+      "workflow": "published-recheck",
+      "duration_sec": 113.0,
+      "duration_min": 1.88,
+      "nodes_tested": 206,
+      "nodes_passed": 101,
+      "pass_rate": "49.0%",
+      "fail_breakdown": {
+        "clash_edgetunnel.yaml": {
+          "total": 34,
+          "passed": 33,
+          "pass_rate": "97.1%"
+        },
+        "clash_wasmer.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_fastly.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_netlify.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_edgeone.yaml": {
+          "total": 36,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-22 13:45:15 UTC",
+      "workflow": "geo-gate-audit",
+      "duration_sec": 354.6,
+      "duration_min": 5.91,
+      "nodes_tested": 34,
+      "nodes_passed": 27,
+      "pass_rate": "79.4%",
+      "fail_breakdown": {
+        "timeouts": 7,
+        "mismatches": 0
+      }
+    },
+    {
+      "timestamp": "2026-09-22 13:54:14 UTC",
+      "workflow": "published-recheck",
+      "duration_sec": 121.4,
+      "duration_min": 2.02,
+      "nodes_tested": 274,
+      "nodes_passed": 137,
+      "pass_rate": "50.0%",
+      "fail_breakdown": {
+        "clash_supabase.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_wasmer.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_northflank.yaml": {
+          "total": 34,
+          "passed": 1,
+          "pass_rate": "2.9%"
+        },
+        "clash_edgetunnel.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash.yaml": {
+          "total": 34,
+          "passed": 34,
+          "pass_rate": "100.0%"
+        },
+        "clash_fastly.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_netlify.yaml": {
+          "total": 34,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        },
+        "clash_edgeone.yaml": {
+          "total": 36,
+          "passed": 0,
+          "pass_rate": "0.0%"
+        }
+      }
+    }
+  ]
+}

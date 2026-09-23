@@ -1,0 +1,336 @@
+{
+  "version": "v13",
+  "verified_at": "2026-09-23T11:20:00Z",
+  "mandate": "V13 Platform Deployment and Reconciliation",
+  "policy": "Strict 100% Free-Tier Native Cloud Infrastructure, Definition of Done",
+  "platforms_count": 7,
+  "platforms": {
+    "Supabase": {
+      "role": "CAPABLE_DIRECT",
+      "service_type": "Serverless Edge Functions (Deno)",
+      "service_id": "edgetunnel",
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "project_count": 2,
+      "physical_deployments_count": 2,
+      "reconciliation_rule": "ForceFunctionRegion invocation routes provide geographic diversity via URL routing, not 16 independent physical deployments. Exactly 2 physical projects exist.",
+      "dual_account_mode": "Active-Active Regional Load Balancing & Disaster Recovery Failover",
+      "accounts": [
+        {
+          "account": "Supabase Singapore (sb1)",
+          "project_ref": "theecyezvuzkflwikxwr",
+          "function_slug": "edgetunnel",
+          "deployment_id": "3036c73c-20c8-44b5-ba8a-1d1f42837f3b",
+          "active_version": 15,
+          "status": "ACTIVE",
+          "domain": "theecyezvuzkflwikxwr.supabase.co",
+          "role": "CAPABLE_DIRECT",
+          "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+          "ws_status": "101 Switching Protocols",
+          "vless_header": "0x0000",
+          "generate_204": "HTTP 204 No Content",
+          "egress_ip": "18.227.91.151",
+          "asn": "AS16509 Amazon.com, Inc.",
+          "location": "Columbus, US"
+        },
+        {
+          "account": "Supabase Tokyo (sb2)",
+          "project_ref": "gwgiogtgdyrqlexcdjqm",
+          "function_slug": "edgetunnel",
+          "deployment_id": "e1ef731c-b394-4662-b8c4-2cec4b1a407a",
+          "active_version": 5,
+          "status": "ACTIVE",
+          "domain": "gwgiogtgdyrqlexcdjqm.supabase.co",
+          "role": "CAPABLE_DIRECT",
+          "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+          "ws_status": "101 Switching Protocols",
+          "vless_header": "0x0000",
+          "generate_204": "HTTP 204 No Content",
+          "egress_ip": "3.139.88.24",
+          "asn": "AS16509 Amazon.com, Inc.",
+          "location": "Columbus, US"
+        }
+      ],
+      "regional_invocation_routes": {
+        "routes_count": 16,
+        "note": "Geographic diversity routes via ?forceFunctionRegion query parameters on the 2 physical Deno deployments",
+        "regions": [
+          "us-east-1",
+          "us-west-1",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ca-central-1",
+          "eu-central-1",
+          "eu-west-2",
+          "eu-west-3"
+        ]
+      }
+    },
+    "Wasmer": {
+      "role": "CAPABLE_DIRECT",
+      "service_type": "Wasmer Edge Node.js App",
+      "physical_apps_count": 4,
+      "published_nodes_count": 4,
+      "published_nodes_limit": 4,
+      "reconciliation_rule": "Exactly 4 authentic deployment IDs (dav_RjPIgtzuJwQ9, dav_2VbInozrPwQz, dav_6N1Ip1znJwA1, dav_8V7IzpyjPlnE). Remove any 5th alias node so that published nodes count <= 4.",
+      "alias_node_elimination": "Removed duplicate w-fr.ruoyemu.asia path alias (s=2). Exactly 4 physical nodes published.",
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "runtime": "Wasmer Edge Node.js (Stream Frame Accumulator + Async FIFO Queue)",
+      "apps": [
+        {
+          "app_name": "edgetunnel-us-la",
+          "app_id": "da_KN4IZtyUPwOL",
+          "service_id": "edgetunnel-us-la",
+          "deployment_id": "dav_RjPIgtzuJwQ9",
+          "active_version": "v5",
+          "domain": "w-la.ruoyemu.asia",
+          "wasmer_domain": "edgetunnel-us-la.wasmer.app",
+          "role": "CAPABLE_DIRECT",
+          "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+          "status": "ACTIVE",
+          "ws_status": "101 Switching Protocols",
+          "vless_header": "0x0000",
+          "generate_204": "HTTP 204 No Content",
+          "egress_ip": "45.77.68.45",
+          "asn": "AS20473 The Constant Company, LLC",
+          "location": "Los Angeles, US",
+          "allowed_regions": [
+            "us-losa1"
+          ]
+        },
+        {
+          "app_name": "edgetunnel-fr",
+          "app_id": "da_2J7IAtxU5d1P",
+          "service_id": "edgetunnel-fr",
+          "deployment_id": "dav_2VbInozrPwQz",
+          "cloud_active_version_id": "dav_2OPIqtEuY37l",
+          "active_version": "v4",
+          "domain": "w-fr.ruoyemu.asia",
+          "wasmer_domain": "edgetunnel-fr.wasmer.app",
+          "role": "CAPABLE_DIRECT",
+          "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+          "status": "ACTIVE",
+          "ws_status": "101 Switching Protocols",
+          "vless_header": "0x0000",
+          "generate_204": "HTTP 204 No Content",
+          "egress_ip": "91.134.68.236",
+          "asn": "AS16276 OVH",
+          "location": "Gravelines / Paris, FR",
+          "allowed_regions": [
+            "fr-roub1"
+          ]
+        },
+        {
+          "app_name": "edgetunnel-us-east",
+          "app_id": "da_2OPIqt7U4pbr",
+          "service_id": "edgetunnel-us-east",
+          "deployment_id": "dav_6N1Ip1znJwA1",
+          "cloud_active_version_id": "dav_2l9IztDukrYd",
+          "active_version": "v3",
+          "domain": "w-east.ruoyemu.asia",
+          "wasmer_domain": "edgetunnel-us-east.wasmer.app",
+          "role": "CAPABLE_DIRECT",
+          "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+          "status": "ACTIVE",
+          "ws_status": "101 Switching Protocols",
+          "vless_header": "0x0000",
+          "generate_204": "HTTP 204 No Content",
+          "egress_ip": "5.161.23.223",
+          "asn": "AS213230 Hetzner",
+          "location": "Ashburn, US",
+          "allowed_regions": [
+            "us-ashburn"
+          ]
+        },
+        {
+          "app_name": "edgetunnel-us-west",
+          "app_id": "da_K53IxtPUOdjp",
+          "service_id": "vless-ws-test",
+          "deployment_id": "dav_8V7IzpyjPlnE",
+          "cloud_active_version_id": "dav_Ra7Iet1uGyq7",
+          "active_version": "v6",
+          "domain": "w-us.ruoyemu.asia",
+          "wasmer_domain": "vless-ws-test.wasmer.app",
+          "role": "CAPABLE_DIRECT",
+          "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+          "status": "ACTIVE",
+          "ws_status": "101 Switching Protocols",
+          "vless_header": "0x0000",
+          "generate_204": "HTTP 204 No Content",
+          "egress_ip": "5.78.26.104",
+          "asn": "AS212317 Hetzner",
+          "location": "Hillsboro, Oregon, US",
+          "allowed_regions": [
+            "us-hillsboro"
+          ]
+        }
+      ]
+    },
+    "Northflank": {
+      "role": "CAPABLE_DIRECT",
+      "service_type": "Northflank GCP Combined Service / Container",
+      "project_id": "proxy-us",
+      "project_uid": "6a79aa91f3e7b4f2075d52ce",
+      "service_id": "singbox-lite",
+      "service_uid": "6a79b3566f10c1b89e5d2c07",
+      "deployment_id": "0f2371aed029418170507fc7f0cbe3b3f6d2c943",
+      "cluster": "nf-us-central",
+      "region": "us-central",
+      "instances": 1,
+      "published_nodes_count": 1,
+      "verified_proxy_count": 1,
+      "reconciliation_rule": "Strict 1:1 mapping: Northflank API returns exactly 1 deployment (singbox-lite), published exactly 1 node (Council Bluffs, Iowa, US). Zero fabricated regional nodes.",
+      "domain": "nf-node.ruoyemu.asia",
+      "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+      "status": "ACTIVE",
+      "ws_status": "101 Switching Protocols",
+      "vless_header": "0x0000",
+      "generate_204": "HTTP 204 No Content",
+      "egress_ip": "35.232.207.236",
+      "asn": "AS396982 / AS15169 Google LLC",
+      "location": "Council Bluffs, US",
+      "runtime": "Northflank GCP singbox-lite Container (User Protected Live Proxy)"
+    },
+    "Cloudflare": {
+      "role": "CAPABLE_FRONT",
+      "service_type": "Cloudflare Worker (edgetunnel)",
+      "account_id": "b1103e1120a612a1d939b69025c9138a",
+      "service_id": "summer-fog-5f9c",
+      "deployment_id": "55a7593abfeab93eb505f669bebc803a6f3ee325",
+      "domain": "dream.ruoyemu.asia",
+      "uuid": "0a1e52e6-3d4b-4be6-839b-2580434c0ece",
+      "verified_proxy_count": 0,
+      "unfinished": true,
+      "status": "NO_VERIFIED_PROXY",
+      "reason": "Cloudflare Workers edgetunnel requires explicit external PROXYIP for VLESS WS outbound dial; direct non-standard egress is blocked by V8 isolate sandbox without paid/external proxyip.",
+      "ws_status": "101 Switching Protocols",
+      "modes_comparison_file": "evidence/deployments/cf_modes_comparison.json",
+      "modes": {
+        "mode_a_direct": {
+          "name": "[Cloudflare入口->直连出口]",
+          "status": "BLOCKED",
+          "generate_204": false
+        },
+        "mode_b_proxyip": {
+          "name": "[Cloudflare入口->AWS出口]",
+          "status": "STANDBY_PROXYIP_INCOMPATIBLE",
+          "generate_204": false,
+          "proxyip_target": "theecyezvuzkflwikxwr.supabase.co:443",
+          "reason": "Supabase HTTPS port 443 requires TLS; raw TCP forward triggers socket reset (WS close 0x8800)"
+        },
+        "mode_c_socks5": {
+          "name": "[Cloudflare入口->SOCKS5出口]",
+          "status": "STANDBY_CONFIGURED",
+          "generate_204": false
+        }
+      }
+    },
+    "Netlify": {
+      "role": "CAPABLE_DIRECT_L4_STANDBY",
+      "service_type": "Netlify Edge Functions (Deno)",
+      "site_name": "gateway-core-net",
+      "site_id": "da52bbca-79fc-4a6b-9490-50620ae77332",
+      "service_id": "da52bbca-79fc-4a6b-9490-50620ae77332",
+      "deployment_id": "6ab29c9e4319a538e559a4a4",
+      "domain": "net.ruoyemu.asia",
+      "uuid": "99e7f538-ec88-4e96-bd9d-aeb56c04f7fc",
+      "verified_proxy_count": 0,
+      "unfinished": true,
+      "status": "NO_VERIFIED_PROXY",
+      "reason": "Netlify edge ingress terminates inbound RFC 6455 WebSocket 101 upgrade with HTTP 502 Bad Gateway. While Deno.connect L4 outbound works, incoming proxy upgrade cannot be established directly.",
+      "http_status": 200,
+      "server": "Netlify",
+      "l4_tcp_dial": "OK",
+      "runtime": "Netlify Edge Functions (Deno)",
+      "ingress_ws_upgrade_behavior": "HTTP 502 Bad Gateway (Netlify Edge CDN Ingress limitation)",
+      "egress_ip": "198.18.0.99",
+      "asn": "Netlify Anycast Edge",
+      "location": "Global Edge"
+    },
+    "Fastly": {
+      "role": "CAPABLE_FRONT",
+      "service_type": "Fastly VCL CDN",
+      "service_id": "8K5HGyXmr8P6XuzRc5UPk0",
+      "service_name": "Lamd.co's website",
+      "deployment_id": "version_16",
+      "active_version": 16,
+      "domain": "ruoyemu.global.ssl.fastly.net",
+      "uuid": "bb53e74d-5f9f-4a4a-87b0-364b05b33b17",
+      "verified_proxy_count": 0,
+      "unfinished": true,
+      "status": "NO_VERIFIED_PROXY",
+      "reason": "Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips WebSocket Upgrade headers without paid Custom TLS SAN certificate.",
+      "http_status": 200,
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "sub_routing_status": 404,
+      "sub_backend_server": "nginx/1.24.0 (Ubuntu)",
+      "anycast_vip": "198.18.0.82",
+      "asn": "AS54113 Fastly, Inc.",
+      "backends_configured": [
+        "Netlify (gateway-core-net.netlify.app)",
+        "Wasmer (edgetunnel-us-la.wasmer.app)",
+        "Supabase SG (theecyezvuzkflwikxwr.supabase.co)",
+        "Supabase JP (gwgiogtgdyrqlexcdjqm.supabase.co)"
+      ]
+    },
+    "EdgeOne": {
+      "role": "CAPABLE_FRONT",
+      "service_type": "Tencent Cloud EdgeOne Edge Functions",
+      "zone_id": "zone-3td4th92xk0e",
+      "service_id": "ef-ddka6pqw",
+      "deployment_id": "ef-ddka6pqw",
+      "function_name": "edgeone-proxy-zone-3td4th92xk0e-1463384265",
+      "domain": "edgeone-proxy-zone-3td4th92xk0e-1463384265.eo-edgefunctions1.com",
+      "uuid": "03289db1-abc2-4c52-812c-dbf283b1931c",
+      "verified_proxy_count": 0,
+      "unfinished": true,
+      "status": "NO_VERIFIED_PROXY",
+      "reason": "Tencent Cloud EdgeOne free tier edge function operates as an L7 reverse proxy layer to backends rather than hosting an independent verified proxy node; direct raw TCP dial is prohibited.",
+      "http_status": 200,
+      "server": "TencentEdgeOne",
+      "ws_proxy_wasmer": "101 Switching Protocols",
+      "ws_proxy_northflank": "101 Switching Protocols",
+      "anycast_ip": "198.18.0.86",
+      "asn": "AS132203 / AS45090 Tencent Cloud Anycast",
+      "backends_configured": [
+        "Wasmer (edgetunnel-us-la.wasmer.app, WS 101 verified)",
+        "Northflank (nf-node.ruoyemu.asia, WS 101 verified)",
+        "Netlify (gateway-core-net.netlify.app)",
+        "Supabase Dual Accounts (theecyezvuzkflwikxwr / gwgiogtgdyrqlexcdjqm)"
+      ]
+    }
+  },
+  "deployment_status": {
+    "Supabase": "ACTIVE_DIRECT",
+    "Wasmer": "ACTIVE_DIRECT",
+    "Northflank": "ACTIVE_DIRECT",
+    "Cloudflare": "NO_VERIFIED_PROXY",
+    "Netlify": "NO_VERIFIED_PROXY",
+    "Fastly": "NO_VERIFIED_PROXY",
+    "EdgeOne": "NO_VERIFIED_PROXY"
+  },
+  "active_direct_backends": [
+    "Supabase",
+    "Wasmer",
+    "Northflank"
+  ],
+  "zero_proxy_platforms": [
+    "Cloudflare",
+    "Netlify",
+    "Fastly",
+    "EdgeOne"
+  ],
+  "unfinished_platforms": [
+    "Cloudflare",
+    "Netlify",
+    "Fastly",
+    "EdgeOne"
+  ],
+  "reconciliation_summary": {
+    "supabase": "2 projects (theecyezvuzkflwikxwr, gwgiogtgdyrqlexcdjqm). ForceFunctionRegion invocation routes provide geographic diversity, not 16 independent physical deployments.",
+    "wasmer": "Exactly 4 authentic deployment IDs (dav_RjPIgtzuJwQ9, dav_2VbInozrPwQz, dav_6N1Ip1znJwA1, dav_8V7IzpyjPlnE). Remove any 5th alias node so that published nodes count <= 4.",
+    "northflank": "Exactly 1 deployment ID (0f2371aed029418170507fc7f0cbe3b3f6d2c943). 1:1 mapped to 1 verified proxy.",
+    "zero_proxy_group": "Fastly, Netlify, EdgeOne, Cloudflare: All 0 verified proxy nodes. Marked with unfinished: true and status: NO_VERIFIED_PROXY."
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "audit_metadata": {
+    "version": "v13",
+    "auditor": "agent-redteam",
+    "role": "Red-Blue Adversarial QA Inspector",
+    "working_directory": "C:\\Users\\ludas\\.gemini\\antigravity\\scratch\\fastly-edge-speedtest",
+    "audited_at": "2026-09-23T11:22:30+00:00",
+    "overall_verdict": "FAIL",
+    "summary": "Critical discrepancies detected across public subscription reachability, Wasmer node count bounds, missing unfinished flags in YAML/subscriptions, Supabase region route inflation, and synthetic route-proof logic. Host proxy isolation is verified PASS."
+  },
+  "adversarial_findings": {
+    "finding_1_public_subscription_endpoints": {
+      "dimension": "Public Subscription URLs and Relative Paths",
+      "status": "FAIL",
+      "rule_violated": "Rule 3 (Only relative paths, no full HTTPS URLs) and Rule 4 (Evidence root is only local machine path)",
+      "evidence": {
+        "claimed_domain": "speedtest.ludash.top",
+        "dns_resolution_public": "198.18.0.109 (via Google DNS 8.8.8.8, RFC 2544 benchmark/fake-ip range)",
+        "endpoint_test_result": "URLError: SSL UNEXPECTED_EOF_WHILE_READING across all 8 endpoints",
+        "tested_urls": [
+          "https://speedtest.ludash.top/all",
+          "https://speedtest.ludash.top/supabase",
+          "https://speedtest.ludash.top/wasmer",
+          "https://speedtest.ludash.top/northflank",
+          "https://speedtest.ludash.top/cloudflare",
+          "https://speedtest.ludash.top/fastly",
+          "https://speedtest.ludash.top/netlify",
+          "https://speedtest.ludash.top/edgeone"
+        ],
+        "local_mock_artifact": "test_http_subscription_endpoints.py (lines 68-79 spins up mock server on 127.0.0.1:18888)",
+        "relative_path_files": [
+          "evidence/subscriptions/all.json (url_path: /all)",
+          "evidence/subscriptions/wasmer.json (url_path: /wasmer)",
+          "evidence/subscriptions/supabase.json (url_path: /supabase)",
+          "evidence/subscriptions/northflank.json (url_path: /northflank)",
+          "evidence/subscriptions/cloudflare.json (url_path: /cloudflare)",
+          "evidence/subscriptions/fastly.json (url_path: /fastly)",
+          "evidence/subscriptions/netlify.json (url_path: /netlify)",
+          "evidence/subscriptions/edgeone.json (url_path: /edgeone)",
+          "evidence/deployments/summary.json (line 101: modes_comparison_file relative local path)"
+        ]
+      },
+      "analysis": "No live public HTTPS subscription endpoint is operational. The domain speedtest.ludash.top maps to a non-routable benchmark IP 198.18.0.109. Evidence files provide only relative paths (/wasmer) or local machine paths instead of public HTTPS URLs."
+    },
+    "finding_2_wasmer_physical_node_bound": {
+      "dimension": "Wasmer Physical Deployments vs Published Nodes",
+      "status": "FAIL_IN_YAML_PASS_IN_RECONCILIATION",
+      "rule_violated": "Rule 1 (deployment ID count < claimed physical node count)",
+      "evidence": {
+        "authentic_deployment_count": 4,
+        "authentic_deployment_ids": [
+          "dav_2l9IztDukrYd (edgetunnel-us-east)",
+          "dav_RjPIgtzuJwQ9 (edgetunnel-us-la)",
+          "dav_Ra7Iet1uGyq7 (vless-ws-test / us-west)",
+          "dav_2OPIqtEuY37l (edgetunnel-fr)"
+        ],
+        "published_clash_yaml_nodes": 5,
+        "published_yaml_path": "clash_wasmer.yaml",
+        "published_yaml_node_count_field": 5,
+        "subscription_evidence_node_count": 5,
+        "subscription_evidence_path": "evidence/subscriptions/wasmer.json",
+        "identified_alias_node": {
+          "node_name": "法国巴黎 02 [Wasmer · OVH AS16276]",
+          "server": "w-fr.ruoyemu.asia",
+          "path": "/?ed=2560&s=2",
+          "underlying_deployment_id": "dav_2OPIqtEuY37l",
+          "duplicate_target": "法国巴黎 01 [Wasmer · OVH AS16276]"
+        },
+        "reconciliation_evidence": "evidence/reconciliation/wasmer_nodes.json (correctly bounds physical count to 4 and deducts alias)"
+      },
+      "analysis": "clash_wasmer.yaml line 149 and evidence/subscriptions/wasmer.json line 6 still publish 5 nodes. The 5th node is an unverified query alias (s=2) pointing to the identical French OVH backend. Although evidence/reconciliation/wasmer_nodes.json has documented the deduction, the published YAML and subscription metadata remain unpruned."
+    },
+    "finding_3_supabase_region_route_inflation": {
+      "dimension": "Supabase Deployments vs Regional Invocation Routes",
+      "status": "FAIL",
+      "rule_violated": "Rule 1 (deployment ID count < claimed physical node count)",
+      "evidence": {
+        "physical_project_count": 2,
+        "physical_deployment_count": 2,
+        "physical_deployments": [
+          "theecyezvuzkflwikxwr (edgetunnel-sb, Singapore)",
+          "gwgiogtgdyrqlexcdjqm (edgetunnel-sb-02, Tokyo)"
+        ],
+        "published_clash_yaml_nodes": 16,
+        "published_yaml_path": "clash_supabase.yaml",
+        "published_yaml_node_count_field": 16,
+        "inventory_summary_claims": {
+          "deployment_count": 2,
+          "region_route_count": 10,
+          "entry_count": 34,
+          "verified_proxy_count": 34
+        },
+        "legacy_ledger_claims": "Supabase >= 34 nodes claimed (orchestration/ledger.md line 67)"
+      },
+      "analysis": "Supabase possesses exactly 2 physical project deployments. The 16 nodes in clash_supabase.yaml are created via query parameter forceFunctionRegion=<aws-region>. Furthermore, evidence/inventory/summary.json claims 34 verified proxies, conflicting with both physical deployments (2) and clash_supabase.yaml (16). Regional invocation routing must not be conflated with physical deployments."
+    },
+    "finding_4_zero_node_platforms_unfinished_flag": {
+      "dimension": "Honest Reporting of Zero-Node Platforms",
+      "status": "FAIL",
+      "rule_violated": "Rule 2 (0-node platform + unfinished == 0 -> FAIL)",
+      "evidence": {
+        "platforms": [
+          "fastly",
+          "netlify",
+          "edgeone",
+          "cloudflare"
+        ],
+        "status_in_yaml": "NO_VERIFIED_PROXY (present across all 4 YAMLs)",
+        "proxies_in_yaml": "[] (empty across all 4 YAMLs)",
+        "unfinished_flag_in_yaml": "MISSING in clash_fastly.yaml, clash_netlify.yaml, clash_edgeone.yaml, clash_cloudflare.yaml",
+        "unfinished_flag_in_subscriptions": "MISSING in evidence/subscriptions/{fastly,netlify,edgeone,cloudflare}.json",
+        "inventory_summary_state": "evidence/inventory/summary.json correctly sets unfinished: true"
+      },
+      "analysis": "While evidence/inventory/summary.json correctly records unfinished: true, the actual client-facing clash_*.yaml files and evidence/subscriptions/*.json omit the required unfinished: true flag. Under Rule 2, any zero-node platform lacking unfinished: true fails the audit."
+    },
+    "finding_5_speedtest_methodology_and_route_proof": {
+      "dimension": "Domestic Speedtest Claim and Route Proof Validity",
+      "status": "FAIL",
+      "rule_violated": "Rule 7 (CHAINED_ESTIMATE described as direct domestic speedtest)",
+      "evidence": {
+        "candidate_counts": {
+          "raw": 6120,
+          "deduped": 348,
+          "rejected": 5772
+        },
+        "candidate_separation_file": "generate_candidates_separation.py",
+        "speedtest_script": "run_speedtest_v12.py",
+        "socket_dial_method": "Direct socket.create_connection from single local/runner host (lines 317, 415)",
+        "carrier_simulation": "Loop over ['china-telecom', 'china-unicom', 'china-mobile'] labeling local sockets with carrier ASNs (lines 502-523)",
+        "route_proof_implementation": "run_speedtest_v12.py lines 598-605",
+        "route_proof_mock_flaw": "except Exception: status = 'VERIFIED' unconditionally marks port 53 DNS connects as verified",
+        "route_proof_file": "results/route-proof/20260922_152129.json",
+        "legacy_report_claims": "orchestration/S3_speed_report.md lines 17-43 claim genuine 3-network pipeline with isolated physical sockets"
+      },
+      "analysis": "Candidate pool separation into 6120 raw, 348 deduped, and 5772 rejected is genuine. However, speedtesting was executed from a single runner environment and labeled with carrier tags rather than routed through true domestic carrier ingress points. This must be designated as CHAINED_ESTIMATE. In addition, route proof logic contains an anti-pattern that sets status to VERIFIED even on socket exceptions."
+    },
+    "finding_6_host_system_proxy_isolation": {
+      "dimension": "Zero-Touch of Host Windows Proxy, TUN, and Registry",
+      "status": "PASS",
+      "rule_violated": "None",
+      "evidence": {
+        "registry_query": "Get-ItemProperty 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings'",
+        "registry_ProxyEnable": 1,
+        "registry_ProxyServer": "127.0.0.1:7897",
+        "proxy_port_status": "127.0.0.1:7897 is LISTENING and INTACT",
+        "codebase_scan_winreg": "0 occurrences in .py, .ps1, .sh",
+        "codebase_scan_set_itemproperty": "0 modification occurrences in .py, .ps1, .sh",
+        "codebase_scan_netsh": "0 occurrences in .py, .ps1, .sh"
+      },
+      "analysis": "Host proxy configuration at 127.0.0.1:7897 is 100% intact. Zero registry modification commands or adapter alterations were detected in the codebase."
+    },
+    "finding_7_github_remote_synchronization": {
+      "dimension": "GitHub Remote State and Workflow Synchronization",
+      "status": "FAIL",
+      "rule_violated": "Rule 5 (40-char SHA), Rule 6 (workflow run URL and artifact digest)",
+      "evidence": {
+        "remote_head_sha": "234067b0145c209b842df97b46da0451fab40294",
+        "local_head_sha": "b82d7bbfcace2a6c06915b1f02b8070edb436720",
+        "remote_workflows_count": 2,
+        "required_v13_workflows_count": 13,
+        "remote_missing_workflows": [
+          "deploy-supabase.yml",
+          "deploy-wasmer.yml",
+          "deploy-northflank.yml",
+          "deploy-cloudflare.yml",
+          "deploy-fastly.yml",
+          "deploy-netlify.yml",
+          "deploy-edgeone.yml",
+          "discover-candidates.yml",
+          "smoke-test.yml",
+          "optimize-three-carriers.yml",
+          "publish-subscriptions.yml",
+          "external-blackbox-audit.yml",
+          "watchdog.yml"
+        ],
+        "remote_artifact_count": 0,
+        "auto_update_drills_status": "Not executed on remote GitHub Actions"
+      },
+      "analysis": "The remote repository default branch main only contains 2 legacy workflows. None of the 13 required V13 workflows have been synchronized or pushed by agent-github-deployer. Artifact storage contains 0 files."
+    }
+  },
+  "reconciler_rules_matrix": {
+    "rule_1_deployment_vs_nodes": {
+      "rule": "deployment ID count < claimed physical node count -> FAIL",
+      "evaluation": "FAIL (Supabase: 2 deployments vs 16 published nodes / 34 claimed; Wasmer: 4 deployments vs 5 published nodes)"
+    },
+    "rule_2_zero_node_unfinished": {
+      "rule": "0-node platform + unfinished == 0 -> FAIL",
+      "evaluation": "FAIL (Fastly, Netlify, EdgeOne, Cloudflare YAMLs and subscriptions lack unfinished: true)"
+    },
+    "rule_3_relative_paths": {
+      "rule": "Only relative paths, no full HTTPS URLs -> FAIL",
+      "evaluation": "FAIL (Public endpoints on speedtest.ludash.top return SSL EOF; subscriptions only contain relative /path)"
+    },
+    "rule_4_evidence_root_local": {
+      "rule": "Evidence root is only local machine path -> FAIL",
+      "evaluation": "FAIL (evidence/deployments/summary.json line 101 uses relative local file path)"
+    },
+    "rule_5_short_sha": {
+      "rule": "Only short SHA, not 40-character SHA -> FAIL",
+      "evaluation": "PASS (40-char SHA 234067b0145c209b842df97b46da0451fab40294 captured in evidence/github/repository.json)"
+    },
+    "rule_6_workflow_url_and_digest": {
+      "rule": "No workflow run URL or artifact digest -> FAIL",
+      "evaluation": "FAIL (0 remote artifacts exist on GitHub Actions; V13 workflows have not run)"
+    },
+    "rule_7_chained_estimate_misrepresented": {
+      "rule": "CHAINED_ESTIMATE described as direct domestic speedtest -> FAIL",
+      "evaluation": "FAIL (Legacy S3 report and ledger described single-host runner testing as direct China 3-network probing)"
+    },
+    "rule_8_ingress_claimed_as_independent_egress": {
+      "rule": "Ingress-only/origin-forwarding platform claimed as independent egress -> FAIL",
+      "evaluation": "PASS (Cloudflare, Fastly, and EdgeOne are acknowledged as FRONT/ingress-only with 0 verified proxies)"
+    }
+  },
+  "remediation_priorities": [
+    "1. Fix DNS record for speedtest.ludash.top or update subscription delivery to working HTTPS endpoints (e.g. GitHub raw or Workers dev).",
+    "2. Prune clash_wasmer.yaml from 5 nodes to 4 nodes by removing the duplicate 法国巴黎 02 alias node.",
+    "3. Align Supabase reporting to distinguish physical deployments (2) from regional invocation routes (10) and correct summary.json proxy counts.",
+    "4. Add unfinished: true to clash_fastly.yaml, clash_netlify.yaml, clash_edgeone.yaml, clash_cloudflare.yaml, and evidence/subscriptions/*.json.",
+    "5. Formally designate speedtest methodology as CHAINED_ESTIMATE and fix route proof exception-handling defect in run_speedtest_v12.py.",
+    "6. Have agent-github-deployer commit and push all 13 workflow files to remote main and execute remote automated update drills."
+  ]
+}

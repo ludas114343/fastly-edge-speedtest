@@ -1,0 +1,11 @@
+[[edge_functions]]
+  path = "/ws"
+  function = "vless"
+
+[[edge_functions]]
+  path = "/status"
+  function = "vless"
+
+[[edge_functions]]
+  path = "/*"
+  function = "vless"

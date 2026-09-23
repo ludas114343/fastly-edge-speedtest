@@ -1,0 +1,14 @@
+{
+  "zone_id": "zone-3td4th92xk0e",
+  "zone_name": "ruoyemu.asia",
+  "function_id": "ef-ddka6pqw",
+  "function_name": "edgeone-proxy-zone-3td4th92xk0e-1463384265",
+  "endpoint": "https://edgeone-proxy-zone-3td4th92xk0e-1463384265.eo-edgefunctions1.com",
+  "role": "CAPABLE_FRONT",
+  "backends": {
+    "netlify": "gateway-core-net.netlify.app",
+    "supabase": "theecyezvuzkflwikxwr.supabase.co",
+    "wasmer": "edgetunnel-us-la.wasmer.app"
+  },
+  "uuid": "03289db1-abc2-4c52-812c-dbf283b1931c"
+}

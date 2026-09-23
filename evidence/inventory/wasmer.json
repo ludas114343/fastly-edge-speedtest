@@ -1,0 +1,228 @@
+{
+  "platform": "wasmer",
+  "account_verified": true,
+  "username": "cccp2427",
+  "email": "cccp2427@gmail.com",
+  "account_credential_masked": "wap_***[len=68]",
+  "DEPLOYMENT_COUNT": 4,
+  "project_count": 4,
+  "service_count": 4,
+  "deployment_count": 4,
+  "region_route_count": 4,
+  "entry_count": 4,
+  "candidate_count": 5,
+  "verified_proxy_count": 4,
+  "status": "ACTIVE_DIRECT",
+  "unfinished": false,
+  "projects": [
+    {
+      "app_id": "da_2OPIqt7U4pbr",
+      "app_name": "edgetunnel-us-east",
+      "deployment_id": "dav_2l9IztDukrYd",
+      "version_tag": "v3",
+      "created_at": "2026-09-22T12:49:21.809583Z",
+      "url": "https://edgetunnel-us-east.wasmer.app",
+      "custom_domain": "w-east.ruoyemu.asia",
+      "region": "us-east",
+      "location": "Ashburn, US",
+      "asn": "AS213230 Hetzner Online GmbH",
+      "egress_ip": "5.78.112.42",
+      "status": "ACTIVE"
+    },
+    {
+      "app_id": "da_KN4IZtyUPwOL",
+      "app_name": "edgetunnel-us-la",
+      "deployment_id": "dav_RjPIgtzuJwQ9",
+      "version_tag": "v5",
+      "created_at": "2026-09-22T12:47:11.759715Z",
+      "url": "https://edgetunnel-us-la.wasmer.app",
+      "custom_domain": "w-la.ruoyemu.asia",
+      "region": "us-la",
+      "location": "Los Angeles, US",
+      "asn": "AS20473 The Constant Company, LLC (Vultr/Choopa)",
+      "egress_ip": "45.77.68.45",
+      "status": "ACTIVE"
+    },
+    {
+      "app_id": "da_K53IxtPUOdjp",
+      "app_name": "vless-ws-test",
+      "deployment_id": "dav_Ra7Iet1uGyq7",
+      "version_tag": "v6",
+      "created_at": "2026-09-22T12:46:45.537478Z",
+      "url": "https://vless-ws-test.wasmer.app",
+      "custom_domain": "w-us.ruoyemu.asia",
+      "region": "us-west",
+      "location": "Hillsboro/Oregon, US",
+      "asn": "AS212317 Hetzner Online GmbH",
+      "egress_ip": "65.108.136.191",
+      "status": "ACTIVE"
+    },
+    {
+      "app_id": "da_2J7IAtxU5d1P",
+      "app_name": "edgetunnel-fr",
+      "deployment_id": "dav_2OPIqtEuY37l",
+      "version_tag": "v4",
+      "created_at": "2026-09-22T12:45:12.721079Z",
+      "url": "https://edgetunnel-fr.wasmer.app",
+      "custom_domain": "w-fr.ruoyemu.asia",
+      "region": "fr",
+      "location": "Paris, FR",
+      "asn": "AS16276 OVH SAS",
+      "egress_ip": "51.159.208.197",
+      "status": "ACTIVE"
+    }
+  ],
+  "services": [
+    "wasmer-edge-app"
+  ],
+  "deployments": [
+    {
+      "app_id": "da_2OPIqt7U4pbr",
+      "app_name": "edgetunnel-us-east",
+      "deployment_id": "dav_2l9IztDukrYd",
+      "version_tag": "v3",
+      "created_at": "2026-09-22T12:49:21.809583Z",
+      "url": "https://edgetunnel-us-east.wasmer.app",
+      "custom_domain": "w-east.ruoyemu.asia",
+      "region": "us-east",
+      "location": "Ashburn, US",
+      "asn": "AS213230 Hetzner Online GmbH",
+      "egress_ip": "5.78.112.42",
+      "status": "ACTIVE"
+    },
+    {
+      "app_id": "da_KN4IZtyUPwOL",
+      "app_name": "edgetunnel-us-la",
+      "deployment_id": "dav_RjPIgtzuJwQ9",
+      "version_tag": "v5",
+      "created_at": "2026-09-22T12:47:11.759715Z",
+      "url": "https://edgetunnel-us-la.wasmer.app",
+      "custom_domain": "w-la.ruoyemu.asia",
+      "region": "us-la",
+      "location": "Los Angeles, US",
+      "asn": "AS20473 The Constant Company, LLC (Vultr/Choopa)",
+      "egress_ip": "45.77.68.45",
+      "status": "ACTIVE"
+    },
+    {
+      "app_id": "da_K53IxtPUOdjp",
+      "app_name": "vless-ws-test",
+      "deployment_id": "dav_Ra7Iet1uGyq7",
+      "version_tag": "v6",
+      "created_at": "2026-09-22T12:46:45.537478Z",
+      "url": "https://vless-ws-test.wasmer.app",
+      "custom_domain": "w-us.ruoyemu.asia",
+      "region": "us-west",
+      "location": "Hillsboro/Oregon, US",
+      "asn": "AS212317 Hetzner Online GmbH",
+      "egress_ip": "65.108.136.191",
+      "status": "ACTIVE"
+    },
+    {
+      "app_id": "da_2J7IAtxU5d1P",
+      "app_name": "edgetunnel-fr",
+      "deployment_id": "dav_2OPIqtEuY37l",
+      "version_tag": "v4",
+      "created_at": "2026-09-22T12:45:12.721079Z",
+      "url": "https://edgetunnel-fr.wasmer.app",
+      "custom_domain": "w-fr.ruoyemu.asia",
+      "region": "fr",
+      "location": "Paris, FR",
+      "asn": "AS16276 OVH SAS",
+      "egress_ip": "51.159.208.197",
+      "status": "ACTIVE"
+    }
+  ],
+  "dormant_legacy_apps": [
+    {
+      "id": "da_nzrI7tJUbPLZ",
+      "name": "edgetunnel-ca",
+      "owner": "cccp2427",
+      "url": "https://edgetunnel-ca.wasmer.app",
+      "active_version_id": "dav_KgYIZtZudOmg",
+      "active_version": "v2",
+      "created_at": "2026-09-12T07:21:13.107027Z"
+    },
+    {
+      "id": "da_RMMIrt4U81md",
+      "name": "edgetunnel-app",
+      "owner": "cccp2427",
+      "url": "https://edgetunnel-app.wasmer.app",
+      "active_version_id": "dav_RrWI0tjuMVeA",
+      "active_version": "v22",
+      "created_at": "2026-09-12T13:50:18.915079Z"
+    },
+    {
+      "id": "da_KE4I8tXUZN8j",
+      "name": "edgetunnel-de",
+      "owner": "cccp2427",
+      "url": "https://edgetunnel-de.wasmer.app",
+      "active_version_id": "dav_Ra7Iet1uGmgX",
+      "active_version": "v3",
+      "created_at": "2026-09-12T07:25:32.567377Z"
+    },
+    {
+      "id": "da_nkPI5tJUPq7Z",
+      "name": "edgetunnel-test",
+      "owner": "cccp2427",
+      "url": "https://edgetunnel-test.wasmer.app",
+      "active_version_id": "dav_neGIvtLulrYG",
+      "active_version": "v1",
+      "created_at": "2026-09-12T05:29:22.106762Z"
+    }
+  ],
+  "regions": [
+    "us-east",
+    "us-la",
+    "us-west",
+    "fr"
+  ],
+  "domains": [
+    "w-east.ruoyemu.asia",
+    "edgetunnel-us-east.wasmer.app",
+    "w-la.ruoyemu.asia",
+    "edgetunnel-us-la.wasmer.app",
+    "w-us.ruoyemu.asia",
+    "vless-ws-test.wasmer.app",
+    "w-fr.ruoyemu.asia",
+    "edgetunnel-fr.wasmer.app"
+  ],
+  "active_versions": {
+    "edgetunnel-us-east": {
+      "deployment_id": "dav_2l9IztDukrYd",
+      "version": "v3",
+      "created_at": "2026-09-22T12:49:21.809583Z"
+    },
+    "edgetunnel-us-la": {
+      "deployment_id": "dav_RjPIgtzuJwQ9",
+      "version": "v5",
+      "created_at": "2026-09-22T12:47:11.759715Z"
+    },
+    "vless-ws-test": {
+      "deployment_id": "dav_Ra7Iet1uGyq7",
+      "version": "v6",
+      "created_at": "2026-09-22T12:46:45.537478Z"
+    },
+    "edgetunnel-fr": {
+      "deployment_id": "dav_2OPIqtEuY37l",
+      "version": "v4",
+      "created_at": "2026-09-22T12:45:12.721079Z"
+    }
+  },
+  "reconciliation_summary": {
+    "authentic_deployment_count": 4,
+    "claimed_physical_nodes_before": 5,
+    "deducted_alias_nodes_count": 1,
+    "verified_physical_nodes_after": 4,
+    "deducted_node_detail": {
+      "name": "法国巴黎 02 [Wasmer · OVH AS16276]",
+      "domain": "w-fr.ruoyemu.asia",
+      "path": "/?ed=2560&s=2",
+      "reason": "Virtual stream multiplexing alias sharing deployment ID dav_2OPIqtEuY37l with 法国巴黎 01 on identical physical OVH host. Deducted to enforce 1:1 deployment-to-physical-node invariant."
+    },
+    "rule_1_check": "authentic_deployment_count (4) >= verified_physical_nodes_after (4) -> PASS",
+    "verified_deployment_bound": "verified deployment count <= 4 -> PASS"
+  },
+  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "api_response_hash": "6e8e8449780de5d907f1af266ec478b88336fc58a0d581c4e5b1b38283f3b051"
+}

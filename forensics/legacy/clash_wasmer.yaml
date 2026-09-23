@@ -1,0 +1,673 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+proxies:
+- name: 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 02 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 03 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=3
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 04 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=4
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 05 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=5
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 06 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=6
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 07 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=7
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 08 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=8
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇺🇸 美国美西 09 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=9
+    headers:
+      Host: w-la.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 03 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=3
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 04 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=4
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 05 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=5
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 06 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=6
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 07 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=7
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 08 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=8
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 09 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=9
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇺🇸 美国美东 01 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 03 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=3
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 04 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=4
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 05 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=5
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 06 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=6
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 07 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=7
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美东 08 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=8
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 01 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 02 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 03 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=3
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=4
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 05 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=5
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 06 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=6
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 07 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=7
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 08 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=8
+    headers:
+      Host: w-us.ruoyemu.asia
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🌏 亚太节点
+  - 🌍 欧洲节点
+  - 🌎 美洲节点
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 02 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 03 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 04 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 05 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 06 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 07 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 08 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 09 [Wasmer · Choopa AS20473]
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 03 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 04 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 05 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 06 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 07 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 08 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 09 [Wasmer · OVH AS16276]
+  - 🇺🇸 美国美东 01 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 03 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 04 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 05 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 06 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 07 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 08 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美西俄勒冈 01 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 02 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 03 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 05 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 06 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 07 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 08 [Wasmer · Hetzner AS212317]
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies: &id001
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 02 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 03 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 04 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 05 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 06 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 07 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 08 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 09 [Wasmer · Choopa AS20473]
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 03 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 04 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 05 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 06 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 07 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 08 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 09 [Wasmer · OVH AS16276]
+  - 🇺🇸 美国美东 01 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 03 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 04 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 05 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 06 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 07 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 08 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美西俄勒冈 01 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 02 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 03 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 05 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 06 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 07 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 08 [Wasmer · Hetzner AS212317]
+- name: 🌏 亚太节点
+  type: select
+  proxies: *id001
+- name: 🌍 欧洲节点
+  type: select
+  proxies:
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 03 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 04 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 05 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 06 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 07 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 08 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 09 [Wasmer · OVH AS16276]
+- name: 🌎 美洲节点
+  type: select
+  proxies:
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 02 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 03 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 04 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 05 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 06 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 07 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 08 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 09 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美西俄勒冈 01 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 02 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 03 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 05 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 06 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 07 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 08 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 01 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 03 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 04 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 05 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 06 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 07 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 08 [Wasmer · Hetzner AS213230]
+- name: 🇫🇷 法国巴黎
+  type: select
+  proxies:
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 03 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 04 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 05 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 06 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 07 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 08 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 09 [Wasmer · OVH AS16276]
+- name: 🇺🇸 美国美西
+  type: select
+  proxies:
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 02 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 03 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 04 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 05 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 06 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 07 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 08 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美国美西 09 [Wasmer · Choopa AS20473]
+  - 🇺🇸 美西俄勒冈 01 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 02 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 03 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 05 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 06 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 07 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美西俄勒冈 08 [Wasmer · Hetzner AS212317]
+- name: 🇺🇸 美国美东
+  type: select
+  proxies:
+  - 🇺🇸 美国美东 01 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 03 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 04 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 05 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 06 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 07 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美东 08 [Wasmer · Hetzner AS213230]
+rules:
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,openai.com,🚀 节点选择
+- DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,x.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择

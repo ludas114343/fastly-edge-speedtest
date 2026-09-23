@@ -1,0 +1,117 @@
+{
+  "mandate": "V13 Unified Multi-Platform Inventory and Asset Reconciliation",
+  "audited_at": "2026-09-23T11:20:07.818309+00:00",
+  "total_platforms": 7,
+  "total_projects": 11,
+  "total_services": 13,
+  "total_deployments": 11,
+  "total_region_routes": 19,
+  "total_published_entries": 39,
+  "total_candidates": 348,
+  "total_verified_proxies": 39,
+  "total_verified_physical_backends": 7,
+  "active_proxy_platforms": [
+    "supabase",
+    "wasmer",
+    "northflank"
+  ],
+  "standby_or_fronting_platforms": [
+    "cloudflare",
+    "fastly",
+    "netlify",
+    "edgeone"
+  ],
+  "platforms": {
+    "supabase": {
+      "project_count": 2,
+      "service_count": 2,
+      "deployment_count": 2,
+      "region_route_count": 10,
+      "entry_count": 34,
+      "candidate_count": 34,
+      "verified_proxy_count": 34,
+      "status": "ACTIVE_DIRECT",
+      "unfinished": false,
+      "role": "CAPABLE_DIRECT",
+      "reconciliation_rule": "2 projects/deployments vs 10 regional Anycast invocation routes"
+    },
+    "wasmer": {
+      "project_count": 4,
+      "service_count": 4,
+      "deployment_count": 4,
+      "region_route_count": 4,
+      "entry_count": 4,
+      "candidate_count": 5,
+      "verified_proxy_count": 4,
+      "status": "ACTIVE_DIRECT",
+      "unfinished": false,
+      "role": "CAPABLE_DIRECT",
+      "reconciliation_rule": "Strictly 4 authentic physical deployments; 5th node deducted as stream alias"
+    },
+    "northflank": {
+      "project_count": 1,
+      "service_count": 1,
+      "deployment_count": 1,
+      "region_route_count": 1,
+      "entry_count": 1,
+      "candidate_count": 1,
+      "verified_proxy_count": 1,
+      "status": "ACTIVE_DIRECT",
+      "unfinished": false,
+      "role": "CAPABLE_DIRECT",
+      "reconciliation_rule": "Strict 1:1 mapping: 1 GCP container deployment ID = 1 verified node"
+    },
+    "cloudflare": {
+      "project_count": 1,
+      "service_count": 2,
+      "deployment_count": 1,
+      "region_route_count": 1,
+      "entry_count": 0,
+      "candidate_count": 3,
+      "verified_proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY",
+      "unfinished": true,
+      "role": "CAPABLE_FRONT_EGRESS_LIMITED",
+      "reconciliation_rule": "Ingress edge fronting; 0 verified proxies; marked unfinished: true"
+    },
+    "fastly": {
+      "project_count": 1,
+      "service_count": 1,
+      "deployment_count": 1,
+      "region_route_count": 1,
+      "entry_count": 0,
+      "candidate_count": 1,
+      "verified_proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY",
+      "unfinished": true,
+      "role": "CAPABLE_FRONT",
+      "reconciliation_rule": "Anycast CDN reverse proxy; 0 verified proxies; marked unfinished: true"
+    },
+    "netlify": {
+      "project_count": 1,
+      "service_count": 2,
+      "deployment_count": 1,
+      "region_route_count": 1,
+      "entry_count": 0,
+      "candidate_count": 1,
+      "verified_proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY",
+      "unfinished": true,
+      "role": "CAPABLE_DIRECT_WS_INGRESS_LIMITED",
+      "reconciliation_rule": "Edge function WS 502 limitation; 0 verified proxies; marked unfinished: true"
+    },
+    "edgeone": {
+      "project_count": 1,
+      "service_count": 1,
+      "deployment_count": 1,
+      "region_route_count": 1,
+      "entry_count": 0,
+      "candidate_count": 1,
+      "verified_proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY",
+      "unfinished": true,
+      "role": "CAPABLE_FRONT",
+      "reconciliation_rule": "L7 Anycast fronting proxy; 0 verified proxies; marked unfinished: true"
+    }
+  }
+}

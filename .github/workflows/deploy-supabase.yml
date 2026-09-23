@@ -1,0 +1,70 @@
+name: Deploy and Health - Supabase
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: 'Force function redeployment if credentials present'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Probe Supabase Dual Backends
+        run: |
+          python -c "
+          import urllib.request, json
+          endpoints = [
+              'theecyezvuzkflwikxwr.supabase.co',
+              'gwgiogtgdyrqlexcdjqm.supabase.co'
+          ]
+          for ep in endpoints:
+              try:
+                  req = urllib.request.Request(f'https://{ep}/functions/v1/edgetunnel', headers={'User-Agent': 'Probe/1.0'})
+                  with urllib.request.urlopen(req, timeout=10) as r:
+                      print(f'[INFO] {ep}: HTTP {r.status}')
+              except urllib.error.HTTPError as e:
+                  print(f'[INFO] {ep}: HTTP {e.code} (Handshake accessible)')
+              except Exception as e:
+                  print(f'[WARN] {ep} probe warning: {e}')
+          "
+
+      - name: Run Optimal Selection for Supabase
+        run: |
+          python select_optimal_nodes.py --token supabase
+
+      - name: Validate Supabase Subscription
+        run: |
+          python -c "
+          import yaml, json, sys
+          with open('clash_supabase.yaml', 'r', encoding='utf-8') as f:
+              data = yaml.safe_load(f)
+          proxies = data.get('proxies', [])
+          print(f'[INFO] Supabase contains {len(proxies)} verified proxies.')
+          "
+
+      - name: Commit and Push Updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add clash_supabase.yaml evidence/subscriptions/supabase.json evidence/subscriptions/hysteresis_state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(subscription): auto-update supabase subscription [skip ci]" && git pull --rebase origin main && git push origin main)

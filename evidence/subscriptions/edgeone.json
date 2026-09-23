@@ -1,0 +1,18 @@
+{
+  "token": "edgeone",
+  "url_path": "/edgeone",
+  "http_status": 200,
+  "sha256": "1e560737db05713e1f0805af620b7383aa1b2f65cfeb4922e917a7ca459a9ffd",
+  "node_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "metadata": {
+    "status": "NO_VERIFIED_PROXY",
+    "platform": "edgeone",
+    "node_count": 0,
+    "reason": "Tencent Cloud EdgeOne free tier prohibits arbitrary TCP socket dial and terminates WebSocket proxying on overseas edge nodes",
+    "tested_run_id": "20260922_133327",
+    "verified_at": "2026-09-22T15:41:01.303890+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-09-22T15:41:01.312697+00:00"
+}

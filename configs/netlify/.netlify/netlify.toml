@@ -1,0 +1,39 @@
+plugins = []
+headers = []
+redirects = []
+
+[build]
+edge_functions = "C:\\Users\\ludas\\.gemini\\antigravity\\scratch\\fastly-edge-speedtest\\configs\\netlify\\netlify\\edge-functions"
+publish = "C:\\Users\\ludas\\.gemini\\antigravity\\scratch\\fastly-edge-speedtest\\configs\\netlify"
+publishOrigin = "default"
+base = "C:\\Users\\ludas\\.gemini\\antigravity\\scratch\\fastly-edge-speedtest\\configs\\netlify"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[edge_functions]]
+path = "/ws"
+function = "vless"
+
+[[edge_functions]]
+path = "/status"
+function = "vless"
+
+[[edge_functions]]
+path = "/*"
+function = "vless"
+
+[functions]
+
+[functions."*"]

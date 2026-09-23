@@ -1,0 +1,59 @@
+{
+  "updated_at": "2026-09-20T21:56:00Z",
+  "policy": "100_percent_free_tier_hard_budget",
+  "platforms": {
+    "supabase": {
+      "monthly_function_invocations_limit": 500000,
+      "monthly_egress_gb_limit": 5.0,
+      "max_probes_per_sweep": 50,
+      "inactivity_pause_days": 7,
+      "active_projects": [
+        "theecyezvuzkflwikxwr",
+        "gwgiogtgdyrqlexcdjqm",
+        "duletchbsmevnqqxvfwy"
+      ]
+    },
+    "cloudflare_workers": {
+      "daily_requests_limit": 100000,
+      "max_cpu_ms_per_request": 10,
+      "unmetered_bandwidth": true
+    },
+    "fastly": {
+      "service_id": "8K5HGyXmr8P6XuzRc5UPk0",
+      "free_tier_monthly_allowance_usd": 50.0,
+      "estimated_egress_gb_limit": 400.0
+    },
+    "wasmer": {
+      "monthly_egress_gb_limit": 150.0,
+      "primary_endpoint": "66.42.98.41",
+      "primary_sni": "w-la.ruoyemu.asia",
+      "datacenter_location": "US_WEST_LOS_ANGELES"
+    },
+    "northflank": {
+      "monthly_egress_gb_limit": 100.0,
+      "max_active_services": 1,
+      "endpoint": "nf-node.ruoyemu.asia"
+    },
+    "netlify": {
+      "monthly_egress_gb_limit": 100.0,
+      "monthly_functions_limit": 125000,
+      "monthly_build_minutes": 300
+    },
+    "tencent_edgeone": {
+      "package_id_1": "edgeone-3td4b7ph7nir",
+      "package_id_2": "edgeone-3td43r626qxf",
+      "plan_type": "plan-free",
+      "valid_until": "2099-12-31T15:59:59Z",
+      "bandwidth_allowance": "unmetered",
+      "requests_allowance": "unmetered",
+      "edge_function_invocations_limit": 1000000
+    },
+    "github_actions": {
+      "monthly_private_repo_minutes": 2000,
+      "budget_warning_threshold_pct": 75,
+      "budget_cutoff_threshold_pct": 90,
+      "full_sweep_frequency": "daily_0200_utc",
+      "recheck_frequency": "every_4_hours"
+    }
+  }
+}

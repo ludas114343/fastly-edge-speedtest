@@ -1,0 +1,603 @@
+{
+  "timestamp": "2026-09-22 23:24:14",
+  "clash_yaml_results": [
+    {
+      "index": 0,
+      "name": "🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]",
+      "server": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1815.4,
+      "ws_ms": 348.9,
+      "total_ms": 2385.2,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 1,
+      "name": "🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]",
+      "server": "w-fr.ruoyemu.asia",
+      "port": 443,
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "path": "/?ed=2560&s=2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 2690.8,
+      "ws_ms": 306.9,
+      "total_ms": 3322.2,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 2,
+      "name": "🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]",
+      "server": "w-us.ruoyemu.asia",
+      "port": 443,
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "path": "/?ed=2560&s=1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1698.1,
+      "ws_ms": 614.2,
+      "total_ms": 2652.7,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 3,
+      "name": "🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2&s=2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 3890.5,
+      "ws_ms": 925.5,
+      "total_ms": 5291.7,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 4,
+      "name": "🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]",
+      "server": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1809.7,
+      "ws_ms": 858.8,
+      "total_ms": 3104.8,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 5,
+      "name": "🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]",
+      "server": "w-east.ruoyemu.asia",
+      "port": 443,
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "path": "/?ed=2560&s=1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1186.7,
+      "ws_ms": 278.9,
+      "total_ms": 2054.7,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 6,
+      "name": "🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]",
+      "server": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1416.7,
+      "ws_ms": 1092.5,
+      "total_ms": 3009.8,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 7,
+      "name": "🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]",
+      "server": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ca-central-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1068.9,
+      "ws_ms": 472.7,
+      "total_ms": 1815.4,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 8,
+      "name": "🇺🇸 美国美东 01 [Northflank · GCP AS15169]",
+      "server": "nf-node.ruoyemu.asia",
+      "port": 443,
+      "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+      "path": "/ws",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1263.3,
+      "ws_ms": 220.3,
+      "total_ms": 1704.8,
+      "error": null,
+      "bytes_received": 152
+    },
+    {
+      "index": 9,
+      "name": "🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 849.7,
+      "ws_ms": 500.8,
+      "total_ms": 1614.7,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 10,
+      "name": "🇯🇵 日本东京 01 [edgetunnel · AWS ap-northeast-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 4299.3,
+      "ws_ms": 750.5,
+      "total_ms": 5644.1,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 11,
+      "name": "🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]",
+      "server": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 2312.2,
+      "ws_ms": 638.7,
+      "total_ms": 3284.1,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 12,
+      "name": "🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 961.2,
+      "ws_ms": 945.1,
+      "total_ms": 2252.7,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 13,
+      "name": "🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ca-central-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 2824.5,
+      "ws_ms": 466.4,
+      "total_ms": 3581.2,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 14,
+      "name": "🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]",
+      "server": "w-fr.ruoyemu.asia",
+      "port": 443,
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "path": "/?ed=2560&s=1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1393.3,
+      "ws_ms": 324.9,
+      "total_ms": 2070.8,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 15,
+      "name": "🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1909.5,
+      "ws_ms": 979.3,
+      "total_ms": 3387.0,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 16,
+      "name": "🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1209.2,
+      "ws_ms": 635.1,
+      "total_ms": 2190.8,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 17,
+      "name": "🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1&s=2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1361.8,
+      "ws_ms": 955.8,
+      "total_ms": 2687.6,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 18,
+      "name": "🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]",
+      "server": "w-la.ruoyemu.asia",
+      "port": 443,
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "path": "/?ed=2560&s=1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 2746.1,
+      "ws_ms": 294.8,
+      "total_ms": 3337.7,
+      "error": null,
+      "bytes_received": 154
+    },
+    {
+      "index": 19,
+      "name": "🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1&s=2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1321.5,
+      "ws_ms": 1036.5,
+      "total_ms": 2805.2,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 20,
+      "name": "🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]",
+      "server": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 7811.6,
+      "ws_ms": 666.9,
+      "total_ms": 8819.1,
+      "error": null,
+      "bytes_received": 156
+    },
+    {
+      "index": 21,
+      "name": "🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]",
+      "server": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+      "path": "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1&s=2",
+      "success": true,
+      "status_code": 204,
+      "tls_ms": 1374.9,
+      "ws_ms": 783.7,
+      "total_ms": 2565.7,
+      "error": null,
+      "bytes_received": 156
+    }
+  ],
+  "clash_summary": {
+    "total": 22,
+    "passed": 22,
+    "failed": 0,
+    "pass_rate": 100.0
+  },
+  "dns_inspection": {
+    "w-us.ruoyemu.asia": {
+      "ips": [
+        "5.78.26.104"
+      ],
+      "asns": [
+        {
+          "ip": "5.78.26.104",
+          "as": "AS212317 Hetzner Online GmbH",
+          "org": "HETZNER-DC",
+          "country": "US"
+        }
+      ]
+    },
+    "w-la.ruoyemu.asia": {
+      "ips": [
+        "66.42.98.41"
+      ],
+      "asns": [
+        {
+          "ip": "66.42.98.41",
+          "as": "AS20473 The Constant Company, LLC",
+          "org": "Vultr Holdings, LLC",
+          "country": "US"
+        }
+      ]
+    },
+    "w-fr.ruoyemu.asia": {
+      "ips": [
+        "91.134.68.236"
+      ],
+      "asns": [
+        {
+          "ip": "91.134.68.236",
+          "as": "AS16276 OVH SAS",
+          "org": "OVH",
+          "country": "FR"
+        }
+      ]
+    },
+    "nf-node.ruoyemu.asia": {
+      "ips": [
+        "35.193.113.78"
+      ],
+      "asns": [
+        {
+          "ip": "35.193.113.78",
+          "as": "AS396982 Google LLC",
+          "org": "Google Cloud (us-central1)",
+          "country": "US"
+        }
+      ]
+    },
+    "w-east.ruoyemu.asia": {
+      "ips": [
+        "5.161.23.223"
+      ],
+      "asns": [
+        {
+          "ip": "5.161.23.223",
+          "as": "AS213230 Hetzner Online GmbH",
+          "org": "Hetzner Online GmbH",
+          "country": "US"
+        }
+      ]
+    },
+    "theecyezvuzkflwikxwr.supabase.co": {
+      "ips": [
+        "104.18.38.10",
+        "172.64.149.246"
+      ],
+      "asns": [
+        {
+          "ip": "104.18.38.10",
+          "as": "AS13335 Cloudflare, Inc.",
+          "org": "Cloudflare, Inc.",
+          "country": "CA"
+        },
+        {
+          "ip": "172.64.149.246",
+          "as": "AS13335 Cloudflare, Inc.",
+          "org": "Cloudflare, Inc.",
+          "country": "CA"
+        }
+      ]
+    },
+    "gwgiogtgdyrqlexcdjqm.supabase.co": {
+      "ips": [
+        "172.64.149.246",
+        "104.18.38.10"
+      ],
+      "asns": [
+        {
+          "ip": "172.64.149.246",
+          "as": "AS13335 Cloudflare, Inc.",
+          "org": "Cloudflare, Inc.",
+          "country": "CA"
+        },
+        {
+          "ip": "104.18.38.10",
+          "as": "AS13335 Cloudflare, Inc.",
+          "org": "Cloudflare, Inc.",
+          "country": "CA"
+        }
+      ]
+    }
+  },
+  "wasmer_matrix": [
+    {
+      "gateway": "w-la",
+      "domain": "w-la.ruoyemu.asia",
+      "uuid_tag": "Primary UUID (78174327...)",
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "success": true,
+      "rtt_ms": 2808.8,
+      "error": null,
+      "egress_ip": "66.42.98.41"
+    },
+    {
+      "gateway": "w-la",
+      "domain": "w-la.ruoyemu.asia",
+      "uuid_tag": "Compatible UUID (c69d9310...)",
+      "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+      "success": true,
+      "rtt_ms": 1856.8,
+      "error": null,
+      "egress_ip": "66.42.98.41"
+    },
+    {
+      "gateway": "w-fr",
+      "domain": "w-fr.ruoyemu.asia",
+      "uuid_tag": "Primary UUID (78174327...)",
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "success": true,
+      "rtt_ms": 2882.6,
+      "error": null,
+      "egress_ip": "91.134.68.236"
+    },
+    {
+      "gateway": "w-fr",
+      "domain": "w-fr.ruoyemu.asia",
+      "uuid_tag": "Compatible UUID (c69d9310...)",
+      "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+      "success": true,
+      "rtt_ms": 4718.8,
+      "error": null,
+      "egress_ip": "91.134.68.236"
+    },
+    {
+      "gateway": "w-east",
+      "domain": "w-east.ruoyemu.asia",
+      "uuid_tag": "Primary UUID (78174327...)",
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "success": true,
+      "rtt_ms": 2233.9,
+      "error": null,
+      "egress_ip": "5.161.213.176"
+    },
+    {
+      "gateway": "w-east",
+      "domain": "w-east.ruoyemu.asia",
+      "uuid_tag": "Compatible UUID (c69d9310...)",
+      "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+      "success": true,
+      "rtt_ms": 2075.0,
+      "error": null,
+      "egress_ip": "5.161.213.176"
+    },
+    {
+      "gateway": "w-us",
+      "domain": "w-us.ruoyemu.asia",
+      "uuid_tag": "Primary UUID (78174327...)",
+      "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+      "success": true,
+      "rtt_ms": 2101.8,
+      "error": null,
+      "egress_ip": "5.78.138.69"
+    },
+    {
+      "gateway": "w-us",
+      "domain": "w-us.ruoyemu.asia",
+      "uuid_tag": "Compatible UUID (c69d9310...)",
+      "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+      "success": true,
+      "rtt_ms": 3244.5,
+      "error": null,
+      "egress_ip": "5.78.138.69"
+    }
+  ],
+  "northflank": {
+    "domain": "nf-node.ruoyemu.asia",
+    "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+    "success": true,
+    "rtt_ms": 3059.5,
+    "egress_ip": "35.232.207.236",
+    "asn": {
+      "ip": "35.232.207.236",
+      "as": "AS396982 Google LLC",
+      "org": "Google Cloud (us-central1)",
+      "country": "US"
+    },
+    "primary_uuid_rejected": true
+  },
+  "supabase": {
+    "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+    "status": "OPERATIONAL",
+    "nodes_in_clash_yaml": 16,
+    "nodes_passed": 16,
+    "pass_rate": 100.0,
+    "accounts": {
+      "sb1": {
+        "domain": "theecyezvuzkflwikxwr.supabase.co",
+        "default_egress": {
+          "ip": "3.147.56.216",
+          "as": "AS16509 Amazon.com, Inc.",
+          "org": "AWS EC2 (us-east-2)",
+          "country": "US",
+          "rtt_ms": 2226.6,
+          "status_code": 204,
+          "success": true,
+          "error": null
+        },
+        "tokyo_egress": {
+          "region": "ap-northeast-1",
+          "ip": "18.181.244.167",
+          "as": "AS16509 Amazon.com, Inc.",
+          "org": "AWS EC2 (ap-northeast-1)",
+          "country": "JP",
+          "rtt_ms": 3168.5,
+          "status_code": 204,
+          "success": true,
+          "error": null
+        }
+      },
+      "sb2": {
+        "domain": "gwgiogtgdyrqlexcdjqm.supabase.co",
+        "default_egress": {
+          "ip": "3.142.93.63",
+          "as": "AS16509 Amazon.com, Inc.",
+          "org": "AWS EC2 (us-east-2)",
+          "country": "US",
+          "rtt_ms": 2250.2,
+          "status_code": 204,
+          "success": true,
+          "error": null
+        },
+        "tokyo_egress": {
+          "region": "ap-northeast-1",
+          "ip": "18.181.255.73",
+          "as": "AS16509 Amazon.com, Inc.",
+          "org": "AWS EC2 (ap-northeast-1)",
+          "country": "JP",
+          "rtt_ms": 2331.8,
+          "status_code": 204,
+          "success": true,
+          "error": null
+        }
+      }
+    },
+    "regional_routing_verified": true,
+    "dual_account_hot_standby": true
+  }
+}

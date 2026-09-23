@@ -1,0 +1,54 @@
+{
+  "platform": "netlify",
+  "account_verified": true,
+  "team": "Ze",
+  "account_credential_masked": "nfp_***[len=40]",
+  "DEPLOYMENT_COUNT": 1,
+  "project_count": 1,
+  "service_count": 2,
+  "deployment_count": 1,
+  "region_route_count": 1,
+  "entry_count": 0,
+  "candidate_count": 1,
+  "verified_proxy_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
+  "projects": [
+    {
+      "id": "da52bbca-79fc-4a6b-9490-50620ae77332",
+      "name": "gateway-core-net",
+      "custom_domain": "net.ruoyemu.asia",
+      "url": "https://net.ruoyemu.asia",
+      "plan": "nf_team_dev",
+      "created_at": "2026-09-16T14:10:01.554Z"
+    }
+  ],
+  "services": [
+    "edge-functions",
+    "site-hosting"
+  ],
+  "deployments": [
+    {
+      "site_id": "da52bbca-79fc-4a6b-9490-50620ae77332",
+      "site_name": "gateway-core-net",
+      "deploy_id": "6ab29c9e4319a538e559a4a4",
+      "deployment_id": "6ab29c9e4319a538e559a4a4",
+      "state": "ready",
+      "url": "https://net.ruoyemu.asia",
+      "published_at": "2026-09-22T15:20:12.771Z"
+    }
+  ],
+  "regions": [
+    "global-anycast"
+  ],
+  "domains": [
+    "net.ruoyemu.asia",
+    "gateway-core-net.netlify.app"
+  ],
+  "active_versions": {
+    "gateway-core-net": "6ab29c9e4319a538e559a4a4"
+  },
+  "distinction_note": "Netlify Edge Function is deployed and responds HTTP 200, but WebSocket upgrade returns HTTP 502 Bad Gateway due to Netlify CDN ingress edge limitations. Inactive for direct WebSocket proxying. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
+  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "api_response_hash": "d71e62fec8212ee848a41a0e2e67e745f4b3da076c8f6d3bd4ebb3ce37e622e1"
+}

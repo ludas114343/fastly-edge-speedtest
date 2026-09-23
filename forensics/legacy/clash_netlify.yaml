@@ -1,0 +1,697 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+proxies:
+- name: 🇯🇵 日本东京 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇯🇵 日本东京 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇯🇵 日本东京 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=3
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇯🇵 日本东京 04 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=4
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇰🇷 韩国首尔 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=5
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇰🇷 韩国首尔 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=6
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇰🇷 韩国首尔 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=7
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇸🇬 新加坡 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=8
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇸🇬 新加坡 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=9
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇸🇬 新加坡 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=10
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇩🇪 德国法兰克福 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=11
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇩🇪 德国法兰克福 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=12
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇩🇪 德国法兰克福 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=13
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=14
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=15
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=16
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇬🇧 英国伦敦 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=17
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇬🇧 英国伦敦 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=18
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇬🇧 英国伦敦 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=19
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇨🇭 瑞士苏黎世 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=20
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇨🇭 瑞士苏黎世 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=21
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇨🇭 瑞士苏黎世 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=22
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇺🇸 美国美西 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=23
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇺🇸 美国美西 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=24
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇺🇸 美国美西 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=25
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇺🇸 美国美东 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=26
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇺🇸 美国美东 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=27
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇺🇸 美国美东 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=28
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇨🇦 加拿大 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=29
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇨🇦 加拿大 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=30
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇨🇦 加拿大 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=31
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇦🇺 澳大利亚 01 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=32
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇦🇺 澳大利亚 02 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=33
+    headers:
+      Host: net.ruoyemu.asia
+- name: 🇦🇺 澳大利亚 03 [Netlify · Gateway Entry]
+  type: vless
+  server: net.ruoyemu.asia
+  port: 443
+  uuid: 99e7f538-ec88-4e96-bd9d-aeb56c04f7fc
+  network: ws
+  tls: true
+  udp: true
+  sni: net.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=34
+    headers:
+      Host: net.ruoyemu.asia
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🌏 亚太节点
+  - 🌍 欧洲节点
+  - 🌎 美洲节点
+  - 🇯🇵 日本东京 01 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 02 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 03 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 04 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 01 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 02 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 03 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 01 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 02 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 03 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 01 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 02 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 03 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 01 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 02 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 03 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 01 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 02 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 03 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 01 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 02 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 03 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 03 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 03 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 01 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 02 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 03 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 01 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 02 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 03 [Netlify · Gateway Entry]
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇯🇵 日本东京 01 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 02 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 03 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 04 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 01 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 02 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 03 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 01 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 02 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 03 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 01 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 02 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 03 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 01 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 02 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 03 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 01 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 02 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 03 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 01 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 02 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 03 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 03 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 03 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 01 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 02 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 03 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 01 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 02 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 03 [Netlify · Gateway Entry]
+- name: 🌏 亚太节点
+  type: select
+  proxies:
+  - 🇯🇵 日本东京 01 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 02 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 03 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 04 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 01 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 02 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 03 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 01 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 02 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 03 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 01 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 02 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 03 [Netlify · Gateway Entry]
+- name: 🌍 欧洲节点
+  type: select
+  proxies:
+  - 🇩🇪 德国法兰克福 01 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 02 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 03 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 01 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 02 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 03 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 01 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 02 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 03 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 01 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 02 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 03 [Netlify · Gateway Entry]
+- name: 🌎 美洲节点
+  type: select
+  proxies:
+  - 🇺🇸 美国美西 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 03 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 03 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 01 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 02 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 03 [Netlify · Gateway Entry]
+- name: 🇯🇵 日本东京
+  type: select
+  proxies:
+  - 🇯🇵 日本东京 01 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 02 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 03 [Netlify · Gateway Entry]
+  - 🇯🇵 日本东京 04 [Netlify · Gateway Entry]
+- name: 🇰🇷 韩国首尔
+  type: select
+  proxies:
+  - 🇰🇷 韩国首尔 01 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 02 [Netlify · Gateway Entry]
+  - 🇰🇷 韩国首尔 03 [Netlify · Gateway Entry]
+- name: 🇸🇬 新加坡
+  type: select
+  proxies:
+  - 🇸🇬 新加坡 01 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 02 [Netlify · Gateway Entry]
+  - 🇸🇬 新加坡 03 [Netlify · Gateway Entry]
+- name: 🇩🇪 德国法兰克福
+  type: select
+  proxies:
+  - 🇩🇪 德国法兰克福 01 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 02 [Netlify · Gateway Entry]
+  - 🇩🇪 德国法兰克福 03 [Netlify · Gateway Entry]
+- name: 🇫🇷 法国巴黎
+  type: select
+  proxies:
+  - 🇫🇷 法国巴黎 01 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 02 [Netlify · Gateway Entry]
+  - 🇫🇷 法国巴黎 03 [Netlify · Gateway Entry]
+- name: 🇬🇧 英国伦敦
+  type: select
+  proxies:
+  - 🇬🇧 英国伦敦 01 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 02 [Netlify · Gateway Entry]
+  - 🇬🇧 英国伦敦 03 [Netlify · Gateway Entry]
+- name: 🇨🇭 瑞士苏黎世
+  type: select
+  proxies:
+  - 🇨🇭 瑞士苏黎世 01 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 02 [Netlify · Gateway Entry]
+  - 🇨🇭 瑞士苏黎世 03 [Netlify · Gateway Entry]
+- name: 🇺🇸 美国美西
+  type: select
+  proxies:
+  - 🇺🇸 美国美西 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美西 03 [Netlify · Gateway Entry]
+- name: 🇺🇸 美国美东
+  type: select
+  proxies:
+  - 🇺🇸 美国美东 01 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 02 [Netlify · Gateway Entry]
+  - 🇺🇸 美国美东 03 [Netlify · Gateway Entry]
+- name: 🇨🇦 加拿大
+  type: select
+  proxies:
+  - 🇨🇦 加拿大 01 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 02 [Netlify · Gateway Entry]
+  - 🇨🇦 加拿大 03 [Netlify · Gateway Entry]
+- name: 🇦🇺 澳大利亚
+  type: select
+  proxies:
+  - 🇦🇺 澳大利亚 01 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 02 [Netlify · Gateway Entry]
+  - 🇦🇺 澳大利亚 03 [Netlify · Gateway Entry]
+rules:
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,openai.com,🚀 节点选择
+- DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,x.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择

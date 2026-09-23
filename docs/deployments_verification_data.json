@@ -1,0 +1,93 @@
+{
+  "Supabase": {
+    "role": "CAPABLE_DIRECT",
+    "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+    "dual_account_mode": "Active-Active Regional Load Balancing & Disaster Recovery Failover",
+    "accounts": [
+      {
+        "account": "Supabase Singapore (sb1)",
+        "domain": "theecyezvuzkflwikxwr.supabase.co",
+        "role": "CAPABLE_DIRECT",
+        "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+        "ws_status": "101 Switching Protocols",
+        "vless_header": "0x0000",
+        "generate_204": "HTTP 204 No Content",
+        "egress_ip": "18.218.29.249",
+        "asn": "AS16509 Amazon.com, Inc.",
+        "location": "Columbus, US"
+      },
+      {
+        "account": "Supabase Tokyo (sb2)",
+        "domain": "gwgiogtgdyrqlexcdjqm.supabase.co",
+        "role": "CAPABLE_DIRECT",
+        "uuid": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+        "ws_status": "101 Switching Protocols",
+        "vless_header": "0x0000",
+        "generate_204": "HTTP 204 No Content",
+        "egress_ip": "3.134.114.203",
+        "asn": "AS16509 Amazon.com, Inc.",
+        "location": "Columbus, US"
+      }
+    ]
+  },
+  "Wasmer": {
+    "domain": "w-la.ruoyemu.asia",
+    "role": "CAPABLE_DIRECT",
+    "uuid": "78174327-45d8-42ef-a61d-abf885950d9d",
+    "ws_status": "101 Switching Protocols",
+    "vless_header": "0x0000",
+    "generate_204": "HTTP 204 No Content",
+    "egress_ip": "66.42.98.41",
+    "asn": "AS20473 The Constant Company, LLC",
+    "location": "Los Angeles, US",
+    "runtime": "Wasmer Edge Node.js (Stream Frame Accumulator + Async FIFO Queue)"
+  },
+  "Northflank": {
+    "domain": "nf-node.ruoyemu.asia",
+    "role": "CAPABLE_DIRECT",
+    "uuid": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+    "ws_status": "101 Switching Protocols",
+    "vless_header": "0x0000",
+    "generate_204": "HTTP 204 No Content",
+    "egress_ip": "35.232.207.236",
+    "asn": "AS396982 Google LLC",
+    "location": "Council Bluffs, US",
+    "runtime": "Northflank GCP singbox-lite Container (User Protected Live Proxy)"
+  },
+  "Netlify": {
+    "domain": "net.ruoyemu.asia",
+    "role": "CAPABLE_DIRECT",
+    "uuid": "99e7f538-ec88-4e96-bd9d-aeb56c04f7fc",
+    "http_status": 200,
+    "server": "Netlify",
+    "l4_tcp_dial": "Failed",
+    "runtime": "Netlify Edge Functions (Deno)",
+    "ingress_ws_upgrade_behavior": "HTTP 502 Bad Gateway (Netlify Edge CDN Ingress limitation)",
+    "egress_ip": "198.18.0.99",
+    "asn": "Unknown",
+    "location": "Unknown, Unknown"
+  },
+  "Fastly": {
+    "domain": "ruoyemu.global.ssl.fastly.net",
+    "role": "CAPABLE_FRONT",
+    "uuid": "bb53e74d-5f9f-4a4a-87b0-364b05b33b17",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+  },
+  "EdgeOne": {
+    "domain": "edgeone-proxy-zone-3td4th92xk0e-1463384265.eo-edgefunctions1.com",
+    "role": "CAPABLE_FRONT",
+    "uuid": "03289db1-abc2-4c52-812c-dbf283b1931c",
+    "http_status": 200,
+    "server": "TencentEdgeOne",
+    "ws_proxy_wasmer": "101 Switching Protocols",
+    "ws_proxy_northflank": "101 Switching Protocols",
+    "anycast_ip": "198.18.0.86",
+    "asn": "AS132203 / AS45090 Tencent Cloud Anycast",
+    "backends_configured": [
+      "Wasmer (edgetunnel-us-la.wasmer.app, WS 101 verified)",
+      "Northflank (nf-node.ruoyemu.asia, WS 101 verified)",
+      "Netlify (gateway-core-net.netlify.app)",
+      "Supabase Dual Accounts (theecyezvuzkflwikxwr / gwgiogtgdyrqlexcdjqm)"
+    ]
+  }
+}

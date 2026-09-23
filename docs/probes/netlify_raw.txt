@@ -1,0 +1,57 @@
+=== NETLIFY CAPABILITY PROBE (N1 - N5) ===
+Timestamp: 2026-09-22T15:29:04Z
+Site ID: da52bbca-79fc-4a6b-9490-50620ae77332
+Active Deploy ID: 6ab29c9e4319a538e559a4a4
+Site URL: https://gateway-core-net.netlify.app
+
+[N1 & N2] Querying Live Netlify Edge Function Runtime Probe (/probe)...
+HTTP Status: 200
+Response Headers: {'Content-Type': 'application/json', 'Date': 'Tue, 22 Sep 2026 15:29:06 GMT', 'Server': 'Netlify', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Nf-Request-Id': '01M34VR976WYY15Z9JK7SNB1VN', 'Connection': 'close', 'Transfer-Encoding': 'chunked'}
+Probe JSON Response:
+{
+  "probe": "Netlify Edge Function N1-N5 Probe",
+  "timestamp": "2026-09-22T15:29:06.871Z",
+  "N1": {
+    "test": "typeof Deno.connect",
+    "result": "function",
+    "capable": true
+  },
+  "N2": {
+    "test": "Deno.connect dial TCP echo",
+    "target": "example.com:80",
+    "capable": true,
+    "details": {
+      "success": true,
+      "bytes_sent": 37,
+      "bytes_recv": 128,
+      "echo_preview": "HTTP/1.1 200 OK\r\nDate: Tue, 22 Sep 2026 15:29:06 GMT\r\nContent-Type: text/html\r\nConnection: close\r\nServer: cloudflare\r\nLast-Modif",
+      "error": null
+    }
+  },
+  "N3_runtime": {
+    "test": "typeof Deno.upgradeWebSocket",
+    "result": "function",
+    "runtime_present": true
+  }
+}
+N1 typeof Deno.connect: function
+N1 Result: PASSED
+N2 Deno.connect TCP Echo Dial: PASSED
+N2 Details: {'success': True, 'bytes_sent': 37, 'bytes_recv': 128, 'echo_preview': 'HTTP/1.1 200 OK\r\nDate: Tue, 22 Sep 2026 15:29:06 GMT\r\nContent-Type: text/html\r\nConnection: close\r\nServer: cloudflare\r\nLast-Modif', 'error': None}
+
+[N3] Testing Inbound WebSocket Upgrade Takeover via HTTP Handshake (/ws)...
+N3 Raw Inbound WS Upgrade Response:
+HTTP/1.1 502 Bad Gateway
+Date: Tue, 22 Sep 2026 15:29:07 GMT
+Server: Netlify
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Nf-Request-Id: 01M34VRBBT20ZKGW1XPAZ09EY5
+Content-Length: 0
+N3 Result: FAILED (Netlify L7 CDN Reverse Proxy rejects inbound WebSocket protocol upgrade with HTTP 502 Bad Gateway. Deno runtime has Deno.upgradeWebSocket, but edge network terminates connection)
+
+[N4] Testing Bidirectional Binary WS 60s Hold...
+N4 Connection terminated after 3.00s: InvalidStatus: server rejected WebSocket connection: HTTP 502
+N4 Result: FAILED (Unable to establish or hold WebSocket connection through Netlify edge proxy)
+
+[N5] Testing WS Target Address Reception and TCP Outbound Forwarding...
+N5 Result: FAILED / INFEASIBLE (Inbound WebSocket handshake is dropped by Netlify edge proxy with HTTP 502; unable to negotiate WS frame protocol to convey destination address). Note: Deno.connect raw TCP outbound itself works (as verified in N2), but inbound WS entry point cannot be established on Netlify Edge Functions.

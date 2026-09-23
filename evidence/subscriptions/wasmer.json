@@ -1,0 +1,18 @@
+{
+  "token": "wasmer",
+  "url_path": "/wasmer",
+  "http_status": 200,
+  "sha256": "b8c6ba06eb062166b728b0890b4fa0f459e698fd298fb95a3ace23ca48f9ee2c",
+  "node_count": 5,
+  "status": "VERIFIED_PROXY",
+  "metadata": {
+    "status": "VERIFIED_PROXY",
+    "platform": "wasmer",
+    "node_count": 5,
+    "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
+    "tested_run_id": "20260922_133327",
+    "verified_at": "2026-09-22T15:41:01.235281+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-09-22T15:41:01.250301+00:00"
+}

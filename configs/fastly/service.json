@@ -1,0 +1,41 @@
+{
+  "service_id": "8K5HGyXmr8P6XuzRc5UPk0",
+  "name": "Lamd.co's website",
+  "active_version": 16,
+  "role": "CAPABLE_FRONT",
+  "domains": [
+    "ruoyemu.global.ssl.fastly.net",
+    "fastly.ruoyemu.asia"
+  ],
+  "backends": [
+    {
+      "name": "backend_netlify",
+      "address": "gateway-core-net.netlify.app",
+      "port": 443,
+      "override_host": "gateway-core-net.netlify.app",
+      "ssl": true
+    },
+    {
+      "name": "backend_wasmer",
+      "address": "edgetunnel-us-la.wasmer.app",
+      "port": 443,
+      "override_host": "edgetunnel-us-la.wasmer.app",
+      "ssl": true
+    },
+    {
+      "name": "backend_sb1",
+      "address": "theecyezvuzkflwikxwr.supabase.co",
+      "port": 443,
+      "override_host": "theecyezvuzkflwikxwr.supabase.co",
+      "ssl": true
+    },
+    {
+      "name": "backend_sb2",
+      "address": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "port": 443,
+      "override_host": "gwgiogtgdyrqlexcdjqm.supabase.co",
+      "ssl": true
+    }
+  ],
+  "uuid": "bb53e74d-5f9f-4a4a-87b0-364b05b33b17"
+}

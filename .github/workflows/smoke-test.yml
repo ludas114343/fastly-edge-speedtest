@@ -1,0 +1,39 @@
+name: Pipeline - Backend Smoke Test
+
+on:
+  schedule:
+    - cron: '31 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Run Inventory and Backend Health Smoke Tests
+        run: |
+          python test_inventory.py
+
+      - name: Verify Subscription Formats
+        run: |
+          python -c "
+          import yaml, glob, sys
+          for yf in glob.glob('clash*.yaml'):
+              with open(yf, 'r', encoding='utf-8') as f:
+                  data = yaml.safe_load(f)
+              print(f'[INFO] {yf}: valid YAML, {len(data.get(\"proxies\", []))} proxies')
+          "

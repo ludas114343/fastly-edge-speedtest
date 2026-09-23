@@ -1,0 +1,62 @@
+name: Deploy and Health - EdgeOne
+
+on:
+  schedule:
+    - cron: '53 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-edgeone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Probe EdgeOne Function Endpoint
+        run: |
+          python -c "
+          import urllib.request
+          host = 'edgeone-proxy-zone-3td4th92xk0e-1463384265.eo-edgefunctions1.com'
+          try:
+              req = urllib.request.Request(f'https://{host}/', headers={'User-Agent': 'Probe/1.0'})
+              with urllib.request.urlopen(req, timeout=10) as r:
+                  print(f'[INFO] {host}: HTTP {r.status}')
+          except urllib.error.HTTPError as e:
+              print(f'[INFO] {host}: HTTP {e.code}')
+          except Exception as e:
+              print(f'[WARN] {host} probe warning: {e}')
+          "
+
+      - name: Run Optimal Selection for EdgeOne
+        run: |
+          python select_optimal_nodes.py --token edgeone
+
+      - name: Validate EdgeOne Subscription
+        run: |
+          python -c "
+          import yaml, json, sys
+          with open('clash_edgeone.yaml', 'r', encoding='utf-8') as f:
+              data = yaml.safe_load(f)
+          proxies = data.get('proxies', [])
+          meta = data.get('metadata', {})
+          print(f'[INFO] EdgeOne contains {len(proxies)} verified proxies. Status: {meta.get(\"status\")}')
+          "
+
+      - name: Commit and Push Updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add clash_edgeone.yaml evidence/subscriptions/edgeone.json evidence/subscriptions/hysteresis_state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(subscription): auto-update edgeone subscription [skip ci]" && git pull --rebase origin main && git push origin main)

@@ -1,0 +1,28 @@
+kind: wasmer.io/App.v0
+name: edgetunnel-fr
+app_id: da_2J7IAtxU5d1P
+deployment_id: dav_2VbInozrPwQz
+owner: cccp2427
+package: .
+locality:
+  regions:
+  - fr-roub1
+env:
+  UUID: 78174327-45d8-42ef-a61d-abf885950d9d
+  CAMOUFLAGE: https://edt-pages.github.io
+annotations:
+  anybuild.run/config:
+    commands:
+      start: node server.js
+    edgejs_enable: true
+    edgejs_precompile: true
+    name: out
+    node_install_inputs:
+    - package.json
+    node_package_manager: npm
+    node_package_name: wasmer-edgetunnel
+    node_remove_native_binaries: true
+    node_server: node
+  anybuild.run/provider: node
+  anybuild.run/version: 0.28.4
+  wasmer.io/version: 7.4.1

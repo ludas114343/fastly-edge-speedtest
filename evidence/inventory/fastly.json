@@ -1,0 +1,66 @@
+{
+  "platform": "fastly",
+  "account_verified": true,
+  "customer_id": "bUmHW5xOsl7Al6guDSQuh",
+  "account_credential_masked": "***[len=32]",
+  "DEPLOYMENT_COUNT": 1,
+  "project_count": 1,
+  "service_count": 1,
+  "deployment_count": 1,
+  "region_route_count": 1,
+  "entry_count": 0,
+  "candidate_count": 1,
+  "verified_proxy_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
+  "projects": [
+    {
+      "id": "8K5HGyXmr8P6XuzRc5UPk0",
+      "name": "Lamd.co's website",
+      "type": "vcl"
+    }
+  ],
+  "services": [
+    {
+      "id": "8K5HGyXmr8P6XuzRc5UPk0",
+      "name": "Lamd.co's website",
+      "type": "vcl",
+      "active_version": 16
+    }
+  ],
+  "deployments": [
+    {
+      "service_id": "8K5HGyXmr8P6XuzRc5UPk0",
+      "service_name": "Lamd.co's website",
+      "active_version": 16,
+      "deployment_id": "version_16",
+      "domains": [
+        "ruoyemu.global.ssl.fastly.net"
+      ],
+      "backends": [
+        "backend_netlify",
+        "backend_sb1",
+        "backend_sb2",
+        "backend_wasmer"
+      ],
+      "snippets": [
+        "edgetunnel_camouflage_error",
+        "edgetunnel_hide_headers",
+        "edgetunnel_routing"
+      ],
+      "status": "active"
+    }
+  ],
+  "regions": [
+    "global-anycast"
+  ],
+  "domains": [
+    "ruoyemu.global.ssl.fastly.net"
+  ],
+  "active_versions": {
+    "8K5HGyXmr8P6XuzRc5UPk0": 16
+  },
+  "distinction_note": "Fastly VCL service active version 16 operates as an Anycast CDN reverse proxy fronting backends (Netlify, Wasmer, Supabase). Ingress-only CDN fronting does not provide independent egress proxy capability. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
+  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "api_response_hash": "fdaac8b2d2059009a9ae6ea0d34c3f667190b21d6f4c4f0c8fe0a5a6ea88227a"
+}

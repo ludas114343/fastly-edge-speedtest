@@ -1,0 +1,10 @@
+{
+  "name": "wasmer-edgetunnel",
+  "version": "1.0.0",
+  "description": "Enterprise Web Application Gateway on Wasmer Edge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

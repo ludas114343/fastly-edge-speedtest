@@ -1,0 +1,70 @@
+{
+  "platform": "northflank",
+  "account_verified": true,
+  "team": "lty114s-team",
+  "account_credential_masked": "nf-***[len=520]",
+  "DEPLOYMENT_COUNT": 1,
+  "project_count": 1,
+  "service_count": 1,
+  "deployment_count": 1,
+  "region_route_count": 1,
+  "entry_count": 1,
+  "candidate_count": 1,
+  "verified_proxy_count": 1,
+  "status": "ACTIVE_DIRECT",
+  "unfinished": false,
+  "projects": [
+    {
+      "id": "proxy-us",
+      "uid": "6a79aa91f3e7b4f2075d52ce",
+      "name": "proxy-us",
+      "description": "singbox US node"
+    }
+  ],
+  "services": [
+    {
+      "project_id": "proxy-us",
+      "name": "singbox-lite",
+      "type": null,
+      "status": {
+        "build": {
+          "status": "SUCCESS",
+          "lastTransitionTime": "2026-08-20T13:56:37.042Z"
+        },
+        "deployment": {
+          "status": "COMPLETED",
+          "reason": "DEPLOYING",
+          "lastTransitionTime": "2026-08-20T13:56:48.581Z"
+        }
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "project_id": "proxy-us",
+      "service_name": "singbox-lite",
+      "deployment_id": "0f2371aed029418170507fc7f0cbe3b3f6d2c943",
+      "cluster": "nf-us-central",
+      "region": "us-central",
+      "location": "Council Bluffs, Iowa, US",
+      "asn": "AS396982 / AS15169 Google LLC",
+      "egress_ip": "35.232.207.236",
+      "domain": "nf-node.ruoyemu.asia",
+      "deployment_status": "COMPLETED",
+      "build_status": "SUCCESS",
+      "last_transition_time": "2026-08-20T13:56:48.581Z"
+    }
+  ],
+  "regions": [
+    "us-central"
+  ],
+  "domains": [
+    "nf-node.ruoyemu.asia"
+  ],
+  "active_versions": {
+    "proxy-us/singbox-lite": "0f2371aed029418170507fc7f0cbe3b3f6d2c943"
+  },
+  "distinction_note": "Strict 1:1 mapping: Northflank official API confirms exactly 1 project, 1 service, 1 deployment ID (0f2371aed029418170507fc7f0cbe3b3f6d2c943), and 1 published node (Council Bluffs, Iowa, Google Cloud AS396982/AS15169). Zero fabricated regional nodes.",
+  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "api_response_hash": "a5e3b94a645ae55e50acc9e2b144ff1a50f4e49252423bd2c849ec8ad4b2c22e"
+}

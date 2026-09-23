@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-09-22T12:00:00Z",
+  "retired_uuid": "",
+  "subscriptions": {
+    "fastly": "bb53e74d-5f9f-4a4a-87b0-364b05b33b17",
+    "wasmer": "78174327-45d8-42ef-a61d-abf885950d9d",
+    "northflank": "c69d9310-66db-4614-b3b7-0fb01e68b4ec",
+    "netlify": "99e7f538-ec88-4e96-bd9d-aeb56c04f7fc",
+    "supabase": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+    "edgetunnel": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+    "edgeone": "03289db1-abc2-4c52-812c-dbf283b1931c",
+    "cloudflare": "21a1f940-25c6-488b-ac29-ae8e89d58b16",
+    "all": "392266f9-b88d-4ced-905e-7201d15feb6b"
+  }
+}

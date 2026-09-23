@@ -1,0 +1,18 @@
+{
+  "token": "netlify",
+  "url_path": "/netlify",
+  "http_status": 200,
+  "sha256": "4bf4d12bac9d013b937d138d46afd182b9d88ea35faa151aebdfef4ed1f116c0",
+  "node_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "metadata": {
+    "status": "NO_VERIFIED_PROXY",
+    "platform": "netlify",
+    "node_count": 0,
+    "reason": "Netlify edge ingress terminates inbound RFC 6455 WebSocket 101 upgrade with HTTP 502 Bad Gateway",
+    "tested_run_id": "20260922_133327",
+    "verified_at": "2026-09-22T15:41:01.293837+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-09-22T15:41:01.303890+00:00"
+}

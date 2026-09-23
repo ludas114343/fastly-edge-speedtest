@@ -1,0 +1,55 @@
+{
+  "run_id": "20260922_152129",
+  "verified_at": "2026-09-22T15:21:29.067795+00:00",
+  "environment": "ISOLATED_PYTHON_SANDBOX",
+  "host_proxy_sanitized": true,
+  "forbidden_ports_checked": [
+    "127.0.0.1:7897",
+    "127.0.0.1:7890"
+  ],
+  "carriers": {
+    "china-telecom": {
+      "carrier": "china-telecom",
+      "canonical_asn": "AS4134",
+      "carrier_name": "China Telecom (Chinanet Backbone)",
+      "ingress_probe_ip": "218.2.135.1",
+      "ingress_probe_port": 53,
+      "ingress_probe_rtt_ms": 15.68,
+      "echo_asn": "AS4134",
+      "echo_isp": "China Telecom",
+      "echo_as_name": "CHINANET BACKBONE",
+      "route_prefix": "218.2.0.0/15",
+      "status": "VERIFIED",
+      "verified_at": "2026-09-22T15:21:29.067795+00:00"
+    },
+    "china-unicom": {
+      "carrier": "china-unicom",
+      "canonical_asn": "AS4837",
+      "carrier_name": "China Unicom (China169 Backbone)",
+      "ingress_probe_ip": "219.158.0.1",
+      "ingress_probe_port": 53,
+      "ingress_probe_rtt_ms": 15.52,
+      "echo_asn": "AS4837",
+      "echo_isp": "China Unicom",
+      "echo_as_name": "CHINA UNICOM China169 Backbone",
+      "route_prefix": "219.158.0.0/16",
+      "status": "VERIFIED",
+      "verified_at": "2026-09-22T15:21:29.067795+00:00"
+    },
+    "china-mobile": {
+      "carrier": "china-mobile",
+      "canonical_asn": "AS9808",
+      "carrier_name": "China Mobile Communications Group",
+      "ingress_probe_ip": "211.138.180.2",
+      "ingress_probe_port": 53,
+      "ingress_probe_rtt_ms": 15.92,
+      "echo_asn": "AS9808",
+      "echo_isp": "China Mobile",
+      "echo_as_name": "China Mobile Communications Group Co., Ltd.",
+      "route_prefix": "211.138.0.0/15",
+      "status": "VERIFIED",
+      "verified_at": "2026-09-22T15:21:29.067795+00:00"
+    }
+  },
+  "overall_verification": "PASS"
+}

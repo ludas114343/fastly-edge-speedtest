@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-09-22T15:38:57Z",
+  "policy": "Cloudflare Edgetunnel Controlled Comparison Matrix",
+  "mandate": "V12 TASKCARD-PHASE2-BACKEND-DEPLOY",
+  "endpoint": "dream.ruoyemu.asia",
+  "service_id": "summer-fog-5f9c",
+  "modes": {
+    "mode_a_direct": {
+      "node_name": "[Cloudflare入口→直连出口]",
+      "mode_id": "mode_a_no_proxyip",
+      "topology": "Cloudflare Ingress (Anycast) -> Direct Origin Dial (No PROXYIP)",
+      "request_path": "/?ed=2048",
+      "ws_handshake_status": "101 Switching Protocols",
+      "vless_header_verified": true,
+      "generate_204_success": false,
+      "behavior": "Cloudflare Workers outbound TCP connect() to external ports 80/443 without PROXYIP is blocked by Cloudflare V8 isolate sandbox policies.",
+      "egress_status": "BLOCKED",
+      "verified_status": "BLOCKED"
+    },
+    "mode_b_proxyip": {
+      "node_name": "[Cloudflare入口→AWS出口]",
+      "mode_id": "mode_b_aws_proxyip",
+      "topology": "Cloudflare Ingress (Anycast) -> AWS/Supabase ProxyIP Egress",
+      "request_path": "/?proxyip=theecyezvuzkflwikxwr.supabase.co:443&ed=2048",
+      "ws_handshake_status": "101 Switching Protocols",
+      "vless_header_verified": true,
+      "generate_204_success": false,
+      "behavior": "Cloudflare Anycast edge accepts WS upgrade. Egress TCP connection to theecyezvuzkflwikxwr.supabase.co:443 fails because Supabase is an HTTPS/TLS endpoint rather than a raw TCP proxy relay, triggering origin socket reset (WS close 0x8800).",
+      "egress_status": "STANDBY_PROXYIP_INCOMPATIBLE",
+      "verified_status": "BLOCKED_TLS_MISMATCH",
+      "proxyip_target": "theecyezvuzkflwikxwr.supabase.co:443"
+    },
+    "mode_c_socks5": {
+      "node_name": "[Cloudflare入口→SOCKS5出口]",
+      "mode_id": "mode_c_socks5",
+      "topology": "Cloudflare Ingress (Anycast) -> SOCKS5 Server Outbound",
+      "request_path": "/s5=user:pass@host:port?ed=2048",
+      "ws_handshake_status": "101 Switching Protocols",
+      "vless_header_verified": true,
+      "generate_204_success": false,
+      "behavior": "Requires active upstream authenticated SOCKS5 proxy credentials. Handshake parsed by edgetunnel SOCKS5 state machine and closed without credentials.",
+      "egress_status": "STANDBY_CONFIGURED",
+      "verified_status": "STANDBY"
+    }
+  }
+}

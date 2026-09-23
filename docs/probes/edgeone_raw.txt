@@ -1,0 +1,49 @@
+=== EDGEONE CAPABILITY PROBE (E1 - E8) ===
+Timestamp: 2026-09-22T15:29:37Z
+Zone ID: zone-3td4th92xk0e
+Function ID: ef-ddka6pqw
+
+[E1] Testing Edge Function Outbound fetch() Capability...
+ModifyFunction E1 Success: {"RequestId": "764c2bfe-04a3-4472-999a-01e252a06f8a"}
+E1 Live HTTP Status: 200
+E1 Response Body: {"e1_status":"SUCCESS","fetch_status":200,"fetch_ok":true,"runtime":"EdgeOne Edge Functions"}
+
+[E2 & E3] Testing Edge Functions Node Functions (node:net) & TCP Echo Dial...
+ModifyFunction E2 Success: {"RequestId": "76a90e1e-1b62-4bd6-a1c7-16c6efe0d558"}
+E2/E3 Live HTTP Error 545: Error return from script
+E2 Result: FAILED (Edge Functions runtime does not support 'node:net' module import)
+E3 Result: FAILED (Cannot execute net.connect TCP echo dial)
+
+[E4 & E5] Testing Edge Functions Inbound WebSocket Hijack & 60s Hold...
+E4 Globals Audit Body:
+{
+  "platform": "Tencent EdgeOne Edge Functions",
+  "node_net_available": false,
+  "deno_connect_available": false,
+  "websocket_available": false,
+  "websocket_pair_available": false,
+  "socket_primitives": {
+    "has_TCPSocket": false,
+    "has_Socket": false,
+    "has_connect": false
+  },
+  "runtime_type": "V8-Isolate-L7-Worker",
+  "node_net_error": "require is not defined"
+}
+E4 Result: FAILED (WebSocketPair and inbound WS takeover primitives do not exist in EdgeOne V8 Isolate runtime)
+E5 Result: FAILED (Cannot hijack inbound WS to maintain 60s bidirectional stream)
+
+[E6 & E7] Testing EdgeOne L4 Proxy (Layer 4 TCP/UDP) Capability & Permission...
+DescribeL4Proxy: {"TotalCount": 0, "L4Proxies": [], "RequestId": "563b1cbb-5a1a-49dc-bbb9-4e97d144bd39"}
+Testing CreateL4Proxy API capability...
+CreateL4Proxy Error: [TencentCloudSDKException] code:OperationDenied.UserNotInMainlandorGlobalAccessWhiteList message:如需创建加速区域为「中国大陆可用区」/「全球可用区」且防护方式为「平台默认防护」的四层实例，请联系服务支持团队评估。 requestId:565c3909-aed6-48de-94fd-d41dae0b1eb5
+E6 Result: FAILED (OperationDenied: User not in mainland or global access whitelist for L4 instances)
+E7 Result: FAILED (L4 TCP forwarding prohibited due to account whitelist policy)
+
+[E8] Testing EdgeOne Site Acceleration (站点加速) WS Origin Capability...
+DescribeAccelerationDomains Total: 0
+Acceleration Domains: []
+E8 Result: CAPABLE_FRONT / DISTRIBUTION_ONLY (EdgeOne 站点加速 L7 CDN natively supports HTTP and WebSocket origin pass-through via Acceleration Domain routing rules, but does not provide direct L4 egress).
+
+Restoring EdgeOne Production Fronting Gateway...
+Restored function.js successfully.

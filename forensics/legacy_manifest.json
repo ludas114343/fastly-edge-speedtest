@@ -1,0 +1,260 @@
+{
+  "manifest_version": "1.0",
+  "generated_at": "2026-09-22T15:16:45.199657+00:00",
+  "algorithm": "sha256",
+  "total_files": 36,
+  "files": [
+    {
+      "original_path": "clash.yaml",
+      "archived_path": "forensics/legacy/clash.yaml",
+      "sha256": "455309b56e15a8f546a94a0235f087b23dbcd260c2b8427f33575f12482c01b9",
+      "size_bytes": 24479,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_edgeone.yaml",
+      "archived_path": "forensics/legacy/clash_edgeone.yaml",
+      "sha256": "866241b5ea90188c6c118d358c45e25a8dee8395e3e9347179813a662a0d5fb0",
+      "size_bytes": 22790,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_edgetunnel.yaml",
+      "archived_path": "forensics/legacy/clash_edgetunnel.yaml",
+      "sha256": "dca97acde5c496e19217171f57972ce6be21424d7c3b27689628efcf0719c530",
+      "size_bytes": 25357,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_fastly.yaml",
+      "archived_path": "forensics/legacy/clash_fastly.yaml",
+      "sha256": "e11a0011aba15020bb156b36c5f5f7adf2b68281fc97bbb5b83f90358fb88333",
+      "size_bytes": 23275,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_netlify.yaml",
+      "archived_path": "forensics/legacy/clash_netlify.yaml",
+      "sha256": "6224b795a21b1603fb3a1fa62db67d870573ace7e792af8538b57f40f93fe793",
+      "size_bytes": 21242,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_northflank.yaml",
+      "archived_path": "forensics/legacy/clash_northflank.yaml",
+      "sha256": "6c2ea97ff37e350f96b751ccc98bc04f531ca6a17764997c10464d99fe15d172",
+      "size_bytes": 21786,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_supabase.yaml",
+      "archived_path": "forensics/legacy/clash_supabase.yaml",
+      "sha256": "dca97acde5c496e19217171f57972ce6be21424d7c3b27689628efcf0719c530",
+      "size_bytes": 25357,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "clash_wasmer.yaml",
+      "archived_path": "forensics/legacy/clash_wasmer.yaml",
+      "sha256": "ae3ca0d18957726fc2d3e30ef07e89693c5570bd8d20c579c164bfc0ae6d181b",
+      "size_bytes": 20994,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "edgeone_best_nodes.json",
+      "archived_path": "forensics/legacy/edgeone_best_nodes.json",
+      "sha256": "b0ec156a80fdd0c1f160dbfd7ed872f35b67f93b26e442182992c3588e0f3275",
+      "size_bytes": 7149,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "edgeone_candidates.json",
+      "archived_path": "forensics/legacy/edgeone_candidates.json",
+      "sha256": "7d3f04c2cccef3f8fd799e36d60e8b96aea7d984ccf31cb402f715ea5b679e29",
+      "size_bytes": 359251,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "fastly_best_nodes.json",
+      "archived_path": "forensics/legacy/fastly_best_nodes.json",
+      "sha256": "caceae34162cb20acf6952bdffccde8817b08773a78acc9f589945267f038275",
+      "size_bytes": 3850,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "fastly_candidates.json",
+      "archived_path": "forensics/legacy/fastly_candidates.json",
+      "sha256": "4ced1ab54a74a22d2f1c77a5952c359deab2bd40c34ac2acf2709717028855b1",
+      "size_bytes": 420433,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "geo_audit_report.json",
+      "archived_path": "forensics/legacy/geo_audit_report.json",
+      "sha256": "fb227964a1fd9c9f2460e1eefdc6b3150b73f79ba7d6c9efd8eff03107e6b7d7",
+      "size_bytes": 12821,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "netlify_candidates.json",
+      "archived_path": "forensics/legacy/netlify_candidates.json",
+      "sha256": "fe1bd46b2e044de2e5028f319fbb86ec9ab97f50b7ab3efa11f7d2d8cbd6cdb4",
+      "size_bytes": 357007,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "northflank_candidates.json",
+      "archived_path": "forensics/legacy/northflank_candidates.json",
+      "sha256": "e67660c7ac9f4e3fb6167622e58a1a7e4edb634ec526207b08451c3124453db9",
+      "size_bytes": 367222,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/2026-09-21.jsonl.gz",
+      "archived_path": "forensics/legacy/results/2026-09-21.jsonl.gz",
+      "sha256": "6767425ebe528a64984d89765d37a5c69e524d4bf661db0550de31745dbf377e",
+      "size_bytes": 12175,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/2026-09-22.jsonl.gz",
+      "archived_path": "forensics/legacy/results/2026-09-22.jsonl.gz",
+      "sha256": "07a63bda8ecd7be42c9275d2c64cb88b129864bd70c12f819851e8d8689b848e",
+      "size_bytes": 61015,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/china-mobile/20260922_132834.json",
+      "archived_path": "forensics/legacy/results/china-mobile/20260922_132834.json",
+      "sha256": "57e26ecb13bed8205a4ebd8d59024bd32914729fad6eb975470c71b07880f882",
+      "size_bytes": 97056,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/china-mobile/20260922_133327.json",
+      "archived_path": "forensics/legacy/results/china-mobile/20260922_133327.json",
+      "sha256": "e9fead00dd868f9e16e9aefc1e774fe55a55e049b52c7942c3ea209218a1a115",
+      "size_bytes": 99531,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/china-telecom/20260922_132834.json",
+      "archived_path": "forensics/legacy/results/china-telecom/20260922_132834.json",
+      "sha256": "51cda1f0e8bb292fac5794b11b71c19e218bee4737723a9ae5a1f4c98db3778f",
+      "size_bytes": 97187,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/china-telecom/20260922_133327.json",
+      "archived_path": "forensics/legacy/results/china-telecom/20260922_133327.json",
+      "sha256": "d4a318c2b7cc43048383998c2c9f738d0cb33f90a1d6fa5b49307cfc4718aa3f",
+      "size_bytes": 99689,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/china-unicom/20260922_132834.json",
+      "archived_path": "forensics/legacy/results/china-unicom/20260922_132834.json",
+      "sha256": "7bb76e9bdb8bea0d378046e6e77079c9659a4b13e2db9defad50dfec2bcf51e3",
+      "size_bytes": 97023,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/china-unicom/20260922_133327.json",
+      "archived_path": "forensics/legacy/results/china-unicom/20260922_133327.json",
+      "sha256": "be3b97ff890ea82ae33e4cf1923a237990d756ebba788fd0ceace2dd22310b1c",
+      "size_bytes": 99607,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_132834/manifest.json",
+      "archived_path": "forensics/legacy/results/raw/20260922_132834/manifest.json",
+      "sha256": "e200c6b1632d63fc73dd7603365e13c0e5c36a570a68212d238ec85511d82365",
+      "size_bytes": 641,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_132834/mobile.jsonl",
+      "archived_path": "forensics/legacy/results/raw/20260922_132834/mobile.jsonl",
+      "sha256": "d63c4d709f8ebd7c327718730298db4dc3cdf567812719b1f258ceb076876e2c",
+      "size_bytes": 81459,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_132834/telecom.jsonl",
+      "archived_path": "forensics/legacy/results/raw/20260922_132834/telecom.jsonl",
+      "sha256": "046b97c96334c73425b8e1a6b08cd4e17dc14015d3890ef04c4e6d07b655f81e",
+      "size_bytes": 81590,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_132834/unicom.jsonl",
+      "archived_path": "forensics/legacy/results/raw/20260922_132834/unicom.jsonl",
+      "sha256": "fa71f81613bf1d007668ffc9e63c56087eae107512e74b073d64af31ca60803b",
+      "size_bytes": 81426,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_133327/manifest.json",
+      "archived_path": "forensics/legacy/results/raw/20260922_133327/manifest.json",
+      "sha256": "c8f4402d48191687a6677ae338fddf634893048fbf02afb38e2069a31fac31d2",
+      "size_bytes": 641,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_133327/mobile.jsonl",
+      "archived_path": "forensics/legacy/results/raw/20260922_133327/mobile.jsonl",
+      "sha256": "bad1b190d407426fd0338af298bf1ed59e3bcb9ef4ae15e32d34e8a997bb86a1",
+      "size_bytes": 83934,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_133327/telecom.jsonl",
+      "archived_path": "forensics/legacy/results/raw/20260922_133327/telecom.jsonl",
+      "sha256": "046695c97f1ad48bca975fdc4063ca17a485f01ef8d299884e7e728666ddee47",
+      "size_bytes": 84092,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/raw/20260922_133327/unicom.jsonl",
+      "archived_path": "forensics/legacy/results/raw/20260922_133327/unicom.jsonl",
+      "sha256": "34157784892e62f6e3f1beb8ece4f6cf9fc7f2af46c24875b11e9aa824232fad",
+      "size_bytes": 84010,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/stage_b_independent_verification.json",
+      "archived_path": "forensics/legacy/results/stage_b_independent_verification.json",
+      "sha256": "f73173b7534f768cce08a615249f2fd64aa5e2857de0b5dd326044129612f777",
+      "size_bytes": 23268,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "results/stage_c_geogate_audit.json",
+      "archived_path": "forensics/legacy/results/stage_c_geogate_audit.json",
+      "sha256": "fa4b2303f2ad597c4e8c574eb2d6123db5b7eb85b9d8db7b80b8cd718515d7cf",
+      "size_bytes": 17593,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "supabase_candidates.json",
+      "archived_path": "forensics/legacy/supabase_candidates.json",
+      "sha256": "9a5886ddcac8e0aa54c699f36137caba102d36e0514cc54186e5f315dbe095dc",
+      "size_bytes": 437683,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "usage_metrics.json",
+      "archived_path": "forensics/legacy/usage_metrics.json",
+      "sha256": "411d7d5bd2d20e2494ded90837fb54e9d87f6ef7f821c0d5b0acd0f4f4caeb4d",
+      "size_bytes": 6686,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    },
+    {
+      "original_path": "wasmer_candidates.json",
+      "archived_path": "forensics/legacy/wasmer_candidates.json",
+      "sha256": "18880b7821c31a56a857d655b444b8d19dff9aa895461f0ae487fbe7a6306cb3",
+      "size_bytes": 357670,
+      "moved_at": "2026-09-22T15:16:45.199657+00:00"
+    }
+  ]
+}

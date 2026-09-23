@@ -1,0 +1,23 @@
+{
+  "run_id": "20260922_133327",
+  "format": "jsonl",
+  "total_records": 414,
+  "files": {
+    "telecom.jsonl": {
+      "records": 138,
+      "sha256": "046695c97f1ad48bca975fdc4063ca17a485f01ef8d299884e7e728666ddee47",
+      "size_bytes": 84092
+    },
+    "unicom.jsonl": {
+      "records": 138,
+      "sha256": "34157784892e62f6e3f1beb8ece4f6cf9fc7f2af46c24875b11e9aa824232fad",
+      "size_bytes": 84010
+    },
+    "mobile.jsonl": {
+      "records": 138,
+      "sha256": "bad1b190d407426fd0338af298bf1ed59e3bcb9ef4ae15e32d34e8a997bb86a1",
+      "size_bytes": 83934
+    }
+  },
+  "created_at": "2026-09-22T13:33:27Z"
+}

@@ -1,0 +1,55 @@
+=== FASTLY CAPABILITY PROBE (F1 - F7) ===
+Timestamp: 2026-09-22T15:29:14Z
+Service ID: 8K5HGyXmr8P6XuzRc5UPk0
+
+[F1] Testing Compute Service Creation Permission (type: wasm)...
+F1 Compute Service Creation HTTP 400: {"msg":"Your current plan doesn't include Compute. All trial services are still running, but to continue managing these services you'll need to add Compute to your plan by logging in to the control panel and visiting the products page."}
+
+[F2] Examining Domain Binding on Service...
+F2 Domains configured (1): ['ruoyemu.global.ssl.fastly.net']
+
+[F3] Testing WebSocket Product Permission...
+F3 WebSockets Product HTTP 400: {"type":"","title":"no product on service","status":400,"errors":null,"detail":""}
+
+
+[F4] Testing WebSocket Handoff to Origin...
+F4 Raw Handoff Response Headers:
+HTTP/1.1 404 Not Found
+Connection: close
+Content-Type: text/plain
+CF-Ray: a3f25852be59b4b8-ORD
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Age: 771
+set-cookie: __cf_bm=yhQRx3S89mkDrsYb9I69MtkP1Vs5gw2BY5LRWS0BcM4-1790090964.919215-1.0.1.1-28TP7QS2tka5qbSuRYwMrnNffHwwUjE3XWy3HlYUiBwzSLv5tlh_BnJ7XOXCOK1nlDrdcT8GC2X6JVt0wy8ILaQsXRft7ajK3nyJB9fz8NEnkJH0OexNp9M2MNqP6ouQ; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Tue, 22 Sep 2026 15:59:25 GMT
+ETag: W/"6aac0af2-24a3"
+X-Content-Type-Options: nosniff
+content-security-policy: default-src 'none'; sandbox
+endpoint-load-metrics: application_utilization:6,named_metrics.queue_depth:6
+fastly-debug-states: DELIVER
+sb-gateway-version: 1
+sb-project-ref: theecyezvuzkflwikxwr
+sb-request-id: 01a0c9bc-6fbc-7d4d-8daa-b6a18057e968
+x-deno-execution-id: 7bf6f139-a007-4181-80ac-cb1376e6d141
+x-fastly-request-id: b8df97b364148652b4142e2b9a43bc6ba7ea1d00
+x-github-edge-region: iad
+x-github-request-id: B77C:286969:16A449B:184A504:6AB29BD1
+x-proxy-cache: MISS
+x-sb-edge-region: us-east-1
+Accept-Ranges: bytes
+Date: Tue, 22 Sep 2026 15:29:25 GMT
+X-Timer: S1790090965.642594,VS0,VE407
+Vary: Accept-Encoding
+Server: nginx/1.24.0 (Ubuntu)
+Strict-Transport-Security: max-age=300
+F4 Result: PASSED_L7 (Fastly forwards HTTP request with Upgrade header to configured origin; backend returns HTTP response headers)
+
+[F5] Testing Bidirectional WS Persistence for 60s...
+F5 FAILED: ConnectionResetError: 
+
+[F6] Checking Raw TCP Socket API Existence...
+F6 Result: Fastly VCL is purely L7 HTTP proxy; Fastly Compute SDK provides fetch(), SecretStore, KVStore, but lacks raw L4 socket listening/dialing primitives (no TCPSocket/connect API).
+
+[F7] Checking Dynamic Backend Outbound TCP Dialing Capability...
+Customer Plan: None, can_dynamic_backends: None
+F7 Result: Dynamic Backends feature is disabled on account. Furthermore, Fastly Dynamic Backends only allow dynamically registering HTTP/HTTPS origins within VCL/Compute, not arbitrary raw TCP port forwarding.

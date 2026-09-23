@@ -1,0 +1,49 @@
+name: Pipeline - Publish Subscriptions
+
+on:
+  schedule:
+    - cron: '11 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-subscriptions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Run Subscription Engine
+        run: |
+          python select_optimal_nodes.py
+
+      - name: Run Comprehensive Verification Suite
+        run: |
+          python test_subscriptions_suite.py
+
+      - name: Upload Published Subscriptions Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-subscriptions
+          path: |
+            clash*.yaml
+            evidence/subscriptions/
+          retention-days: 30
+
+      - name: Commit and Push Published Updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add clash*.yaml evidence/subscriptions/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(publish): publish unified subscriptions [skip ci]" && git pull --rebase origin main && git push origin main)

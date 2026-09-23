@@ -1,0 +1,56 @@
+name: Pipeline - Discover Candidates
+
+on:
+  schedule:
+    - cron: '19 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover-candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Run Candidate Discovery and Pool Separation
+        run: |
+          python generate_candidates_separation.py
+
+      - name: Validate Candidate Artifacts
+        run: |
+          python -c "
+          import os, sys
+          files = ['candidates/raw.jsonl', 'candidates/deduped.jsonl', 'candidates/rejected.jsonl']
+          for f in files:
+              if not os.path.exists(f):
+                  print(f'[ERROR] Missing candidate file: {f}')
+                  sys.exit(1)
+              count = sum(1 for _ in open(f, encoding='utf-8'))
+              print(f'[INFO] {f}: {count} records')
+          "
+
+      - name: Upload Candidates Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidates-artifact
+          path: candidates/
+          retention-days: 14
+
+      - name: Commit and Push Updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add candidates/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(candidates): update candidate pools [skip ci]" && git pull --rebase origin main && git push origin main)

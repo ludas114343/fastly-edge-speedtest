@@ -1,0 +1,78 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+proxies:
+- name: 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+  type: vless
+  server: nf-node.ruoyemu.asia
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  udp: true
+  sni: nf-node.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: nf-node.ruoyemu.asia
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇺🇸 美国节点
+  - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+- name: 🇺🇸 美国节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - DIRECT
+rules:
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,openai.com,🚀 节点选择
+- DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,x.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择
+metadata:
+  status: VERIFIED_PROXY
+  platform: northflank
+  node_count: 1
+  reason: Successfully passed 9-round VLESS and generate_204 hard gates with stable
+    egress route
+  tested_run_id: '20260922_133327'
+  verified_at: '2026-09-22T15:41:01.251302+00:00'

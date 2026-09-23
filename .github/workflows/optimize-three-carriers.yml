@@ -1,0 +1,53 @@
+name: Pipeline - Optimize Three Carriers
+
+on:
+  schedule:
+    - cron: '43 2,14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize-carriers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Run Speedtest Sweep
+        run: |
+          python speedtest.py
+
+      - name: Format Raw Results and Update Matrix
+        run: |
+          python format_raw_results.py
+
+      - name: Execute Optimal Selection Engine
+        run: |
+          python select_optimal_nodes.py
+
+      - name: Upload Telemetry Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: speedtest-telemetry
+          path: |
+            results/
+            evidence/subscriptions/
+          retention-days: 14
+
+      - name: Commit and Push Optimization Results
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add results/ clash*.yaml evidence/subscriptions/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(speedtest): optimize 3-carrier nodes [skip ci]" && git pull --rebase origin main && git push origin main)

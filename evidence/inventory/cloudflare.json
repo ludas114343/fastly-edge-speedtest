@@ -1,0 +1,56 @@
+{
+  "platform": "cloudflare",
+  "account_verified": true,
+  "account_id": "b1103e1120a612a1d939b69025c9138a",
+  "zone_id": "92ff80748a90e7ef55880af0952d2037",
+  "account_credential_masked": "cfut_***[len=53]",
+  "DEPLOYMENT_COUNT": 1,
+  "project_count": 1,
+  "service_count": 2,
+  "deployment_count": 1,
+  "region_route_count": 1,
+  "entry_count": 0,
+  "candidate_count": 3,
+  "verified_proxy_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
+  "projects": [
+    {
+      "account_id": "b1103e1120a612a1d939b69025c9138a",
+      "zone_id": "92ff80748a90e7ef55880af0952d2037",
+      "zone_name": "ruoyemu.asia",
+      "plan": "free"
+    }
+  ],
+  "services": [
+    "worker-proxy",
+    "dns-management"
+  ],
+  "deployments": [
+    {
+      "account_id": "b1103e1120a612a1d939b69025c9138a",
+      "service_name": "summer-fog-5f9c",
+      "deployment_id": "014e9abc-a1c5-4b23-9ef3-5275fb3d4e9e",
+      "version_id": "e63b82f2-23e6-46ac-8166-2feea290d7d1",
+      "custom_domain": "dream.ruoyemu.asia",
+      "domain_binding_id": "55a7593abfeab93eb505f669bebc803a6f3ee325",
+      "created_on": "2026-07-27T10:13:36.616669Z",
+      "source": "dash",
+      "status": "active"
+    }
+  ],
+  "regions": [
+    "global-anycast"
+  ],
+  "domains": [
+    "dream.ruoyemu.asia",
+    "sub.ruoyemu.asia",
+    "ruoyemu.asia"
+  ],
+  "active_versions": {
+    "summer-fog-5f9c": "014e9abc-a1c5-4b23-9ef3-5275fb3d4e9e"
+  },
+  "distinction_note": "Cloudflare Worker summer-fog-5f9c deployed on dream.ruoyemu.asia acts as Anycast edge ingress. Direct egress is blocked by Cloudflare runtime constraints; proxyip mode triggers TLS resets against Supabase endpoints. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
+  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "api_response_hash": "f198299a8f64e1b0af987282cd445587d2266c86ddc1e19215d442ee8c56386b"
+}

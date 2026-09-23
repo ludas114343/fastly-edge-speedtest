@@ -1,0 +1,50 @@
+{
+  "platform": "edgeone",
+  "account_verified": true,
+  "secret_id_masked": "IKIDZI***Hw63",
+  "DEPLOYMENT_COUNT": 1,
+  "project_count": 1,
+  "service_count": 1,
+  "deployment_count": 1,
+  "region_route_count": 1,
+  "entry_count": 0,
+  "candidate_count": 1,
+  "verified_proxy_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
+  "projects": [
+    {
+      "zone_id": "zone-3td4th92xk0e",
+      "zone_name": "ruoyemu.asia",
+      "status": "pending",
+      "area": "global"
+    }
+  ],
+  "services": [
+    "edge-function"
+  ],
+  "deployments": [
+    {
+      "type": "function",
+      "zone_id": "zone-3td4th92xk0e",
+      "function_id": "ef-ddka6pqw",
+      "deployment_id": "ef-ddka6pqw",
+      "name": "edgeone-proxy-zone-3td4th92xk0e-1463384265",
+      "remark": "EdgeOne L7 Fronting Gateway",
+      "create_time": "2026-09-20T21:56:30+08:00",
+      "update_time": "2026-09-22T23:29:56+08:00"
+    }
+  ],
+  "regions": [
+    "global"
+  ],
+  "domains": [
+    "ruoyemu.asia"
+  ],
+  "active_versions": {
+    "edgeone-proxy-zone-3td4th92xk0e-1463384265": "2026-09-22T23:29:56+08:00"
+  },
+  "distinction_note": "Tencent Cloud EdgeOne edge function ef-ddka6pqw operates as an L7 Anycast fronting reverse proxy forwarding to Wasmer and Northflank backends. Ingress-only fronting does not provide independent egress proxy nodes. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
+  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "api_response_hash": "6b1689677eb796d1c6d7150a77338c9141770e5cb95bfcebcd9c792ab888c875"
+}

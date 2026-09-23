@@ -1,0 +1,74 @@
+name: Watchdog - Subscription Audit and Activity Guard
+
+on:
+  schedule:
+    - cron: '33 1,13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  watchdog-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Run Subscription Audit Test Suite
+        run: |
+          python test_subscriptions_suite.py
+
+      - name: Character Hygiene and Secret Leak Check
+        run: |
+          python -c "
+          import os, sys
+          forbidden_chars = ['\u2014', '\u2013']
+          targets = [
+              'clash.yaml', 'clash_all.yaml', 'clash_supabase.yaml', 'clash_wasmer.yaml',
+              'clash_northflank.yaml', 'clash_cloudflare.yaml', 'clash_fastly.yaml',
+              'clash_netlify.yaml', 'clash_edgeone.yaml'
+          ]
+          for target in targets:
+              if os.path.exists(target):
+                  with open(target, 'r', encoding='utf-8') as f:
+                      content = f.read()
+                      for fc in forbidden_chars:
+                          if fc in content:
+                              print(f'[FAIL] Forbidden character {repr(fc)} found in {target}')
+                              sys.exit(1)
+          print('[PASS] Character hygiene audit passed across all subscription files.')
+          "
+
+      - name: 60-Day Repository Activity Guard
+        run: |
+          python -c "
+          import os, json, datetime
+          now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+          target = 'quota_guard.json'
+          if os.path.exists(target):
+              with open(target, 'r', encoding='utf-8') as f:
+                  data = json.load(f)
+          else:
+              data = {}
+          data['last_watchdog_heartbeat'] = now
+          with open(target, 'w', encoding='utf-8') as f:
+              json.dump(data, f, indent=2)
+          print(f'[INFO] Watchdog heartbeat recorded: {now}')
+          "
+
+      - name: Commit Heartbeat if Changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add quota_guard.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(watchdog): record 60-day activity heartbeat [skip ci]" && git pull --rebase origin main && git push origin main)

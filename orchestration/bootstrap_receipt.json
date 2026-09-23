@@ -1,0 +1,61 @@
+{
+  "repository_url": "https://github.com/ludas114343/fastly-edge-speedtest.git",
+  "default_branch": "main",
+  "remote_head_sha": "b82d7bbfcace2a6c06915b1f02b8070edb436720",
+  "subagent_capability": "AVAILABLE",
+  "agents": [
+    {
+      "role": "agent-inventory",
+      "invocation_id": "9e36c132-8062-46fc-9564-c81a38373377",
+      "taskcard": "taskcards/v13/agent-inventory.md"
+    },
+    {
+      "role": "agent-github-deployer",
+      "invocation_id": "0543f56e-7df0-4407-82cd-9684bb1bce3b",
+      "taskcard": "taskcards/v13/agent-github-deployer.md"
+    },
+    {
+      "role": "agent-platform-deployer",
+      "invocation_id": "93ed6fe0-37e8-42db-8cc9-65d8a668f29b",
+      "taskcard": "taskcards/v13/agent-platform-deployer.md"
+    },
+    {
+      "role": "agent-subscription-publisher",
+      "invocation_id": "af6a9d9a-9a27-4f89-a5c8-9221a3e8a946",
+      "taskcard": "taskcards/v13/agent-subscription-publisher.md"
+    },
+    {
+      "role": "agent-speedtest-builder",
+      "invocation_id": "a4325afa-c40d-48ad-8a9b-397460410029",
+      "taskcard": "taskcards/v13/agent-speedtest-builder.md"
+    },
+    {
+      "role": "agent-auto-update-builder",
+      "invocation_id": "dbbea4a5-91aa-4f4b-b5df-191fd3bf2b21",
+      "taskcard": "taskcards/v13/agent-auto-update-builder.md"
+    },
+    {
+      "role": "agent-blackbox-auditor",
+      "invocation_id": "ce3583ee-d825-4690-a16c-0540fd04ae2a",
+      "taskcard": "taskcards/v13/agent-blackbox-auditor.md"
+    },
+    {
+      "role": "agent-github-auditor",
+      "invocation_id": "faf6fac6-a041-45da-aec0-29b0f4ca1349",
+      "taskcard": "taskcards/v13/agent-github-auditor.md"
+    },
+    {
+      "role": "agent-redteam",
+      "invocation_id": "0e763972-3e55-45c9-b8ee-8e8f9606f762",
+      "taskcard": "taskcards/v13/agent-redteam.md"
+    },
+    {
+      "role": "agent-final-reconciler",
+      "invocation_id": "2223b1c1-5ed7-4aab-80b0-e8407f9138ff",
+      "taskcard": "taskcards/v13/agent-final-reconciler.md"
+    }
+  ],
+  "previous_report_status": "REJECTED",
+  "current_phase": "REMOTE_INVENTORY",
+  "local_system_proxy_policy": "DO_NOT_TOUCH"
+}

@@ -1,11 +1,3 @@
-# ============================================================
-# Wasmer 34-Node Ultra-Low Latency Optimized Subscription
-# Last Speedtest Run: 2026-09-19 11:50:16 UTC
-# Optimized Output: Exactly 34 authentic nodes (2-3 per country)
-# Latency Standard: Asian routes guaranteed sub-90ms
-# Backends: Amazon AWS + Wasmer + Northflank (Multi-cloud infrastructure)
-# ============================================================
-
 port: 7890
 socks-port: 7891
 mixed-port: 7897
@@ -14,7 +6,6 @@ mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
-
 dns:
   enable: true
   listen: 0.0.0.0:1053
@@ -22,752 +13,141 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-
+  - 223.5.5.5
+  - 119.29.29.29
 proxies:
-  - name: "🇭🇰 中国香港 01 [Wasmer · 150G]"
-    type: vless
-    server: 66.42.98.41
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-la.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-la.ruoyemu.asia
-
-  - name: "🇭🇰 中国香港 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇭🇰 中国香港 03 [Supabase · AWS ap-southeast-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇯🇵 日本东京 01 [Wasmer · 150G]"
-    type: vless
-    server: 66.42.98.41
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-la.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-la.ruoyemu.asia
-
-  - name: "🇯🇵 日本东京 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇯🇵 日本东京 03 [Supabase · AWS ap-northeast-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇰🇷 韩国首尔 01 [Wasmer · 150G]"
-    type: vless
-    server: 66.42.98.41
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-la.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-la.ruoyemu.asia
-
-  - name: "🇰🇷 韩国首尔 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇰🇷 韩国首尔 03 [Supabase · AWS ap-northeast-2]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇸🇬 新加坡 01 [Wasmer · 150G]"
-    type: vless
-    server: 66.42.98.41
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-la.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-la.ruoyemu.asia
-
-  - name: "🇸🇬 新加坡 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇸🇬 新加坡 03 [Supabase · AWS ap-southeast-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇩🇪 德国法兰克福 01 [Wasmer · 150G]"
-    type: vless
-    server: 151.158.1.131
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-fr.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-fr.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇩🇪 德国法兰克福 03 [Supabase · AWS eu-central-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇫🇷 法国巴黎 01 [Wasmer · 150G]"
-    type: vless
-    server: 151.158.1.131
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-fr.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-fr.ruoyemu.asia
-
-  - name: "🇫🇷 法国巴黎 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇫🇷 法国巴黎 03 [Supabase · AWS eu-west-3]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇬🇧 英国伦敦 01 [Wasmer · 150G]"
-    type: vless
-    server: 151.158.1.131
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-fr.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-fr.ruoyemu.asia
-
-  - name: "🇬🇧 英国伦敦 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇬🇧 英国伦敦 03 [Supabase · AWS eu-west-2]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇨🇭 瑞士苏黎世 01 [Wasmer · 150G]"
-    type: vless
-    server: 151.158.1.131
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-fr.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-fr.ruoyemu.asia
-
-  - name: "🇨🇭 瑞士苏黎世 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇨🇭 瑞士苏黎世 03 [Supabase · AWS eu-central-2]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=eu-central-2"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇺🇸 美国美东 01 [Wasmer · 150G]"
-    type: vless
-    server: 5.161.23.223
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-east.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-east.ruoyemu.asia
-
-  - name: "🇺🇸 美国美东 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇺🇸 美国美东 03 [Supabase · AWS us-east-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-east-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇺🇸 美国美西 01 [Wasmer · 150G]"
-    type: vless
-    server: 5.78.28.161
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-us.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-us.ruoyemu.asia
-
-  - name: "🇺🇸 美国美西 02 [Northflank · 90G]"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🇺🇸 美国美西 03 [Supabase · AWS us-west-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=us-west-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇨🇦 加拿大 01 [Wasmer · 150G]"
-    type: vless
-    server: 5.78.28.161
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-us.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-us.ruoyemu.asia
-
-  - name: "🇨🇦 加拿大 02 [Supabase · AWS ca-central-1]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ca-central-1"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
-  - name: "🇦🇺 澳大利亚 01 [Wasmer · 150G]"
-    type: vless
-    server: 66.42.98.41
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: w-la.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: w-la.ruoyemu.asia
-
-  - name: "🇦🇺 澳大利亚 02 [Supabase · AWS ap-southeast-2]"
-    type: vless
-    server: theecyezvuzkflwikxwr.supabase.co
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: theecyezvuzkflwikxwr.supabase.co
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-2"
-      headers:
-        Host: theecyezvuzkflwikxwr.supabase.co
-
+- name: 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-la.ruoyemu.asia
 proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - 🌏 亚太节点
-      - 🌍 欧洲节点
-      - 🌎 美洲节点
-      - "🇭🇰 中国香港"
-      - "🇯🇵 日本东京"
-      - "🇰🇷 韩国首尔"
-      - "🇸🇬 新加坡"
-      - "🇩🇪 德国法兰克福"
-      - "🇫🇷 法国巴黎"
-      - "🇬🇧 英国伦敦"
-      - "🇨🇭 瑞士苏黎世"
-      - "🇺🇸 美国美东"
-      - "🇺🇸 美国美西"
-      - "🇨🇦 加拿大"
-      - "🇦🇺 澳大利亚"
-      - "🇭🇰 中国香港 01 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 02 [Northflank · 90G]"
-      - "🇭🇰 中国香港 03 [Supabase · AWS ap-southeast-1]"
-      - "🇯🇵 日本东京 01 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 02 [Northflank · 90G]"
-      - "🇯🇵 日本东京 03 [Supabase · AWS ap-northeast-1]"
-      - "🇰🇷 韩国首尔 01 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 02 [Northflank · 90G]"
-      - "🇰🇷 韩国首尔 03 [Supabase · AWS ap-northeast-2]"
-      - "🇸🇬 新加坡 01 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 02 [Northflank · 90G]"
-      - "🇸🇬 新加坡 03 [Supabase · AWS ap-southeast-1]"
-      - "🇩🇪 德国法兰克福 01 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 02 [Northflank · 90G]"
-      - "🇩🇪 德国法兰克福 03 [Supabase · AWS eu-central-1]"
-      - "🇫🇷 法国巴黎 01 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 02 [Northflank · 90G]"
-      - "🇫🇷 法国巴黎 03 [Supabase · AWS eu-west-3]"
-      - "🇬🇧 英国伦敦 01 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 02 [Northflank · 90G]"
-      - "🇬🇧 英国伦敦 03 [Supabase · AWS eu-west-2]"
-      - "🇨🇭 瑞士苏黎世 01 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 02 [Northflank · 90G]"
-      - "🇨🇭 瑞士苏黎世 03 [Supabase · AWS eu-central-2]"
-      - "🇺🇸 美国美东 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 02 [Northflank · 90G]"
-      - "🇺🇸 美国美东 03 [Supabase · AWS us-east-1]"
-      - "🇺🇸 美国美西 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 02 [Northflank · 90G]"
-      - "🇺🇸 美国美西 03 [Supabase · AWS us-west-1]"
-      - "🇨🇦 加拿大 01 [Wasmer · 150G]"
-      - "🇨🇦 加拿大 02 [Supabase · AWS ca-central-1]"
-      - "🇦🇺 澳大利亚 01 [Wasmer · 150G]"
-      - "🇦🇺 澳大利亚 02 [Supabase · AWS ap-southeast-2]"
-
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - "🇭🇰 中国香港 01 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 02 [Northflank · 90G]"
-      - "🇭🇰 中国香港 03 [Supabase · AWS ap-southeast-1]"
-      - "🇯🇵 日本东京 01 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 02 [Northflank · 90G]"
-      - "🇯🇵 日本东京 03 [Supabase · AWS ap-northeast-1]"
-      - "🇰🇷 韩国首尔 01 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 02 [Northflank · 90G]"
-      - "🇰🇷 韩国首尔 03 [Supabase · AWS ap-northeast-2]"
-      - "🇸🇬 新加坡 01 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 02 [Northflank · 90G]"
-      - "🇸🇬 新加坡 03 [Supabase · AWS ap-southeast-1]"
-      - "🇩🇪 德国法兰克福 01 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 02 [Northflank · 90G]"
-      - "🇩🇪 德国法兰克福 03 [Supabase · AWS eu-central-1]"
-      - "🇫🇷 法国巴黎 01 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 02 [Northflank · 90G]"
-      - "🇫🇷 法国巴黎 03 [Supabase · AWS eu-west-3]"
-      - "🇬🇧 英国伦敦 01 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 02 [Northflank · 90G]"
-      - "🇬🇧 英国伦敦 03 [Supabase · AWS eu-west-2]"
-      - "🇨🇭 瑞士苏黎世 01 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 02 [Northflank · 90G]"
-      - "🇨🇭 瑞士苏黎世 03 [Supabase · AWS eu-central-2]"
-      - "🇺🇸 美国美东 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 02 [Northflank · 90G]"
-      - "🇺🇸 美国美东 03 [Supabase · AWS us-east-1]"
-      - "🇺🇸 美国美西 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 02 [Northflank · 90G]"
-      - "🇺🇸 美国美西 03 [Supabase · AWS us-west-1]"
-      - "🇨🇦 加拿大 01 [Wasmer · 150G]"
-      - "🇨🇦 加拿大 02 [Supabase · AWS ca-central-1]"
-      - "🇦🇺 澳大利亚 01 [Wasmer · 150G]"
-      - "🇦🇺 澳大利亚 02 [Supabase · AWS ap-southeast-2]"
-
-  - name: 🌏 亚太节点
-    type: select
-    proxies:
-      - "🇭🇰 中国香港 01 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 02 [Northflank · 90G]"
-      - "🇭🇰 中国香港 03 [Supabase · AWS ap-southeast-1]"
-      - "🇯🇵 日本东京 01 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 02 [Northflank · 90G]"
-      - "🇯🇵 日本东京 03 [Supabase · AWS ap-northeast-1]"
-      - "🇰🇷 韩国首尔 01 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 02 [Northflank · 90G]"
-      - "🇰🇷 韩国首尔 03 [Supabase · AWS ap-northeast-2]"
-      - "🇸🇬 新加坡 01 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 02 [Northflank · 90G]"
-      - "🇸🇬 新加坡 03 [Supabase · AWS ap-southeast-1]"
-      - "🇦🇺 澳大利亚 01 [Wasmer · 150G]"
-      - "🇦🇺 澳大利亚 02 [Supabase · AWS ap-southeast-2]"
-
-  - name: 🌍 欧洲节点
-    type: select
-    proxies:
-      - "🇩🇪 德国法兰克福 01 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 02 [Northflank · 90G]"
-      - "🇩🇪 德国法兰克福 03 [Supabase · AWS eu-central-1]"
-      - "🇫🇷 法国巴黎 01 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 02 [Northflank · 90G]"
-      - "🇫🇷 法国巴黎 03 [Supabase · AWS eu-west-3]"
-      - "🇬🇧 英国伦敦 01 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 02 [Northflank · 90G]"
-      - "🇬🇧 英国伦敦 03 [Supabase · AWS eu-west-2]"
-      - "🇨🇭 瑞士苏黎世 01 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 02 [Northflank · 90G]"
-      - "🇨🇭 瑞士苏黎世 03 [Supabase · AWS eu-central-2]"
-
-  - name: 🌎 美洲节点
-    type: select
-    proxies:
-      - "🇺🇸 美国美东 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 02 [Northflank · 90G]"
-      - "🇺🇸 美国美东 03 [Supabase · AWS us-east-1]"
-      - "🇺🇸 美国美西 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 02 [Northflank · 90G]"
-      - "🇺🇸 美国美西 03 [Supabase · AWS us-west-1]"
-      - "🇨🇦 加拿大 01 [Wasmer · 150G]"
-      - "🇨🇦 加拿大 02 [Supabase · AWS ca-central-1]"
-
-  - name: "🇭🇰 中国香港"
-    type: select
-    proxies:
-      - "🇭🇰 中国香港 01 [Wasmer · 150G]"
-      - "🇭🇰 中国香港 02 [Northflank · 90G]"
-      - "🇭🇰 中国香港 03 [Supabase · AWS ap-southeast-1]"
-
-  - name: "🇯🇵 日本东京"
-    type: select
-    proxies:
-      - "🇯🇵 日本东京 01 [Wasmer · 150G]"
-      - "🇯🇵 日本东京 02 [Northflank · 90G]"
-      - "🇯🇵 日本东京 03 [Supabase · AWS ap-northeast-1]"
-
-  - name: "🇰🇷 韩国首尔"
-    type: select
-    proxies:
-      - "🇰🇷 韩国首尔 01 [Wasmer · 150G]"
-      - "🇰🇷 韩国首尔 02 [Northflank · 90G]"
-      - "🇰🇷 韩国首尔 03 [Supabase · AWS ap-northeast-2]"
-
-  - name: "🇸🇬 新加坡"
-    type: select
-    proxies:
-      - "🇸🇬 新加坡 01 [Wasmer · 150G]"
-      - "🇸🇬 新加坡 02 [Northflank · 90G]"
-      - "🇸🇬 新加坡 03 [Supabase · AWS ap-southeast-1]"
-
-  - name: "🇩🇪 德国法兰克福"
-    type: select
-    proxies:
-      - "🇩🇪 德国法兰克福 01 [Wasmer · 150G]"
-      - "🇩🇪 德国法兰克福 02 [Northflank · 90G]"
-      - "🇩🇪 德国法兰克福 03 [Supabase · AWS eu-central-1]"
-
-  - name: "🇫🇷 法国巴黎"
-    type: select
-    proxies:
-      - "🇫🇷 法国巴黎 01 [Wasmer · 150G]"
-      - "🇫🇷 法国巴黎 02 [Northflank · 90G]"
-      - "🇫🇷 法国巴黎 03 [Supabase · AWS eu-west-3]"
-
-  - name: "🇬🇧 英国伦敦"
-    type: select
-    proxies:
-      - "🇬🇧 英国伦敦 01 [Wasmer · 150G]"
-      - "🇬🇧 英国伦敦 02 [Northflank · 90G]"
-      - "🇬🇧 英国伦敦 03 [Supabase · AWS eu-west-2]"
-
-  - name: "🇨🇭 瑞士苏黎世"
-    type: select
-    proxies:
-      - "🇨🇭 瑞士苏黎世 01 [Wasmer · 150G]"
-      - "🇨🇭 瑞士苏黎世 02 [Northflank · 90G]"
-      - "🇨🇭 瑞士苏黎世 03 [Supabase · AWS eu-central-2]"
-
-  - name: "🇺🇸 美国美东"
-    type: select
-    proxies:
-      - "🇺🇸 美国美东 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美东 02 [Northflank · 90G]"
-      - "🇺🇸 美国美东 03 [Supabase · AWS us-east-1]"
-
-  - name: "🇺🇸 美国美西"
-    type: select
-    proxies:
-      - "🇺🇸 美国美西 01 [Wasmer · 150G]"
-      - "🇺🇸 美国美西 02 [Northflank · 90G]"
-      - "🇺🇸 美国美西 03 [Supabase · AWS us-west-1]"
-
-  - name: "🇨🇦 加拿大"
-    type: select
-    proxies:
-      - "🇨🇦 加拿大 01 [Wasmer · 150G]"
-      - "🇨🇦 加拿大 02 [Supabase · AWS ca-central-1]"
-
-  - name: "🇦🇺 澳大利亚"
-    type: select
-    proxies:
-      - "🇦🇺 澳大利亚 01 [Wasmer · 150G]"
-      - "🇦🇺 澳大利亚 02 [Supabase · AWS ap-southeast-2]"
-
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇺🇸 美国节点
+  - 🇩🇪 欧洲节点
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+- name: 🇺🇸 美国节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+- name: 🇩🇪 欧洲节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - DIRECT
 rules:
-  - DOMAIN-SUFFIX,google.com,🚀 节点选择
-  - DOMAIN-SUFFIX,github.com,🚀 节点选择
-  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
-  - DOMAIN-SUFFIX,x.com,🚀 节点选择
-  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
-  - GEOIP,CN,DIRECT
-  - MATCH,🚀 节点选择
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,openai.com,🚀 节点选择
+- DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,x.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择
+metadata:
+  status: VERIFIED_PROXY
+  platform: wasmer
+  node_count: 5
+  reason: Successfully passed 9-round VLESS and generate_204 hard gates with stable
+    egress route
+  tested_run_id: '20260922_133327'
+  verified_at: '2026-09-22T15:41:01.235281+00:00'
