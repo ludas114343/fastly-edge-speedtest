@@ -1,0 +1,55 @@
+{
+  "audit_timestamp": "2026-09-23T11:24:09.324413+00:00",
+  "runner": "github-actions-ubuntu-latest",
+  "endpoints_tested": [
+    {
+      "token": "all",
+      "file": "clash.yaml",
+      "proxy_count": 22,
+      "status": "VERIFIED_PROXY"
+    },
+    {
+      "token": "supabase",
+      "file": "clash_supabase.yaml",
+      "proxy_count": 16,
+      "status": "VERIFIED_PROXY"
+    },
+    {
+      "token": "wasmer",
+      "file": "clash_wasmer.yaml",
+      "proxy_count": 5,
+      "status": "VERIFIED_PROXY"
+    },
+    {
+      "token": "northflank",
+      "file": "clash_northflank.yaml",
+      "proxy_count": 1,
+      "status": "VERIFIED_PROXY"
+    },
+    {
+      "token": "cloudflare",
+      "file": "clash_cloudflare.yaml",
+      "proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY"
+    },
+    {
+      "token": "fastly",
+      "file": "clash_fastly.yaml",
+      "proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY"
+    },
+    {
+      "token": "netlify",
+      "file": "clash_netlify.yaml",
+      "proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY"
+    },
+    {
+      "token": "edgeone",
+      "file": "clash_edgeone.yaml",
+      "proxy_count": 0,
+      "status": "NO_VERIFIED_PROXY"
+    }
+  ],
+  "verdict": "PASS"
+}
