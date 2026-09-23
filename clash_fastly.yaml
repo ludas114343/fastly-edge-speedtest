@@ -24,9 +24,9 @@ metadata:
   platform: fastly
   node_count: 0
   unfinished: true
-  head_sha: 234067b0145c209b842df97b46da0451fab40294
+  head_sha: 54e44a916b279fc5be3f4b765b8fabfb996b775c
   run_id: '20260922_133327'
   tested_run_id: '20260922_133327'
   reason: Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips
     WebSocket Upgrade headers without paid Custom TLS SAN certificate
-  verified_at: '2026-09-23T11:24:05.702382+00:00'
+  verified_at: '2026-09-23T11:25:08.496271+00:00'

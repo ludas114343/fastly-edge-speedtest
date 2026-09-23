@@ -1,14 +1,14 @@
 {
   "version": "v13",
   "auditor": "agent-final-reconciler",
-  "timestamp": "2026-09-23T11:24:48.204066+00:00",
+  "timestamp": "2026-09-23T11:25:13.803758+00:00",
   "overall_verdict": "FAIL",
   "report_generation_blocked": true,
-  "blocking_reason": "Reconciliation detected 5 contradiction violation(s) across 8 rules. Under Definition of Done and Mandate Rule 3, report generation is strictly BLOCKED.",
+  "blocking_reason": "Reconciliation detected 4 contradiction violation(s) across 8 rules. Under Definition of Done and Mandate Rule 3, report generation is strictly BLOCKED.",
   "rules_summary": {
     "total_rules": 8,
-    "passed_count": 3,
-    "failed_count": 5
+    "passed_count": 4,
+    "failed_count": 4
   },
   "rules": {
     "rule_1_deployment_id_count_vs_claimed_physical_nodes": {
@@ -138,7 +138,7 @@
       "rule_name": "remote_evidence_root_required_no_local_only",
       "status": "FAIL",
       "violations": [
-        "Local git HEAD (a8c101ca69110a4524a4035bf570e13124c1e90f) is desynchronized from remote authoritative HEAD (92c2276327eaf11e133c6b3482c7b3266d77e671). Evidence relying solely on local workspace path without pushing to remote origin violates the remote root mandate."
+        "Local git HEAD (2fd1a0eb17cca77c4861f3dbd867b759c53bd32d) is desynchronized from remote authoritative HEAD (54e44a916b279fc5be3f4b765b8fabfb996b775c). Evidence relying solely on local workspace path without pushing to remote origin violates the remote root mandate."
       ],
       "details": {
         "repository_evidence_loaded": true,
@@ -146,8 +146,8 @@
         "bootstrap_receipt_loaded": true,
         "remote_repo_url": "https://github.com/ludas114343/fastly-edge-speedtest",
         "local_only_fields": [],
-        "remote_head_sha": "92c2276327eaf11e133c6b3482c7b3266d77e671",
-        "local_head_sha": "a8c101ca69110a4524a4035bf570e13124c1e90f"
+        "remote_head_sha": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+        "local_head_sha": "2fd1a0eb17cca77c4861f3dbd867b759c53bd32d"
       }
     },
     "rule_5_full_40_char_sha_required_no_short_sha": {
@@ -157,29 +157,27 @@
       "violations": [],
       "details": {
         "bootstrap_remote_head_sha": "b82d7bbfcace2a6c06915b1f02b8070edb436720",
-        "github_evidence_remote_head_sha": "92c2276327eaf11e133c6b3482c7b3266d77e671",
+        "github_evidence_remote_head_sha": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
         "subscription_head_shas": {
-          "all": "234067b0145c209b842df97b46da0451fab40294",
-          "supabase": "234067b0145c209b842df97b46da0451fab40294",
-          "wasmer": "234067b0145c209b842df97b46da0451fab40294",
-          "northflank": "234067b0145c209b842df97b46da0451fab40294",
-          "cloudflare": "234067b0145c209b842df97b46da0451fab40294",
-          "fastly": "234067b0145c209b842df97b46da0451fab40294",
-          "netlify": "234067b0145c209b842df97b46da0451fab40294",
-          "edgeone": "234067b0145c209b842df97b46da0451fab40294"
+          "all": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "supabase": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "wasmer": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "northflank": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "cloudflare": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "fastly": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "netlify": "54e44a916b279fc5be3f4b765b8fabfb996b775c",
+          "edgeone": "54e44a916b279fc5be3f4b765b8fabfb996b775c"
         }
       }
     },
     "rule_6_workflow_run_url_and_artifact_digest_required": {
       "rule_id": 6,
       "rule_name": "workflow_run_url_and_artifact_digest_required",
-      "status": "FAIL",
-      "violations": [
-        "Remote GitHub Actions artifacts count is 0. No artifact URL or SHA-256 digest exists for blackbox audit or subscription release."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
         "workflows_evidence_loaded": true,
-        "remote_artifacts_total_count": 0,
+        "remote_artifacts_total_count": 1,
         "remote_registered_workflow_paths": [
           ".github/workflows/deploy-cloudflare.yml",
           ".github/workflows/deploy-edgeone.yml",
@@ -195,7 +193,7 @@
           ".github/workflows/smoke-test.yml",
           ".github/workflows/watchdog.yml"
         ],
-        "remote_workflow_runs_count": 50,
+        "remote_workflow_runs_count": 51,
         "remote_has_v13_workflows": true
       }
     },

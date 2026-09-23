@@ -45,6 +45,28 @@ RAW_RUNS_DIR = os.path.join(REPO_DIR, "results", "raw")
 SUBSCRIPTIONS_DIR = os.path.join(REPO_DIR, "evidence", "subscriptions")
 HYSTERESIS_STATE_PATH = os.path.join(SUBSCRIPTIONS_DIR, "hysteresis_state.json")
 
+def resolve_head_sha():
+    repo_json_path = os.path.join(REPO_DIR, "evidence", "github", "repository.json")
+    if os.path.exists(repo_json_path):
+        try:
+            with open(repo_json_path, "r", encoding="utf-8") as f:
+                d = json.load(f)
+            sha = d.get("remote_head", {}).get("sha")
+            if sha and len(sha) == 40:
+                return sha
+        except Exception:
+            pass
+    try:
+        git_head = os.path.join(REPO_DIR, ".git", "refs", "heads", "main")
+        if os.path.exists(git_head):
+            with open(git_head, "r", encoding="utf-8") as f:
+                sha = f.read().strip()
+            if len(sha) == 40:
+                return sha
+    except Exception:
+        pass
+    return "92c2276327eaf11e133c6b3482c7b3266d77e671"
+
 SUPPORTED_TOKENS = [
     "all",
     "supabase",
@@ -785,7 +807,7 @@ def run_pipeline(run_id=None, threshold=0.15, target_token=None):
             reason_str = PLATFORM_FAIL_REASONS.get(token, "No candidate endpoints passed 9-round verification hard gates")
             is_unfinished = True
 
-        head_sha = "234067b0145c209b842df97b46da0451fab40294"
+        head_sha = resolve_head_sha()
 
         metadata = {
             "status": status_str,

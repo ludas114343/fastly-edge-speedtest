@@ -1,0 +1,199 @@
+{
+  "date": "2026-09-23",
+  "run_id": "20260923_112251",
+  "methodology": "CHAINED_ESTIMATE",
+  "proxy_chain_overhead_disclaimer": "Testing mode is CHAINED_ESTIMATE. The measurements reflect an isolated multi-hop route / proxy chain topology incurring protocol encapsulation, TLS tunneling, and edge routing overhead. This measurement represents an estimation of cross-border edge reachability and is NOT equivalent to direct client terminal speedtest within mainland China.",
+  "total_records": 333,
+  "compressed_file": {
+    "path": "results/telemetry/2026-09-23.jsonl.gz",
+    "sha256": "0368b698eb5c35050bc2293370b3b833f39795bd3d22aacab1eeaf2f415b29c3",
+    "size_bytes": 26674
+  },
+  "nodes": {
+    "supabase-op-01": {
+      "records": 9,
+      "sha256": "e8b46822945e30507c878a494aecb86863219ee66f8c2986593bff49c69749aa",
+      "size_bytes": 10955
+    },
+    "supabase-op-02": {
+      "records": 9,
+      "sha256": "fc71ef9a49228e59f2f8e6b3e8a1c129cb6f3ee76021367c0cebbcace6d59086",
+      "size_bytes": 10964
+    },
+    "supabase-op-03": {
+      "records": 9,
+      "sha256": "f6239da7792f33d4fe9186fe7bb687d933372dc31039db0a779b5ed2c8cf4b2b",
+      "size_bytes": 10990
+    },
+    "supabase-op-04": {
+      "records": 9,
+      "sha256": "b680c9607fc5b99bbbd238d2371b9d47b5356460457d86ae2ac17e7ae4d20229",
+      "size_bytes": 10972
+    },
+    "supabase-op-05": {
+      "records": 9,
+      "sha256": "036161ba23dbc09e83ccbecb2015622866acafe8b7a76b10fd5f9321395f4ef1",
+      "size_bytes": 10969
+    },
+    "supabase-op-06": {
+      "records": 9,
+      "sha256": "a7da2e2cd628dd6e0e7877a3e0446a6bd768a5f3bdaf7a409afa5caf24033240",
+      "size_bytes": 11007
+    },
+    "supabase-op-07": {
+      "records": 9,
+      "sha256": "208054a127043f0437397fe548cd14aeb0a070d48037f9bb2e8fd072d4149c89",
+      "size_bytes": 10959
+    },
+    "supabase-op-08": {
+      "records": 9,
+      "sha256": "5ab638a75391f05c7f809b8fdd232ffa400a0ad0ea9263848080ffef7c1c2f52",
+      "size_bytes": 10954
+    },
+    "supabase-op-09": {
+      "records": 9,
+      "sha256": "f577e935f43b1f742b9f680bcee6b9c91f012cdce7ef4136180fbe1568f2491d",
+      "size_bytes": 10995
+    },
+    "supabase-op-10": {
+      "records": 9,
+      "sha256": "249996cd443d0adebc10cf8c6231caa159d3623929f1390559760e64af4f7e5d",
+      "size_bytes": 10977
+    },
+    "supabase-op-11": {
+      "records": 9,
+      "sha256": "6d9a1024036c3df03465eb712d9abacfdf603e12db9b11408cecb9a8fccad12e",
+      "size_bytes": 10976
+    },
+    "supabase-op-12": {
+      "records": 9,
+      "sha256": "5b5b369d5d62810b147c855707bc17d0280111ec32084ed163891fe5d3092564",
+      "size_bytes": 11016
+    },
+    "wasmer-op-13": {
+      "records": 9,
+      "sha256": "472130e646662b597ded30f7c18a417d74daa269012ec340ff7127b35084149c",
+      "size_bytes": 9788
+    },
+    "wasmer-op-14": {
+      "records": 9,
+      "sha256": "e0b9aba39fd08efed7e8e1beb68ab488765462cb2321d46ce65bc1eed5b90129",
+      "size_bytes": 9788
+    },
+    "supabase-op-15": {
+      "records": 9,
+      "sha256": "83cf2c93af8bfdffb2a0a979a878c72080b0ebbe833fce530d01e6e1ce61fdb0",
+      "size_bytes": 10838
+    },
+    "supabase-op-16": {
+      "records": 9,
+      "sha256": "552851ea9af81befa8e843a3368123ca41f5694878e8bb956ecb4b3cff9f6ba6",
+      "size_bytes": 10836
+    },
+    "supabase-op-17": {
+      "records": 9,
+      "sha256": "aecf31faca27bfb123ea943c38dafbe34910e47b6e0ba892113e6ae6d53dd722",
+      "size_bytes": 10835
+    },
+    "supabase-op-18": {
+      "records": 9,
+      "sha256": "b2a1ed2d06806f49269c6011b159737305cb5cf7faf10cd6becc7b60da650d6a",
+      "size_bytes": 10840
+    },
+    "supabase-op-19": {
+      "records": 9,
+      "sha256": "63da243a0aae389fd848eb945047277cbeeb88bbb8f2ab017c39014da6933237",
+      "size_bytes": 10931
+    },
+    "supabase-op-20": {
+      "records": 9,
+      "sha256": "99ca851ff7470d81556ce487fb4078d52514d736f7905e203c2a5fffbe8e1d3f",
+      "size_bytes": 10927
+    },
+    "wasmer-op-21": {
+      "records": 9,
+      "sha256": "298dc0ee96fdc862eac18919116a9fe103639f4d57a8fc092153af8b7c3e6ac8",
+      "size_bytes": 9979
+    },
+    "wasmer-op-22": {
+      "records": 9,
+      "sha256": "98cb75cd06e494ae742d87faa5fb606ba65e2f78b8b2e733d2361362991f23cc",
+      "size_bytes": 9985
+    },
+    "wasmer-op-23": {
+      "records": 9,
+      "sha256": "9051bb27c93aeea3fad436e8ddfbb3d6ad40e34f9285a260f63e37f77a380c5d",
+      "size_bytes": 9985
+    },
+    "wasmer-op-24": {
+      "records": 9,
+      "sha256": "0e676d894032b5272e2b2ec2802b1b6aa14cc5fc4f4edcd9986f8bd94b4cdf49",
+      "size_bytes": 9992
+    },
+    "supabase-op-25": {
+      "records": 9,
+      "sha256": "9f5235a73b9a7fe9f627f097c517f837a5e4fa8fd0fe1886b25bc088735e8e68",
+      "size_bytes": 10836
+    },
+    "northflank-op-26": {
+      "records": 9,
+      "sha256": "01cf8efb10cee4a9adc7d58456f5a4a5db4bf748494a177a2852aab582167cbb",
+      "size_bytes": 10022
+    },
+    "wasmer-op-27": {
+      "records": 9,
+      "sha256": "2c260deaaad32892024affe0a11f52ab26d68c593f90364d8955f1e701361813",
+      "size_bytes": 10039
+    },
+    "supabase-op-28": {
+      "records": 9,
+      "sha256": "20e82ac579ddb5e7497aecbaf8a7e5e6044d71255f2676c23cb098bd4bc95628",
+      "size_bytes": 10836
+    },
+    "supabase-op-29": {
+      "records": 9,
+      "sha256": "087e971de119cbfa71ef56c60b451a9480b3ced3c8a8ca42beb6c9a401f41e98",
+      "size_bytes": 10867
+    },
+    "supabase-op-30": {
+      "records": 9,
+      "sha256": "5c55a003c8f7a66d1caa04ac01c3e9a11270bf85edaf4f0feb2ef8a9d2493f7f",
+      "size_bytes": 10881
+    },
+    "supabase-op-31": {
+      "records": 9,
+      "sha256": "91f028d6d9c300719f7b543149abf0833d89974877bf0ef1d2c32e0d6eca5cf7",
+      "size_bytes": 10875
+    },
+    "supabase-op-32": {
+      "records": 9,
+      "sha256": "f51408a4c6bf49a2c2d14d1bd439f630ca81a7de6f23bd44931b48e431c7ccd0",
+      "size_bytes": 10952
+    },
+    "supabase-op-33": {
+      "records": 9,
+      "sha256": "d7dc580f783868d49e5b13cb6b9ccbbd93805ca8e11ac23c5bd3d400761cf5bd",
+      "size_bytes": 10951
+    },
+    "supabase-op-34": {
+      "records": 9,
+      "sha256": "63934a1cf0018a541970325be03f693991ff87cdf957fd164650a7e42b59113e",
+      "size_bytes": 10983
+    },
+    "fastly-ct-0001": {
+      "records": 9,
+      "sha256": "b2bb9a68a5d14a0c8c98136a6ad2675b586101e57906e33f3ad54a234f3dd2af",
+      "size_bytes": 10084
+    },
+    "netlify-ct-0001": {
+      "records": 9,
+      "sha256": "27409e53d0f64950995950891e1aaa82275a2559ce8c252c96f3ac3e6c8cf22d",
+      "size_bytes": 9445
+    },
+    "edgeone-ct-0001": {
+      "records": 9,
+      "sha256": "590a549ece412747451a84f4c8a0e7bf5e72962fe2284e332a4d9d56b67bfc92",
+      "size_bytes": 9236
+    }
+  }
+}

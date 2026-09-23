@@ -1,0 +1,51 @@
+{
+  "run_id": "20260923_112251",
+  "format": "jsonl",
+  "generated_at": "2026-09-23T11:25:27.941862+00:00",
+  "methodology": "CHAINED_ESTIMATE",
+  "proxy_chain_overhead_disclaimer": "Testing mode is CHAINED_ESTIMATE. The measurements reflect an isolated multi-hop route / proxy chain topology incurring protocol encapsulation, TLS tunneling, and edge routing overhead. This measurement represents an estimation of cross-border edge reachability and is NOT equivalent to direct client terminal speedtest within mainland China.",
+  "total_records": 333,
+  "rounds_per_carrier": 3,
+  "total_rounds": 9,
+  "files": {
+    "telecom.jsonl": {
+      "carrier": "telecom",
+      "carrier_network": "china-telecom",
+      "carrier_asn": "AS4134",
+      "records": 111,
+      "rounds_tested": 3,
+      "sha256": "1e76460cb9952c5230d86069321c898d40994abba2ffc3e0f4c5857f29f5d747",
+      "size_bytes": 130966
+    },
+    "unicom.jsonl": {
+      "carrier": "unicom",
+      "carrier_network": "china-unicom",
+      "carrier_asn": "AS4837",
+      "records": 111,
+      "rounds_tested": 3,
+      "sha256": "e817212df23820a7472f50244e61b57acec0b2f8d451c2fd0d2e1091e734f019",
+      "size_bytes": 130746
+    },
+    "mobile.jsonl": {
+      "carrier": "mobile",
+      "carrier_network": "china-mobile",
+      "carrier_asn": "AS9808",
+      "records": 111,
+      "rounds_tested": 3,
+      "sha256": "970874fad76315ab6a9adfa032441ffeec0293eb05b4a7c0db68f5935ab9e9ec",
+      "size_bytes": 130753
+    }
+  },
+  "route_proof": {
+    "file": "results/route-proof/20260923_112251.json",
+    "sha256": "3948aa8d1dca73da4b8a30ab54a74a308dbfea25612d9df4464b81c2906fed25"
+  },
+  "candidate_pool_summary": {
+    "raw_candidates_count": 6120,
+    "deduped_candidates_count": 348,
+    "rejected_candidates_count": 5772,
+    "deployed_candidates_count": 270,
+    "tested_candidates_count": 37,
+    "published_candidates_count": 34
+  }
+}
