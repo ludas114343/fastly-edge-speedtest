@@ -80,6 +80,6 @@
     "gwgiogtgdyrqlexcdjqm/edgetunnel": 5
   },
   "distinction_note": "Explicit partition: Supabase operates exactly 2 physical projects and 2 Edge Function deployment groups (theecyezvuzkflwikxwr and gwgiogtgdyrqlexcdjqm). The 10 regional paths (?forceFunctionRegion) provide egress geographic diversity via Supabase Anycast routing to regional AWS clusters, and are NOT independent physical deployments.",
-  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "checked_at": "2026-09-23T11:21:59.812506+00:00",
   "api_response_hash": "3dbd951f5d47760513d632325cd9c766eec3bf8683e576e391ea8ae58daa6b62"
 }

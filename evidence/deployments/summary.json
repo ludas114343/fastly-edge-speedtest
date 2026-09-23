@@ -205,7 +205,7 @@
       "status": "NO_VERIFIED_PROXY",
       "reason": "Cloudflare Workers edgetunnel requires explicit external PROXYIP for VLESS WS outbound dial; direct non-standard egress is blocked by V8 isolate sandbox without paid/external proxyip.",
       "ws_status": "101 Switching Protocols",
-      "modes_comparison_file": "evidence/deployments/cf_modes_comparison.json",
+      "modes_comparison_file": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/evidence/deployments/cf_modes_comparison.json",
       "modes": {
         "mode_a_direct": {
           "name": "[Cloudflare入口->直连出口]",

@@ -45,6 +45,6 @@
     "edgeone-proxy-zone-3td4th92xk0e-1463384265": "2026-09-22T23:29:56+08:00"
   },
   "distinction_note": "Tencent Cloud EdgeOne edge function ef-ddka6pqw operates as an L7 Anycast fronting reverse proxy forwarding to Wasmer and Northflank backends. Ingress-only fronting does not provide independent egress proxy nodes. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
-  "checked_at": "2026-09-23T11:20:07.818309+00:00",
-  "api_response_hash": "6b1689677eb796d1c6d7150a77338c9141770e5cb95bfcebcd9c792ab888c875"
+  "checked_at": "2026-09-23T11:21:59.812506+00:00",
+  "api_response_hash": "fcb4bbd5a1bfb0da9cccfa9b0bce34f2db912f6da845255c6d3a70addc2db42c"
 }

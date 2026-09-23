@@ -49,6 +49,6 @@
     "gateway-core-net": "6ab29c9e4319a538e559a4a4"
   },
   "distinction_note": "Netlify Edge Function is deployed and responds HTTP 200, but WebSocket upgrade returns HTTP 502 Bad Gateway due to Netlify CDN ingress edge limitations. Inactive for direct WebSocket proxying. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
-  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "checked_at": "2026-09-23T11:21:59.812506+00:00",
   "api_response_hash": "d71e62fec8212ee848a41a0e2e67e745f4b3da076c8f6d3bd4ebb3ce37e622e1"
 }

@@ -752,5 +752,6 @@ def run_reconciliation():
 
 if __name__ == "__main__":
     verdict = run_reconciliation()
-    # Exit cleanly with code 0 as test execution completed deterministically
+    if "--strict" in sys.argv or "--fail-on-violation" in sys.argv:
+        sys.exit(1 if verdict["report_generation_blocked"] else 0)
     sys.exit(0)

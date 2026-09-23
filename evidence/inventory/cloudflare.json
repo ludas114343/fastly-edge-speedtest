@@ -51,6 +51,6 @@
     "summer-fog-5f9c": "014e9abc-a1c5-4b23-9ef3-5275fb3d4e9e"
   },
   "distinction_note": "Cloudflare Worker summer-fog-5f9c deployed on dream.ruoyemu.asia acts as Anycast edge ingress. Direct egress is blocked by Cloudflare runtime constraints; proxyip mode triggers TLS resets against Supabase endpoints. Verified proxy count is 0; marked unfinished: true and status: NO_VERIFIED_PROXY.",
-  "checked_at": "2026-09-23T11:20:07.818309+00:00",
+  "checked_at": "2026-09-23T11:21:59.812506+00:00",
   "api_response_hash": "f198299a8f64e1b0af987282cd445587d2266c86ddc1e19215d442ee8c56386b"
 }
