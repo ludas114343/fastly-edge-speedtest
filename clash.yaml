@@ -30,34 +30,6 @@ proxies:
     path: /functions/v1/edgetunnel?forceFunctionRegion=us-east-1
     headers:
       Host: gwgiogtgdyrqlexcdjqm.supabase.co
-- name: 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
-  type: vless
-  server: w-fr.ruoyemu.asia
-  port: 443
-  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-  network: ws
-  tls: true
-  udp: true
-  sni: w-fr.ruoyemu.asia
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&s=2
-    headers:
-      Host: w-fr.ruoyemu.asia
-- name: 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
-  type: vless
-  server: w-us.ruoyemu.asia
-  port: 443
-  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-  network: ws
-  tls: true
-  udp: true
-  sni: w-us.ruoyemu.asia
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&s=1
-    headers:
-      Host: w-us.ruoyemu.asia
 - name: 🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]
   type: vless
   server: theecyezvuzkflwikxwr.supabase.co
@@ -100,20 +72,6 @@ proxies:
     path: /ws
     headers:
       Host: nf-node.ruoyemu.asia
-- name: 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
-  type: vless
-  server: w-east.ruoyemu.asia
-  port: 443
-  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-  network: ws
-  tls: true
-  udp: true
-  sni: w-east.ruoyemu.asia
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&s=1
-    headers:
-      Host: w-east.ruoyemu.asia
 - name: 🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]
   type: vless
   server: gwgiogtgdyrqlexcdjqm.supabase.co
@@ -226,34 +184,6 @@ proxies:
     path: /functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-2
     headers:
       Host: theecyezvuzkflwikxwr.supabase.co
-- name: 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
-  type: vless
-  server: w-fr.ruoyemu.asia
-  port: 443
-  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-  network: ws
-  tls: true
-  udp: true
-  sni: w-fr.ruoyemu.asia
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&s=1
-    headers:
-      Host: w-fr.ruoyemu.asia
-- name: 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
-  type: vless
-  server: w-la.ruoyemu.asia
-  port: 443
-  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-  network: ws
-  tls: true
-  udp: true
-  sni: w-la.ruoyemu.asia
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&s=1
-    headers:
-      Host: w-la.ruoyemu.asia
 - name: 🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]
   type: vless
   server: theecyezvuzkflwikxwr.supabase.co
@@ -324,6 +254,62 @@ proxies:
     path: /functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1&s=2
     headers:
       Host: theecyezvuzkflwikxwr.supabase.co
+- name: 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  type: vless
+  server: w-fr.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-fr.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=2
+    headers:
+      Host: w-fr.ruoyemu.asia
+- name: 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  type: vless
+  server: w-us.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-us.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-us.ruoyemu.asia
+- name: 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  type: vless
+  server: w-east.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-east.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-east.ruoyemu.asia
+- name: 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
+  type: vless
+  server: w-la.ruoyemu.asia
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: w-la.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&s=1
+    headers:
+      Host: w-la.ruoyemu.asia
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -337,12 +323,9 @@ proxy-groups:
   - 🇩🇪 欧洲节点
   - 🇦🇺 大洋洲节点
   - 🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]
-  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
-  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
   - 🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]
   - 🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]
   - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
-  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
   - 🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]
   - 🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]
   - 🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]
@@ -351,13 +334,15 @@ proxy-groups:
   - 🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]
   - 🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]
   - 🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]
-  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
-  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
   - 🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]
   - 🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]
   - 🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]
   - 🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]
   - 🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -365,12 +350,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]
-  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
-  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
   - 🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]
   - 🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]
   - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
-  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
   - 🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]
   - 🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]
   - 🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]
@@ -379,13 +361,15 @@ proxy-groups:
   - 🇨🇦 加拿大 01 [edgetunnel · AWS ca-central-1]
   - 🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]
   - 🇦🇺 澳大利亚 01 [edgetunnel · AWS ap-southeast-2]
-  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
-  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
   - 🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]
   - 🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]
   - 🇸🇬 新加坡 03 [edgetunnel · AWS ap-southeast-1]
   - 🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]
   - 🇯🇵 日本东京 03 [edgetunnel · AWS ap-northeast-1]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
+  - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
 - name: 🇯🇵 日本节点
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -417,10 +401,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]
-  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
   - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
-  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
   - 🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]
+  - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
+  - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
   - 🇺🇸 美国美西 01 [Wasmer · Choopa AS20473]
 - name: 🇩🇪 欧洲节点
   type: url-test
@@ -428,13 +412,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
   - 🇬🇧 英国伦敦 02 [edgetunnel · AWS eu-west-2]
   - 🇩🇪 德国法兰克福 01 [edgetunnel · AWS eu-central-1]
-  - 🇫🇷 法国巴黎 01 [Wasmer · OVH AS16276]
   - 🇫🇷 法国巴黎 03 [edgetunnel · AWS eu-west-3]
   - 🇩🇪 德国法兰克福 03 [edgetunnel · AWS eu-central-1]
   - 🇩🇪 德国法兰克福 02 [edgetunnel · AWS eu-central-1]
+  - 🇫🇷 法国巴黎 02 [Wasmer · OVH AS16276]
 - name: 🇦🇺 大洋洲节点
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -461,8 +444,11 @@ rules:
 metadata:
   status: VERIFIED_PROXY
   platform: all
-  node_count: 22
+  node_count: 21
+  unfinished: false
+  head_sha: 234067b0145c209b842df97b46da0451fab40294
+  run_id: '20260922_133327'
+  tested_run_id: '20260922_133327'
   reason: Successfully passed 9-round VLESS and generate_204 hard gates with stable
     egress route
-  tested_run_id: '20260922_133327'
-  verified_at: '2026-09-22T15:41:01.176108+00:00'
+  verified_at: '2026-09-23T11:24:05.574450+00:00'

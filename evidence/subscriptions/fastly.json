@@ -1,18 +1,28 @@
 {
   "token": "fastly",
   "url_path": "/fastly",
+  "https_url": "https://speedtest.ludash.top/fastly",
+  "alternate_urls": [
+    "https://speedtest.ruoyemu.asia/fastly",
+    "https://wasmer-sub.cccp2427.workers.dev/fastly",
+    "https://sub.ruoyemu.asia/fastly"
+  ],
   "http_status": 200,
-  "sha256": "85a4818aa5bf035e0a8372af856c146055bd9eab7ac9c959fd348a7e83517958",
+  "sha256": "57f8430cef3e8471bd287332b03f0f794cdf4b304ccba66b0daa2fa70fbd9589",
   "node_count": 0,
   "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
   "metadata": {
     "status": "NO_VERIFIED_PROXY",
     "platform": "fastly",
     "node_count": 0,
-    "reason": "Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips WebSocket Upgrade headers without paid Custom TLS SAN certificate",
+    "unfinished": true,
+    "head_sha": "234067b0145c209b842df97b46da0451fab40294",
+    "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
-    "verified_at": "2026-09-22T15:41:01.284864+00:00"
+    "reason": "Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips WebSocket Upgrade headers without paid Custom TLS SAN certificate",
+    "verified_at": "2026-09-23T11:24:05.702382+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-09-22T15:41:01.293837+00:00"
+  "verified_at": "2026-09-23T11:24:05.711898+00:00"
 }

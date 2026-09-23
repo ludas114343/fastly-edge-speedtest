@@ -1,72 +1,380 @@
 {
-  "audit_timestamp": "2026-09-23T11:21:22.603525+00:00",
+  "audit_timestamp": "2026-09-23T11:23:39.831189+00:00",
   "auditor": "agent-github-auditor",
   "summary": {
     "expected_workflows_count": 13,
-    "actual_remote_workflow_files_count": 2,
-    "actual_registered_actions_workflows_count": 2,
+    "actual_remote_workflow_files_count": 13,
+    "actual_registered_actions_workflows_count": 13,
     "actual_local_workflow_files_count": 13,
-    "discrepancy_detected": true,
-    "discrepancy_reason": "Remote repository only contains 2 legacy workflows (edgeone-full-sweep.yml, edgeone-published-recheck.yml). The 13 required V13 workflow files have not yet been synchronized or pushed to origin/main."
+    "discrepancy_detected": false,
+    "discrepancy_reason": null
   },
   "remote_workflow_files": [
     {
-      "name": "edgeone-full-sweep.yml",
-      "path": ".github/workflows/edgeone-full-sweep.yml",
-      "sha": "d14ef7fa90f1a57dbae8abc3fcac664582d405d0",
-      "size": 2745,
-      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/edgeone-full-sweep.yml?ref=main",
-      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/edgeone-full-sweep.yml",
-      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d14ef7fa90f1a57dbae8abc3fcac664582d405d0",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/edgeone-full-sweep.yml?token=BJQP6DDTCTF4DKMZLWFHMK3KWO3HFAA",
+      "name": "deploy-cloudflare.yml",
+      "path": ".github/workflows/deploy-cloudflare.yml",
+      "sha": "b693bc6b7b52c1bd99d61c8b1461ae2bbfa8bf99",
+      "size": 2176,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-cloudflare.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-cloudflare.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b693bc6b7b52c1bd99d61c8b1461ae2bbfa8bf99",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-cloudflare.yml?token=BJQP6DDNCHDJV5LU5AUP3R3KWO3PXAA",
       "type": "file",
       "_links": {
-        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/edgeone-full-sweep.yml?ref=main",
-        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d14ef7fa90f1a57dbae8abc3fcac664582d405d0",
-        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/edgeone-full-sweep.yml"
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-cloudflare.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b693bc6b7b52c1bd99d61c8b1461ae2bbfa8bf99",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-cloudflare.yml"
       }
     },
     {
-      "name": "edgeone-published-recheck.yml",
-      "path": ".github/workflows/edgeone-published-recheck.yml",
-      "sha": "f6cce4899beb6e6102f718bac829ab06af5650b7",
-      "size": 1003,
-      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/edgeone-published-recheck.yml?ref=main",
-      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/edgeone-published-recheck.yml",
-      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/f6cce4899beb6e6102f718bac829ab06af5650b7",
-      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/edgeone-published-recheck.yml?token=BJQP6DCHT2OY3HQRREMAUYDKWO3HFAA",
+      "name": "deploy-edgeone.yml",
+      "path": ".github/workflows/deploy-edgeone.yml",
+      "sha": "f3db204f5491c6c192e5f6bd208024d28d89a4c7",
+      "size": 2175,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-edgeone.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-edgeone.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/f3db204f5491c6c192e5f6bd208024d28d89a4c7",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-edgeone.yml?token=BJQP6DH35BQO7XD4L7CC2CDKWO3PXAA",
       "type": "file",
       "_links": {
-        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/edgeone-published-recheck.yml?ref=main",
-        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/f6cce4899beb6e6102f718bac829ab06af5650b7",
-        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/edgeone-published-recheck.yml"
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-edgeone.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/f3db204f5491c6c192e5f6bd208024d28d89a4c7",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-edgeone.yml"
+      }
+    },
+    {
+      "name": "deploy-fastly.yml",
+      "path": ".github/workflows/deploy-fastly.yml",
+      "sha": "c697225ee748ce62ba20ab18e473b9bf49970ea1",
+      "size": 2160,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-fastly.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-fastly.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/c697225ee748ce62ba20ab18e473b9bf49970ea1",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-fastly.yml?token=BJQP6DH2M4YQN3WNKYE55BLKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-fastly.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/c697225ee748ce62ba20ab18e473b9bf49970ea1",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-fastly.yml"
+      }
+    },
+    {
+      "name": "deploy-netlify.yml",
+      "path": ".github/workflows/deploy-netlify.yml",
+      "sha": "4126aca24df6c1c19e5c18b3219dbc3f1f12b3a2",
+      "size": 2125,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-netlify.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-netlify.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/4126aca24df6c1c19e5c18b3219dbc3f1f12b3a2",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-netlify.yml?token=BJQP6DDX5X4ZMU4QZD47YGDKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-netlify.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/4126aca24df6c1c19e5c18b3219dbc3f1f12b3a2",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-netlify.yml"
+      }
+    },
+    {
+      "name": "deploy-northflank.yml",
+      "path": ".github/workflows/deploy-northflank.yml",
+      "sha": "477640c884b661ff6bf0455638317e94462c6bd6",
+      "size": 2296,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-northflank.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-northflank.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/477640c884b661ff6bf0455638317e94462c6bd6",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-northflank.yml?token=BJQP6DBTFDZVZCHQBQVT2PTKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-northflank.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/477640c884b661ff6bf0455638317e94462c6bd6",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-northflank.yml"
+      }
+    },
+    {
+      "name": "deploy-supabase.yml",
+      "path": ".github/workflows/deploy-supabase.yml",
+      "sha": "1efb2ef67381921e57258e36a568c01fec2e16c0",
+      "size": 2422,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-supabase.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-supabase.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/1efb2ef67381921e57258e36a568c01fec2e16c0",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-supabase.yml?token=BJQP6DE2IL3TOQSTP6IYYH3KWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-supabase.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/1efb2ef67381921e57258e36a568c01fec2e16c0",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-supabase.yml"
+      }
+    },
+    {
+      "name": "deploy-wasmer.yml",
+      "path": ".github/workflows/deploy-wasmer.yml",
+      "sha": "55bd4b8a8e201a53adccf7bdb58311d5a5549bda",
+      "size": 2379,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-wasmer.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-wasmer.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/55bd4b8a8e201a53adccf7bdb58311d5a5549bda",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/deploy-wasmer.yml?token=BJQP6DGXXNHRVFC43DWZT6LKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/deploy-wasmer.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/55bd4b8a8e201a53adccf7bdb58311d5a5549bda",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-wasmer.yml"
+      }
+    },
+    {
+      "name": "discover-candidates.yml",
+      "path": ".github/workflows/discover-candidates.yml",
+      "sha": "17c40b3b248adf5eaa2b6c6536e9e24f9b02de7e",
+      "size": 1701,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/discover-candidates.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/discover-candidates.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/17c40b3b248adf5eaa2b6c6536e9e24f9b02de7e",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/discover-candidates.yml?token=BJQP6DALAPQXBY5T5YVJRI3KWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/discover-candidates.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/17c40b3b248adf5eaa2b6c6536e9e24f9b02de7e",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/discover-candidates.yml"
+      }
+    },
+    {
+      "name": "external-blackbox-audit.yml",
+      "path": ".github/workflows/external-blackbox-audit.yml",
+      "sha": "389dea3ef5c8bd84b59dc227f5d41b08e306750c",
+      "size": 3016,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/external-blackbox-audit.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/external-blackbox-audit.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/389dea3ef5c8bd84b59dc227f5d41b08e306750c",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/external-blackbox-audit.yml?token=BJQP6DH3Z75YQT32FWO2KRLKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/external-blackbox-audit.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/389dea3ef5c8bd84b59dc227f5d41b08e306750c",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/external-blackbox-audit.yml"
+      }
+    },
+    {
+      "name": "optimize-three-carriers.yml",
+      "path": ".github/workflows/optimize-three-carriers.yml",
+      "sha": "e41e33e3557e89490637acc315653aa0bac7528c",
+      "size": 1467,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/optimize-three-carriers.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/optimize-three-carriers.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/e41e33e3557e89490637acc315653aa0bac7528c",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/optimize-three-carriers.yml?token=BJQP6DFPQOYBJW2VS4WQGEDKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/optimize-three-carriers.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/e41e33e3557e89490637acc315653aa0bac7528c",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/optimize-three-carriers.yml"
+      }
+    },
+    {
+      "name": "publish-subscriptions.yml",
+      "path": ".github/workflows/publish-subscriptions.yml",
+      "sha": "b0b03adbf97ec14599604a41e9db3ef904db9b91",
+      "size": 1397,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/publish-subscriptions.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/publish-subscriptions.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b0b03adbf97ec14599604a41e9db3ef904db9b91",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/publish-subscriptions.yml?token=BJQP6DF2VQALWJRUED74MEDKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/publish-subscriptions.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/b0b03adbf97ec14599604a41e9db3ef904db9b91",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/publish-subscriptions.yml"
+      }
+    },
+    {
+      "name": "smoke-test.yml",
+      "path": ".github/workflows/smoke-test.yml",
+      "sha": "d21619690bc6e0ce37fd3bab84a0170da1f8ab1c",
+      "size": 933,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/smoke-test.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/smoke-test.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d21619690bc6e0ce37fd3bab84a0170da1f8ab1c",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/smoke-test.yml?token=BJQP6DDG3CV2XG3WKN25MVDKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/smoke-test.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d21619690bc6e0ce37fd3bab84a0170da1f8ab1c",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/smoke-test.yml"
+      }
+    },
+    {
+      "name": "watchdog.yml",
+      "path": ".github/workflows/watchdog.yml",
+      "sha": "d79dbf36b5081b162ec206664b2db66b27deff59",
+      "size": 2604,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/watchdog.yml?ref=main",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/watchdog.yml",
+      "git_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d79dbf36b5081b162ec206664b2db66b27deff59",
+      "download_url": "https://raw.githubusercontent.com/ludas114343/fastly-edge-speedtest/main/.github/workflows/watchdog.yml?token=BJQP6DBHZ2F3VCKWMV2MQKTKWO3PXAA",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/contents/.github/workflows/watchdog.yml?ref=main",
+        "git": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/git/blobs/d79dbf36b5081b162ec206664b2db66b27deff59",
+        "html": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/watchdog.yml"
       }
     }
   ],
   "actions_workflows": [
     {
-      "id": 362053412,
-      "node_id": "W_kwDOUcADxs4VlH8k",
-      "name": "Edge Multi-Platform Full Candidate Sweep",
-      "path": ".github/workflows/edgeone-full-sweep.yml",
+      "id": 365071837,
+      "node_id": "W_kwDOUcADxs4Vwo3d",
+      "name": "Deploy and Health - Cloudflare",
+      "path": ".github/workflows/deploy-cloudflare.yml",
       "state": "active",
-      "created_at": "2026-09-19T20:30:59.000+08:00",
-      "updated_at": "2026-09-19T20:30:59.000+08:00",
-      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/362053412",
-      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/edgeone-full-sweep.yml",
-      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Edge%20Multi-Platform%20Full%20Candidate%20Sweep/badge.svg"
+      "created_at": "2026-09-23T19:22:43.000+08:00",
+      "updated_at": "2026-09-23T19:22:43.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071837",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-cloudflare.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20Cloudflare/badge.svg"
     },
     {
-      "id": 362053413,
-      "node_id": "W_kwDOUcADxs4VlH8l",
-      "name": "Edge Published Nodes Recheck",
-      "path": ".github/workflows/edgeone-published-recheck.yml",
+      "id": 365071839,
+      "node_id": "W_kwDOUcADxs4Vwo3f",
+      "name": "Deploy and Health - EdgeOne",
+      "path": ".github/workflows/deploy-edgeone.yml",
       "state": "active",
-      "created_at": "2026-09-19T20:30:59.000+08:00",
-      "updated_at": "2026-09-19T20:30:59.000+08:00",
-      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/362053413",
-      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/edgeone-published-recheck.yml",
-      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Edge%20Published%20Nodes%20Recheck/badge.svg"
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071839",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-edgeone.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20EdgeOne/badge.svg"
+    },
+    {
+      "id": 365071840,
+      "node_id": "W_kwDOUcADxs4Vwo3g",
+      "name": "Deploy and Health - Fastly",
+      "path": ".github/workflows/deploy-fastly.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071840",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-fastly.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20Fastly/badge.svg"
+    },
+    {
+      "id": 365071841,
+      "node_id": "W_kwDOUcADxs4Vwo3h",
+      "name": "Deploy and Health - Netlify",
+      "path": ".github/workflows/deploy-netlify.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071841",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-netlify.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20Netlify/badge.svg"
+    },
+    {
+      "id": 365071843,
+      "node_id": "W_kwDOUcADxs4Vwo3j",
+      "name": "Deploy and Health - Northflank",
+      "path": ".github/workflows/deploy-northflank.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071843",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-northflank.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20Northflank/badge.svg"
+    },
+    {
+      "id": 365071845,
+      "node_id": "W_kwDOUcADxs4Vwo3l",
+      "name": "Deploy and Health - Supabase",
+      "path": ".github/workflows/deploy-supabase.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071845",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-supabase.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20Supabase/badge.svg"
+    },
+    {
+      "id": 365071847,
+      "node_id": "W_kwDOUcADxs4Vwo3n",
+      "name": "Deploy and Health - Wasmer",
+      "path": ".github/workflows/deploy-wasmer.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071847",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/deploy-wasmer.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Deploy%20and%20Health%20-%20Wasmer/badge.svg"
+    },
+    {
+      "id": 365071850,
+      "node_id": "W_kwDOUcADxs4Vwo3q",
+      "name": "Pipeline - Discover Candidates",
+      "path": ".github/workflows/discover-candidates.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071850",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/discover-candidates.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Pipeline%20-%20Discover%20Candidates/badge.svg"
+    },
+    {
+      "id": 365071852,
+      "node_id": "W_kwDOUcADxs4Vwo3s",
+      "name": "Security - External Blackbox Audit",
+      "path": ".github/workflows/external-blackbox-audit.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071852",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/external-blackbox-audit.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Security%20-%20External%20Blackbox%20Audit/badge.svg"
+    },
+    {
+      "id": 365071853,
+      "node_id": "W_kwDOUcADxs4Vwo3t",
+      "name": "Pipeline - Optimize Three Carriers",
+      "path": ".github/workflows/optimize-three-carriers.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071853",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/optimize-three-carriers.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Pipeline%20-%20Optimize%20Three%20Carriers/badge.svg"
+    },
+    {
+      "id": 365071856,
+      "node_id": "W_kwDOUcADxs4Vwo3w",
+      "name": "Pipeline - Publish Subscriptions",
+      "path": ".github/workflows/publish-subscriptions.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071856",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/publish-subscriptions.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Pipeline%20-%20Publish%20Subscriptions/badge.svg"
+    },
+    {
+      "id": 365071858,
+      "node_id": "W_kwDOUcADxs4Vwo3y",
+      "name": "Pipeline - Backend Smoke Test",
+      "path": ".github/workflows/smoke-test.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071858",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/smoke-test.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Pipeline%20-%20Backend%20Smoke%20Test/badge.svg"
+    },
+    {
+      "id": 365071860,
+      "node_id": "W_kwDOUcADxs4Vwo30",
+      "name": "Watchdog - Subscription Audit and Activity Guard",
+      "path": ".github/workflows/watchdog.yml",
+      "state": "active",
+      "created_at": "2026-09-23T19:22:44.000+08:00",
+      "updated_at": "2026-09-23T19:22:44.000+08:00",
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/workflows/365071860",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/blob/main/.github/workflows/watchdog.yml",
+      "badge_url": "https://github.com/ludas114343/fastly-edge-speedtest/workflows/Watchdog%20-%20Subscription%20Audit%20and%20Activity%20Guard/badge.svg"
     }
   ],
   "local_workflow_files": [
@@ -150,15 +458,52 @@
     }
   ],
   "workflow_runs_summary": {
-    "total_runs_count": 49,
+    "total_runs_count": 50,
     "completed_runs": 49,
-    "in_progress_runs": 0,
+    "in_progress_runs": 1,
     "queued_runs": 0,
     "success_runs": 45,
     "failure_runs": 4,
     "cancelled_runs": 0
   },
   "workflow_runs": [
+    {
+      "id": 35854255197,
+      "name": "Watchdog - Subscription Audit and Activity Guard",
+      "node_id": "WFR_kwLOUcADxs8AAAAIWRSEXQ",
+      "head_branch": "main",
+      "head_sha": "92c2276327eaf11e133c6b3482c7b3266d77e671",
+      "path": ".github/workflows/watchdog.yml",
+      "display_title": "Watchdog - Subscription Audit and Activity Guard",
+      "run_number": 1,
+      "event": "workflow_dispatch",
+      "status": "in_progress",
+      "conclusion": null,
+      "workflow_id": 365071860,
+      "url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35854255197",
+      "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/actions/runs/35854255197",
+      "created_at": "2026-09-23T11:23:30Z",
+      "updated_at": "2026-09-23T11:23:35Z",
+      "run_started_at": "2026-09-23T11:23:30Z",
+      "jobs_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35854255197/jobs",
+      "logs_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35854255197/logs",
+      "artifacts_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35854255197/artifacts",
+      "jobs": [
+        {
+          "id": 107158889069,
+          "run_id": 35854255197,
+          "name": "watchdog-guard",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-09-23T11:23:34Z",
+          "completed_at": null,
+          "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/actions/runs/35854255197/job/107158889069",
+          "runner_id": 1000000239,
+          "runner_name": "GitHub Actions 1000000239",
+          "steps_count": 11
+        }
+      ]
+    },
     {
       "id": 35839802459,
       "name": "Edge Published Nodes Recheck",
@@ -698,21 +1043,7 @@
       "jobs_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35540381500/jobs",
       "logs_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35540381500/logs",
       "artifacts_url": "https://api.github.com/repos/ludas114343/fastly-edge-speedtest/actions/runs/35540381500/artifacts",
-      "jobs": [
-        {
-          "id": 106156828247,
-          "run_id": 35540381500,
-          "name": "published-nodes-recheck",
-          "status": "completed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T22:01:25Z",
-          "completed_at": "2026-09-20T22:01:46Z",
-          "html_url": "https://github.com/ludas114343/fastly-edge-speedtest/actions/runs/35540381500/job/106156828247",
-          "runner_id": 1000000202,
-          "runner_name": "GitHub Actions 1000000202",
-          "steps_count": 9
-        }
-      ]
+      "jobs": []
     },
     {
       "id": 35528815463,

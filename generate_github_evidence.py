@@ -182,8 +182,8 @@ def fetch_all():
             'actual_remote_workflow_files_count': len(contents) if isinstance(contents, list) else 0,
             'actual_registered_actions_workflows_count': workflows.get('total_count', 0),
             'actual_local_workflow_files_count': len(local_workflows),
-            'discrepancy_detected': True,
-            'discrepancy_reason': 'Remote repository only contains 2 legacy workflows (edgeone-full-sweep.yml, edgeone-published-recheck.yml). The 13 required V13 workflow files have not yet been synchronized or pushed to origin/main.'
+            'discrepancy_detected': not (len(contents) == 13 and len(local_workflows) == 13 and workflows.get('total_count', 0) == 13),
+            'discrepancy_reason': None if (len(contents) == 13 and len(local_workflows) == 13 and workflows.get('total_count', 0) == 13) else 'Workflow count mismatch between expected and actual.'
         },
         'remote_workflow_files': contents if isinstance(contents, list) else [],
         'actions_workflows': workflows.get('workflows', []),
