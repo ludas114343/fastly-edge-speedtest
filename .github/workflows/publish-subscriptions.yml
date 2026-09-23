@@ -32,18 +32,24 @@ jobs:
         run: |
           python test_subscriptions_suite.py
 
+      - name: Execute Atomic Subscription Release and Promotion
+        run: |
+          python scripts/atomic_release.py --run-id "${{ github.run_id }}" --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" --head-sha "${{ github.sha }}"
+
       - name: Upload Published Subscriptions Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: published-subscriptions
+          name: published-subscriptions-${{ github.run_id }}
           path: |
             clash*.yaml
             evidence/subscriptions/
+            production/
+            release/
           retention-days: 30
 
       - name: Commit and Push Published Updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add clash*.yaml evidence/subscriptions/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(publish): publish unified subscriptions [skip ci]" && git pull --rebase origin main && git push origin main)
+          git add clash*.yaml evidence/subscriptions/ production/ release/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(publish): publish unified subscriptions and atomic release [skip ci]" && git pull --rebase origin main && git push origin main)

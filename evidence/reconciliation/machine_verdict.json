@@ -1,14 +1,14 @@
 {
   "version": "v13",
   "auditor": "agent-final-reconciler",
-  "timestamp": "2026-09-23T11:23:33.788662+00:00",
+  "timestamp": "2026-09-23T11:24:48.204066+00:00",
   "overall_verdict": "FAIL",
   "report_generation_blocked": true,
-  "blocking_reason": "Reconciliation detected 7 contradiction violation(s) across 8 rules. Under Definition of Done and Mandate Rule 3, report generation is strictly BLOCKED.",
+  "blocking_reason": "Reconciliation detected 5 contradiction violation(s) across 8 rules. Under Definition of Done and Mandate Rule 3, report generation is strictly BLOCKED.",
   "rules_summary": {
     "total_rules": 8,
-    "passed_count": 1,
-    "failed_count": 7
+    "passed_count": 3,
+    "failed_count": 5
   },
   "rules": {
     "rule_1_deployment_id_count_vs_claimed_physical_nodes": {
@@ -16,7 +16,6 @@
       "rule_name": "deployment_id_count_vs_claimed_physical_nodes",
       "status": "FAIL",
       "violations": [
-        "Wasmer deployment ID count (4) < claimed node count (5). Clash config contains 5 proxies exceeding 4 authentic physical deployments.",
         "Supabase physical deployment count (2) < claimed node count (16). Regional routes mischaracterized as independent physical deployments without 1:1 physical deployment mapping."
       ],
       "details": {
@@ -28,7 +27,7 @@
             "dav_6N1Ip1znJwA1",
             "dav_8V7IzpyjPlnE"
           ],
-          "claimed_proxy_node_count": 5
+          "claimed_proxy_node_count": 4
         },
         "northflank": {
           "verified_deployment_count": 1,
@@ -62,53 +61,45 @@
     "rule_2_zero_node_platform_must_have_unfinished_flag": {
       "rule_id": 2,
       "rule_name": "zero_node_platform_must_have_unfinished_flag",
-      "status": "FAIL",
-      "violations": [
-        "Platform cloudflare is a 0-node platform (proxies: 0) but unfinished flag is not set to true. yaml_unfinished=None, evidence_unfinished=None.",
-        "Platform fastly is a 0-node platform (proxies: 0) but unfinished flag is not set to true. yaml_unfinished=None, evidence_unfinished=None.",
-        "Platform netlify is a 0-node platform (proxies: 0) but unfinished flag is not set to true. yaml_unfinished=None, evidence_unfinished=None.",
-        "Platform edgeone is a 0-node platform (proxies: 0) but unfinished flag is not set to true. yaml_unfinished=None, evidence_unfinished=None.",
-        "Total count of 0-node platforms marked with unfinished: true is 0. All 0-node platforms must explicitly declare unfinished: true and status: NO_VERIFIED_PROXY."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
         "cloudflare": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
-          "yaml_unfinished": null,
+          "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": null
+          "evidence_unfinished": true
         },
         "fastly": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
-          "yaml_unfinished": null,
+          "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": null
+          "evidence_unfinished": true
         },
         "netlify": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
-          "yaml_unfinished": null,
+          "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": null
+          "evidence_unfinished": true
         },
         "edgeone": {
           "zero_node": true,
           "yaml_status": "NO_VERIFIED_PROXY",
-          "yaml_unfinished": null,
+          "yaml_unfinished": true,
           "evidence_status": "NO_VERIFIED_PROXY",
-          "evidence_unfinished": null
+          "evidence_unfinished": true
         },
-        "total_unfinished_zero_node_platforms": 0
+        "total_unfinished_zero_node_platforms": 4
       }
     },
     "rule_3_full_https_urls_required_no_relative_only": {
       "rule_id": 3,
       "rule_name": "full_https_urls_required_no_relative_only",
-      "status": "FAIL",
-      "violations": [
-        "Evidence subscriptions contain only relative paths (e.g. url_path: '/all') and zero full HTTPS URLs. Deliverables must provide verified, full HTTPS subscription endpoints."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
         "relative_paths_in_evidence": [
           "all: /all",
@@ -120,7 +111,16 @@
           "netlify: /netlify",
           "edgeone: /edgeone"
         ],
-        "https_urls_in_evidence": [],
+        "https_urls_in_evidence": [
+          "all: https://speedtest.ludash.top/all",
+          "supabase: https://speedtest.ludash.top/supabase",
+          "wasmer: https://speedtest.ludash.top/wasmer",
+          "northflank: https://speedtest.ludash.top/northflank",
+          "cloudflare: https://speedtest.ludash.top/cloudflare",
+          "fastly: https://speedtest.ludash.top/fastly",
+          "netlify: https://speedtest.ludash.top/netlify",
+          "edgeone: https://speedtest.ludash.top/edgeone"
+        ],
         "expected_public_https_endpoints": [
           "https://speedtest.ludash.top/all",
           "https://speedtest.ludash.top/supabase",
@@ -136,8 +136,10 @@
     "rule_4_remote_evidence_root_required_no_local_only": {
       "rule_id": 4,
       "rule_name": "remote_evidence_root_required_no_local_only",
-      "status": "PASS",
-      "violations": [],
+      "status": "FAIL",
+      "violations": [
+        "Local git HEAD (a8c101ca69110a4524a4035bf570e13124c1e90f) is desynchronized from remote authoritative HEAD (92c2276327eaf11e133c6b3482c7b3266d77e671). Evidence relying solely on local workspace path without pushing to remote origin violates the remote root mandate."
+      ],
       "details": {
         "repository_evidence_loaded": true,
         "deployments_summary_loaded": true,
@@ -145,28 +147,26 @@
         "remote_repo_url": "https://github.com/ludas114343/fastly-edge-speedtest",
         "local_only_fields": [],
         "remote_head_sha": "92c2276327eaf11e133c6b3482c7b3266d77e671",
-        "local_head_sha": "92c2276327eaf11e133c6b3482c7b3266d77e671"
+        "local_head_sha": "a8c101ca69110a4524a4035bf570e13124c1e90f"
       }
     },
     "rule_5_full_40_char_sha_required_no_short_sha": {
       "rule_id": 5,
       "rule_name": "full_40_char_sha_required_no_short_sha",
-      "status": "FAIL",
-      "violations": [
-        "Subscription evidence metadata lacks full 40-character head_sha for tokens: ['all', 'supabase', 'wasmer', 'northflank', 'cloudflare', 'fastly', 'netlify', 'edgeone']. Task card requires full 40-character head_sha in all subscription metadata."
-      ],
+      "status": "PASS",
+      "violations": [],
       "details": {
         "bootstrap_remote_head_sha": "b82d7bbfcace2a6c06915b1f02b8070edb436720",
         "github_evidence_remote_head_sha": "92c2276327eaf11e133c6b3482c7b3266d77e671",
         "subscription_head_shas": {
-          "all": null,
-          "supabase": null,
-          "wasmer": null,
-          "northflank": null,
-          "cloudflare": null,
-          "fastly": null,
-          "netlify": null,
-          "edgeone": null
+          "all": "234067b0145c209b842df97b46da0451fab40294",
+          "supabase": "234067b0145c209b842df97b46da0451fab40294",
+          "wasmer": "234067b0145c209b842df97b46da0451fab40294",
+          "northflank": "234067b0145c209b842df97b46da0451fab40294",
+          "cloudflare": "234067b0145c209b842df97b46da0451fab40294",
+          "fastly": "234067b0145c209b842df97b46da0451fab40294",
+          "netlify": "234067b0145c209b842df97b46da0451fab40294",
+          "edgeone": "234067b0145c209b842df97b46da0451fab40294"
         }
       }
     },
@@ -195,7 +195,7 @@
           ".github/workflows/smoke-test.yml",
           ".github/workflows/watchdog.yml"
         ],
-        "remote_workflow_runs_count": 49,
+        "remote_workflow_runs_count": 50,
         "remote_has_v13_workflows": true
       }
     },

@@ -205,13 +205,6 @@ async function handleRequest(request, env) {
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request, typeof env !== 'undefined' ? env : globalThis));
 });
-
-// Module Worker format export
-export default {
-  fetch(request, env, ctx) {
-    return handleRequest(request, env);
-  }
-};
 """
 
 full_code = header + fallbacks + body
