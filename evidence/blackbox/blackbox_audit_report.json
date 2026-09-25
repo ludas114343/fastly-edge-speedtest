@@ -1,11 +1,11 @@
 {
-  "audit_timestamp": "2026-09-25T08:56:51.518605+00:00",
+  "audit_timestamp": "2026-09-25T19:20:56.641251+00:00",
   "runner": "github-actions-ubuntu-latest",
   "endpoints_tested": [
     {
       "token": "all",
       "file": "clash.yaml",
-      "proxy_count": 22,
+      "proxy_count": 21,
       "status": "VERIFIED_PROXY"
     },
     {
@@ -23,8 +23,8 @@
     {
       "token": "northflank",
       "file": "clash_northflank.yaml",
-      "proxy_count": 18,
-      "status": "UNKNOWN"
+      "proxy_count": 1,
+      "status": "VERIFIED_PROXY"
     },
     {
       "token": "cloudflare",
