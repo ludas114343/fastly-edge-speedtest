@@ -72,6 +72,20 @@ proxies:
     path: /ws
     headers:
       Host: nf-node.ruoyemu.asia
+- name: 🇪🇺 欧洲西部 01 [Northflank · AWS/GCP AS15169]
+  type: vless
+  server: ws--singbox-eu--lkc76mfhjtps.code.run
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  udp: true
+  sni: ws--singbox-eu--lkc76mfhjtps.code.run
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ws--singbox-eu--lkc76mfhjtps.code.run
 - name: 🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]
   type: vless
   server: gwgiogtgdyrqlexcdjqm.supabase.co
@@ -326,6 +340,7 @@ proxy-groups:
   - 🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]
   - 🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]
   - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+  - 🇪🇺 欧洲西部 01 [Northflank · AWS/GCP AS15169]
   - 🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]
   - 🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]
   - 🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]
@@ -353,6 +368,7 @@ proxy-groups:
   - 🇰🇷 韩国首尔 03 [edgetunnel · AWS ap-northeast-2]
   - 🇰🇷 韩国首尔 02 [edgetunnel · AWS ap-northeast-2]
   - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+  - 🇪🇺 欧洲西部 01 [Northflank · AWS/GCP AS15169]
   - 🇨🇦 加拿大 02 [edgetunnel · AWS ca-central-1]
   - 🇸🇬 新加坡 02 [edgetunnel · AWS ap-southeast-1]
   - 🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]
@@ -402,6 +418,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国美东 03 [edgetunnel · AWS us-east-1]
   - 🇺🇸 美国美东 01 [Northflank · GCP AS15169]
+  - 🇪🇺 欧洲西部 01 [Northflank · AWS/GCP AS15169]
   - 🇺🇸 美国美西 05 [edgetunnel · AWS us-west-1]
   - 🇺🇸 美西俄勒冈 04 [Wasmer · Hetzner AS212317]
   - 🇺🇸 美国美东 02 [Wasmer · Hetzner AS213230]
