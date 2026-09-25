@@ -17,7 +17,7 @@ dns:
     - 119.29.29.29
 
 proxies:
-  # --- Northflank 原生双账号直连节点 (180GB 独立配额) ---
+  # --- 1. Northflank 原生双账号直连节点 (180GB 独立配额 · 实测 800ms) ---
   - name: "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
     type: vless
     server: nf-node.ruoyemu.asia
@@ -48,53 +48,8 @@ proxies:
       headers:
         Host: ws--singbox-eu--lkc76mfhjtps.code.run
 
-  # --- Northflank 边缘加速节点 (Cloudflare Anycast CDN 真实双向隧道) ---
-  - name: "⚡ CF-NF 边缘加速 01 (US出口 · 全球智能Anycast)"
-    type: vless
-    server: wz.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 边缘加速 02 (EU出口 · 全球智能Anycast)"
-    type: vless
-    server: wz.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 极速优选 01 (US出口 · 104.16 Anycast)"
-    type: vless
-    server: 104.16.85.20
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 极速优选 02 (US出口 · 104.18 Anycast)"
+  # --- 2. Cloudflare Anycast 边缘加速集群 (双向 WS 隧道 · 实测 900-1200ms) ---
+  - name: "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
     type: vless
     server: 104.18.2.1
     port: 443
@@ -109,9 +64,9 @@ proxies:
       headers:
         Host: wz.ruoyemu.asia
 
-  - name: "⚡ CF-NF 极速优选 03 (US出口 · 162.159 Anycast)"
+  - name: "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
     type: vless
-    server: 162.159.192.1
+    server: 104.18.3.1
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -124,9 +79,9 @@ proxies:
       headers:
         Host: wz.ruoyemu.asia
 
-  - name: "⚡ CF-NF 极速优选 04 (EU出口 · 104.16 Anycast)"
+  - name: "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
     type: vless
-    server: 104.16.85.20
+    server: 104.17.85.20
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -135,11 +90,11 @@ proxies:
     sni: wz.ruoyemu.asia
     client-fingerprint: chrome
     ws-opts:
-      path: /nf-eu
+      path: /ws
       headers:
         Host: wz.ruoyemu.asia
 
-  - name: "⚡ CF-NF 极速优选 05 (EU出口 · 104.18 Anycast)"
+  - name: "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
     type: vless
     server: 104.18.2.1
     port: 443
@@ -154,9 +109,9 @@ proxies:
       headers:
         Host: wz.ruoyemu.asia
 
-  - name: "⚡ CF-NF 极速优选 06 (EU出口 · 162.159 Anycast)"
+  - name: "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
     type: vless
-    server: 162.159.192.1
+    server: 104.18.3.1
     port: 443
     uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
     network: ws
@@ -169,7 +124,22 @@ proxies:
       headers:
         Host: wz.ruoyemu.asia
 
-  # --- Wasmer 极速独立边缘节点 (150GB 配额) ---
+  - name: "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
+    type: vless
+    server: wz.ruoyemu.asia
+    port: 443
+    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+    network: ws
+    tls: true
+    udp: true
+    sni: wz.ruoyemu.asia
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+      headers:
+        Host: wz.ruoyemu.asia
+
+  # --- 3. Wasmer 极速独立边缘节点 (150GB 配额 · 实测 700ms) ---
   - name: "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
     type: vless
     server: edgetunnel-us-la.wasmer.app
@@ -184,21 +154,6 @@ proxies:
       path: /
       headers:
         Host: edgetunnel-us-la.wasmer.app
-
-  - name: "⚡ Wasmer 极速美东 (US-East · 150GB)"
-    type: vless
-    server: edgetunnel-us-east.wasmer.app
-    port: 443
-    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-    network: ws
-    tls: true
-    udp: true
-    sni: edgetunnel-us-east.wasmer.app
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: edgetunnel-us-east.wasmer.app
 
   - name: "⚡ Wasmer 极速欧洲 (France · 150GB)"
     type: vless
@@ -215,6 +170,21 @@ proxies:
       headers:
         Host: edgetunnel-fr.wasmer.app
 
+  - name: "⚡ Wasmer 极速美东 (US-East · 150GB)"
+    type: vless
+    server: edgetunnel-us-east.wasmer.app
+    port: 443
+    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+    network: ws
+    tls: true
+    udp: true
+    sni: edgetunnel-us-east.wasmer.app
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: edgetunnel-us-east.wasmer.app
+
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -224,17 +194,15 @@ proxy-groups:
       - "⚡ 边缘加速集群"
       - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
       - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
-      - "⚡ CF-NF 边缘加速 01 (US出口 · 全球智能Anycast)"
-      - "⚡ CF-NF 边缘加速 02 (EU出口 · 全球智能Anycast)"
-      - "⚡ CF-NF 极速优选 01 (US出口 · 104.16 Anycast)"
-      - "⚡ CF-NF 极速优选 02 (US出口 · 104.18 Anycast)"
-      - "⚡ CF-NF 极速优选 03 (US出口 · 162.159 Anycast)"
-      - "⚡ CF-NF 极速优选 04 (EU出口 · 104.16 Anycast)"
-      - "⚡ CF-NF 极速优选 05 (EU出口 · 104.18 Anycast)"
-      - "⚡ CF-NF 极速优选 06 (EU出口 · 162.159 Anycast)"
+      - "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
+      - "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
+      - "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
+      - "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
+      - "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
+      - "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
       - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
       - "⚡ Wasmer 极速欧洲 (France · 150GB)"
+      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
       - DIRECT
 
   - name: "⚡ 自动最优"
@@ -245,17 +213,15 @@ proxy-groups:
     proxies:
       - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
       - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
-      - "⚡ CF-NF 边缘加速 01 (US出口 · 全球智能Anycast)"
-      - "⚡ CF-NF 边缘加速 02 (EU出口 · 全球智能Anycast)"
-      - "⚡ CF-NF 极速优选 01 (US出口 · 104.16 Anycast)"
-      - "⚡ CF-NF 极速优选 02 (US出口 · 104.18 Anycast)"
-      - "⚡ CF-NF 极速优选 03 (US出口 · 162.159 Anycast)"
-      - "⚡ CF-NF 极速优选 04 (EU出口 · 104.16 Anycast)"
-      - "⚡ CF-NF 极速优选 05 (EU出口 · 104.18 Anycast)"
-      - "⚡ CF-NF 极速优选 06 (EU出口 · 162.159 Anycast)"
+      - "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
+      - "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
+      - "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
+      - "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
+      - "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
+      - "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
       - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
       - "⚡ Wasmer 极速欧洲 (France · 150GB)"
+      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
 
   - name: "🌐 Northflank 原生直连"
     type: url-test
@@ -272,17 +238,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "⚡ CF-NF 边缘加速 01 (US出口 · 全球智能Anycast)"
-      - "⚡ CF-NF 边缘加速 02 (EU出口 · 全球智能Anycast)"
-      - "⚡ CF-NF 极速优选 01 (US出口 · 104.16 Anycast)"
-      - "⚡ CF-NF 极速优选 02 (US出口 · 104.18 Anycast)"
-      - "⚡ CF-NF 极速优选 03 (US出口 · 162.159 Anycast)"
-      - "⚡ CF-NF 极速优选 04 (EU出口 · 104.16 Anycast)"
-      - "⚡ CF-NF 极速优选 05 (EU出口 · 104.18 Anycast)"
-      - "⚡ CF-NF 极速优选 06 (EU出口 · 162.159 Anycast)"
+      - "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
+      - "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
+      - "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
+      - "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
+      - "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
+      - "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
       - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
       - "⚡ Wasmer 极速欧洲 (France · 150GB)"
+      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
 
   - name: "🐟 漏网之鱼"
     type: select
@@ -305,7 +269,7 @@ rules:
 metadata:
   status: VERIFIED_PROXY
   platform: northflank_cf_accelerated
-  node_count: 13
+  node_count: 11
   verified_handshake: "101 Switching Protocols"
   bandwidth_limit_gb: 330
-  verified_at: "2026-09-25T16:12:00+08:00"
+  verified_at: "2026-09-25T16:15:00+08:00"
