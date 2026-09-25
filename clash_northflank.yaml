@@ -28,6 +28,7 @@ proxies:
   network: ws
   tls: true
   udp: true
+  tfo: true
   sni: edgetunnel-us-la.wasmer.app
   client-fingerprint: chrome
   ws-opts:
@@ -42,6 +43,7 @@ proxies:
   network: ws
   tls: true
   udp: true
+  tfo: true
   sni: vless-ws-test.wasmer.app
   client-fingerprint: chrome
   ws-opts:
@@ -56,6 +58,7 @@ proxies:
   network: ws
   tls: true
   udp: true
+  tfo: true
   sni: edgetunnel-fr.wasmer.app
   client-fingerprint: chrome
   ws-opts:
@@ -70,6 +73,7 @@ proxies:
   network: ws
   tls: true
   udp: true
+  tfo: true
   sni: edgetunnel-us-east.wasmer.app
   client-fingerprint: chrome
   ws-opts:
@@ -84,6 +88,7 @@ proxies:
   network: ws
   tls: true
   udp: true
+  tfo: true
   sni: ws--singbox-lite--tbhrv4d578gv.code.run
   client-fingerprint: chrome
   ws-opts:
@@ -98,12 +103,19 @@ proxies:
   network: ws
   tls: true
   udp: true
+  tfo: true
   sni: ws--singbox-eu--lkc76mfhjtps.code.run
   client-fingerprint: chrome
   ws-opts:
     path: /ws
     headers:
       Host: ws--singbox-eu--lkc76mfhjtps.code.run
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 4
+    min-streams: 4
+    padding: true
 - name: ⚡ CF优选 · 日本 POP 01 (172.238.18.137:443 -> NF美区 · 5ms握手)
   type: vless
   server: 172.238.18.137
