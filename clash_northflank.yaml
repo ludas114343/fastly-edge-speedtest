@@ -17,187 +17,8 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "⚡ Fastly-NF 极速香港 HKG (US出口)"
-    type: vless
-    server: hkg.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: hkg.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速日本 TYO (US出口)"
-    type: vless
-    server: tyo.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: tyo.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速新加坡 SIN (US出口)"
-    type: vless
-    server: sin.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: sin.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速韩国 ICN (US出口)"
-    type: vless
-    server: icn.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: icn.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速美西 LAX (US出口)"
-    type: vless
-    server: lax.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: lax.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速硅谷 SJC (US出口)"
-    type: vless
-    server: sjc.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: sjc.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速美东 IAD (US出口)"
-    type: vless
-    server: iad.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: iad.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 全球智能 Anycast (US出口)"
-    type: vless
-    server: ruoyemu.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: ruoyemu.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-us
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速德国 FRA (EU出口)"
-    type: vless
-    server: fra.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: fra.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速英国 LHR (EU出口)"
-    type: vless
-    server: lhr.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: lhr.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 极速法国 CDG (EU出口)"
-    type: vless
-    server: cdg.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: cdg.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "⚡ Fastly-NF 全球智能 Anycast (EU出口)"
-    type: vless
-    server: ruoyemu.global.ssl.fastly.net
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: ruoyemu.global.ssl.fastly.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: ruoyemu.global.ssl.fastly.net
-
-  - name: "🌐 Northflank 美国原生直连 (US-Central)"
+  # --- Northflank 原生双账号直连节点 (180GB 独立高速配额) ---
+  - name: "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
     type: vless
     server: nf-node.ruoyemu.asia
     port: 443
@@ -212,7 +33,7 @@ proxies:
       headers:
         Host: nf-node.ruoyemu.asia
 
-  - name: "🌐 Northflank 欧洲原生直连 (EU-West)"
+  - name: "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
     type: vless
     server: ws--singbox-eu--lkc76mfhjtps.code.run
     port: 443
@@ -227,27 +48,225 @@ proxies:
       headers:
         Host: ws--singbox-eu--lkc76mfhjtps.code.run
 
+  # --- Wasmer 极速边缘节点 (150GB 免费配额) ---
+  - name: "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
+    type: vless
+    server: edgetunnel-us-la.wasmer.app
+    port: 443
+    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+    network: ws
+    tls: true
+    udp: true
+    sni: edgetunnel-us-la.wasmer.app
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: edgetunnel-us-la.wasmer.app
+
+  - name: "⚡ Wasmer 极速美东 (US-East · 150GB)"
+    type: vless
+    server: edgetunnel-us-east.wasmer.app
+    port: 443
+    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+    network: ws
+    tls: true
+    udp: true
+    sni: edgetunnel-us-east.wasmer.app
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: edgetunnel-us-east.wasmer.app
+
+  - name: "⚡ Wasmer 极速欧洲 (France · 150GB)"
+    type: vless
+    server: edgetunnel-fr.wasmer.app
+    port: 443
+    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+    network: ws
+    tls: true
+    udp: true
+    sni: edgetunnel-fr.wasmer.app
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: edgetunnel-fr.wasmer.app
+
+  # --- Supabase AWS 极速边缘加速集群 (S CDN) ---
+  - name: "⚡ Supabase 极速东京 01 [AWS ap-northeast-1]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速首尔 02 [AWS ap-northeast-2]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速新加坡 02 [AWS ap-southeast-1]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速德国 01 [AWS eu-central-1]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=eu-central-1
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速英国 02 [AWS eu-west-2]"
+    type: vless
+    server: theecyezvuzkflwikxwr.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=eu-west-2
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "⚡ Supabase 极速法国 03 [AWS eu-west-3]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=eu-west-3
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速美东 03 [AWS us-east-1]"
+    type: vless
+    server: theecyezvuzkflwikxwr.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: theecyezvuzkflwikxwr.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=us-east-1
+      headers:
+        Host: theecyezvuzkflwikxwr.supabase.co
+
+  - name: "⚡ Supabase 极速美西 05 [AWS us-west-1]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=us-west-1
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速大洋洲 01 [AWS ap-southeast-2]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-2
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
+  - name: "⚡ Supabase 极速加拿大 01 [AWS ca-central-1]"
+    type: vless
+    server: gwgiogtgdyrqlexcdjqm.supabase.co
+    port: 443
+    uuid: 21a1f940-25c6-488b-ac29-ae8e89d58b16
+    network: ws
+    tls: true
+    udp: true
+    sni: gwgiogtgdyrqlexcdjqm.supabase.co
+    client-fingerprint: chrome
+    ws-opts:
+      path: /functions/v1/edgetunnel?forceFunctionRegion=ca-central-1
+      headers:
+        Host: gwgiogtgdyrqlexcdjqm.supabase.co
+
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "⚡ 自动最优"
-      - "⚡ Fastly-NF 极速集群"
-      - "🌐 Northflank 原生集群"
-      - "⚡ Fastly-NF 极速香港 HKG (US出口)"
-      - "⚡ Fastly-NF 极速日本 TYO (US出口)"
-      - "⚡ Fastly-NF 极速新加坡 SIN (US出口)"
-      - "⚡ Fastly-NF 极速韩国 ICN (US出口)"
-      - "⚡ Fastly-NF 极速美西 LAX (US出口)"
-      - "⚡ Fastly-NF 极速硅谷 SJC (US出口)"
-      - "⚡ Fastly-NF 极速美东 IAD (US出口)"
-      - "⚡ Fastly-NF 全球智能 Anycast (US出口)"
-      - "⚡ Fastly-NF 极速德国 FRA (EU出口)"
-      - "⚡ Fastly-NF 极速英国 LHR (EU出口)"
-      - "⚡ Fastly-NF 极速法国 CDG (EU出口)"
-      - "⚡ Fastly-NF 全球智能 Anycast (EU出口)"
-      - "🌐 Northflank 美国原生直连 (US-Central)"
-      - "🌐 Northflank 欧洲原生直连 (EU-West)"
+      - "🌐 Northflank 原生直连"
+      - "⚡ 边缘加速集群"
+      - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
+      - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
+      - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
+      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
+      - "⚡ Wasmer 极速欧洲 (France · 150GB)"
+      - "⚡ Supabase 极速东京 01 [AWS ap-northeast-1]"
+      - "⚡ Supabase 极速首尔 02 [AWS ap-northeast-2]"
+      - "⚡ Supabase 极速新加坡 02 [AWS ap-southeast-1]"
+      - "⚡ Supabase 极速德国 01 [AWS eu-central-1]"
+      - "⚡ Supabase 极速英国 02 [AWS eu-west-2]"
+      - "⚡ Supabase 极速法国 03 [AWS eu-west-3]"
+      - "⚡ Supabase 极速美东 03 [AWS us-east-1]"
+      - "⚡ Supabase 极速美西 05 [AWS us-west-1]"
+      - "⚡ Supabase 极速大洋洲 01 [AWS ap-southeast-2]"
+      - "⚡ Supabase 极速加拿大 01 [AWS ca-central-1]"
       - DIRECT
 
   - name: "⚡ 自动最优"
@@ -256,48 +275,50 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "⚡ Fastly-NF 极速香港 HKG (US出口)"
-      - "⚡ Fastly-NF 极速日本 TYO (US出口)"
-      - "⚡ Fastly-NF 极速新加坡 SIN (US出口)"
-      - "⚡ Fastly-NF 极速韩国 ICN (US出口)"
-      - "⚡ Fastly-NF 极速美西 LAX (US出口)"
-      - "⚡ Fastly-NF 极速硅谷 SJC (US出口)"
-      - "⚡ Fastly-NF 极速美东 IAD (US出口)"
-      - "⚡ Fastly-NF 全球智能 Anycast (US出口)"
-      - "⚡ Fastly-NF 极速德国 FRA (EU出口)"
-      - "⚡ Fastly-NF 极速英国 LHR (EU出口)"
-      - "⚡ Fastly-NF 极速法国 CDG (EU出口)"
-      - "⚡ Fastly-NF 全球智能 Anycast (EU出口)"
-      - "🌐 Northflank 美国原生直连 (US-Central)"
-      - "🌐 Northflank 欧洲原生直连 (EU-West)"
+      - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
+      - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
+      - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
+      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
+      - "⚡ Wasmer 极速欧洲 (France · 150GB)"
+      - "⚡ Supabase 极速东京 01 [AWS ap-northeast-1]"
+      - "⚡ Supabase 极速首尔 02 [AWS ap-northeast-2]"
+      - "⚡ Supabase 极速新加坡 02 [AWS ap-southeast-1]"
+      - "⚡ Supabase 极速德国 01 [AWS eu-central-1]"
+      - "⚡ Supabase 极速英国 02 [AWS eu-west-2]"
+      - "⚡ Supabase 极速法国 03 [AWS eu-west-3]"
+      - "⚡ Supabase 极速美东 03 [AWS us-east-1]"
+      - "⚡ Supabase 极速美西 05 [AWS us-west-1]"
+      - "⚡ Supabase 极速大洋洲 01 [AWS ap-southeast-2]"
+      - "⚡ Supabase 极速加拿大 01 [AWS ca-central-1]"
 
-  - name: "⚡ Fastly-NF 极速集群"
+  - name: "🌐 Northflank 原生直连"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "⚡ Fastly-NF 极速香港 HKG (US出口)"
-      - "⚡ Fastly-NF 极速日本 TYO (US出口)"
-      - "⚡ Fastly-NF 极速新加坡 SIN (US出口)"
-      - "⚡ Fastly-NF 极速韩国 ICN (US出口)"
-      - "⚡ Fastly-NF 极速美西 LAX (US出口)"
-      - "⚡ Fastly-NF 极速硅谷 SJC (US出口)"
-      - "⚡ Fastly-NF 极速美东 IAD (US出口)"
-      - "⚡ Fastly-NF 全球智能 Anycast (US出口)"
-      - "⚡ Fastly-NF 极速德国 FRA (EU出口)"
-      - "⚡ Fastly-NF 极速英国 LHR (EU出口)"
-      - "⚡ Fastly-NF 极速法国 CDG (EU出口)"
-      - "⚡ Fastly-NF 全球智能 Anycast (EU出口)"
+      - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
+      - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
 
-  - name: "🌐 Northflank 原生集群"
+  - name: "⚡ 边缘加速集群"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "🌐 Northflank 美国原生直连 (US-Central)"
-      - "🌐 Northflank 欧洲原生直连 (EU-West)"
+      - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
+      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
+      - "⚡ Wasmer 极速欧洲 (France · 150GB)"
+      - "⚡ Supabase 极速东京 01 [AWS ap-northeast-1]"
+      - "⚡ Supabase 极速首尔 02 [AWS ap-northeast-2]"
+      - "⚡ Supabase 极速新加坡 02 [AWS ap-southeast-1]"
+      - "⚡ Supabase 极速德国 01 [AWS eu-central-1]"
+      - "⚡ Supabase 极速英国 02 [AWS eu-west-2]"
+      - "⚡ Supabase 极速法国 03 [AWS eu-west-3]"
+      - "⚡ Supabase 极速美东 03 [AWS us-east-1]"
+      - "⚡ Supabase 极速美西 05 [AWS us-west-1]"
+      - "⚡ Supabase 极速大洋洲 01 [AWS ap-southeast-2]"
+      - "⚡ Supabase 极速加拿大 01 [AWS ca-central-1]"
 
   - name: "🐟 漏网之鱼"
     type: select
@@ -319,8 +340,8 @@ rules:
 
 metadata:
   status: VERIFIED_PROXY
-  platform: northflank
-  node_count: 14
-  accelerator: fastly_anycast
-  bandwidth_limit_gb: 180
-  verified_at: "2026-09-25T15:45:00+08:00"
+  platform: unified_cluster
+  node_count: 15
+  verified_handshake: "101 Switching Protocols"
+  bandwidth_limit_gb: 330
+  verified_at: "2026-09-25T16:07:00+08:00"
