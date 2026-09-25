@@ -271,7 +271,11 @@ def generate_ai_summary(emails):
             "messages": [{"role": "user", "content": prompt}],
             "temperature": 0.3
         }).encode("utf-8"),
-        headers={"Authorization": f"Bearer {AGNES_KEY}", "Content-Type": "application/json"}
+        headers={
+            "Authorization": f"Bearer {AGNES_KEY}",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+        }
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
         data = json.loads(resp.read().decode("utf-8"))
