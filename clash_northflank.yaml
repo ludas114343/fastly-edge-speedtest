@@ -1,275 +1,377 @@
 port: 7890
 socks-port: 7891
+redir-port: 7892
 mixed-port: 7897
-allow-lan: false
+tproxy-port: 7893
+allow-lan: true
 mode: rule
 log-level: info
-ipv6: false
-external-controller: 127.0.0.1:9090
+external-controller: 127.0.0.1:9097
 dns:
   enable: true
-  listen: 0.0.0.0:1053
   ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-
+  - 223.5.5.5
+  - 119.29.29.29
+  - 180.76.76.76
 proxies:
-  # --- 1. Northflank 原生双账号直连节点 (180GB 独立配额 · 实测 800ms) ---
-  - name: "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
-    type: vless
-    server: nf-node.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: nf-node.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: nf-node.ruoyemu.asia
-
-  - name: "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
-    type: vless
-    server: ws--singbox-eu--lkc76mfhjtps.code.run
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: ws--singbox-eu--lkc76mfhjtps.code.run
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: ws--singbox-eu--lkc76mfhjtps.code.run
-
-  # --- 2. Cloudflare Anycast 边缘加速集群 (双向 WS 隧道 · 实测 900-1200ms) ---
-  - name: "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
-    type: vless
-    server: 104.18.2.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
-    type: vless
-    server: 104.18.3.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
-    type: vless
-    server: 104.17.85.20
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
-    type: vless
-    server: 104.18.2.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
-    type: vless
-    server: 104.18.3.1
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /nf-eu
-      headers:
-        Host: wz.ruoyemu.asia
-
-  - name: "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
-    type: vless
-    server: wz.ruoyemu.asia
-    port: 443
-    uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-    network: ws
-    tls: true
-    udp: true
-    sni: wz.ruoyemu.asia
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-      headers:
-        Host: wz.ruoyemu.asia
-
-  # --- 3. Wasmer 极速独立边缘节点 (150GB 配额 · 实测 700ms) ---
-  - name: "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-    type: vless
-    server: edgetunnel-us-la.wasmer.app
-    port: 443
-    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-    network: ws
-    tls: true
-    udp: true
-    sni: edgetunnel-us-la.wasmer.app
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: edgetunnel-us-la.wasmer.app
-
-  - name: "⚡ Wasmer 极速欧洲 (France · 150GB)"
-    type: vless
-    server: edgetunnel-fr.wasmer.app
-    port: 443
-    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-    network: ws
-    tls: true
-    udp: true
-    sni: edgetunnel-fr.wasmer.app
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: edgetunnel-fr.wasmer.app
-
-  - name: "⚡ Wasmer 极速美东 (US-East · 150GB)"
-    type: vless
-    server: edgetunnel-us-east.wasmer.app
-    port: 443
-    uuid: 78174327-45d8-42ef-a61d-abf885950d9d
-    network: ws
-    tls: true
-    udp: true
-    sni: edgetunnel-us-east.wasmer.app
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: edgetunnel-us-east.wasmer.app
-
+- name: 🌐 Northflank 美国原生直连 (US-Central · 90GB)
+  type: vless
+  server: ws--singbox-lite--tbhrv4d578gv.code.run
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  udp: true
+  sni: ws--singbox-lite--tbhrv4d578gv.code.run
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ws--singbox-lite--tbhrv4d578gv.code.run
+- name: 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  type: vless
+  server: ws--singbox-eu--lkc76mfhjtps.code.run
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  udp: true
+  sni: ws--singbox-eu--lkc76mfhjtps.code.run
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ws--singbox-eu--lkc76mfhjtps.code.run
+- name: ⚡ Wasmer 极速美西 (Los Angeles · 150GB)
+  type: vless
+  server: edgetunnel-us-la.wasmer.app
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: edgetunnel-us-la.wasmer.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-us-la.wasmer.app
+- name: ⚡ Wasmer 极速俄勒冈 (Oregon · 150GB)
+  type: vless
+  server: vless-ws-test.wasmer.app
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: vless-ws-test.wasmer.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vless-ws-test.wasmer.app
+- name: ⚡ Wasmer 极速欧洲 (France · 150GB)
+  type: vless
+  server: edgetunnel-fr.wasmer.app
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: edgetunnel-fr.wasmer.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-fr.wasmer.app
+- name: ⚡ Wasmer 极速美东 (US-East · 150GB)
+  type: vless
+  server: edgetunnel-us-east.wasmer.app
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  udp: true
+  sni: edgetunnel-us-east.wasmer.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-us-east.wasmer.app
+- name: ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
+  type: vless
+  server: 104.18.2.1
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
+  type: vless
+  server: 104.18.3.1
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
+  type: vless
+  server: 104.17.85.20
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
+  type: vless
+  server: 104.18.2.1
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-eu
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
+  type: vless
+  server: 104.18.3.1
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-eu
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
+  type: vless
+  server: wz.ruoyemu.asia
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: 🚀 Fastly-NF 亚太加速 01 (香港 POP · 151.101.229.57)
+  type: vless
+  server: 151.101.229.57
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: ruoyemu.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-us
+    headers:
+      Host: ruoyemu.global.ssl.fastly.net
+- name: 🚀 Fastly-NF 亚太加速 02 (东京 POP · 151.101.109.57)
+  type: vless
+  server: 151.101.109.57
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: ruoyemu.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-us
+    headers:
+      Host: ruoyemu.global.ssl.fastly.net
+- name: 🚀 Fastly-NF 欧洲加速 01 (法兰克福 POP · 151.101.114.133)
+  type: vless
+  server: 151.101.114.133
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: ruoyemu.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-eu
+    headers:
+      Host: ruoyemu.global.ssl.fastly.net
+- name: 🚀 Fastly-NF 欧洲加速 02 (伦敦 POP · 151.101.16.133)
+  type: vless
+  server: 151.101.16.133
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: ruoyemu.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-eu
+    headers:
+      Host: ruoyemu.global.ssl.fastly.net
+- name: 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
+  type: vless
+  server: 151.101.229.57
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: ruoyemu.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /wasmer
+    headers:
+      Host: ruoyemu.global.ssl.fastly.net
+- name: 🚀 Fastly 全球 Anycast 域名调度 (ruoyemu.global.ssl.fastly.net)
+  type: vless
+  server: ruoyemu.global.ssl.fastly.net
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: ruoyemu.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /nf-us
+    headers:
+      Host: ruoyemu.global.ssl.fastly.net
 proxy-groups:
-  - name: "🚀 节点选择"
-    type: select
-    proxies:
-      - "⚡ 自动最优"
-      - "🌐 Northflank 原生直连"
-      - "⚡ 边缘加速集群"
-      - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
-      - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
-      - "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
-      - "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
-      - "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
-      - "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
-      - "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
-      - "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
-      - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-      - "⚡ Wasmer 极速欧洲 (France · 150GB)"
-      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
-      - DIRECT
-
-  - name: "⚡ 自动最优"
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
-      - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
-      - "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
-      - "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
-      - "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
-      - "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
-      - "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
-      - "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
-      - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-      - "⚡ Wasmer 极速欧洲 (France · 150GB)"
-      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
-
-  - name: "🌐 Northflank 原生直连"
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - "🌐 Northflank 美国原生直连 (US-Central · 90GB)"
-      - "🌐 Northflank 欧洲原生直连 (EU-West · 90GB)"
-
-  - name: "⚡ 边缘加速集群"
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - "⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)"
-      - "⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)"
-      - "⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)"
-      - "⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)"
-      - "⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)"
-      - "⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)"
-      - "⚡ Wasmer 极速美西 (Los Angeles · 150GB)"
-      - "⚡ Wasmer 极速欧洲 (France · 150GB)"
-      - "⚡ Wasmer 极速美东 (US-East · 150GB)"
-
-  - name: "🐟 漏网之鱼"
-    type: select
-    proxies:
-      - "🚀 节点选择"
-      - DIRECT
-
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择 (url-test)
+  - ⚡ Wasmer 极速专区
+  - 🌐 Northflank 原生直连
+  - ⚡ CF 边缘优选组
+  - 🚀 Fastly CDN 加速组
+  - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
+  - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  - ⚡ Wasmer 极速美西 (Los Angeles · 150GB)
+  - ⚡ Wasmer 极速俄勒冈 (Oregon · 150GB)
+  - ⚡ Wasmer 极速欧洲 (France · 150GB)
+  - ⚡ Wasmer 极速美东 (US-East · 150GB)
+  - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
+  - ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
+  - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
+  - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
+  - 🚀 Fastly-NF 亚太加速 01 (香港 POP · 151.101.229.57)
+  - 🚀 Fastly-NF 亚太加速 02 (东京 POP · 151.101.109.57)
+  - 🚀 Fastly-NF 欧洲加速 01 (法兰克福 POP · 151.101.114.133)
+  - 🚀 Fastly-NF 欧洲加速 02 (伦敦 POP · 151.101.16.133)
+  - 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
+  - 🚀 Fastly 全球 Anycast 域名调度 (ruoyemu.global.ssl.fastly.net)
+- name: ♻️ 自动选择 (url-test)
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - ⚡ Wasmer 极速美西 (Los Angeles · 150GB)
+  - ⚡ Wasmer 极速俄勒冈 (Oregon · 150GB)
+  - ⚡ Wasmer 极速欧洲 (France · 150GB)
+  - ⚡ Wasmer 极速美东 (US-East · 150GB)
+  - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
+  - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
+  - ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
+  - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
+  - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
+- name: ⚡ Wasmer 极速专区
+  type: select
+  proxies:
+  - ⚡ Wasmer 极速美西 (Los Angeles · 150GB)
+  - ⚡ Wasmer 极速俄勒冈 (Oregon · 150GB)
+  - ⚡ Wasmer 极速欧洲 (France · 150GB)
+  - ⚡ Wasmer 极速美东 (US-East · 150GB)
+  - 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
+- name: 🌐 Northflank 原生直连
+  type: select
+  proxies:
+  - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
+  - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+- name: ⚡ CF 边缘优选组
+  type: select
+  proxies:
+  - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
+  - ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
+  - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
+  - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
+- name: 🚀 Fastly CDN 加速组
+  type: select
+  proxies:
+  - 🚀 Fastly-NF 亚太加速 01 (香港 POP · 151.101.229.57)
+  - 🚀 Fastly-NF 亚太加速 02 (东京 POP · 151.101.109.57)
+  - 🚀 Fastly-NF 欧洲加速 01 (法兰克福 POP · 151.101.114.133)
+  - 🚀 Fastly-NF 欧洲加速 02 (伦敦 POP · 151.101.16.133)
+  - 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
+  - 🚀 Fastly 全球 Anycast 域名调度 (ruoyemu.global.ssl.fastly.net)
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - DIRECT
 rules:
-  - DOMAIN-SUFFIX,google.com,🚀 节点选择
-  - DOMAIN-SUFFIX,github.com,🚀 节点选择
-  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
-  - DOMAIN-SUFFIX,x.com,🚀 节点选择
-  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
-  - GEOIP,CN,DIRECT
-  - MATCH,🚀 节点选择
-
-metadata:
-  status: VERIFIED_PROXY
-  platform: northflank_cf_accelerated
-  node_count: 11
-  verified_handshake: "101 Switching Protocols"
-  bandwidth_limit_gb: 330
-  verified_at: "2026-09-25T16:15:00+08:00"
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择
