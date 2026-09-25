@@ -20,10 +20,10 @@ if hasattr(sys.stderr, 'reconfigure'):
 
 # Configuration & Env
 GMAIL_USER = os.environ.get("GMAIL_USER", "luotianyi983@gmail.com")
-GMAIL_APP_PW = os.environ.get("GMAIL_APP_PW", "pvztopjfnqfmgxwt").replace(" ", "")
+GMAIL_APP_PW = os.environ.get("GMAIL_APP_PW", "xpvivybiftuxhtxr").replace(" ", "")
 OUTLOOK_USER = os.environ.get("OUTLOOK_USER", "luotianyi1919@outlook.com")
 AGNES_BASE = os.environ.get("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1")
-AGNES_KEY = os.environ.get("AGNES_API_KEY", "wk-2026-6ca8422ab72740ff9ea9d20c52bb8ff4-HY1")
+AGNES_KEY = os.environ.get("AGNES_API_KEY", "wk-16wJgCQvuAnyAUxIxfiXwSGbr43kopg7ScOoiztK9wPDFHY1")
 AGNES_MODEL = os.environ.get("AGNES_MODEL", "agnes-2.5-flash")
 DRV_BASE = os.environ.get("DRV_BASE", "https://drv.ruoyemu.asia")
 ACCESS_PW = os.environ.get("ACCESS_PASSWORD", "710223")
