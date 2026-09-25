@@ -20,34 +20,6 @@ dns:
   - 119.29.29.29
   - 180.76.76.76
 proxies:
-- name: 🌐 Northflank 美国原生直连 (US-Central · 90GB)
-  type: vless
-  server: ws--singbox-lite--tbhrv4d578gv.code.run
-  port: 443
-  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-  network: ws
-  tls: true
-  udp: true
-  sni: ws--singbox-lite--tbhrv4d578gv.code.run
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ws--singbox-lite--tbhrv4d578gv.code.run
-- name: 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
-  type: vless
-  server: ws--singbox-eu--lkc76mfhjtps.code.run
-  port: 443
-  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-  network: ws
-  tls: true
-  udp: true
-  sni: ws--singbox-eu--lkc76mfhjtps.code.run
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ws--singbox-eu--lkc76mfhjtps.code.run
 - name: ⚡ Wasmer 极速美西 (Los Angeles · 150GB)
   type: vless
   server: edgetunnel-us-la.wasmer.app
@@ -104,6 +76,139 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-us-east.wasmer.app
+- name: 🌐 Northflank 美国原生直连 (US-Central · 90GB)
+  type: vless
+  server: ws--singbox-lite--tbhrv4d578gv.code.run
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  udp: true
+  sni: ws--singbox-lite--tbhrv4d578gv.code.run
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ws--singbox-lite--tbhrv4d578gv.code.run
+- name: 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  type: vless
+  server: ws--singbox-eu--lkc76mfhjtps.code.run
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  udp: true
+  sni: ws--singbox-eu--lkc76mfhjtps.code.run
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ws--singbox-eu--lkc76mfhjtps.code.run
+- name: ⚡ CF优选 · 日本 POP 01 (172.238.18.137:443 -> NF美区 · 5ms握手)
+  type: vless
+  server: 172.238.18.137
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF优选 · 日本 POP 02 (139.162.81.219:8443 -> NF美区 · 5ms握手)
+  type: vless
+  server: 139.162.81.219
+  port: 8443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF优选 · 日本 POP 03 (172.104.81.253:443 -> Wasmer美西 · 660ms直达)
+  type: vless
+  server: 172.104.81.253
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /wasmer
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF优选 · 韩国 POP 01 (43.164.134.99:443 -> NF美区 · 10ms握手)
+  type: vless
+  server: 43.164.134.99
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF优选 · 韩国 POP 02 (43.155.134.179:443 -> Wasmer美西 · 14ms握手)
+  type: vless
+  server: 43.155.134.179
+  port: 443
+  uuid: 78174327-45d8-42ef-a61d-abf885950d9d
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /wasmer
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF优选 · 台湾 POP 01 (60.249.21.30:443 -> NF美区 · 860ms)
+  type: vless
+  server: 60.249.21.30
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
+- name: ⚡ CF优选 · 新加坡 POP 01 (139.59.225.43:443 -> NF美区 · 1000ms)
+  type: vless
+  server: 139.59.225.43
+  port: 443
+  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  sni: wz.ruoyemu.asia
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wz.ruoyemu.asia
 - name: ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
   type: vless
   server: 104.18.2.1
@@ -122,21 +227,6 @@ proxies:
 - name: ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
   type: vless
   server: 104.18.3.1
-  port: 443
-  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-  network: ws
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  sni: wz.ruoyemu.asia
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: wz.ruoyemu.asia
-- name: ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
-  type: vless
-  server: 104.17.85.20
   port: 443
   uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
   network: ws
@@ -239,21 +329,6 @@ proxies:
     path: /nf-eu
     headers:
       Host: ruoyemu.global.ssl.fastly.net
-- name: 🚀 Fastly-NF 欧洲加速 02 (伦敦 POP · 151.101.16.133)
-  type: vless
-  server: 151.101.16.133
-  port: 443
-  uuid: c69d9310-66db-4614-b3b7-0fb01e68b4ec
-  network: ws
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  sni: ruoyemu.global.ssl.fastly.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /nf-eu
-    headers:
-      Host: ruoyemu.global.ssl.fastly.net
 - name: 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
   type: vless
   server: 151.101.229.57
@@ -289,26 +364,31 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选择 (url-test)
+  - ⚡ K40 优选 Clean IP 边缘加速组
   - ⚡ Wasmer 极速专区
-  - 🌐 Northflank 原生直连
-  - ⚡ CF 边缘优选组
-  - 🚀 Fastly CDN 加速组
-  - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
-  - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  - 🌐 Northflank 原生双活
+  - 🚀 Fastly CDN 试验组
   - ⚡ Wasmer 极速美西 (Los Angeles · 150GB)
   - ⚡ Wasmer 极速俄勒冈 (Oregon · 150GB)
   - ⚡ Wasmer 极速欧洲 (France · 150GB)
   - ⚡ Wasmer 极速美东 (US-East · 150GB)
+  - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
+  - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  - ⚡ CF优选 · 日本 POP 01 (172.238.18.137:443 -> NF美区 · 5ms握手)
+  - ⚡ CF优选 · 日本 POP 02 (139.162.81.219:8443 -> NF美区 · 5ms握手)
+  - ⚡ CF优选 · 日本 POP 03 (172.104.81.253:443 -> Wasmer美西 · 660ms直达)
+  - ⚡ CF优选 · 韩国 POP 01 (43.164.134.99:443 -> NF美区 · 10ms握手)
+  - ⚡ CF优选 · 韩国 POP 02 (43.155.134.179:443 -> Wasmer美西 · 14ms握手)
+  - ⚡ CF优选 · 台湾 POP 01 (60.249.21.30:443 -> NF美区 · 860ms)
+  - ⚡ CF优选 · 新加坡 POP 01 (139.59.225.43:443 -> NF美区 · 1000ms)
   - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
   - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
-  - ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
   - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
   - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
   - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
   - 🚀 Fastly-NF 亚太加速 01 (香港 POP · 151.101.229.57)
   - 🚀 Fastly-NF 亚太加速 02 (东京 POP · 151.101.109.57)
   - 🚀 Fastly-NF 欧洲加速 01 (法兰克福 POP · 151.101.114.133)
-  - 🚀 Fastly-NF 欧洲加速 02 (伦敦 POP · 151.101.16.133)
   - 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
   - 🚀 Fastly 全球 Anycast 域名调度 (ruoyemu.global.ssl.fastly.net)
 - name: ♻️ 自动选择 (url-test)
@@ -323,9 +403,30 @@ proxy-groups:
   - ⚡ Wasmer 极速美东 (US-East · 150GB)
   - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
   - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
+  - ⚡ CF优选 · 日本 POP 01 (172.238.18.137:443 -> NF美区 · 5ms握手)
+  - ⚡ CF优选 · 日本 POP 02 (139.162.81.219:8443 -> NF美区 · 5ms握手)
+  - ⚡ CF优选 · 日本 POP 03 (172.104.81.253:443 -> Wasmer美西 · 660ms直达)
+  - ⚡ CF优选 · 韩国 POP 01 (43.164.134.99:443 -> NF美区 · 10ms握手)
+  - ⚡ CF优选 · 韩国 POP 02 (43.155.134.179:443 -> Wasmer美西 · 14ms握手)
+  - ⚡ CF优选 · 台湾 POP 01 (60.249.21.30:443 -> NF美区 · 860ms)
+  - ⚡ CF优选 · 新加坡 POP 01 (139.59.225.43:443 -> NF美区 · 1000ms)
   - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
   - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
-  - ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
+  - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
+  - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
+- name: ⚡ K40 优选 Clean IP 边缘加速组
+  type: select
+  proxies:
+  - ⚡ CF优选 · 日本 POP 01 (172.238.18.137:443 -> NF美区 · 5ms握手)
+  - ⚡ CF优选 · 日本 POP 02 (139.162.81.219:8443 -> NF美区 · 5ms握手)
+  - ⚡ CF优选 · 日本 POP 03 (172.104.81.253:443 -> Wasmer美西 · 660ms直达)
+  - ⚡ CF优选 · 韩国 POP 01 (43.164.134.99:443 -> NF美区 · 10ms握手)
+  - ⚡ CF优选 · 韩国 POP 02 (43.155.134.179:443 -> Wasmer美西 · 14ms握手)
+  - ⚡ CF优选 · 台湾 POP 01 (60.249.21.30:443 -> NF美区 · 860ms)
+  - ⚡ CF优选 · 新加坡 POP 01 (139.59.225.43:443 -> NF美区 · 1000ms)
+  - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
+  - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
   - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
   - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
   - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
@@ -337,27 +438,17 @@ proxy-groups:
   - ⚡ Wasmer 极速欧洲 (France · 150GB)
   - ⚡ Wasmer 极速美东 (US-East · 150GB)
   - 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
-- name: 🌐 Northflank 原生直连
+- name: 🌐 Northflank 原生双活
   type: select
   proxies:
   - 🌐 Northflank 美国原生直连 (US-Central · 90GB)
   - 🌐 Northflank 欧洲原生直连 (EU-West · 90GB)
-- name: ⚡ CF 边缘优选组
-  type: select
-  proxies:
-  - ⚡ CF-NF 边缘极速优选 01 (US出口 · 104.18.2.1)
-  - ⚡ CF-NF 边缘极速优选 02 (US出口 · 104.18.3.1)
-  - ⚡ CF-NF 边缘极速优选 03 (US出口 · 104.17.85.20)
-  - ⚡ CF-NF 边缘极速优选 04 (EU出口 · 104.18.2.1)
-  - ⚡ CF-NF 边缘极速优选 05 (EU出口 · 104.18.3.1)
-  - ⚡ CF-NF 全球智能 Anycast (US出口 · wz.ruoyemu.asia)
-- name: 🚀 Fastly CDN 加速组
+- name: 🚀 Fastly CDN 试验组
   type: select
   proxies:
   - 🚀 Fastly-NF 亚太加速 01 (香港 POP · 151.101.229.57)
   - 🚀 Fastly-NF 亚太加速 02 (东京 POP · 151.101.109.57)
   - 🚀 Fastly-NF 欧洲加速 01 (法兰克福 POP · 151.101.114.133)
-  - 🚀 Fastly-NF 欧洲加速 02 (伦敦 POP · 151.101.16.133)
   - 🚀 Fastly-Wasmer 极速加速 (香港 POP · 151.101.229.57)
   - 🚀 Fastly 全球 Anycast 域名调度 (ruoyemu.global.ssl.fastly.net)
 - name: 🐟 漏网之鱼
