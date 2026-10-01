@@ -78,4 +78,4 @@ metadata:
   tested_run_id: '20260922_133327'
   reason: Successfully passed 9-round VLESS and generate_204 hard gates with stable
     egress route
-  verified_at: '2026-10-01T05:42:28.249673+00:00'
+  verified_at: '2026-10-01T06:21:44.923120+00:00'
