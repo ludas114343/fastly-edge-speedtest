@@ -1,0 +1,19 @@
+{
+  "head_sha": "22aaf9ab958418f1d6b489735ce72c2f36111d11",
+  "manifest_digest": "922c4eb796f40aca0fa231d14a5940ca1bccf95abfa3d1519db09a71adaa04db",
+  "run_id": "37120053097",
+  "run_url": "https://github.com/ludas114343/fastly-edge-speedtest/actions/runs/37120053097",
+  "status": "PROMOTED",
+  "subscription_files": {
+    "clash.yaml": "e7255cfc981f8a8f295f64231325ee0b890f29e640e5f5d65101ca0f572662be",
+    "clash_all.yaml": "e7255cfc981f8a8f295f64231325ee0b890f29e640e5f5d65101ca0f572662be",
+    "clash_cloudflare.yaml": "57ae806df4fafe849a3a14fc015b5f5385e957ece81c76703ee93e7ebbc940e9",
+    "clash_edgeone.yaml": "c6a3132832c6f7a9213da1f64c181eb970436e9bec6cded29e879500760c7635",
+    "clash_fastly.yaml": "c855ad065f7ea83ae724725017ab510f9547f347933f970f7b2d50e2de0cc4cc",
+    "clash_netlify.yaml": "03f3299b479cd8112b0abc905c69cc4cae0db5842bbee77ef5d29a8903e1a1f6",
+    "clash_northflank.yaml": "192c66d316c992401a2b1426dded24dff54ff0c3ccb62b8a632ec840710b860c",
+    "clash_supabase.yaml": "c4c5a6743cefbadb265bcc8cecde107f690ff74ac118cdf0a8414ac3c16d9639",
+    "clash_wasmer.yaml": "44440dc4c995db4ce0a9719ef42df3a941e96c0e5ea3073235fb7b98c991ff8a"
+  },
+  "timestamp": "2026-10-03T11:33:57.205382+00:00"
+}
