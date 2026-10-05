@@ -29,4 +29,4 @@ metadata:
   tested_run_id: '20260922_133327'
   reason: Netlify edge ingress terminates inbound RFC 6455 WebSocket 101 upgrade with
     HTTP 502 Bad Gateway
-  verified_at: '2026-10-05T14:26:40.439446+00:00'
+  verified_at: '2026-10-05T15:17:20.917165+00:00'
