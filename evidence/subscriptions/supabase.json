@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/supabase"
   ],
   "http_status": 200,
-  "sha256": "7ca092cadafd325e908310451f6a788e012f2194320d921e317375089cdce824",
+  "sha256": "1402149a62c3adc3abab4191acca7e0a6be8e912cfca61b2d4291cb674e6b1cc",
   "node_count": 16,
   "status": "VERIFIED_PROXY",
   "unfinished": false,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
-    "verified_at": "2026-10-05T21:58:01.234330+00:00"
+    "verified_at": "2026-10-06T00:05:13.257585+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-10-05T21:58:01.245778+00:00"
+  "verified_at": "2026-10-06T00:05:13.272007+00:00"
 }
