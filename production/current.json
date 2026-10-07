@@ -1,21 +1,21 @@
 {
-  "active_release": "release/37541662917",
-  "head_sha": "42c86ddb8d2922d8c1891cf0d90352d2fe0daa1a",
+  "active_release": "release/37578108178",
+  "head_sha": "049d2eb0eb8e1cfecce342eabeb3b94202314e68",
   "last_known_good": {
+    "manifest_digest": "3953aa0a0246420ba4c17da49cd5fe25cf80d5b0445b60d9fb500df75acb9a0a",
+    "promoted_at": "2026-10-07T05:48:03.810951+00:00",
+    "run_id": "37578108178"
+  },
+  "manifest_digest": "3953aa0a0246420ba4c17da49cd5fe25cf80d5b0445b60d9fb500df75acb9a0a",
+  "manifest_path": "release/37578108178/manifest.json",
+  "node_count": 21,
+  "previous_good": {
     "manifest_digest": "0acdd3279bd244682ed55905b221f0cf8e4d139e1aa52077c5237b19bece5019",
     "promoted_at": "2026-10-06T22:36:46.513457+00:00",
     "run_id": "37541662917"
   },
-  "manifest_digest": "0acdd3279bd244682ed55905b221f0cf8e4d139e1aa52077c5237b19bece5019",
-  "manifest_path": "release/37541662917/manifest.json",
-  "node_count": 21,
-  "previous_good": {
-    "manifest_digest": "e7785ec2c57ffab1a9ada9725d9b66e4a17234a0918b5f207bf549657a4296d9",
-    "promoted_at": "2026-10-06T15:52:48.037680+00:00",
-    "run_id": "37491160330"
-  },
-  "run_id": "37541662917",
-  "run_url": "https://github.com/ludas114343/fastly-edge-speedtest/actions/runs/37541662917",
+  "run_id": "37578108178",
+  "run_url": "https://github.com/ludas114343/fastly-edge-speedtest/actions/runs/37578108178",
   "status": "HEALTHY",
-  "timestamp": "2026-10-06T22:36:46.513457+00:00"
+  "timestamp": "2026-10-07T05:48:03.810951+00:00"
 }
