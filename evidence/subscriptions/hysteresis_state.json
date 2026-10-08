@@ -13,7 +13,7 @@
       ],
       "composite_score": 376.61,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947024+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560545+00:00"
     },
     "w-fr.ruoyemu.asia:443/?ed=2560&s=2": {
       "candidate_id": "wasmer-pub-14",
@@ -28,7 +28,7 @@
       ],
       "composite_score": 474.46,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947037+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560560+00:00"
     },
     "w-us.ruoyemu.asia:443/?ed=2560&s=1": {
       "candidate_id": "wasmer-pub-24",
@@ -43,7 +43,7 @@
       ],
       "composite_score": 492.75,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947040+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560564+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2&s=2": {
       "candidate_id": "supabase-pub-06",
@@ -58,7 +58,7 @@
       ],
       "composite_score": 521.37,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947042+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560568+00:00"
     },
     "gwgiogtgdyrqlexcdjqm.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-2": {
       "candidate_id": "supabase-pub-05",
@@ -73,7 +73,7 @@
       ],
       "composite_score": 555.66,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947045+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560571+00:00"
     },
     "w-east.ruoyemu.asia:443/?ed=2560&s=1": {
       "candidate_id": "wasmer-pub-27",
@@ -88,7 +88,7 @@
       ],
       "composite_score": 584.97,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947047+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560576+00:00"
     },
     "gwgiogtgdyrqlexcdjqm.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1": {
       "candidate_id": "supabase-pub-08",
@@ -103,7 +103,7 @@
       ],
       "composite_score": 645.33,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947051+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560580+00:00"
     },
     "gwgiogtgdyrqlexcdjqm.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ca-central-1": {
       "candidate_id": "supabase-pub-31",
@@ -118,7 +118,7 @@
       ],
       "composite_score": 617.37,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947060+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560590+00:00"
     },
     "nf-node.ruoyemu.asia:443/ws": {
       "candidate_id": "northflank-pub-26",
@@ -133,7 +133,7 @@
       ],
       "composite_score": 562.05,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947064+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560594+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=us-west-1": {
       "candidate_id": "supabase-pub-25",
@@ -148,7 +148,7 @@
       ],
       "composite_score": 674.44,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947066+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560597+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1": {
       "candidate_id": "supabase-pub-01",
@@ -163,7 +163,7 @@
       ],
       "composite_score": 695.13,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947068+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560600+00:00"
     },
     "gwgiogtgdyrqlexcdjqm.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=eu-west-2": {
       "candidate_id": "supabase-pub-18",
@@ -178,7 +178,7 @@
       ],
       "composite_score": 698.55,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947070+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560603+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1": {
       "candidate_id": "supabase-pub-10",
@@ -193,7 +193,7 @@
       ],
       "composite_score": 755.13,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947072+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560605+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ca-central-1": {
       "candidate_id": "supabase-pub-30",
@@ -208,7 +208,7 @@
       ],
       "composite_score": 734.51,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947074+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560608+00:00"
     },
     "w-fr.ruoyemu.asia:443/?ed=2560&s=1": {
       "candidate_id": "wasmer-pub-13",
@@ -223,7 +223,7 @@
       ],
       "composite_score": 808.57,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947076+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560611+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-2": {
       "candidate_id": "supabase-pub-32",
@@ -238,7 +238,7 @@
       ],
       "composite_score": 797.5,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947078+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560613+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=eu-west-3": {
       "candidate_id": "supabase-pub-15",
@@ -253,7 +253,7 @@
       ],
       "composite_score": 876.88,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947080+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560616+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1&s=2": {
       "candidate_id": "supabase-pub-12",
@@ -268,7 +268,7 @@
       ],
       "composite_score": 919.82,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947082+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560619+00:00"
     },
     "w-la.ruoyemu.asia:443/?ed=2560&s=1": {
       "candidate_id": "wasmer-pub-21",
@@ -283,7 +283,7 @@
       ],
       "composite_score": 869.97,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947085+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560623+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-southeast-1&s=2": {
       "candidate_id": "supabase-pub-09",
@@ -298,7 +298,7 @@
       ],
       "composite_score": 1045.22,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947089+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560628+00:00"
     },
     "gwgiogtgdyrqlexcdjqm.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=eu-central-1": {
       "candidate_id": "supabase-pub-11",
@@ -313,7 +313,7 @@
       ],
       "composite_score": 1234.48,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947091+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560631+00:00"
     },
     "theecyezvuzkflwikxwr.supabase.co:443/functions/v1/edgetunnel?forceFunctionRegion=ap-northeast-1&s=2": {
       "candidate_id": "supabase-pub-03",
@@ -328,8 +328,8 @@
       ],
       "composite_score": 1327.16,
       "consecutive_failures": 0,
-      "last_active_at": "2026-10-08T06:08:38.947093+00:00"
+      "last_active_at": "2026-10-08T06:18:27.560633+00:00"
     }
   },
-  "last_evaluated_at": "2026-10-08T06:08:38.947146+00:00"
+  "last_evaluated_at": "2026-10-08T06:18:27.560709+00:00"
 }
