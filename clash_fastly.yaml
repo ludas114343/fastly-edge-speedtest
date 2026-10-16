@@ -29,4 +29,4 @@ metadata:
   tested_run_id: '20260922_133327'
   reason: Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips
     WebSocket Upgrade headers without paid Custom TLS SAN certificate
-  verified_at: '2026-10-16T16:55:25.503481+00:00'
+  verified_at: '2026-10-16T20:59:18.082751+00:00'
