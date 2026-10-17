@@ -1,0 +1,28 @@
+{
+  "token": "netlify",
+  "url_path": "/netlify",
+  "https_url": "https://speedtest.ludash.top/netlify",
+  "alternate_urls": [
+    "https://speedtest.ruoyemu.asia/netlify",
+    "https://wasmer-sub.cccp2427.workers.dev/netlify",
+    "https://sub.ruoyemu.asia/netlify"
+  ],
+  "http_status": 200,
+  "sha256": "0ce499c9e6182b79a9344d053a97444423ec4f500721589d7b97d66aa4abf1cd",
+  "node_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
+  "metadata": {
+    "status": "NO_VERIFIED_PROXY",
+    "platform": "netlify",
+    "node_count": 0,
+    "unfinished": true,
+    "head_sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+    "run_id": "20260922_133327",
+    "tested_run_id": "20260922_133327",
+    "reason": "Netlify edge ingress terminates inbound RFC 6455 WebSocket 101 upgrade with HTTP 502 Bad Gateway",
+    "verified_at": "2026-10-17T23:03:30.079854+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-10-17T23:03:30.081135+00:00"
+}
