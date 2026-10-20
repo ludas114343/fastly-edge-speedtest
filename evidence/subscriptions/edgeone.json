@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/edgeone"
   ],
   "http_status": 200,
-  "sha256": "e01cdfa072e9a42cbe8d320291f4207024f0db7ac8c6862f56c25e80518ed2bf",
+  "sha256": "fb377409b50d2c22b6c32a2293ca7ed5ecb6b9c4f06d011446a2382842f10bff",
   "node_count": 0,
   "status": "NO_VERIFIED_PROXY",
   "unfinished": true,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Tencent Cloud EdgeOne free tier prohibits arbitrary TCP socket dial and terminates WebSocket proxying on overseas edge nodes",
-    "verified_at": "2026-10-20T14:15:46.031083+00:00"
+    "verified_at": "2026-10-20T17:34:01.156448+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-10-20T14:15:46.032340+00:00"
+  "verified_at": "2026-10-20T17:34:01.157267+00:00"
 }
