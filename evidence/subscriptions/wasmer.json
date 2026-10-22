@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/wasmer"
   ],
   "http_status": 200,
-  "sha256": "d8a18f9b47e0190a30a55078e8e365193921be56e5bf50763fcd1af3fbbb1990",
+  "sha256": "bf0a7344bd38737d4617188d986f5f88ef1fa4804f6494aa7ee094ed9ef32da8",
   "node_count": 4,
   "status": "VERIFIED_PROXY",
   "unfinished": false,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
-    "verified_at": "2026-10-22T05:02:59.254291+00:00"
+    "verified_at": "2026-10-22T11:41:30.770956+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-10-22T05:02:59.259598+00:00"
+  "verified_at": "2026-10-22T11:41:30.775995+00:00"
 }
