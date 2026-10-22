@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/fastly"
   ],
   "http_status": 200,
-  "sha256": "a1687959e3e0cf87f95dc1a17da0ff82124d1dc06db3818638803517baaac18d",
+  "sha256": "ef64e08a4feda64a528eea3aa003d6e8d0a319cc0ac9d30198925c29dc840b03",
   "node_count": 0,
   "status": "NO_VERIFIED_PROXY",
   "unfinished": true,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Fastly Free tier edge terminates with synthetic HTTP 200/421 and strips WebSocket Upgrade headers without paid Custom TLS SAN certificate",
-    "verified_at": "2026-10-22T17:36:23.741680+00:00"
+    "verified_at": "2026-10-22T21:29:16.277708+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-10-22T17:36:23.743231+00:00"
+  "verified_at": "2026-10-22T21:29:16.279001+00:00"
 }
