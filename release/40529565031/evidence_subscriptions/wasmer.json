@@ -1,0 +1,28 @@
+{
+  "token": "wasmer",
+  "url_path": "/wasmer",
+  "https_url": "https://speedtest.ludash.top/wasmer",
+  "alternate_urls": [
+    "https://speedtest.ruoyemu.asia/wasmer",
+    "https://wasmer-sub.cccp2427.workers.dev/wasmer",
+    "https://sub.ruoyemu.asia/wasmer"
+  ],
+  "http_status": 200,
+  "sha256": "2286248419b5c004df3b2b01a6dbd4e8c24734731784b92adc235c786601bbd9",
+  "node_count": 4,
+  "status": "VERIFIED_PROXY",
+  "unfinished": false,
+  "metadata": {
+    "status": "VERIFIED_PROXY",
+    "platform": "wasmer",
+    "node_count": 4,
+    "unfinished": false,
+    "head_sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+    "run_id": "20260922_133327",
+    "tested_run_id": "20260922_133327",
+    "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
+    "verified_at": "2026-10-27T15:18:04.238519+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-10-27T15:18:04.241088+00:00"
+}
