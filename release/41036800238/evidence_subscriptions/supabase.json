@@ -1,0 +1,28 @@
+{
+  "token": "supabase",
+  "url_path": "/supabase",
+  "https_url": "https://speedtest.ludash.top/supabase",
+  "alternate_urls": [
+    "https://speedtest.ruoyemu.asia/supabase",
+    "https://wasmer-sub.cccp2427.workers.dev/supabase",
+    "https://sub.ruoyemu.asia/supabase"
+  ],
+  "http_status": 200,
+  "sha256": "b54e28d788e0b51b53cc034a533cd77d44330660748d11aca47b658b9d82add2",
+  "node_count": 16,
+  "status": "VERIFIED_PROXY",
+  "unfinished": false,
+  "metadata": {
+    "status": "VERIFIED_PROXY",
+    "platform": "supabase",
+    "node_count": 16,
+    "unfinished": false,
+    "head_sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+    "run_id": "20260922_133327",
+    "tested_run_id": "20260922_133327",
+    "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
+    "verified_at": "2026-10-30T09:54:24.353292+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-10-30T09:54:24.362216+00:00"
+}
