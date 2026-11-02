@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/netlify"
   ],
   "http_status": 200,
-  "sha256": "8fd58e6faa4b92d3e7fb773f48ff82ce1cc0ab0d9d5a43ec02ed8e86acf6e052",
+  "sha256": "e0a58d9507e3b6f5378dc328fc5d53eb056e7b8f004234568c9434c4e1f059c2",
   "node_count": 0,
   "status": "NO_VERIFIED_PROXY",
   "unfinished": true,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Netlify edge ingress terminates inbound RFC 6455 WebSocket 101 upgrade with HTTP 502 Bad Gateway",
-    "verified_at": "2026-11-02T21:40:13.955004+00:00"
+    "verified_at": "2026-11-02T21:56:44.885401+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-11-02T21:40:13.955817+00:00"
+  "verified_at": "2026-11-02T21:56:44.886960+00:00"
 }
