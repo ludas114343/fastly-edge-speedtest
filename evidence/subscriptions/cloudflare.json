@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/cloudflare"
   ],
   "http_status": 200,
-  "sha256": "43eb3cc70e2e1449a386767329b1a0941bd0fbf68dfd6ab3166aed76382e49e9",
+  "sha256": "e66ec25860acc8b4f3bbf24110b7aceb2d2818ba950e4c664976191c0121b959",
   "node_count": 0,
   "status": "NO_VERIFIED_PROXY",
   "unfinished": true,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Cloudflare Workers edgetunnel requires explicit PROXYIP for VLESS WS outbound dial; direct non-standard egress is blocked by V8 isolate sandbox",
-    "verified_at": "2026-11-06T06:28:30.189045+00:00"
+    "verified_at": "2026-11-06T07:20:15.589225+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-11-06T06:28:30.190353+00:00"
+  "verified_at": "2026-11-06T07:20:15.590175+00:00"
 }
