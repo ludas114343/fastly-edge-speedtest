@@ -29,4 +29,4 @@ metadata:
   tested_run_id: '20260922_133327'
   reason: Tencent Cloud EdgeOne free tier prohibits arbitrary TCP socket dial and
     terminates WebSocket proxying on overseas edge nodes
-  verified_at: '2026-11-07T13:35:48.121117+00:00'
+  verified_at: '2026-11-07T19:22:27.358108+00:00'

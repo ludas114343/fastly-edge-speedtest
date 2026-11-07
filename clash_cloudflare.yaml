@@ -29,4 +29,4 @@ metadata:
   tested_run_id: '20260922_133327'
   reason: Cloudflare Workers edgetunnel requires explicit PROXYIP for VLESS WS outbound
     dial; direct non-standard egress is blocked by V8 isolate sandbox
-  verified_at: '2026-11-07T13:30:07.473674+00:00'
+  verified_at: '2026-11-07T19:22:27.355214+00:00'
