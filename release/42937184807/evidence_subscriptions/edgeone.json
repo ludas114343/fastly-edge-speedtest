@@ -1,0 +1,28 @@
+{
+  "token": "edgeone",
+  "url_path": "/edgeone",
+  "https_url": "https://speedtest.ludash.top/edgeone",
+  "alternate_urls": [
+    "https://speedtest.ruoyemu.asia/edgeone",
+    "https://wasmer-sub.cccp2427.workers.dev/edgeone",
+    "https://sub.ruoyemu.asia/edgeone"
+  ],
+  "http_status": 200,
+  "sha256": "cfc8860846689b5aab534c9a80ad326fe8b7f21385578705149a9114266b88a7",
+  "node_count": 0,
+  "status": "NO_VERIFIED_PROXY",
+  "unfinished": true,
+  "metadata": {
+    "status": "NO_VERIFIED_PROXY",
+    "platform": "edgeone",
+    "node_count": 0,
+    "unfinished": true,
+    "head_sha": "816aa23bbc23e2e3d7a5e3842dd1390b49abbd0c",
+    "run_id": "20260922_133327",
+    "tested_run_id": "20260922_133327",
+    "reason": "Tencent Cloud EdgeOne free tier prohibits arbitrary TCP socket dial and terminates WebSocket proxying on overseas edge nodes",
+    "verified_at": "2026-11-11T01:12:19.649441+00:00"
+  },
+  "yaml_valid": true,
+  "verified_at": "2026-11-11T01:12:19.650712+00:00"
+}
