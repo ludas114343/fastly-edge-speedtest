@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/northflank"
   ],
   "http_status": 200,
-  "sha256": "88dc855df650785e364a8d183f145b45d5a831337ab750af0ec97e35a8daada5",
+  "sha256": "a821b49f89d3ad4a9940c87c0e7830dca24bec848c4908e23f8829ec65b24bd4",
   "node_count": 1,
   "status": "VERIFIED_PROXY",
   "unfinished": false,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
-    "verified_at": "2026-11-21T02:07:40.153663+00:00"
+    "verified_at": "2026-11-21T07:34:00.857822+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-11-21T02:07:40.155197+00:00"
+  "verified_at": "2026-11-21T07:34:00.859843+00:00"
 }
