@@ -8,7 +8,7 @@
     "https://sub.ruoyemu.asia/all"
   ],
   "http_status": 200,
-  "sha256": "e546a4c092b488164e3687838ab06df7c54c3b0c247731a04c5bafe9fcd8426a",
+  "sha256": "8d6bff73266a7159b20ca6d09bcf37edaf509cfa23a2a935b585b3559fd655dc",
   "node_count": 21,
   "status": "VERIFIED_PROXY",
   "unfinished": false,
@@ -21,8 +21,8 @@
     "run_id": "20260922_133327",
     "tested_run_id": "20260922_133327",
     "reason": "Successfully passed 9-round VLESS and generate_204 hard gates with stable egress route",
-    "verified_at": "2026-11-26T03:29:35.524456+00:00"
+    "verified_at": "2026-11-26T16:45:52.892305+00:00"
   },
   "yaml_valid": true,
-  "verified_at": "2026-11-26T03:29:35.535479+00:00"
+  "verified_at": "2026-11-26T16:45:52.907064+00:00"
 }
